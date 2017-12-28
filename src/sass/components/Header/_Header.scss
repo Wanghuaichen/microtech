@@ -1,0 +1,49 @@
+.header-home {
+    position: relative;
+    z-index: 10;
+    overflow-x: hidden;
+}
+
+.header-nav {
+    @include flexSetUp;
+}
+
+.logo {
+    width: 30vw;
+    margin: 30px;
+    
+}
+
+.nav-links {
+    background-color: $primary-blue;
+    width: 70vw;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    color: $white;    
+    @include header6SetUp;    
+}
+
+ul {
+    display: flex;
+    align-items: center;    
+}
+
+li {
+    margin-right: 40px;
+}
+
+.white-btn {
+    background-color: $white;
+    padding: 10px;
+    color: $primary-blue;
+    border-radius: 6px;
+}
+
+.nav-sublinks {
+    display: flex;
+    justify-content: flex-end;
+    color: $primary-blue;
+    font-size: 16px;
+    font-family: $btn-font;
+}

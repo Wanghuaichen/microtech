@@ -1,0 +1,69 @@
+@mixin media-query($width, $type: min) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @media only screen and (#{$type}-width: $width - 1) {
+            @content;
+        }
+    }
+  }
+  
+@mixin flexSetUp($justify: center, $align: center, $direction: row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin header1SetUp {
+    font-family: $main-font;
+    font-weight: regular;
+    font-size: 104px;
+    color: red;
+    margin: 50px;
+}
+
+@mixin header2SetUp {
+    font-family: $main-font;
+    font-weight: regular;
+    font-size: 43px;
+}
+
+@mixin header3SetUp {
+    font-family: $main-font;
+    font-weight: regular;
+    font-size: 34px;
+}
+
+@mixin header4SetUp {
+    font-family: $main-font;
+    font-weight: regular;
+    font-size: 25px;
+}
+
+@mixin header5SetUp {
+    font-family: $btn-font;
+    font-weight: light;
+    font-size: 26px;
+}
+
+@mixin header6SetUp {
+    font-family: $btn-font;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+@mixin bodySetUp {
+    font-family: $body-font;
+    font-weight: regular;
+    font-size: 15px;
+}
+
+@mixin mainCTA {
+    color: $white;
+    background-color: $secondary-blue;
+    font-family: $btn-font;
+    opacity: 0.8;
+    border-radius: 7px;
+    width: 300px;
+    height: 60px;
+    @include flexSetUp;
+}

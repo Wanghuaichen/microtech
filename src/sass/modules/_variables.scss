@@ -1,0 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+$main-font: 'Arvo', serif;
+// $btn-font: 'pck4elz', sans-serif;
+$btn-font: "acumin-pro-condensed", sans-serif;
+$body-font: 'Open Sans', sans-serif;
+
+$primary-blue: #1A2E5A;
+$secondary-blue: #00539B;
+$third-blue: #2C7EC6;
+$fourth-blue: #41A7DF;
+$text-gray: #D8D8D8;
+$bg-light: #F6F6F6;
+$bg-dark: #E8E8E8;
+$circle-gray: #747474;
+$white: #FFFFFF;
+
+
+/* media query breakpoints */
+$breakpoints: (
+  "phone":        400px,
+  "phone-wide":   480px,
+  "tablet":       768px,
+  "desktop":      1248px,
+  "desktop-wide": 1440px
+);

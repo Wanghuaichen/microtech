@@ -1,0 +1,24 @@
+h1 {
+    @include header1SetUp;
+}
+
+h2 {
+    @include header2SetUp;
+}
+
+h3 {
+    @include header3SetUp;
+    line-height: 1.3;
+}
+
+h5 {
+    @include header5SetUp;
+}
+
+h6 {
+    @include header6SetUp
+}
+
+p {
+    @include bodySetUp
+}
