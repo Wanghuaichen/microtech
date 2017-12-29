@@ -48,6 +48,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+a {
+  text-decoration: none; }
+
 /* modules */
 /* media query breakpoints */
 /* page layout */
@@ -135,8 +138,7 @@ p {
 .icon-box {
   background-color: #FFFFFF;
   height: 250px;
-  padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-top: 50px; }
 
 .icon-header {
   word-wrap: break-word;

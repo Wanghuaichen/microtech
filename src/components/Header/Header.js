@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
 import Logo from '../../assets/Logos/MicroTech_MED.jpg'
 
 export default class Header extends Component {
@@ -15,7 +17,9 @@ export default class Header extends Component {
               <li>FEEDYARD</li>
               <li>DAIRY</li>
               <li>INTEGRATOR</li>
+              <Link to='/contact'>
               <li className="white-btn">CONTACT</li>
+              </Link>
             </ul>
           </nav>
         </div>

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
 import Logo from '../../assets/Logos/MicroTech_MED.jpg'
 import HR from '../../assets/Icons/HR_white.png';
 import Knowledge from '../../assets/Icons/Knowledgedriven_white.png';
@@ -23,7 +25,9 @@ export default class Footer extends Component {
                                 <img className="social-icon" src={LinkedIn} alt="LinkedIn Icon" />
                                 <img className="social-icon" src={Mail} alt="Mail Icon" />
                                 <img className="social-icon" src={Twitter} alt="Twitter Icon" />
+                                <Link to='/contact'>
                                 <div className="contact-btn">CONTACT</div>
+                                </Link>
                             </div>
                         </nav>
                         <div className="terms">
