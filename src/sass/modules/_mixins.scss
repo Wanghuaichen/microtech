@@ -17,8 +17,8 @@
     font-family: $main-font;
     font-weight: regular;
     font-size: 104px;
-    color: red;
-    margin: 50px;
+    color: $white;
+    opacity: 0.2;
 }
 
 @mixin header2SetUp {
@@ -49,6 +49,7 @@
     font-family: $btn-font;
     font-weight: lighter;
     font-size: 20px;
+    text-transform: uppercase;
 }
 
 @mixin bodySetUp {

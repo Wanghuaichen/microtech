@@ -19,7 +19,7 @@ export default class Header extends Component {
             </ul>
           </nav>
         </div>
-        <div class="sub-header">
+        <div className="sub-header">
           <nav className="nav-sublinks">
             <ul>
               <li>THE MICRO DIFFERENCE</li>

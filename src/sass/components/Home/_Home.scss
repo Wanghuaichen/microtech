@@ -1,17 +1,15 @@
 .slider-home {
     display: flex;
+    flex-direction: column; 
 }
 
 .slider-one {
     width: 100vw;
-    position: absolute;
     overflow-x: hidden;
-    z-index: 1;    
 }
 
 .slider-text {
     position: absolute;
-    z-index: 20;
     width: 100vw;
     height: 100vh;
     @include flexSetUp;
@@ -25,10 +23,134 @@
 .vision-text {
     color: $primary-blue;
     position: absolute;
-    width: 60vw;
+    word-wrap: break-word;
+    width: 800px; 
 }
 
 .main-cta {
     @include mainCTA;
     margin-top: 300px;
 }
+
+.icon-box {
+    background-color: $white;
+    height: 250px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+
+.icon-header {
+    word-wrap: break-word;
+    width: 1050px; 
+}
+
+.icon-header, .icon-subheader, .animal, .animal-text {
+    text-align: center;  
+    margin: auto;  
+    margin-bottom: 50px;
+    color: $primary-blue;
+}
+
+.animal-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+    text-align: center;  
+    margin: auto; 
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.est-box {
+    background-color: $primary-blue;
+    height: 327px;
+    color: $white;
+    @include bodySetUp;
+    @include flexSetUp;
+}
+
+.est-text {
+    word-wrap: break-word;
+    width: 650px; 
+}
+
+.est-header {
+    color: $text-gray;
+}
+
+.est-est {
+    margin: 88px 60px 0px 20px;
+}
+
+.mission-boxes {
+    @include flexSetUp;
+    height: 500px;
+    vertical-align: center;
+}
+
+.mission-box {
+    justify-content: center;
+    margin: 10px;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 7px 24px 0 rgba(0,0,0,.25), 0 5px 5px 0 rgba(0,0,0,.26)    
+}
+
+.mission-gear {
+    margin: 55px 0px 25px 0px;
+}
+
+.mission-value {
+    margin: 55px 0px 35px 0px;
+}
+
+.mission-service {
+    margin: 80px 0px 45px 0px;
+}
+
+.fourth-main {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+}
+
+.fourth-container {
+    height: 700px;
+    width: 100vw;
+    margin-top: 25px;
+    text-align: center;  
+}
+
+.fourth-text {
+    position: absolute;
+    margin-top: 150px;
+}
+
+.center-container {
+    text-align: center; 
+    width: 1000px; 
+}
+
+.fourth-para {
+    color: $primary-blue;
+    word-wrap: break-word;
+    width: 1000px; 
+}
+
+.four {
+    margin: 20px;
+}
+
+.res-cta {
+    @include mainCTA;
+    margin: auto;
+    margin-top: 100px;
+    letter-spacing: 2px;
+}
+
+

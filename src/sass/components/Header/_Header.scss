@@ -1,5 +1,4 @@
 .header-home {
-    position: relative;
     z-index: 10;
     overflow-x: hidden;
 }
@@ -38,6 +37,7 @@ li {
     padding: 10px;
     color: $primary-blue;
     border-radius: 6px;
+    font-family: $btn-font;    
 }
 
 .nav-sublinks {
