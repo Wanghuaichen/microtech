@@ -5,9 +5,15 @@ import Footer from '../Footer/Footer';
 export default class Feedyard extends Component {
   render() {
     return (
-      <div>
-        Feedyard!
-      </div>
+      <section className="feedyard-container">
+        <Header />
+
+            <main className="feedyard-main">
+             feedyard!       
+            </main>
+
+            <Footer />
+        </section>
     )
   }
 }

@@ -1,0 +1,103 @@
+.contact-main {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-form {
+    margin-left: 60px;
+    width: 54vw;
+    background-color: $white;
+    margin-top: -5px;
+}
+
+.contact-spacing {
+    margin-bottom: 15px;
+}
+
+.contact-photo {
+    width: 46vw;
+    height: 100.8%;
+    overflow-x: hidden;
+
+}
+
+.input-one, .input-two, .input-three, .input-four, {
+    margin: 7px 0px 25px 0px;    
+    border: 1px solid transparent;
+    border-top: none;
+    border-bottom: 1px solid #DDD;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
+}
+
+.radio-input {
+    display: flex;
+    align-items: center;
+    width: 45vw;
+    margin: 15px 0px 25px 0px;    
+}
+
+.radio-option {
+    margin: 0px 70px 0px 10px;
+}
+
+.input-one {
+    width: 45vw;
+    height: 25px;
+}
+
+.input-three {
+    width: 6vw;
+    height: 25px;
+    margin-right: 25px;    
+}
+
+.input-four {
+    width: 45vw;
+    height: 100px;
+    word-wrap: break-word;
+    word-break: break-all;
+    height: 80px;
+}
+
+.contact-banner {
+    background-color: $primary-blue;
+    color: $white;    
+    width: 100vw;
+    height: 347px;
+    @include flexSetUp;
+}
+
+.contact-line {
+    background-color: $white;
+    width: 1px;
+    height: 150px;
+    margin: 50px;
+}
+
+.contact-icons {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-icon {
+    width: 25px;
+    margin: 10px;
+}
+
+.contact-subheader {
+    margin: 15px 0px 15px 35px;
+}
+
+.address {
+    word-wrap: break-word;
+    width: 300px;
+    margin-bottom: -15px;
+}
+
+.submit-btn {
+    @include mainCTA;
+    font-size: 26px;
+    height: 39px;
+    width: 212px;
+    margin-bottom: 50px;
+}

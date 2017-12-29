@@ -5,9 +5,15 @@ import Footer from '../Footer/Footer';
 export default class Difference extends Component {
   render() {
     return (
-      <div>
-        Difference!
-      </div>
+      <section className="difference-container">
+        <Header />
+
+            <main className="difference-main">
+             difference!       
+            </main>
+
+            <Footer />
+        </section>
     )
   }
 }
