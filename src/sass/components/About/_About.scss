@@ -52,6 +52,139 @@
     flex-direction: column;
 }
 
+.team-container {
+    margin: 75px 0px;
+    display: flex;
+}
+
+.team-box {
+    margin-left: 100px;
+}
+
+.team-text {
+    word-wrap: break-word;
+    width: 490px;
+    margin-bottom: 45px;
+}
+
+.execs-container {
+    margin-top: -20px;
+}
+
+.president {
+    display: flex;
+    margin: 30px 0px 10px 0px;
+}
+
+.pres-name {
+    font-size: 35px;
+}
+
+.pres-title {
+    font-size: 26px;
+    margin: 10px 0px 0px 10px;
+}
+
+.executives {
+    display: flex;
+}
+
+.execs-box {
+    margin-bottom: 20px;
+}
+
+.execs-name {
+    font-size: 26px;
+}
+
+.execs-title {
+    font-size: 15px;
+    margin: 12px 0px 0px 10px;
+}
+
+.email-information {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.company-information {
+    display: flex;
+    align-items: center;
+    margin: 5px 0px 10px 0px;
+}
+
+.email-tiny {
+    width: 20px;
+}
+
+.email-tiny-text {
+    margin-left: 20px;
+}
+
+.email-tiny-text-exec {
+    margin-left: 15px;
+    font-size: 10px;
+    color: $circle-gray;
+}
+
+.team-line {
+    background-color: $secondary-blue;
+    width: 1px;
+    height: 375px;
+    margin: 0px 90px;
+}
+
+.res-align {
+    display: flex;
+}
+
+.responsibility-box {
+    margin-left: 100px;
+    word-wrap: break-word;
+    width: 500px;
+}
+
+.responsibility-header {
+    margin: 80px 0px 25px 0px;
+}
+
+.facts-box {
+    background-color: $secondary-blue;
+    color: $white;
+    width: 550px;
+    height: 400px;
+    text-align: center;
+    margin: 80px 0px 25px 0px;
+    margin-left: 35px;
+    z-index: -1;
+}
+
+.facts-header {
+    margin: 30px 0px;
+}
+
+.cowpen-image {
+    width: 1090px;
+    display: flex;
+    margin: auto;
+    margin-top: -100px;
+}
+
+.map-box {
+    margin-bottom: 50px;
+}
+
+.reach {
+    margin: 25px 0px 25px 100px;
+}
+
+.map {
+    width: 500px;
+    display: flex;
+    margin: auto;    
+}
+
 .partnership-logos {
     display: flex;
     margin-left: 100px;      
@@ -60,4 +193,13 @@
 .part-icon {
     height: 50px;
     margin: 10px 75px 0px 0px; 
+}
+
+.gray-footer {
+    height: 129px;
+    background-color: $bg-light;
+    color: $primary-blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
