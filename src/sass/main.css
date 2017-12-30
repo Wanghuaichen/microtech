@@ -85,7 +85,6 @@ h5 {
 
 h6 {
   font-family: "acumin-pro-condensed", sans-serif;
-  font-weight: lighter;
   font-size: 20px;
   text-transform: uppercase; }
 
@@ -172,7 +171,7 @@ textarea {
   display: flex;
   flex-direction: column; }
 
-.est-box {
+.bluebanner-box {
   background-color: #1A2E5A;
   height: 327px;
   color: #FFFFFF;
@@ -183,14 +182,14 @@ textarea {
   justify-content: center;
   align-items: center; }
 
-.est-text {
+.bluebanner-text {
   word-wrap: break-word;
   width: 650px; }
 
-.est-header {
+.bluebanner-header {
   color: #D8D8D8; }
 
-.est-est {
+.bluebanner-est {
   margin: 88px 60px 0px 20px; }
 
 .mission-boxes {
@@ -269,11 +268,15 @@ textarea {
   background-color: #FFFFFF; }
 
 .contact-spacing {
-  margin-bottom: 15px; }
+  margin: 15px 0px; }
 
 .contact-photo {
+  position: relative;
+  height: 100%;
   width: 44vw;
-  overflow-x: hidden; }
+  background-image: url("../assets/Pics/Micro-Technologies-mdx-120-FINAL-web-dupe-Copy.jpg");
+  background-size: contain no-repeat;
+  background-attachment: fixed; }
 
 .input-one, .input-two, .input-three, .input-four {
   margin: 7px 0px 25px 0px;
@@ -352,7 +355,8 @@ textarea {
   font-size: 26px;
   height: 39px;
   width: 212px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  padding-bottom: 4px; }
 
 .header-home {
   z-index: 10;
@@ -364,41 +368,45 @@ textarea {
   align-items: center; }
 
 .logo {
-  width: 30vw;
+  width: 28vw;
   margin: 30px; }
 
 .nav-links {
   background-color: #1A2E5A;
   width: 70vw;
-  height: 10vh;
+  height: 8vh;
   display: flex;
   justify-content: flex-end;
   font-family: "acumin-pro-condensed", sans-serif;
-  font-weight: lighter;
   font-size: 20px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-right: -27px; }
 
 ul {
   display: flex;
   align-items: center; }
 
 li {
-  margin-right: 40px; }
+  margin-right: 50px; }
 
 .white-btn {
   background-color: #FFFFFF;
-  padding: 10px;
+  height: 35px;
+  width: 110px;
   color: #1A2E5A;
   border-radius: 6px;
-  font-family: "acumin-pro-condensed", sans-serif; }
+  font-family: "acumin-pro-condensed", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .sub-header {
-  margin-bottom: 33px; }
+  margin-bottom: 25px; }
 
 .nav-sublinks {
   display: flex;
   justify-content: flex-end;
-  color: #1A2E5A !important;
+  color: #1A2E5A;
   font-size: 16px;
   font-family: "acumin-pro-condensed", sans-serif; }
 
@@ -406,7 +414,11 @@ li {
   color: #FFFFFF; }
 
 .nav-sublinks a {
-  color: #1A2E5A; }
+  color: #1A2E5A;
+  margin: -10px 5px 0px 0px; }
+
+.sub {
+  margin-left: -12px; }
 
 .footer-nav {
   display: flex;
@@ -467,3 +479,62 @@ li {
   display: flex;
   justify-content: flex-end;
   direction: row; }
+
+.about-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  background-image: url("../assets/Pics/Hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.bluebanner-box {
+  background-color: #1A2E5A;
+  height: 327px;
+  color: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
+  font-weight: regular;
+  font-size: 15px; }
+
+.about {
+  justify-content: flex-start; }
+
+.bannerabout {
+  word-wrap: break-word;
+  width: 220px; }
+
+.bluebanner-header {
+  color: #D8D8D8; }
+
+.left {
+  margin-left: 100px; }
+
+.bluebanner-column {
+  background-color: #1A2E5A;
+  height: 327px;
+  color: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
+  font-weight: regular;
+  font-size: 15px;
+  text-transform: uppercase; }
+
+.lead {
+  word-wrap: break-word;
+  width: 800px; }
+
+.columnbanner {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+.partnership-logos {
+  display: flex;
+  margin-left: 100px; }
+
+.part-icon {
+  height: 50px;
+  margin: 10px 75px 0px 0px; }

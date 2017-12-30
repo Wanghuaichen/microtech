@@ -57,19 +57,19 @@ export default class Home extends Component {
           </div>
         </section>
 
-        <section className="est-box">
-          <div className="est-left">
+        <section className="bluebanner-box">
+          <div className="bluebanner-left">
             <h4>SINCE</h4>
-            <h1 className="est-header">1971</h1>
+            <h1 className="bluebanner-header">1971</h1>
           </div>
-          <div className="est-est">
+          <div className="bluebanner-est">
             <h4>EST.</h4>
           </div>
-          <div className="est-right">
-            <p className="est-text">
+          <div className="bluebanner-right">
+            <p className="bluebanner-text">
               Since 1971, we continue to be the leading provider of advanced, comprehensive and integrated animal management systems and solutions.</p>
             <br></br>
-            <p className="est-text">
+            <p className="bluebanner-text">
               We have established an unparalleled track record of delivering meaningful technology solutions based upon a business philosophy centered around three key principles: innovation, value creation and service.
             </p>
           </div>

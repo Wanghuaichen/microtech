@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
-import ContactPhoto from '../../assets/Pics/Warehouse.svg';
 import PhoneIcon from '../../assets/Icons/phone-receiver.png';
 import EmailIcon from '../../assets/Icons/large_envelope.png';
 import LocationIcon from '../../assets/Icons/facebook-placeholder-for-locate-places-on-maps.png';
@@ -67,11 +66,11 @@ export default class Conact extends Component {
                     </div>
 
                     <div className="contact-image">
-                        <img className="contact-photo" src={ContactPhoto} alt="Micro Technologies Warehouse" />
+                        <div className="contact-photo"></div>
                     </div>
 
                 </main>
-                
+
                 <div className="contact-banner">
                     <h3 className="contact-header">Contact Us</h3>
                     <div className="contact-line"></div>

@@ -27,10 +27,10 @@ export default class Header extends Component {
         <div className="sub-header">
           <nav className="nav-sublinks">
             <ul>
-              <Link to="/difference"><li>THE MICRO DIFFERENCE</li></Link>
-              <Link to="/about"><li>ABOUT</li></Link>
-              <Link to="/blog"><li>KNOWLEDGE BASE</li></Link>
-              <Link to="/careers"><li>CAREERS</li></Link>
+              <Link to="/difference"><li className="sub">THE MICRO DIFFERENCE</li ></Link>
+              <Link to="/about"><li className="sub">ABOUT</li></Link>
+              <Link to="/blog"><li className="sub">KNOWLEDGE BASE</li></Link>
+              <Link to="/careers"><li className="sub">CAREERS</li></Link>
             </ul>
           </nav>
         </div>

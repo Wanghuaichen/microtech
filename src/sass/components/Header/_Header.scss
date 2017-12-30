@@ -8,17 +8,18 @@
 }
 
 .logo {
-    width: 30vw;
+    width: 28vw;
     margin: 30px;
 }
 
 .nav-links {
     background-color: $primary-blue;
     width: 70vw;
-    height: 10vh;
+    height: 8vh;
     display: flex;
     justify-content: flex-end;
     @include header6SetUp;    
+    margin-right: -27px;
 }
 
 ul {
@@ -27,25 +28,27 @@ ul {
 }
 
 li {
-    margin-right: 40px;
+    margin-right: 50px;
 }
 
 .white-btn {
     background-color: $white;
-    padding: 10px;
+    height: 35px;
+    width: 110px;
     color: $primary-blue;
     border-radius: 6px;
-    font-family: $btn-font;    
+    font-family: $btn-font;   
+    @include flexSetUp; 
 }
 
 .sub-header {
-    margin-bottom: 33px;
+    margin-bottom: 25px;
 }
 
 .nav-sublinks {
     display: flex;
     justify-content: flex-end;
-    color: $primary-blue !important;
+    color: $primary-blue;
     font-size: 16px;
     font-family: $btn-font;
 }
@@ -56,4 +59,9 @@ li {
 
 .nav-sublinks a {
     color: $primary-blue;
+    margin: -10px 5px 0px 0px;
+}
+
+.sub {
+    margin-left: -12px;
 }

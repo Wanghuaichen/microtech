@@ -63,7 +63,7 @@
     flex-direction: column;
 }
 
-.est-box {
+.bluebanner-box {
     background-color: $primary-blue;
     height: 327px;
     color: $white;
@@ -71,16 +71,16 @@
     @include flexSetUp;
 }
 
-.est-text {
+.bluebanner-text {
     word-wrap: break-word;
     width: 650px; 
 }
 
-.est-header {
+.bluebanner-header {
     color: $text-gray;
 }
 
-.est-est {
+.bluebanner-est {
     margin: 88px 60px 0px 20px;
 }
 

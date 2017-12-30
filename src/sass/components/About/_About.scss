@@ -1,0 +1,63 @@
+.about-cover {
+    @include flexSetUp;   
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    background-image: url('../assets/Pics/Hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.bluebanner-box {
+    background-color: $primary-blue;
+    height: 327px;
+    color: $white;
+    @include bodySetUp;
+}
+
+.about {
+    justify-content: flex-start;
+}
+
+.bannerabout {
+    word-wrap: break-word;
+    width: 220px;
+}
+
+.bluebanner-header {
+    color: $text-gray;
+}
+
+.left {
+    margin-left: 100px;  
+}
+
+.bluebanner-column {
+    background-color: $primary-blue;
+    height: 327px;
+    color: $white;
+    @include bodySetUp;
+    text-transform: uppercase;
+}
+
+.lead {
+    word-wrap: break-word;
+    width: 800px;
+}
+
+.columnbanner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.partnership-logos {
+    display: flex;
+    margin-left: 100px;      
+}
+
+.part-icon {
+    height: 50px;
+    margin: 10px 75px 0px 0px; 
+}
