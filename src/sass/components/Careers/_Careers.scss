@@ -1,0 +1,100 @@
+.transparent-half {
+    width: 50vw;
+    height: 80vh;
+    color: $white;
+    position: absolute;
+    text-align: center;
+    @include flexSetUp;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.careers-main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.careers-subheader {
+    word-wrap: break-word;
+    width: 425px;
+}
+
+.white-banner-box {
+    height: 300px;
+    background-color: $white;
+    text-align: center;
+}
+
+.careers-title {
+    font-size: 40px;
+    margin-top: 60px;
+    color: $primary-blue;
+}
+
+.careers-para {
+    word-wrap: break-word;
+    width: 850px;
+    margin: auto;
+    margin-top: 20px;
+    color: $text-dark;
+}
+
+.btn-cta {
+    @include secondCTA;
+}
+
+.gray-banner-box {
+    height: 500px;
+    background-color: $bg-light;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perks-box {
+    @include flexSetUp;
+    margin-top: 40px;
+}
+
+.benefits {
+    margin: 15px;
+    width: 363px;
+    height: 174px;
+    background-color: $white;
+    text-align: left;
+}
+
+
+.benefits-title {
+    margin: 15px 10px 10px 20px;
+    color: $secondary-blue;
+}
+
+.benefits-list {
+    color: $text-dark;
+    margin: 15px 10px 10px 20px;
+
+}
+
+.careers-para-gray {
+    word-wrap: break-word;
+    width: 850px;
+    margin-top: 20px;
+    color: $text-dark;
+}
+
+.expandedbox {
+    height: 650px;
+}
+
+.vision-subheader {
+    color: $primary-blue;
+    margin-bottom: -20px;
+    margin-top: 20px;
+}
+
+.white-arrow {
+    margin-left: 5px;
+    width: 15px;
+}

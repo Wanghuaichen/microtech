@@ -1,17 +1,18 @@
 .footer-nav {
     @include flexSetUp;
-    height: 125px;
+    height: 150px;
+    border-top: 0.5px solid #eee
 }
 
 .logo-footer {
     width: 25vw;
-    margin: 25px 25px 25px 50px;;
+    margin: 25px 25px 25px 75px;;
 }
 
 .footer-right {
     width: 75vw;
     text-align: right;
-    margin-right: 50px;    
+    margin-right: 75px;    
     
 }
 
@@ -37,10 +38,13 @@
     color: $white;
     border-radius: 6px;
     font-family: $btn-font;
-    height: 35px;
-    width: 110px;
+    height: 37px;
+    width: 148px;
     @include flexSetUp;   
     margin-left: 20px; 
+    letter-spacing: 1px;
+    font-size: 26px;
+    padding-bottom: 2px;
 }
 
 .terms {

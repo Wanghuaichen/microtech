@@ -67,3 +67,17 @@
     height: 60px;
     @include flexSetUp;
 }
+
+@mixin secondCTA {
+    color: $white;
+    background-color: $primary-blue;
+    font-family: $btn-font;
+    border-radius: 7px;
+    width: 325px;
+    height: 60px;
+    @include flexSetUp;
+    margin: auto;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    font-size: 26px;
+}
