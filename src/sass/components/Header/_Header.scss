@@ -10,7 +10,6 @@
 .logo {
     width: 30vw;
     margin: 30px;
-    
 }
 
 .nav-links {
@@ -19,7 +18,6 @@
     height: 10vh;
     display: flex;
     justify-content: flex-end;
-    color: $white;    
     @include header6SetUp;    
 }
 
@@ -47,7 +45,15 @@ li {
 .nav-sublinks {
     display: flex;
     justify-content: flex-end;
-    color: $primary-blue;
+    color: $primary-blue !important;
     font-size: 16px;
     font-family: $btn-font;
+}
+
+.nav-links a {
+    color: $white;
+}
+
+.nav-sublinks a {
+    color: $primary-blue;
 }

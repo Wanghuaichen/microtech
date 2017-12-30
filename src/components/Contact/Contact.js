@@ -65,10 +65,13 @@ export default class Conact extends Component {
                         </div>
                         <div className="submit-btn">SUBMIT</div>
                     </div>
+
                     <div className="contact-image">
                         <img className="contact-photo" src={ContactPhoto} alt="Micro Technologies Warehouse" />
                     </div>
+
                 </main>
+                
                 <div className="contact-banner">
                     <h3 className="contact-header">Contact Us</h3>
                     <div className="contact-line"></div>

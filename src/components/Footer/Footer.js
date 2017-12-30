@@ -31,7 +31,9 @@ export default class Footer extends Component {
                             </div>
                         </nav>
                         <div className="terms">
-                            <p className="conditions">TERMS & CONDITIONS PRIVACY POLICY</p>
+                            <div className="policy-box">
+                            <p className="conditions privacy">TERMS & CONDITIONS </p><p className="conditions privacy policy">PRIVACY POLICY</p>
+                            </div>
                             <p className="conditions">COPYRIGHT 2017 AMERISOURCEBERGEN CORPORATION. ALL RIGHTS RESERVED.</p>
                         </div>
                     </div>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
@@ -25,7 +26,9 @@ export default class Home extends Component {
           <div className="slider-text">
             <div className="center-box">
               <h3 className="vision-text">We innovate technologies that empower food producers to grow a safe, wholesome food supply more efficiently and more profitably.</h3>
+              <a href="https://www.youtube.com">
               <div className="main-cta">WATCH VIDEO</div>
+              </a>
             </div>
           </div>
         </main>
@@ -95,7 +98,9 @@ export default class Home extends Component {
               <p className="fourth-para four">As the world's population grows, we are challenged to produce more higher-quality protein than ever before with the use of less natural resources. We believe the path to securing a safe, affordable and wholesome food supply will come primarily as a result of innovation. That is why we are committed to developing technologies to empower food producers, both as business owners and stewards.</p>
               <br></br>
               <p>Learn more about Our Why and the passion that drives our everyday actions.</p>
+              <Link to='/about'>
               <div className="res-cta four">OUR RESPONSIBILITY</div>
+              </Link>
             </div>
           </div>
         </section>
