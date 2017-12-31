@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+
 import CareersCover from '../../assets/Pics/Careers_cover.svg';
 import WhiteArrow from '../../assets/Icons/White →.png'
 
@@ -58,7 +59,6 @@ export default class Careers extends Component {
                 <p className="benefits-list">	• 	Volunteerism recognition program</p>
               </div>
             </div>
-
           </section>
 
           <section className="white-banner-box expandedbox">

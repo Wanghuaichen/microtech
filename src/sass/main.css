@@ -756,3 +756,240 @@ li {
 .white-arrow {
   margin-left: 5px;
   width: 15px; }
+
+.transparent-white {
+  width: 50vw;
+  height: 80vh;
+  color: #1A2E5A;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px 0px 0px 160px;
+  text-transform: uppercase; }
+
+.difference-cover {
+  width: 100vw;
+  overflow-x: hidden; }
+
+.differce-cover-title {
+  font-size: 46px; }
+
+.difference-subheader {
+  word-wrap: break-word;
+  width: 425px; }
+
+.difference-para {
+  word-wrap: break-word;
+  width: 850px;
+  margin: auto;
+  margin-top: 20px;
+  color: #838383; }
+
+.values-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  height: 250px; }
+
+.values-header {
+  color: #1A2E5A;
+  margin-top: 10px; }
+
+.diff-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 15px;
+  width: 363px;
+  height: 174px;
+  text-align: left; }
+
+.val-line {
+  height: 1.5px;
+  width: 175px;
+  background-color: #1A2E5A;
+  margin-top: 60px;
+  position: absolute; }
+
+.values-numbers {
+  color: #1A2E5A;
+  font-family: "Arvo", serif;
+  font-size: 99px; }
+
+.values-para {
+  word-wrap: break-word;
+  width: 300px;
+  margin-top: 40px;
+  color: #838383;
+  text-align: center; }
+
+.quotebox {
+  height: 250px; }
+
+.slanted-line {
+  background-color: #FFFFFF;
+  width: 2px;
+  height: 200px;
+  transform: skew(35deg);
+  margin: 100px; }
+
+.operations-quote {
+  word-wrap: break-word;
+  width: 600px; }
+
+.operations-box {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin-left: 375px; }
+
+.operations-name {
+  margin: 10px 0px; }
+
+.operations-title {
+  font-size: 10px; }
+
+.white-bar {
+  height: 25px;
+  background-color: #FFFFFF; }
+
+.partnership-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 40px 0px; }
+
+.partnership-para {
+  word-wrap: break-word;
+  width: 960px; }
+
+.nutrition-wide {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.nutrition-container {
+  height: 600px;
+  margin: 25px; }
+
+.nutrition-box {
+  display: flex;
+  align-items: center;
+  color: #1A2E5A; }
+
+.nutrition-header {
+  margin: 50px 25px; }
+
+.arrow-down {
+  width: 20px;
+  margin: 0px 25px; }
+
+.nutrition-para {
+  word-wrap: break-word;
+  width: 500px;
+  margin: 10px 25px 50px 25px;
+  color: #838383; }
+
+.slantedbar {
+  width: 120vw;
+  height: 8px;
+  background-color: #1A2E5A;
+  transform: rotate(-9deg) translateY(0px) translateX(-30px);
+  overflow-x: hidden;
+  margin: 100px 0px; }
+
+.white-passion-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 40px 0px; }
+
+.passion-h2 {
+  margin: 20px 0px; }
+
+.passion-h2-para {
+  word-wrap: break-word;
+  width: 600px; }
+
+.third-cover {
+  width: 100vw;
+  overflow-x: hidden;
+  margin-bottom: 40px; }
+
+.centertext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100vw;
+  height: 90vh; }
+
+.threePs-title, .threePs-title2, .threePs-para {
+  position: absolute;
+  color: #FFFFFF;
+  text-align: center;
+  word-wrap: break-word;
+  width: 740px; }
+
+.threePs-title {
+  top: 0;
+  margin-top: 100px; }
+
+.threePs-title2 {
+  bottom: 0;
+  margin-bottom: 110px; }
+
+.threePs-para {
+  bottom: 0; }
+
+.passion-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px; }
+
+.passion-box {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 12px;
+  justify-content: flex-start; }
+
+.passion-image {
+  width: 250px; }
+
+.bluesub {
+  background-color: rgba(26, 46, 90, 0.9);
+  color: #FFFFFF;
+  width: 250px;
+  height: 100px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px; }
+
+.subblue-subtitle {
+  word-wrap: break-word;
+  width: 200px; }
+
+.graypassion {
+  height: 550px; }
+
+.bluesub-para {
+  font-family: "Open Sans", sans-serif;
+  font-weight: regular;
+  font-size: 15px;
+  color: #838383;
+  font-size: 12px;
+  word-wrap: break-word;
+  width: 250px;
+  text-align: left;
+  margin: 20px 0px;
+  height: 150px; }
