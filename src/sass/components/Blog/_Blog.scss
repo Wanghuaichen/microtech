@@ -1,0 +1,188 @@
+.transparent-mid {
+    width: 100vw;
+    height: 33vh;
+    background-color: $opacity-white;
+    color: $primary-blue;
+    position: absolute;
+    @include flexSetUp;
+    flex-direction: column;
+    bottom: 0;
+    margin-bottom: 75px;
+}
+
+.blog-cover {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.blog-cover-title, .blog-subtitle {
+    margin-bottom: 20px;
+}
+
+.blog-cover-title {
+    word-wrap: break-word;
+    width: 700px;
+    text-align: center;
+}
+
+.blog-readmore {
+    text-decoration: underline;
+    letter-spacing: 1.8px;
+}
+
+.blog-nav {
+    @include flexSetUp;
+    justify-content: space-between;
+    height: 100px;
+    box-shadow: 0 2.5px 2px -2.5px gray;
+}
+
+.btn-nav {
+    @include flexSetUp;
+    margin: 0px 25px;
+}
+
+.filter-btn {
+    @include flexSetUp;
+    @include filterBTN;
+    margin-right: 15px;
+}
+
+input[type=text] {
+    width: 545px;
+    height: 53px;
+    color: $white;
+    background-color: $primary-blue;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: none;
+    @include header5SetUp;
+    margin: 8px 25px;
+}
+
+input::placeholder {
+    color: $white;
+}
+
+.blog-current {
+   @include flexSetUp;
+   flex-direction: column;
+   margin: 60px;
+}
+
+.blog-featured, .blog-box {
+    position: relative;
+}
+
+.blog-featured-top {
+    width: 940px;
+    height: 424px;
+    
+}
+
+.article-section-box {
+    margin-top: -50px;
+    margin-bottom: -50px;
+    margin-left: -200px;
+    width: 940px;
+    @include flexSetUp;
+
+}
+
+.article-section-header {
+    font-size: 38px;
+    color: $primary-blue;
+}
+
+.blog-latest {
+    @include flexSetUp;
+}
+
+.blog-new {
+    width: 300px;
+    height: 424px;
+    margin: 10px;
+}
+
+.blog-text {
+    width: 100%;
+    height: 100%;
+    color: $white;
+    position: absolute;
+    @include flexSetUp;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.blog-title-text {
+    font-size: 52px;
+    letter-spacing: 2.36px;
+}
+
+.smallerblog-title {
+    font-size: 38px;
+    letter-spacing: 1.73px;
+    word-wrap: break-word;
+    width: 300px;
+    text-align: center;
+}
+
+.blog-author, .blog-date {
+    letter-spacing: 0.68px;
+    font-size: 15px;
+    margin: 5px 0px;
+}
+
+.followus-container, .readmore-container {
+    @include flexSetUp;
+    background-color: $filter-bg;
+    height: 125px;
+}
+
+.followus-box, .sm-btn-twitter, .sm-btn-linkedin, .readmore-button {
+    @include flexSetUp;
+}
+
+.sm-btn-twitter, .sm-btn-linkedin {
+    width: 221px;
+    height: 43px;
+    border-radius: 5px;
+    color: $white;
+}
+
+.sm-btn-twitter {
+    background-color: #41A7DF;
+    margin-right: 25px;
+}
+
+.sm-btn-linkedin{
+    background-color: #00539B;
+}
+
+.whitebreak {
+    height: 43px;
+    width: 2px;
+    background-color: $white;
+    margin: 0px 10px;
+}
+
+.twitter-follow {
+    margin-left: -10px;
+}
+
+.readmore-container {
+    border-top: 1px solid $primary-blue;
+}
+
+.readmore-button {
+    background-color: $primary-blue;
+    width: 936px;
+    height: 46px;
+    border-radius: 5px;
+    padding-bottom: 2px;
+}
+
+.readmore-button-header {
+    text-decoration: underline;
+    color: $white;
+}

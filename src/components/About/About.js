@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
+import CowboyCover from '../../assets/Pics/Cowboy_Cover.png';
 import MWILogo from '../../assets/Logos/MWI_Animal_Health_White.png';
 import MTLogo from '../../assets/Logos/Micro_Technologies_White.png';
 import ABLogo from '../../assets/Logos/AmerisourceBergen_White.png';
@@ -19,7 +20,9 @@ export default class About extends Component {
         <Header />
 
         <main className="about-main">
-          <div className="about-cover"></div>
+          <section className="about-cover-container">
+            <img className="about-cover" src={CowboyCover} alt="Cowboy with Rope" />
+          </section>
 
           <section className="bluebanner-box about">
             <div className="bluebanner-left">

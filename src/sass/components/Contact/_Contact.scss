@@ -3,10 +3,16 @@
     flex-direction: row;
 }
 
+.contact-container {
+    height: 950px;
+    width: 100vw;
+}
+
 .contact-form {
     margin-left: 60px;
-    width: 56vw;
     background-color: $white;
+    position: absolute;
+    z-index: 10;
 }
 
 .contact-spacing {
@@ -15,11 +21,9 @@
 
 .contact-photo  {
     position: relative;
-    height: 100%;
-    width: 44vw;
-    background-image: url('../assets/Pics/Micro-Technologies-mdx-120-FINAL-web-dupe-Copy.jpg');
-    background-size: contain no-repeat;
-    background-attachment: fixed;
+    height: 950px;
+    width: 100vw;
+    z-index: 5;
 }
 
 .input-one, .input-two, .input-three, .input-four, {

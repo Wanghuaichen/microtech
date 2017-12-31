@@ -85,7 +85,7 @@ export default class Difference extends Component {
 
           <section className="partnership-container">
             <h2 className="passion-h2">Partnership</h2>
-            <p className="partnership-para ">We pride ourselves on the long standing partnerships we have built within the industry. We work hand in hand with nutritionists, veterinarians and consultants to support the implementation of individualized programs created for each customer. While also providing national distribution and full support services to our manufacturer partners, large and small. The valued history we have in those partnerships allow  us to collaborate and solve for the issues food producers face today and better anticipate the challenges tomorrow.</p>
+            <p className="partnership-para">We pride ourselves on the long standing partnerships we have built within the industry. We work hand in hand with nutritionists, veterinarians and consultants to support the implementation of individualized programs created for each customer. While also providing national distribution and full support services to our manufacturer partners, large and small. The valued history we have in those partnerships allow  us to collaborate and solve for the issues food producers face today and better anticipate the challenges tomorrow.</p>
           </section>
 
           <section className="nutrition-wide">

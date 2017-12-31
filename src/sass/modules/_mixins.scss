@@ -81,3 +81,14 @@
     letter-spacing: 2px;
     font-size: 26px;
 }
+
+@mixin filterBTN {
+    color: $secondary-blue;
+    background-color: $filter-bg;
+    border-radius: 5px;
+    font-family: $btn-font;
+    font-size: 26px;
+    text-transform: uppercase;
+    height: 53px;
+    padding: 0px 25px 2px 25px;
+}
