@@ -1174,3 +1174,67 @@ input::placeholder {
   text-align: left;
   margin: 20px 0px;
   height: 150px; }
+
+.bluecover-container {
+  width: 100vw;
+  height: 350px;
+  background-color: #00539B;
+  color: #FFFFFF;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  margin-bottom: -200px;
+  text-align: left; }
+
+.bluecover-text-box {
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.integrator-top-text {
+  top: 0;
+  margin-top: 60px;
+  position: absolute;
+  color: #1A2E5A;
+  text-align: center;
+  word-wrap: break-word;
+  width: 800px; }
+
+.integrator-top-subtitle {
+  top: 0;
+  margin-top: 220px;
+  position: absolute;
+  color: #1A2E5A;
+  text-align: center;
+  word-wrap: break-word;
+  width: 460px; }
+
+.bluecover-banner-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  word-wrap: break-word;
+  width: 515px;
+  margin: 30px; }
+
+.bluecover-banner-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  word-wrap: break-word;
+  width: 600px;
+  margin: 30px; }
+
+.bluecover-title-left {
+  margin-bottom: 20px;
+  margin-left: -120px; }
+
+.bluecover-title-right {
+  margin-bottom: 20px;
+  margin-left: -180px; }
