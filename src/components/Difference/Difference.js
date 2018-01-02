@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
@@ -171,6 +172,16 @@ export default class Difference extends Component {
                 </p>
               </div>
             </div>
+          </section>
+
+          <section className="watch-video-container-footer">
+            <div className="customized-box">
+              <h3 className="customized-header">INTERESTED IN A
+                CUSTOMIZED SOLUTION?</h3>
+            </div>
+            <div className="customized-line"></div>
+            <Link to="/contact">
+              <div className="contact-video-box">CONTACT US </div></Link>
           </section>
 
         </main>

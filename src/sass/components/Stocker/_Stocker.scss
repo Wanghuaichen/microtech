@@ -1,0 +1,189 @@
+.transparent-stocker {
+    width: 50vw;
+    height: 80vh;
+    color: $primary-blue;
+    position: absolute;
+    @include flexSetUp;
+    flex-direction: column;
+    text-align: center;
+}
+
+.stocker-cover {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.stocker-cover-title {
+    font-size: 34px;
+    font-weight: bold;
+    margin: 30px 0px;
+}
+
+.stocker-para {
+    margin: 10px 120px;
+}
+
+.stocker-watch-video {
+    @include watchVIDEO;
+    background-color: $opacity-second;
+    color: $white;
+    margin-top: 40px;
+}
+
+.stocker-section {
+    @include flexSetUp;
+    background-color: $primary-blue;
+    color: $white;
+    width: 100vw;
+    height: 504px;
+}
+
+.stocker-section-white {
+    @include flexSetUp;
+    background-color: $white;
+    color: $primary-blue;
+    width: 100vw;
+    height: 550px;
+    justify-content: space-around;
+}
+
+.wider {
+    height: 675px;
+}
+
+.stocker-paragraph {
+    word-wrap: break-word;
+    width: 500px;
+    margin-bottom: 125px;
+}
+
+.stocker-paragraph-three {
+    word-wrap: break-word;
+    width: 500px;
+    margin-bottom: 40px;
+}
+
+.stocker-paragraph-two {
+    word-wrap: break-word;
+    width: 500px;
+    margin-bottom: 25px;
+}
+
+.stocker-header {
+    margin-bottom: 30px;
+}
+
+.stocker-subheader {
+    margin-bottom: 10px;
+}
+
+.stocker-capture {
+    margin-left: 20px;
+}
+
+.line-stocker-box {
+    width: 100vw;
+    height: 3px;
+    background-color: $primary-blue;
+
+}
+
+.line-stocker {
+    width: 90vw;
+    height: 1px;
+    background-color: $white;
+}
+
+.line-stocker-box-white {
+    width: 100vw;
+    height: 3px;
+    background-color: $white;
+
+}
+
+.line-stocker-white {
+    width: 90vw;
+    height: 1px;
+    background-color: #979797;
+}
+
+.stocker-text {
+    margin: 75px;
+    @include flexSetUp;
+    flex-direction: column;
+}
+
+.stocker-nav-header {
+    margin-bottom: 15px;
+    margin-left: -875px;
+    color: $primary-blue;
+}
+
+.stocker-nav-para {
+    word-wrap: break-word;
+    width: 960px;
+    margin-bottom: 15px;
+    color: $text-dark;
+}
+
+.stocker-nav-container {
+    display: flex;
+    margin-top: -5px;
+}
+
+.stocker-nav-box {
+    @include flexSetUp;
+    @include header6SetUp;
+    letter-spacing: 0.91px;
+    color: $primary-blue;
+    background-color: $bg-light;
+    width: 33vw;
+    height: 60px;
+}
+
+.stocker-nav-box-active {
+    @include flexSetUp;
+    @include header6SetUp;
+    letter-spacing: 0.91px;
+    color: $white;
+    background-color: $secondary-blue;
+    width: 33vw;
+    height: 60px;
+}
+
+.graytext {
+    color: $text-dark;
+}
+
+.individualtext {
+    word-wrap: break-word;
+    width: 300px;
+}
+
+.watch-video-stocker-footer {
+    height: 120px;
+    width: 100vw;
+    color: $white;
+    background-color: $secondary-blue;
+    @include flexSetUp;
+    justify-content: flex-end;
+}
+
+.stocker-contact-line {
+    background-color: $primary-blue;
+    width: 1px;
+    height: 60px;
+    margin: 0px 25px;
+}
+
+.stocker-video-box {
+    @include watchVIDEO;
+    color: $white;
+    background-color: $primary-blue;
+    width: 220px;
+    margin: 0px 75px;
+}
+
+.stocker-footer-text {
+    font-size: 16px;
+}

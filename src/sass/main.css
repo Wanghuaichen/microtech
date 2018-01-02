@@ -1380,6 +1380,7 @@ input::placeholder {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  padding-bottom: 2px;
   cursor: pointer; }
 
 .enzyme-video-box {
@@ -1394,6 +1395,7 @@ input::placeholder {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  padding-bottom: 2px;
   cursor: pointer;
   color: #1A2E5A; }
 
@@ -1409,6 +1411,7 @@ input::placeholder {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  padding-bottom: 2px;
   cursor: pointer;
   color: #2C7EC6; }
 
@@ -1424,6 +1427,7 @@ input::placeholder {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  padding-bottom: 2px;
   cursor: pointer;
   color: #F6F6F6;
   background-color: #00539B; }
@@ -1657,3 +1661,203 @@ input::placeholder {
   z-index: 15;
   right: -19px;
   top: 43%; }
+
+.transparent-stocker {
+  width: 50vw;
+  height: 80vh;
+  color: #1A2E5A;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center; }
+
+.stocker-cover {
+  width: 100vw;
+  overflow-x: hidden; }
+
+.stocker-cover-title {
+  font-size: 34px;
+  font-weight: bold;
+  margin: 30px 0px; }
+
+.stocker-para {
+  margin: 10px 120px; }
+
+.stocker-watch-video {
+  width: 309px;
+  height: 61px;
+  color: #00539B;
+  background-color: #FFFFFF;
+  font-family: "acumin-pro-condensed", sans-serif;
+  font-size: 26px;
+  letter-spacing: 1.8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding-bottom: 2px;
+  cursor: pointer;
+  background-color: rgba(0, 83, 155, 0.8);
+  color: #FFFFFF;
+  margin-top: 40px; }
+
+.stocker-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1A2E5A;
+  color: #FFFFFF;
+  width: 100vw;
+  height: 504px; }
+
+.stocker-section-white {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  color: #1A2E5A;
+  width: 100vw;
+  height: 550px;
+  justify-content: space-around; }
+
+.wider {
+  height: 675px; }
+
+.stocker-paragraph {
+  word-wrap: break-word;
+  width: 500px;
+  margin-bottom: 125px; }
+
+.stocker-paragraph-three {
+  word-wrap: break-word;
+  width: 500px;
+  margin-bottom: 40px; }
+
+.stocker-paragraph-two {
+  word-wrap: break-word;
+  width: 500px;
+  margin-bottom: 25px; }
+
+.stocker-header {
+  margin-bottom: 30px; }
+
+.stocker-subheader {
+  margin-bottom: 10px; }
+
+.stocker-capture {
+  margin-left: 20px; }
+
+.line-stocker-box {
+  width: 100vw;
+  height: 3px;
+  background-color: #1A2E5A; }
+
+.line-stocker {
+  width: 90vw;
+  height: 1px;
+  background-color: #FFFFFF; }
+
+.line-stocker-box-white {
+  width: 100vw;
+  height: 3px;
+  background-color: #FFFFFF; }
+
+.line-stocker-white {
+  width: 90vw;
+  height: 1px;
+  background-color: #979797; }
+
+.stocker-text {
+  margin: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.stocker-nav-header {
+  margin-bottom: 15px;
+  margin-left: -875px;
+  color: #1A2E5A; }
+
+.stocker-nav-para {
+  word-wrap: break-word;
+  width: 960px;
+  margin-bottom: 15px;
+  color: #838383; }
+
+.stocker-nav-container {
+  display: flex;
+  margin-top: -5px; }
+
+.stocker-nav-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "acumin-pro-condensed", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.91px;
+  color: #1A2E5A;
+  background-color: #F6F6F6;
+  width: 33vw;
+  height: 60px; }
+
+.stocker-nav-box-active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "acumin-pro-condensed", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.91px;
+  color: #FFFFFF;
+  background-color: #00539B;
+  width: 33vw;
+  height: 60px; }
+
+.graytext {
+  color: #838383; }
+
+.individualtext {
+  word-wrap: break-word;
+  width: 300px; }
+
+.watch-video-stocker-footer {
+  height: 120px;
+  width: 100vw;
+  color: #FFFFFF;
+  background-color: #00539B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end; }
+
+.stocker-contact-line {
+  background-color: #1A2E5A;
+  width: 1px;
+  height: 60px;
+  margin: 0px 25px; }
+
+.stocker-video-box {
+  width: 309px;
+  height: 61px;
+  color: #00539B;
+  background-color: #FFFFFF;
+  font-family: "acumin-pro-condensed", sans-serif;
+  font-size: 26px;
+  letter-spacing: 1.8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding-bottom: 2px;
+  cursor: pointer;
+  color: #FFFFFF;
+  background-color: #1A2E5A;
+  width: 220px;
+  margin: 0px 75px; }
+
+.stocker-footer-text {
+  font-size: 16px; }
