@@ -63,4 +63,367 @@
     margin-left: -180px;
 }
 
+.experience-text {
+    word-wrap: break-word;
+    width: 550px;
+    margin-bottom: 45px;
+    color: $text-dark;
+}
+
+.experience-text-two {
+    word-wrap: break-word;
+    width: 550px;
+    margin-bottom: 45px;
+    margin-top: -20px;
+    color: $text-dark;
+}
+
+.four-circles-container {
+    @include flexSetUp;
+    flex-direction: column;
+    margin: 0px 0px 50px 40px;
+}
+
+.circle-num {
+    @include circleNUM;
+}
+
+.circle-num-text {
+    color: $circle-num;
+    font-family: $main-font;
+    font-size: 20px;
+    word-wrap: break-word;
+    width: 330px;
+    margin-left: 30px;
+}
+
+.four-column {
+    @include flexSetUp;
+}
+
+.int-wheel-container {
+    background-color: $primary-blue;
+    width: 100vw;
+    height: 600px;
+    @include flexSetUp;
+}
+
+.app-solutions {
+   margin: 0px 80px 50px 0px;
+}
+
+.app-solutions-box {
+    position: absolute;
+    color: $white;
+    word-wrap: break-word;
+    width: 500px;
+    margin-left: -285px;
+}
+
+.app-solutions-header {
+    margin-left: -70px;
+    word-wrap: break-word;
+    width: 800px;
+    margin-bottom: 20px;
+}
+
+.app-solutions-text-subheader {
+    font-weight: bolder;
+    margin: 20px 0px;
+}
+
+.app-solutions-text-last {
+    margin: 20px 0px;
+}
+
+.liquid-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 400px;
+}
+
+.liquid-box{
+    @include flexSetUp;
+    color: $primary-blue;
+}
+
+.liquid-line {
+    background-color: $fourth-blue;
+    width: 2px;
+    height: 150px;
+    margin: 0px 40px;
+}
+
+.liquid-left {
+    text-align: center;
+}
+
+.liquid-text-one {
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    width: 800px;
+}
+
+.liquid-text-two {
+    word-wrap: break-word;
+    width: 800px;
+}
+
+.watch-video-container {
+    height: 260px;
+    width: 100vw;
+    color: $white;
+    background-color: $secondary-blue;
+    @include flexSetUp;
+    justify-content: space-around;
+}
+
+.pelleting-subtitle {
+    word-wrap: break-word;
+    width: 450px;
+    margin-top: 20px;
+}
+
+.pelleting-video-box {
+    @include watchVIDEO;
+}
+
+.enzyme-video-box {
+    @include watchVIDEO;
+    color: $primary-blue;
+}
+
+.contact-video-box {
+    @include watchVIDEO;
+    color: $third-blue;
+}
+
+.weigh-flex-video-box {
+    @include watchVIDEO;
+    color: $bg-light;
+    background-color: $secondary-blue;
+}
+
+.triangle-down {
+    width: 0; 
+    height: 0; 
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid $secondary-blue;
+    margin: auto;
+}
+
+.liquimatic-container {
+    @include flexSetUp;
+}
+
+.liquimatic-box-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 549px;
+    height: 132px;
+    box-shadow: 2px 4px 9px 1px #ccc;
+    margin: 30px;
+}
+
+.liquimatic-box-right  {
+    @include flexSetUp;
+    flex-direction: column;
+    text-align: center;
+    width: 549px;
+    height: 132px;
+    box-shadow: 2px 4px 9px 1px #ccc;
+    margin: 30px;
+}
+
+.liquimatic-header-left {
+    color: $primary-blue;
+    margin: 0px 0px 10px 30px;
+}
+
+.liquimatic-text-left {
+    color: $text-dark;
+    margin-left: 30px;
+}
+
+.liquimatic-text-right {
+    color: $white;
+}
+
+.liquimatic-box-right {
+    background-color: $secondary-blue;
+}
+
+.color1 {
+    background-color: $primary-blue;
+}
+
+.color2 {
+    background-color: $secondary-blue;
+}
+
+.color3 {
+    background-color: $third-blue;
+}
+
+.color4 {
+    background-color: $fourth-blue;
+}
+
+.color5 {
+    background-color: $bg-light;
+}
+
+.weigh-flex-container {
+    @include flexSetUp;
+    color: $primary-blue;
+}
+
+.weigh-flex-machine-box, .weigh-flex-info {
+    width: 50vw;
+    height: 527px;
+    @include flexSetUp;
+    flex-direction: column;
+}
+
+.weigh-flex-machine-box {
+    margin-top: 10px;
+}
+
+.weigh-flex-text {
+    word-wrap: break-word;
+    width: 550px;
+    text-align: center;
+    margin: 20px 0px 60px 0px;
+}
+
+.enzyme-container {
+    @include flexSetUp;
+    color: $white;
+}
+
+.enzyme-machine-box, .enzyme-info {
+    width: 50vw;
+    height: 527px;
+    @include flexSetUp;
+    flex-direction: column;
+}
+
+.enzyme-text {
+    word-wrap: break-word;
+    width: 550px;
+    text-align: center;
+    margin: 20px 0px 60px 0px;
+}
+
+.batching-container {
+    @include flexSetUp;
+    color: $white;
+}
+
+.batching-unit-three {
+    width: 33.33vw; 
+    height: 287px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.batching-unit-four {
+    width: 25vw; 
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.batching-header {
+    margin: 40px 0px 10px 30px;
+}
+
+.batching-list {
+    margin: 0px 25px 3px 30px;
+    @include bodySetUp;
+    padding-left: 25px;
+    text-indent: -1.5em;
+}
+
+.procontrol-screen {
+    margin: 0px 70px 0px 50px;
+}
+
+.procontrol-container {
+    @include flexSetUp;
+    height: 500px;
+    color: $primary-blue;
+}
+
+.options-container {
+    @include flexSetUp;
+    height: 500px;
+    width: 100vw;
+    color: $primary-blue;
+}
+
+.options-info {
+    margin-left: 20px;
+}
+
+.procontrol-header {
+    margin-bottom: 20px;
+}
+
+.procontrol-list {
+    color: $text-dark;
+    word-wrap: break-word;
+    width: 500px;
+    @include bodySetUp;
+    padding-left: 25px;
+    text-indent: -1.5em;
+}
+
+
+.watch-video-container-footer {
+    height: 260px;
+    width: 100vw;
+    color: $white;
+    background-color: $third-blue;
+    @include flexSetUp;
+}
+
+.customized-header {
+    font-family: $btn-font;
+    font-size: 31px;
+    word-wrap: break-word;
+    width: 300px;
+    text-align: center;
+}
+
+.customized-line {
+    background-color: $white;
+    width: 2px;
+    height: 150px;
+    margin: 0px 60px;
+}
+
+.weigh-btn-container {
+    @include flexSetUp;
+
+}
+
+.weigh-btn {
+    @include weighBTN;
+}
+
+.weigh-text {
+    word-wrap: break-word;
+    width: 170px;
+}
+
+.arrow-circle {
+    @include circleARROW;
+}
+
 
