@@ -1,0 +1,180 @@
+.feedyard-cover-title-one {
+    margin: 60px 0px 2px 0px;
+}
+
+.feedyard-cover-title-two {
+    margin-bottom: 2px;
+}
+
+.feedyard-cover-title-three {
+    margin-bottom: 30px;
+}
+
+.feedyard-subtitle {
+    margin-bottom: 30px;
+}
+
+.blue-banner-flex {
+    height: 227px;
+    width: 100vw;
+    color: $white;
+    background-color: $primary-blue;
+    @include flexSetUp;
+    margin-top: -6px;
+}
+
+.blue-left-text {
+    @include flexSetUp;
+    flex-direction: column;
+    word-wrap: break-word;
+    width: 100px;
+    text-align: center;
+    letter-spacing: 1.41px;
+}
+
+.blue-left-text-two {
+    @include flexSetUp;
+    flex-direction: column;
+    text-align: center;
+    letter-spacing: 1.41px;
+    font-size: 31px;
+}
+
+.line-break-banner {
+    background-color: $opacity-white-half;
+    width: 2px;
+    height: 125px;
+    margin: 0px 60px;
+}
+
+.blue-right-text {
+    font-size: 53px;
+}
+
+.accutrac-container {
+    @include flexSetUp;
+    flex-direction: column;
+    margin: 60px;
+}
+
+.accutrac-header {
+    color: $primary-blue;
+    margin-bottom: 15px;
+}
+
+.accutrac-subheader {
+    color: $secondary-blue;
+    margin-bottom: 15px;
+}
+
+.accutrac-line {
+    width: 250px;
+    height: 1px;
+    background-color: $circle-gray;
+    margin-bottom: 15px;
+}
+
+.accutrac-para {
+    color: $text-dark;
+    margin-bottom: 60px;
+}
+
+.blue-right-contact {
+    @include watchVIDEO;
+    color: $secondary-blue;
+}
+
+.blue-left-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    letter-spacing: 1.41px;
+}
+
+.blue-left-bold {
+    font-weight: bold;
+    font-size: 31px;
+}
+
+.hear-customers-container {
+    @include flexSetUp;
+    margin-bottom: 40px;
+}
+
+.cowboy-testimony {
+    width: 55vw;
+    height: 466px;
+}
+
+.customer-lightblue {
+    background-color: $secondary-blue;
+    color: $white;
+    text-align: center;
+    width: 45vw;
+    height: 465px;
+    margin-left: -1px;
+    @include flexSetUp;
+    flex-direction: column;
+}
+
+.customer-header {
+    font-size: 42px;
+    letter-spacing: 1.91px;
+    word-wrap: break-word;
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+.customer-watchvideo {
+    text-decoration: underline;
+    cursor: pointer;
+    letter-spacing: 0.91px;
+}
+
+.transparent-banner-flex {
+    height: 150px;
+    width: 100vw;
+    color: $primary-blue;
+    background-color: $opacity-white;
+    @include flexSetUp;
+    position: absolute;
+}
+
+.transparent-left-text {
+    @include flexSetUp;
+    flex-direction: column;
+    letter-spacing: 0.3px;
+}
+
+.transparent-left-subtext {
+    letter-spacing: 1.8px;
+}
+
+.transparent-line-break-banner {
+    background-color: $primary-blue;
+    width: 2px;
+    height: 100px;
+    margin: 0px 60px;
+}
+
+.transparent-right-text {
+    color: $text-dark;
+    word-wrap: break-word;
+    width: 450px;
+}
+
+.comprehensive-solutions {
+    margin-top: -41px;
+}
+
+.marginup {
+    margin-top: -6px;
+}
+
+.white-banner-flex {
+    height: 250px;
+    width: 100vw;
+    color: $primary-blue;
+    background-color: $white;
+    @include flexSetUp;
+}
