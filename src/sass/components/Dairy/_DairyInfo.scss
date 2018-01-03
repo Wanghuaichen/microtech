@@ -1,0 +1,19 @@
+.dairy-top-nav {
+    @include flexSetUp;    
+}
+
+.dairy-btn {
+    @include flexSetUp;
+    width: 50%;
+    height: 60px;
+    background-color: $bg-light;
+    color: $primary-blue;
+}
+
+.dairyactive {
+    @include flexSetUp;
+    width: 50%;
+    height: 60px;
+    background-color: $secondary-blue;
+    color: $bg-light;
+}

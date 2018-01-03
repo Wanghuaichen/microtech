@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../Header/Header';
+import MoreInfo from './MoreInfo';
 import Footer from '../Footer/Footer';
 import { Link } from 'react-router-dom';
 
@@ -39,19 +40,17 @@ export default class Feedyard extends Component {
           </section>
 
           <section className="accutrac-container">
+            <div className="accutrac-header-box">
             <h3 className="accutrac-header">ACCU-TRAC</h3>
+            <h4 className="accutrac-header-small">®</h4>
+            </div>
             <h6 className="accutrac-subheader">A complete, truly integrated feedyard management solution</h6>
             <div className="accutrac-line"></div>
             <p className="accutrac-para">Gain access to real time information and statistics from feed, health, and animal data in a single inventory system. </p>
             <img className="accutrac-wheel" src={Accutrac} alt="accu-trac wheel" width="620px" />
           </section>
 
-
-
-
-
-
-
+          <MoreInfo />
 
           <section className="blue-banner-flex">
             <div className="blue-left-box">
@@ -78,7 +77,7 @@ export default class Feedyard extends Component {
               <h6 className="transparent-left-subtext">THAT WORK FOR YOU</h6>
             </div>
             <div className="transparent-line-break-banner"></div>
-            <p className="transparent-right-text">Alongside your team, we help to resolve issues that are affecting your operation. We strive to understand the challenges in a feedyard industry to create solutions through innovative technologies and processes; all to increase operational efficiencies and support your long term success.</p>
+            <p className="transparent-right-text2">Alongside your team, we help to resolve issues that are affecting your operation. We strive to understand the challenges in a feedyard industry to create solutions through innovative technologies and processes; all to increase operational efficiencies and support your long term success.</p>
           </section>
 
           <img className="comprehensive-solutions" src={Comprehensive} alt="herd of cows" height="528px" />

@@ -25,7 +25,7 @@ export default class Stocker extends Component {
 
           <section className="stocker-top">
             <div className="transparent-stocker">
-              <h5 className="stocker-cover-title">Stocker1™</h5>
+              <h5 className="stocker-cover-title-main">Stocker1™</h5>
               <h6>Management System for Stockers and Backgrounders.</h6>
               <p className="stocker-para">Stocker1™ is an Internet based system allowing stocker and backgrounding operations to access it from any location with internet capabilities. One look and you will know it was designed in the field with close interaction between stocker and backgrounder operators.</p>
               <div className="stocker-watch-video">WATCH VIDEO</div>

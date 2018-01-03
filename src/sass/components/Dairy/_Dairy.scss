@@ -1,0 +1,55 @@
+.customer-testimony {
+    width: 55vw;
+    height: 465px;
+}
+
+.customer-lightblue2 {
+    background-color: $secondary-blue;
+    color: $white;
+    text-align: center;
+    width: 45vw;
+    height: 465px;
+    @include flexSetUp;
+    flex-direction: column;
+}
+
+.transparent-stocker2 {
+    width: 50vw;
+    height: 80vh;
+    color: $primary-blue;
+    position: absolute;
+    @include flexSetUp;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 80px;
+}
+
+.transparent-left-text2 {
+    @include flexSetUp;
+    flex-direction: column;
+    letter-spacing: 0.3px;
+}
+
+.transparent-left-subtext2 {
+    letter-spacing: 1.8px;
+    margin-bottom: 30px;
+}
+
+.comp-para {
+    color: $primary-blue;
+    word-wrap: break-word;
+    width: 470px;
+    margin-bottom: 20px;
+}
+
+.dms-text {
+    @include flexSetUp;
+    flex-direction: column;
+    margin: 70px;
+}
+
+.dms-para {
+    font-size: 25px;
+    color: $primary-blue;
+    text-align: center;
+}

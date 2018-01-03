@@ -27,7 +27,7 @@
     @include flexSetUp;
     flex-direction: column;
     word-wrap: break-word;
-    width: 100px;
+    width: 150px;
     text-align: center;
     letter-spacing: 1.41px;
 }
@@ -57,9 +57,18 @@
     margin: 60px;
 }
 
+.accutrac-header-box {
+    display: flex;
+}
+
 .accutrac-header {
     color: $primary-blue;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
+}
+
+.accutrac-header-small {
+    font-size: 15px;
+    margin: 5px;
 }
 
 .accutrac-subheader {
@@ -163,8 +172,15 @@
     width: 450px;
 }
 
+.transparent-right-text2 {
+    color: $text-dark;
+    word-wrap: break-word;
+    width: 520px;
+}
+
 .comprehensive-solutions {
     margin-top: -41px;
+    width: 100vw;
 }
 
 .marginup {

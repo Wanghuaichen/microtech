@@ -1,0 +1,86 @@
+.moreinfo-top {
+    background-color: $bg-dark;
+    color: $primary-blue;
+    width: 100vw;
+    height: 352px;
+    text-align: center;
+    @include flexSetUp;
+    flex-direction: column;    
+}
+
+.moreinfo-top-btns {
+    @include flexSetUp;
+}
+
+.moreinfo-top-nav {
+    height: 132px;
+    width: 460px;
+    background-color: $white;
+    box-shadow: 2px 4px 9px 1px #ccc;
+    @include flexSetUp;
+    flex-direction: column;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.moreinfo-top-text {
+    color: $circle-num;
+    word-wrap: break-word;
+    width: 970px;
+    margin: 20px;
+}
+
+.active-line {
+    width: 460px;
+    height: 11px;
+    background-color: $primary-blue;
+    bottom: 0;
+}
+
+.moreinfo-full {
+    @include flexSetUp;
+}
+
+.moreinfo-side {
+    width: 25vw;
+    height: 800px;
+    background-color: $bg-light;
+    z-index: -1;
+}
+
+.nav-side-box {
+    padding-top: 30px;
+}
+
+.nav-side-btn {
+    width: 20vw;
+    height: 132px;
+    background-color: $white;
+    color: $primary-blue;
+    box-shadow: 2px 4px 9px 1px #ccc;
+    margin: 0px 30px 40px 30px;
+    @include flexSetUp;
+    flex-direction: column;
+}
+
+.moreinfo-right {
+    width: 75vw;
+    height: 800px;
+}
+
+.moreinfo-display {
+    margin: 75px;
+    color: $primary-blue;
+}
+
+.moreinfo-display-header {
+    text-transform: uppercase;
+}
+
+.moreinfo-list {
+    margin: 20px 0px
+}
+
+.tv-batcher {
+    margin-top: 40px;
+}
