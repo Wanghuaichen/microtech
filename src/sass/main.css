@@ -2184,24 +2184,80 @@ input::placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  cursor: pointer; }
+
+.active-side {
+  left: 25px;
+  width: 25px;
+  height: 132px;
+  background-color: #00539B;
+  position: absolute;
+  cursor: pointer; }
 
 .moreinfo-right {
   width: 75vw;
   height: 800px; }
 
 .moreinfo-display {
-  margin: 75px;
+  margin: 60px;
   color: #1A2E5A; }
 
+.dairy-btn {
+  cursor: pointer; }
+
 .moreinfo-display-header {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-bottom: 25 px; }
 
 .moreinfo-list {
-  margin: 20px 0px; }
+  margin: 15px 0px; }
 
 .tv-batcher {
   margin-top: 40px; }
+
+.tv-screen {
+  margin: 20px 0px 10px 20px; }
+
+.view2-text {
+  color: #838383;
+  margin-top: 25px; }
+
+.list-flex {
+  display: flex;
+  padding-left: 25px;
+  text-indent: -1.5em;
+  margin-top: 20px; }
+
+.click-bottom-box {
+  display: flex; }
+
+.click-left-header {
+  color: #1A2E5A; }
+
+.click-left-para {
+  color: #838383;
+  word-wrap: break-word;
+  width: 250px; }
+
+.click-me-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 46px;
+  width: 236px;
+  color: #FFFFFF;
+  background-color: #1A2E5A;
+  font-family: "acumin-pro-condensed", sans-serif;
+  letter-spacing: 1.8px;
+  margin: 10px;
+  cursor: pointer; }
+
+.img-view2-box {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0px; }
 
 .dairy-top-nav {
   display: flex;
@@ -2224,4 +2280,5 @@ input::placeholder {
   width: 50%;
   height: 60px;
   background-color: #00539B;
-  color: #F6F6F6; }
+  color: #F6F6F6;
+  cursor: pointer; }

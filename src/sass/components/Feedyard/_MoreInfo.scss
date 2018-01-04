@@ -61,6 +61,16 @@
     margin: 0px 30px 40px 30px;
     @include flexSetUp;
     flex-direction: column;
+    cursor: pointer;
+}
+
+.active-side {
+    left:25px;
+    width: 25px;
+    height: 132px;
+    background-color: $secondary-blue;
+    position: absolute;
+    cursor: pointer;
 }
 
 .moreinfo-right {
@@ -69,18 +79,64 @@
 }
 
 .moreinfo-display {
-    margin: 75px;
+    margin: 60px;
     color: $primary-blue;
+}
+
+.dairy-btn {
+    cursor: pointer;
 }
 
 .moreinfo-display-header {
     text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 25 px;
 }
 
 .moreinfo-list {
-    margin: 20px 0px
+    margin: 15px 0px
 }
 
 .tv-batcher {
     margin-top: 40px;
+}
+
+.tv-screen {
+    margin: 20px 0px 10px 20px;;
+}
+
+.view2-text {
+    color: $text-dark;
+    margin-top: 25px;
+}
+
+.list-flex {
+    display: flex;
+    padding-left: 25px;
+    text-indent: -1.5em;
+    margin-top: 20px;
+}
+
+.click-bottom-box {
+    display: flex;
+}
+
+.click-left-header {
+    color: $primary-blue;
+}
+
+.click-left-para {
+    color: $text-dark;
+    word-wrap: break-word;
+    width: 250px;
+}
+
+.click-me-btn {
+    @include clickME;
+}
+
+.img-view2-box {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0px;
 }

@@ -102,7 +102,7 @@ export default class Dairy extends Component {
           </section>
 
           <section className="white-banner-flex">
-            <div classname="transparent-banner-box">
+            <div className="transparent-banner-box">
               <h3 className="transparent-left-text">Dedicated Technical</h3>
               <h6 className="transparent-left-subtext">SERVICE & SUPPORT</h6>
             </div>
