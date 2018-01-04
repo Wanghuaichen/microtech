@@ -41,9 +41,6 @@ export default class MoreInfo extends Component {
                         </div>
                     </section>
 
-
-
-
                     <section className="moreinfo-right">
                         <div className="moreinfo-display">
                             <h4 className="moreinfo-display-header"> Pro-Control Plus® Feed Batching System</h4>
@@ -56,6 +53,7 @@ export default class MoreInfo extends Component {
                             <img className="tv-batcher" src={TVbatcher} alt="Pro-Control-Plus" width="673px" />
                         </div>
                     </section>
+                    
                 </section>
             </main>
         )

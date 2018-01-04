@@ -98,7 +98,19 @@
 }
 
 .tv-screen {
-    margin: 20px 0px 10px 20px;;
+    margin: 20px 0px 10px 20px;
+}
+
+.tv-box {
+    @include flexSetUp;
+}
+
+.tv-screen-frame {
+    position: relative;
+}
+
+.tv-display {
+    position: absolute;
 }
 
 .view2-text {
@@ -141,8 +153,29 @@
     @include flexSetUp;
 }
 
+.phone-container2 {
+    @include flexSetUp;
+    margin-top: -50px;
+}
+
 .iphone-text-box {
     margin: 20px 50px;
+}
+
+.iphone-text2 {
+    margin-top: 20px;
+}
+
+.monitor-header {
+    color: $primary-blue;
+    margin-top: 20px;
+}
+
+.monitor-header2 {
+    color: $primary-blue;
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: left;
 }
 
 .iphone-header {
@@ -152,4 +185,8 @@
 .iphone-text {
     color: $text-dark;
     margin-bottom: 20px;
+}
+
+.list-left {
+    margin-right: 25px;
 }

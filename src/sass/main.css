@@ -2217,6 +2217,17 @@ input::placeholder {
 .tv-screen {
   margin: 20px 0px 10px 20px; }
 
+.tv-box {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.tv-screen-frame {
+  position: relative; }
+
+.tv-display {
+  position: absolute; }
+
 .view2-text {
   color: #838383;
   margin-top: 25px; }
@@ -2261,8 +2272,27 @@ input::placeholder {
   justify-content: center;
   align-items: center; }
 
+.phone-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px; }
+
 .iphone-text-box {
   margin: 20px 50px; }
+
+.iphone-text2 {
+  margin-top: 20px; }
+
+.monitor-header {
+  color: #1A2E5A;
+  margin-top: 20px; }
+
+.monitor-header2 {
+  color: #1A2E5A;
+  margin-top: 20px;
+  font-size: 15px;
+  text-align: left; }
 
 .iphone-header {
   color: #1A2E5A; }
@@ -2270,6 +2300,9 @@ input::placeholder {
 .iphone-text {
   color: #838383;
   margin-bottom: 20px; }
+
+.list-left {
+  margin-right: 25px; }
 
 .dairy-top-nav {
   display: flex;

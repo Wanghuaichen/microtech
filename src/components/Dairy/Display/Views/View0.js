@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Slide2 from '../../../assets/Photos/MicroWeigh/Slide2.png';
+import Slide2 from '../../../../assets/Photos/MicroWeigh/Slide2.png';
 
 export default class View0 extends Component {
     render() {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Infographic from '../../../assets/Photos/Cubex/Cubex_Graphic.jpg';
-import Supplies from '../../../assets/Photos/Cubex/CUBEX_1st_image.jpeg';
+import Infographic from '../../../../assets/Photos/Cubex/Cubex_Graphic.jpg';
+import Supplies from '../../../../assets/Photos/Cubex/CUBEX_1st_image.jpeg';
 
 export default class View2 extends Component {
   render() {

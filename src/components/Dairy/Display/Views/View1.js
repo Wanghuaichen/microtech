@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TVScreen from '../../../assets/Photos/Mixer/TvScreen.png';
+import TVScreen from '../../../../assets/Photos/Mixer/TvScreen.png';
 
 export default class View1 extends Component {
     render() {
