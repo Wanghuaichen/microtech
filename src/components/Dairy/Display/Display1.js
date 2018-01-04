@@ -1,38 +1,32 @@
 import React, { Component } from 'react';
-import View0 from './Views/View0';
-import View1 from './Views/View1';
+import View2 from './Views/View2';
 
 export default class Display1 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            view: 0,
+            view: 2,
         }
-        this.handleView0 = this.handleView0.bind(this);
-        this.handleView1 = this.handleView1.bind(this);
+        this.handleView2 = this.handleView2.bind(this);
     };
 
-    handleView0 = () => {
+    handleView2 = () => {
         this.setState({ view: 0 })
     }
 
-    handleView1 = () => {
-        this.setState({ view: 1 })
-    }
 
     render() {
         return (
-            <section className="moreinfo-right">
+            <section className="display1">
                 <div className="dairy-top-nav">
-                    <div onClick={() => this.handleView0()} className={this.state.view === 0 ? "dairyactive" : "dairy-btn"} >
+                    <div onClick={() => this.handleView2()} className={this.state.view === 2 ? "dairyactive" : "dairy-btn"} >
                         <h6 className="dairy-btn-text">MICRO WEIGH SYSTEM®</h6></div>
-                    <div onClick={() => this.handleView1()} className={this.state.view === 1 ? "dairyactive" : "dairy-btn"}  >
-                        <h6 className="dairy-btn-text">Pro-Control® Plus Batching System</h6>
+                    <div className="dairy-btn-null" >
                     </div>
                 </div>
 
-                {this.state.view === 0 && <View0 />}
-                {this.state.view === 1 && <View1 />}
+                {this.state.view === 2 && <View2 />}
+
             </section>
         )
     }
