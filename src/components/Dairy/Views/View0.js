@@ -3,7 +3,7 @@ import Slide2 from '../../../assets/Photos/MicroWeigh/Slide2.png';
 
 export default class View0 extends Component {
     render() {
-        return (
+        return (            
             <div className="moreinfo-display">
                 <h4 className="moreinfo-display-header"> MICRO WEIGH® SYSTEM MICRO INGREDIENT DELIVERY SYSTEM</h4>
                 <h6>FLEXIBLE, CUSTOMIZED & CONSISTENT DIETS</h6>

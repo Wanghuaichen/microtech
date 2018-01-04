@@ -67,7 +67,7 @@ export default class DairyInfo extends Component {
                                 <h6 className="nav-side-label">INVENTORY SOLUTIONS</h6>
                             </div>
                             <div onClick={() => this.handleView3()} className="nav-side-btn">
-                                <div className={this.state.view === 3 ? "active-side" : null}></div>
+                                <div className={this.state.view === 3 || this.state.view===4 ? "active-side" : null}></div>
                                 <h6 className="nav-side-label">MILK QUALITY</h6>
                                 <h6 className="nav-side-label">SOLUTIONS</h6>
                             </div>
@@ -91,12 +91,49 @@ export default class DairyInfo extends Component {
 
                         {this.state.view === 0 && <View0 />}
                         {this.state.view === 1 && <View1 />}
-                        {this.state.view === 2 && <View2 />}
-                        {this.state.view === 3 && <View3 />}
-                        {this.state.view === 4 && <View4 />}
-                        {this.state.view === 5 && <View5 />}
 
                     </section>
+
+                    {/* <section className="moreinfo-right">
+                        <div className="dairy-top-nav">
+                            <div onClick={() => this.handleView2()} className={this.state.view === 2 ? "dairyactive" : "dairy-btn"} >
+                                <h6 className="dairy-btn-text">MICRO WEIGH SYSTEM®</h6></div>
+                            <div className="dairy-btn-null" >
+                                <h6 className="dairy-btn-text"></h6>
+                            </div>
+                        </div>
+
+                        {this.state.view === 2 && <View2 />}
+
+                    </section> */}
+
+                    {/* <section className="moreinfo-right">
+                        <div className="dairy-top-nav">
+                            <div onClick={() => this.handleView3()} className={this.state.view === 3 ? "dairyactive" : "dairy-btn"} >
+                                <h6 className="dairy-btn-text">PRO-CONTROL MIXER</h6></div>
+                            <div onClick={() => this.handleView4()} className={this.state.view === 4 ? "dairyactive" : "dairy-btn"}  >
+                                <h6 className="dairy-btn-text">Pro-Control® Parlor</h6>
+                            </div>
+                        </div>
+
+                        {this.state.view === 3 && <View3 />}
+                        {this.state.view === 4 && <View4 />}
+
+                    </section> */}
+
+                        
+                    {/* <section className="moreinfo-right">
+                        <div className="dairy-top-nav">
+                            <div onClick={() => this.handleView5()} className={this.state.view === 5 ? "dairyactive" : "dairy-btn"} >
+                                <h6 className="dairy-btn-text">SCR HEATIME®</h6></div>
+                            <div className="dairy-btn-null" >
+                                <h6 className="dairy-btn-text"></h6>
+                            </div>
+                        </div>
+
+                        {this.state.view === 5 && <View5 />}
+
+                    </section> */}
 
 
 

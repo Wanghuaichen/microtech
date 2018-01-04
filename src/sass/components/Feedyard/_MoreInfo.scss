@@ -43,7 +43,7 @@
 
 .moreinfo-side {
     width: 25vw;
-    height: 800px;
+    height: 900px;
     background-color: $bg-light;
     z-index: -1;
 }
@@ -75,16 +75,12 @@
 
 .moreinfo-right {
     width: 75vw;
-    height: 800px;
+    height: 900px;
 }
 
 .moreinfo-display {
     margin: 60px;
     color: $primary-blue;
-}
-
-.dairy-btn {
-    cursor: pointer;
 }
 
 .moreinfo-display-header {
@@ -138,5 +134,22 @@
 .img-view2-box {
     display: flex;
     flex-direction: column;
-    margin: 5px 0px;
+    margin: 10px 0px;
+}
+
+.phone-container {
+    @include flexSetUp;
+}
+
+.iphone-text-box {
+    margin: 20px 50px;
+}
+
+.iphone-header {
+    color: $primary-blue;
+}
+
+.iphone-text {
+    color: $text-dark;
+    margin-bottom: 20px;
 }
