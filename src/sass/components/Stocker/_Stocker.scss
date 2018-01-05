@@ -126,6 +126,18 @@
     color: $primary-blue;
 }
 
+.stocker-nav-header2 {
+    margin-bottom: 15px;
+    margin-left: -852px;
+    color: $primary-blue;
+}
+
+.stocker-nav-header3 {
+    margin-bottom: 15px;
+    margin-left: -895px;
+    color: $primary-blue;
+}
+
 .stocker-nav-para {
     word-wrap: break-word;
     width: 960px;
@@ -195,4 +207,9 @@
 
 .stocker-footer-text {
     font-size: 16px;
+}
+
+.stocker-email {
+    color: $secondary-blue;
+    margin-left: 5px;
 }

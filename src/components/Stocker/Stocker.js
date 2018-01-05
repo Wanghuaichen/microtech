@@ -16,6 +16,28 @@ import GP from '../../assets/Pics/groupprocessing.jpg';
 import Treatments from '../../assets/Pics/treatment1.jpg';
 
 export default class Stocker extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      tab: 0,
+    }
+    this.handleTab0 = this.handleTab0.bind(this);
+    this.handleTab1 = this.handleTab1.bind(this);
+    this.handleTab2 = this.handleTab2.bind(this);
+  };
+
+  handleTab0 = () => {
+    this.setState({ tab: 0 })
+  }
+
+  handleTab1 = () => {
+    this.setState({ tab: 1 })
+  }
+
+  handleTab2 = () => {
+    this.setState({ tab: 2 })
+  }
+
   render() {
     return (
       <section className="stocker-container">
@@ -35,16 +57,35 @@ export default class Stocker extends Component {
 
           <section className="stocker-nav">
             <section className="stocker-nav-container">
-              <div className="stocker-nav-box-active">EASY TO USE</div>
-              <div className="stocker-nav-box">FULL FEATURED</div>
-              <div className="stocker-nav-box">INTUITIVE</div>
+              <div onClick={() => this.handleTab0()} className={this.state.tab === 0 ? "stocker-nav-box-active" : "stocker-nav-box"}>EASY TO USE</div>
+              <div onClick={() => this.handleTab1()} className={this.state.tab === 1 ? "stocker-nav-box-active" : "stocker-nav-box"}>FULL FEATURED</div>
+              <div onClick={() => this.handleTab2()} className={this.state.tab === 2 ? "stocker-nav-box-active" : "stocker-nav-box"}>INTUITIVE</div>
+
             </section>
-            <div className="stocker-text">
+
+            {this.state.tab === 0 && <div className="stocker-text">
               <h6 className="stocker-nav-header">Easy to Use</h6>
               <p className="stocker-nav-para">Stocker1™ allows you to easily record the unique activities that occur on stocker and backgrounding operations. Such activities include numerous moves, merging groups together, and splitting groups up, with the system rolling the costs forward so a current break-even is known.</p>
               <p className="stocker-nav-para">The goal of Stocker1™ is to allow the operator to simply enter information on their cattle and then see all cumulative costs and the current break-even on a set of cattle at any time, allowing for better marketing decisions.</p>
               <p className="stocker-nav-para">With Stocker1™, cattle inventories can be viewed on a group or location basis. From the list of groups or locations, the details for each can be drilled down on quickly, viewing placement or shipment information, current weights, and current break-evens. Reporting is also available, from summary to detail reports.</p>
-            </div>
+            </div>}
+
+            {this.state.tab === 1 && <div className="stocker-text">
+              <h6 className="stocker-nav-header2">FULL FEATURED</h6>
+              <p className="stocker-nav-para">Feeding, processing and treatment events are captured with Stocker1 as well. You can call feed (optional) and record the feed fed to any pen or pasture location where feeding takes place. Processing and treatment details are entered through the Health section of Stocker1. Protocols can be setup for each processing or treatment program to list details for the given event, applying the products and services, and capturing the costs and prices charged out for the items.</p>
+            </div>}
+
+            {this.state.tab === 2 && <div className="stocker-text">
+              <h6 className="stocker-nav-header3">INTUITIVE</h6>
+              <p className="stocker-nav-para">Other expenses, some of which are often overlooked, can be setup to record automatically for you through the allocation system. Yardage, pasture, mileage, and other expenses can be setup for each location or even by individual group. The system will automatically apply these costs any time cattle are in the location, saving time entering data each day. One-time expenses, such as dropping in a bale of hay, or delivering salt or mineral can also be recorded. The goal of the system is to capture all costs.</p>
+              
+                <p className="stocker-nav-para">For more information, Contact your local Micro Technologies Representative or
+                <Link to="/contact" className="stocker-email">
+                  email us.
+                </Link></p>
+            </div>}
+
+
           </section>
 
           <section className="stocker-section">
@@ -80,11 +121,11 @@ export default class Stocker extends Component {
 
           <section className="stocker-section">
             <div className="stocker-info">
-            <h6 className="stocker-subheader">Recording Feed</h6>
-            <p className="stocker-paragraph-two">Stocker1™ also allows the user to record the amount of feed fed to a location as well as what ration was fed. The system will show the Head Fed based on the current head in the location and the Feed Call from the days call. The amount fed can be entered directly based on actual feed fed, or be populated based on the feed call.</p>
-            <p className="stocker-paragraph-three">Users are not restricted to a single ration for a location for the day. Additional rations may be fed to a location such as stepping up with a starter ration in the morning and grower ration for the afternoon feeding.</p>
-          </div>
-          <img className="stocker-capture" src={Charges} alt="system features screen capture" width="690px" />
+              <h6 className="stocker-subheader">Recording Feed</h6>
+              <p className="stocker-paragraph-two">Stocker1™ also allows the user to record the amount of feed fed to a location as well as what ration was fed. The system will show the Head Fed based on the current head in the location and the Feed Call from the days call. The amount fed can be entered directly based on actual feed fed, or be populated based on the feed call.</p>
+              <p className="stocker-paragraph-three">Users are not restricted to a single ration for a location for the day. Additional rations may be fed to a location such as stepping up with a starter ration in the morning and grower ration for the afternoon feeding.</p>
+            </div>
+            <img className="stocker-capture" src={Charges} alt="system features screen capture" width="690px" />
           </section>
 
           <section className="stocker-section-white">

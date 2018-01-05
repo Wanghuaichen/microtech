@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
-import Header from '../Header/Header';
-import MoreInfo from './MoreInfo';
-import Footer from '../Footer/Footer';
 import { Link } from 'react-router-dom';
+
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
+import Display0 from './Display/Display0';
+import Display1 from './Display/Display1';
+import Display2 from './Display/Display2';
+import Display3 from './Display/Display3';
+
 
 import FeedyardCover from '../../assets/Pics/Feedyard_cover.png';
 import Accutrac from '../../assets/Icons/accutrac.png';
@@ -12,6 +17,34 @@ import Quotes from '../../assets/Icons/quote.png';
 
 
 export default class Feedyard extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      show: 0,
+      view: 0
+    }
+    this.showDisplay0 = this.showDisplay0.bind(this);
+    this.showDisplay1 = this.showDisplay1.bind(this);
+    this.showDisplay2 = this.showDisplay2.bind(this);
+    this.showDisplay3 = this.showDisplay3.bind(this);
+  };
+
+  showDisplay0() {
+    this.setState({ show: 0, view: 0 })
+  }
+
+  showDisplay1() {
+    this.setState({ show: 1, view: 2 })
+  }
+
+  showDisplay2() {
+    this.setState({ show: 2, view: 3 })
+  }
+
+  showDisplay3() {
+    this.setState({ show: 3, view: 5 })
+  }
+
   render() {
     return (
       <section className="feedyard-container">
@@ -41,8 +74,8 @@ export default class Feedyard extends Component {
 
           <section className="accutrac-container">
             <div className="accutrac-header-box">
-            <h3 className="accutrac-header">ACCU-TRAC</h3>
-            <h4 className="accutrac-header-small">®</h4>
+              <h3 className="accutrac-header">ACCU-TRAC</h3>
+              <h4 className="accutrac-header-small">®</h4>
             </div>
             <h6 className="accutrac-subheader">A complete, truly integrated feedyard management solution</h6>
             <div className="accutrac-line"></div>
@@ -50,9 +83,49 @@ export default class Feedyard extends Component {
             <img className="accutrac-wheel" src={Accutrac} alt="accu-trac wheel" width="620px" />
           </section>
 
-          <MoreInfo />
+          <main className="moreinfo-container">
+          <section className="moreinfo-full">
+            <section className="moreinfo-side">
+              <div className="nav-side-box">
+                <div onClick={() => this.showDisplay0()} className="nav-side-btn">
+                  <div className={this.state.view === 0 || this.state.view === 1 ? "active-side" : null}></div>
+                  <h6 className="nav-side-label">MICRO WEIGH® SYSTEM</h6>
+                </div>
 
-          <section className="blue-banner-flex">
+                <div onClick={() => this.showDisplay1()} className="nav-side-btn">
+                  <div className={this.state.view === 2 ? "active-side" : null}></div>
+                  <h6 className="nav-side-label">PRO-CONTROL PLUS® FEED</h6>
+                  <h6 className="nav-side-label">BATCHING SYSTEM</h6>
+                </div>
+
+                <div onClick={() => this.showDisplay2()} className="nav-side-btn">
+                  <div className={this.state.view === 3 || this.state.view === 4 ? "active-side" : null}></div>
+                  <h6 className="nav-side-label">READ-N-FEED®</h6>
+                  <h6 className="nav-side-label">BUNK READING SYSTEM</h6>
+                </div>
+
+                <div onClick={() => this.showDisplay3()} className="nav-side-btn">
+                  <div className={this.state.view === 5 ? "active-side" : null}></div>
+                  <h6 className="nav-side-label">READ-N-FEED®</h6>
+                  <h6 className="nav-side-label">GPS FEED TRUCK SYSTEM</h6>
+                </div>
+
+              </div>
+            </section>
+
+            <section className="moreinfo-right">
+
+              {this.state.show === 0 && <Display0 />}
+              {this.state.show === 1 && <Display1 />}
+              {this.state.show === 2 && <Display2 />}
+              {this.state.show === 3 && <Display3 />}
+
+            </section>
+          </section>
+          </main >
+
+
+          <section className="blue-banner-flex-m">
             <div className="blue-left-box">
               <h6 className="blue-left-text-two">INTERESTED IN A</h6>
               <h6 className="blue-left-bold">CUSTOMIZED SOLUTION</h6>
@@ -91,7 +164,7 @@ export default class Feedyard extends Component {
               <p className="operations-quote">“Micro’s technology gives us the flexibility we need to manage cattle on an individual or group basis.  If we were using any other technology  we would have to make a decision thirty days or forty-five days out. Today, with the technology that we have from Micro, we can make those decisions hour by hour, day by day, and incorporate that into better decisions for our operation.”</p>
               <div className="operations-box">
                 <h5 className="operations-name">- Walt Garrison</h5>
-                <p className="operations-title"> DIRECTOR OF OPERATIONS 
+                <p className="operations-title"> DIRECTOR OF OPERATIONS
               </p>
                 <p className="operations-title">CACTUS FEEDERS  AMARILLO, TEXAS</p>
               </div>
@@ -121,9 +194,9 @@ export default class Feedyard extends Component {
         </main>
 
 
-
         <Footer />
       </section>
+
     )
   }
 }

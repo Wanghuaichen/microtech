@@ -202,3 +202,12 @@
     background-color: $white;
     @include flexSetUp;
 }
+
+.laptop {
+    margin-top: 20px;
+}
+
+.color-pallete, .stethoscope, .gps {
+    margin-left: -25px;
+    margin-top: 20px;
+}
