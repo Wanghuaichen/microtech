@@ -21,7 +21,8 @@ export default class View2 extends Component {
             <h6 className="click-left-header">ONLINE ORDERING</h6>
             <p className="click-left-para">Login to reorder or to set up an online account</p>
           </div>
-          <div className="click-me-btn"><h5>CLICK ME</h5></div>
+          <a href="https://store.mwiah.com/sign-in?page=%2F">
+          <div className="click-me-btn"><h5>CLICK ME</h5></div></a>
         </div>
       </div>
 

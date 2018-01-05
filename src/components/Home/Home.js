@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Carousel from 'nuka-carousel';
+
+// components
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
 // images
-import HomeHero from '../../assets/Pics/HomeHero.jpg';
+import HomeHero from '../../assets/Pics/HomeHero.png';
+import HomeHero2 from '../../assets/Pics/HeroHome2.png';
 import StockerIcon from '../../assets/Icons/Stocker.png';
 import FeedyardIcon from '../../assets/Icons/Feedyard.png';
 import DairyIcon from '../../assets/Icons/dairy.png';
@@ -22,7 +26,12 @@ export default class Home extends Component {
 
         <main className="slider-home">
           <Header />
-          <img className="slider-one" src={HomeHero} alt="Home Cow Cover" />
+          <Carousel decorators={false} autoplay={true}
+          wrapAround = {true} speed={600}
+          className="slider-one">
+          <img src={HomeHero} alt="Home Cow Cover" />
+          <img src={HomeHero2} alt="Home Cow Cover" />
+          </Carousel>
           <div className="slider-text">
             <div className="center-box">
               <h3 className="vision-text">We innovate technologies that empower food producers to grow a safe, wholesome food supply more efficiently and more profitably.</h3>

@@ -23,6 +23,14 @@
     margin-top: -6px;
 }
 
+.blue-banner-flex-m {
+    height: 227px;
+    width: 100vw;
+    color: $white;
+    background-color: $primary-blue;
+    @include flexSetUp;
+}
+
 .blue-left-text {
     @include flexSetUp;
     flex-direction: column;

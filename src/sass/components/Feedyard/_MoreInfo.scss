@@ -45,7 +45,6 @@
     width: 25vw;
     height: 900px;
     background-color: $bg-light;
-    z-index: -1;
 }
 
 .nav-side-box {
@@ -127,6 +126,7 @@
 
 .click-bottom-box {
     display: flex;
+    margin-top: 30px;
 }
 
 .click-left-header {

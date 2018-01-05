@@ -10,7 +10,8 @@ export default class DairyInfo extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            show: 0
+            show: 0,
+            view: 0
         }
         this.showDisplay0 = this.showDisplay0.bind(this);
         this.showDisplay1 = this.showDisplay1.bind(this);
@@ -19,19 +20,19 @@ export default class DairyInfo extends Component {
     };
 
     showDisplay0() {
-        this.setState({ show: 0 })
+        this.setState({ show: 0, view: 0 })
     }
 
     showDisplay1() {
-        this.setState({ show: 1 })
+        this.setState({ show: 1, view: 2 })
     }
 
     showDisplay2() {
-        this.setState({ show: 2 })
+        this.setState({ show: 2, view: 3 })
     }
 
     showDisplay3() {
-        this.setState({ show: 3 })
+        this.setState({ show: 3, view: 5 })
     }
 
 
@@ -42,7 +43,7 @@ export default class DairyInfo extends Component {
                 <section className="moreinfo-full">
                     <section className="moreinfo-side">
                         <div className="nav-side-box">
-                        <div onClick={() => this.showDisplay0()} className="nav-side-btn">
+                            <div onClick={() => this.showDisplay0()} className="nav-side-btn">
                                 <div className={this.state.view === 0 || this.state.view === 1 ? "active-side" : null}></div>
                                 <h6 className="nav-side-label">INTEGRATED FEED</h6>
                                 <h6 className="nav-side-label">MANAGEMENT SOLUTIONS</h6>
@@ -73,21 +74,16 @@ export default class DairyInfo extends Component {
 
                     <section className="moreinfo-right">
 
-                    {this.state.show === 0 && <Display0 />}
-                    {this.state.show === 1 && <Display1 />}
-                    {this.state.show === 2 && <Display2 />}
-                    {this.state.show === 3 && <Display3 />}
-                    
-                    </section>
+                        {this.state.show === 0 && <Display0 />}
+                        {this.state.show === 1 && <Display1 />}
+                        {this.state.show === 2 && <Display2 />}
+                        {this.state.show === 3 && <Display3 />}
 
                     </section>
+
+                </section>
 
             </main >
         )
     }
 }
-
-//  // {this.state.show === 0 && <Display0 />}
-                    // {this.state.show === 1 && <Display1 />}
-                    // {this.state.show === 2 && <Display2 />}
-                    // {this.state.show === 3 && <Display3 />}

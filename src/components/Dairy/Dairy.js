@@ -43,7 +43,7 @@ export default class Dairy extends Component {
 
           <DairyInfo />
 
-          <section className="blue-banner-flex">
+          <section className="blue-banner-flex-m">
             <div className="blue-left-box">
               <h6 className="blue-left-text-two">INTERESTED IN A</h6>
               <h6 className="blue-left-bold">CUSTOMIZED SOLUTION</h6>
