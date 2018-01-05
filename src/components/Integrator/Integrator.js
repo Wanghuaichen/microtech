@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import { Link } from 'react-router-dom';
+import AnimatedNumber from 'react-animated-number';
 
 import IntegratorCover from '../../assets/Pics/Integrator_cover.png';
 import AppSolutions from '../../assets/Pics/App_solutions.png';
@@ -13,7 +14,44 @@ import ProControl from '../../assets/Pics/Pro-Control-Plus.png';
 import ArrowRight from '../../assets/Icons/→.png';
 
 export default class Integrator extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      smallValue: 0,
+      bigValue: 0,
+      updates: 0
+    };
+  }
+
+  componentDidMount() {
+    this.interval = setInterval(() => this.update(), 2000);
+    this.interval = setInterval(() => this.mountUnmount(), 12000);
+  }
+
+  update() {
+    const { updates } = this.state;
+
+    this.setState({
+      smallValue: 20,
+      mediumValue: 300,
+      bigValue: 500,
+      updates: updates + 1
+    });
+  }
+
+  mountUnmount() {
+    const { updates } = this.state;
+
+    this.setState({
+      updates: updates + 1
+    });
+  }
+  
+
   render() {
+    const { smallValue, mediumValue, bigValue } = this.state;
+
     return (
       <section className="integrator-container">
         <Header />
@@ -48,19 +86,75 @@ export default class Integrator extends Component {
 
             <div className="four-circles-container">
               <div className="four-column">
-                <div className="circle-num">20+</div>
+                <div className="circle-num">
+                  <AnimatedNumber
+                    style={{
+                      transition: '0.8s ease-out',
+                      transitionProperty:
+                        'background-color, color'
+                    }}
+                    frameStyle={perc => (
+                      perc === 100 ? {} : { backgroundColor: '#ffffff' }
+                    )}
+                    stepPrecision={0}
+                    value={smallValue}
+                    duration={2000}
+                    formatValue={n => `${n}+`} />
+                </div>
                 <p className="circle-num-text">20+ years of experience with feed additive application</p>
               </div>
               <div className="four-column">
-                <div className="circle-num">300</div>
+                <div className="circle-num">
+                <AnimatedNumber
+                    style={{
+                      transition: '0.8s ease-out',
+                      transitionProperty:
+                        'background-color, color'
+                    }}
+                    frameStyle={perc => (
+                      perc === 100 ? {} : { backgroundColor: '#ffffff' }
+                    )}
+                    stepPrecision={0}
+                    value={mediumValue}
+                    duration={2000}
+                    formatValue={n => `${n}`} />
+                </div>
                 <p className="circle-num-text">300+ Feedmill installations</p>
               </div>
               <div className="four-column">
-                <div className="circle-num">20+</div>
+                <div className="circle-num">
+                <AnimatedNumber
+                    style={{
+                      transition: '0.8s ease-out',
+                      transitionProperty:
+                        'background-color, color'
+                    }}
+                    frameStyle={perc => (
+                      perc === 100 ? {} : { backgroundColor: '#ffffff' }
+                    )}
+                    stepPrecision={0}
+                    value={smallValue}
+                    duration={2000}
+                    formatValue={n => `${n}+`} />
+                </div>
                 <p className="circle-num-text">20+ Countries</p>
               </div>
               <div className="four-column">
-                <div className="circle-num">500</div>
+                <div className="circle-num">
+                <AnimatedNumber
+                    style={{
+                      transition: '0.8s ease-out',
+                      transitionProperty:
+                        'background-color, color'
+                    }}
+                    frameStyle={perc => (
+                      perc === 100 ? {} : { backgroundColor: '#ffffff' }
+                    )}
+                    stepPrecision={0}
+                    value={bigValue}
+                    duration={2000}
+                    formatValue={n => `${n}`} />
+                </div>
                 <p className="circle-num-text">500+ pellet line start ups for post-pellet liquid enzyme systems</p>
               </div>
             </div>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Carousel from 'nuka-carousel';
 
+
 // components
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
@@ -20,6 +21,7 @@ import Passionate from '../../assets/Pics/4th-Container-Photo.jpg';
 
 
 export default class Home extends Component {
+
   render() {
     return (
       <section className="home-container">
@@ -27,16 +29,16 @@ export default class Home extends Component {
         <main className="slider-home">
           <Header />
           <Carousel decorators={false} autoplay={true}
-          wrapAround = {true} speed={600}
-          className="slider-one">
-          <img src={HomeHero} alt="Home Cow Cover" />
-          <img src={HomeHero2} alt="Home Cow Cover" />
+            wrapAround={true} speed={600}
+            className="slider-one">
+            <img src={HomeHero} alt="Home Cow Cover" />
+            <img src={HomeHero2} alt="Home Cow Cover" />
           </Carousel>
           <div className="slider-text">
             <div className="center-box">
               <h3 className="vision-text">We innovate technologies that empower food producers to grow a safe, wholesome food supply more efficiently and more profitably.</h3>
               <a href="https://www.youtube.com">
-              <div className="main-cta">WATCH VIDEO</div>
+                <div className="main-cta">WATCH VIDEO</div>
               </a>
             </div>
           </div>
@@ -84,18 +86,53 @@ export default class Home extends Component {
           </div>
         </section>
 
+
+
         <section className="mission-boxes">
-          <div className="mission-box">
-            <img className="mission-gear" src={InnovationIcon} alt="Innovation Icon" width="100px" />
-            <h4>INNOVATION</h4>
+
+          <div class="flip-container">
+            <div className="mission-box flipper">
+              <div class="front">
+                <img className="mission-gear" src={InnovationIcon} alt="Innovation Icon" width="100px" />
+                <h4>INNOVATION</h4>
+              </div>
+              <div class="back">
+                <h4 className="back-header">INNOVATION</h4>
+                <p className="back-numbers">20%</p>
+                <div className="back-line"></div>
+                <p className="back-para">20% of every dollar earned is reinvested in research + development</p>
+              </div>
+            </div>
           </div>
-          <div className="mission-box">
-            <img className="mission-value" src={ValueIcon} alt="Value Creation Icon" width="100px" />
-            <h4>VALUE CREATION</h4>
+
+          <div class="flip-container">
+            <div className="mission-box flipper">
+              <div class="front">
+                <img className="mission-value" src={ValueIcon} alt="Value Creation Icon" width="100px" />
+                <h4>VALUE CREATION</h4>
+              </div>
+              <div class="back">
+                <h4 className="back-header">VALUE CREATION</h4>
+                <p className="back-numbers">20</p>
+                <div className="back-line"></div>
+                <p className="back-para">More than 20 useful inventions for animal agriculture</p>
+              </div>
+            </div>
           </div>
-          <div className="mission-box">
-            <img className="mission-service" src={ServiceIcon} alt="Service Icon" height="100px" />
-            <h4>SERVICE</h4>
+
+          <div class="flip-container">
+            <div className="mission-box flipper">
+              <div class="front">
+                <img className="mission-service" src={ServiceIcon} alt="Service Icon" height="100px" />
+                <h4>SERVICE</h4>
+              </div>
+              <div class="back">
+                <h4 className="back-header">SERVICE</h4>
+                <p className="back-numbers">25</p>
+                <div className="back-line"></div>
+                <p className="back-para">The average length of our customer relationship is 25 years and growing</p>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -108,7 +145,7 @@ export default class Home extends Component {
               <br></br>
               <p>Learn more about Our Why and the passion that drives our everyday actions.</p>
               <Link to='/about'>
-              <div className="res-cta four">OUR RESPONSIBILITY</div>
+                <div className="res-cta four">OUR RESPONSIBILITY</div>
               </Link>
             </div>
           </div>
