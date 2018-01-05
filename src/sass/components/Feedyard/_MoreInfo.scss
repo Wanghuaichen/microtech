@@ -20,6 +20,7 @@
     @include flexSetUp;
     flex-direction: column;
     margin: 15px;
+    position: relative;
     cursor: pointer;
 }
 

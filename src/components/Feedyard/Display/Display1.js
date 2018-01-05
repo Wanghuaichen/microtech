@@ -1,41 +1,65 @@
 import React, { Component } from 'react';
-import View2 from './Views/View2';
+import View1 from './Views/View1';
 import View3 from './Views/View3';
+import View5 from './Views/View5';
 
-export default class Display1 extends Component {
+export default class Display0 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            view: 2,
+            view: 1,
+            show: 1
         }
-        this.handleView2 = this.handleView2.bind(this);
+        this.handleView1 = this.handleView1.bind(this);
         this.handleView3 = this.handleView3.bind(this);
+        this.handleView5 = this.handleView5.bind(this);
     };
 
-    handleView2 = () => {
-        this.setState({ view: 2 })
+    handleView1 = () => {
+        this.setState({ view: 1, show: 1 })
     }
 
     handleView3 = () => {
-        this.setState({ view: 3 })
+        this.setState({ view: 3, show: 3 })
+    }
+
+    handleView5 = () => {
+        this.setState({ view: 5, show: 5 })
     }
 
 
     render() {
         return (
-            <section className="display1">
-                <div className="dairy-top-nav">
-                    <div onClick={() => this.handleView2()} className={this.state.view === 2 ? "dairyactive" : "dairy-btn"} >
-                        <h6 className="dairy-btn-text">Precision Feed Management Solutions</h6></div>
-                    <div onClick={() => this.handleView3()} className={this.state.view === 3 ? "dairyactive" : "dairy-btn"}  >
-                        <h6 className="dairy-btn-text">Animal
-                        Health Solutions</h6>
-                    </div>
+            <section className="moreinfo-full">
+              <section className="moreinfo-side">
+                <div className="nav-side-box">
+                  <div onClick={() => this.handleView1()} className="nav-side-btn">
+                    <div className={this.state.view === 0 || this.state.view === 1 ? "active-side" : null}></div>
+                    <h6 className="nav-side-label">DRUG TRAC® ANIMAL HEALTH</h6>
+                  </div>
+  
+                  <div onClick={() => this.handleView3()} className="nav-side-btn">
+                    <div className={this.state.view === 2 || this.state.view === 3 ? "active-side" : null}></div>
+                    <h6 className="nav-side-label">CUBEX</h6>
+                    <h6 className="nav-side-label">DIGITAL INVENTORY MANAGEMENT</h6>
+                  </div>
+  
+                  <div onClick={() => this.handleView5()} className="nav-side-btn">
+                    <div className={this.state.view === 4 || this.state.view === 5 ? "active-side" : null}></div>
+                    <h6 className="nav-side-label">DIAGNOSTIC</h6>
+                    <h6 className="nav-side-label">TECHNOLOGIES</h6>
+                  </div>
+  
                 </div>
-
-                {this.state.view === 2 && <View2 />}
-                {this.state.view === 3 && <View3 />}
-
+              </section>
+  
+              <section className="moreinfo-right">
+  
+              {this.state.view === 1 && <View1 />}
+              {this.state.view === 3 && <View3 />}
+              {this.state.view === 5 && <View5 />}
+  
+              </section>
             </section>
         )
     }
