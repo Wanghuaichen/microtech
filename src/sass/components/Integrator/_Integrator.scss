@@ -26,6 +26,56 @@
     width: 800px;
 }
 
+
+
+.text-animated {
+    margin-top: 130px;
+    position: absolute;
+    color: $primary-blue;
+    text-align: center;
+    word-wrap: break-word;
+    width: 800px;
+}
+
+#fadeout {
+    animation-name: fadeout;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeout {
+    0%   { opacity:0; }
+    50%  { opacity:1; }
+    100% { opacity:0; }
+}
+
+.fadeinlast {
+    margin-top: 130px;
+    position: absolute;
+    color: $primary-blue;
+    text-align: center;
+    word-wrap: break-word;
+    width: 800px;
+    visibility: hidden;
+    animation-name: fadeinlast;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes fadeinlast {
+    0%   { opacity:0; visibility: hidden; }
+    50%  { opacity:0; visibility: visible; }
+    100% { opacity:1; visibility: visible;}
+}
+
+
+
 .integrator-top-subtitle {
     top: 0;
     margin-top: 220px;

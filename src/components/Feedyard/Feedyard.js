@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import animated from 'animate.css';
-import WOW from 'wowjs';
+import Carousel from 'nuka-carousel';
+
 
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
@@ -34,10 +34,6 @@ export default class Feedyard extends Component {
   showDisplay1() {
     this.setState({ show: 1, view: 2 })
   }
-
-  componentDidMount() {
-    new WOW.WOW().init();
-}
 
   render() {    
     return (
@@ -135,15 +131,18 @@ export default class Feedyard extends Component {
           </section>
 
           <img className="comprehensive-solutions" src={Comprehensive} alt="herd of cows" height="528px" />
+          
+          <Carousel decorators={false} autoplay={true}
+            wrapAround={true} speed={600} className="carousel-frame">
 
-          <section className="bluebanner-box quotebox marginup">
+          <section className="bluebanner-box quotebox">
             <div className="bluebanner-left">
               <img className="quotes" src={Quotes} alt="quotes icon" width="60px" />
             </div>
             <div className="slanted-line"></div>
             <div className="bluebanner-right">
-              <p className="operations-quote wow slideInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s" data-wow-offset="10">“Micro’s technology gives us the flexibility we need to manage cattle on an individual or group basis.  If we were using any other technology  we would have to make a decision thirty days or forty-five days out. Today, with the technology that we have from Micro, we can make those decisions hour by hour, day by day, and incorporate that into better decisions for our operation.”</p>
-              <div className="operations-box wow slideInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s" data-wow-offset="10">
+              <p className="operations-quote">“Micro’s technology gives us the flexibility we need to manage cattle on an individual or group basis.  If we were using any other technology  we would have to make a decision thirty days or forty-five days out. Today, with the technology that we have from Micro, we can make those decisions hour by hour, day by day, and incorporate that into better decisions for our operation.”</p>
+              <div className="operations-box">
                 <h5 className="operations-name">- Walt Garrison</h5>
                 <p className="operations-title"> DIRECTOR OF OPERATIONS
               </p>
@@ -152,14 +151,14 @@ export default class Feedyard extends Component {
             </div>
           </section>
 
-          <section className="bluebanner-box quotebox marginup">
+          <section className="bluebanner-box quotebox">
             <div className="bluebanner-left">
               <img className="quotes" src={Quotes} alt="quotes icon" width="60px" />
             </div>
             <div className="slanted-line"></div>
             <div className="bluebanner-right">
-              <p className="operations-quote wow slideInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s" data-wow-offset="10">“It takes the commitment of the entire feedyard to be invested in providing a product that is safe and wholesome that you can feed your children. When you have partners like Micro that have the same philosophy, it allows everything to align and to get the job done right.”</p>
-              <div className="operations-box wow slideInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s" data-wow-offset="10">
+              <p className="operations-quote">“It takes the commitment of the entire feedyard to be invested in providing a product that is safe and wholesome that you can feed your children. When you have partners like Micro that have the same philosophy, it allows everything to align and to get the job done right.”</p>
+              <div className="operations-box">
                 <h5 className="operations-name">-  Robby Kirkland</h5>
                 <p className="operations-title"> VICE PRESIDENT OF OPERATIONS
               </p>
@@ -167,7 +166,7 @@ export default class Feedyard extends Component {
               </div>              
             </div>
           </section>
-
+          </Carousel>
 
 
 

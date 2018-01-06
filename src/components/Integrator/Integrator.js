@@ -4,6 +4,7 @@ import AnimatedNumber from 'react-animated-number';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
+
 import IntegratorCover from '../../assets/Pics/Integrator_cover.png';
 import AppSolutions from '../../assets/Pics/App_solutions.png';
 import Wheel from '../../assets/Icons/IntegratorWheel.png';
@@ -25,8 +26,8 @@ export default class Integrator extends Component {
   }
 
   componentDidMount() {
-    this.interval = setInterval(() => this.update(), 2000);
-    this.interval = setInterval(() => this.mountUnmount(), 12000);
+    this.interval = setInterval(() => this.update(), 4000);
+    this.interval = setInterval(() => this.mountUnmount(), 500000);
   }
 
   update() {
@@ -47,10 +48,9 @@ export default class Integrator extends Component {
       updates: updates + 1
     });
   }
-  
 
   render() {
-    
+
     const { smallValue, mediumValue, bigValue } = this.state;
 
     return (
@@ -60,7 +60,10 @@ export default class Integrator extends Component {
         <main className="integrator-main">
           <section className="bluecover-top">
             <div className="bluecover-text-box">
-              <h3 className="integrator-top-text">Looking to increase the effectiveness of your feed additive ingredients? Efficiency of your production processes?</h3>
+              <h3 className="integrator-top-text">Looking to increase the</h3>
+                <h3 className='text-animated' id="fadeout">
+                effectiveness of your feed additive ingredients?</h3>
+                <h3 className="fadeinlast">efficiency of your production processes?</h3>
               <p className="integrator-top-subtitle">We provide innovative feed additive dosing systems that improve performance and profitability and ensure the success of our partners by providing unparalleled service and support.</p>
             </div>
             <div className="bluecover-container">
@@ -99,14 +102,14 @@ export default class Integrator extends Component {
                     )}
                     stepPrecision={0}
                     value={smallValue}
-                    duration={2000}
+                    duration={4000}
                     formatValue={n => `${n}+`} />
                 </div>
                 <p className="circle-num-text">20+ years of experience with feed additive application</p>
               </div>
               <div className="four-column">
                 <div className="circle-num">
-                <AnimatedNumber
+                  <AnimatedNumber
                     style={{
                       transition: '0.8s ease-out',
                       transitionProperty:
@@ -117,14 +120,14 @@ export default class Integrator extends Component {
                     )}
                     stepPrecision={0}
                     value={mediumValue}
-                    duration={2000}
+                    duration={4000}
                     formatValue={n => `${n}`} />
                 </div>
                 <p className="circle-num-text">300+ Feedmill installations</p>
               </div>
               <div className="four-column">
                 <div className="circle-num">
-                <AnimatedNumber
+                  <AnimatedNumber
                     style={{
                       transition: '0.8s ease-out',
                       transitionProperty:
@@ -135,14 +138,14 @@ export default class Integrator extends Component {
                     )}
                     stepPrecision={0}
                     value={smallValue}
-                    duration={2000}
+                    duration={4000}
                     formatValue={n => `${n}+`} />
                 </div>
                 <p className="circle-num-text">20+ Countries</p>
               </div>
               <div className="four-column">
                 <div className="circle-num">
-                <AnimatedNumber
+                  <AnimatedNumber
                     style={{
                       transition: '0.8s ease-out',
                       transitionProperty:
@@ -153,7 +156,7 @@ export default class Integrator extends Component {
                     )}
                     stepPrecision={0}
                     value={bigValue}
-                    duration={2000}
+                    duration={4000}
                     formatValue={n => `${n}`} />
                 </div>
                 <p className="circle-num-text">500+ pellet line start ups for post-pellet liquid enzyme systems</p>
