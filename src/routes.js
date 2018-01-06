@@ -11,6 +11,7 @@ import Difference from './components/Difference/Difference';
 import About from './components/About/About';
 import Blog from './components/Blog/Blog';
 import Careers from './components/Careers/Careers';
+import Policy from './components/Footer/PrivacyPolicy';
 
 
 
@@ -28,5 +29,7 @@ export default (
     <Route path ='/about' component={ About }/>
     <Route path ='/blog' component={ Blog }/>
     <Route path ='/careers' component={ Careers }/>
+
+    <Route path ='/policy' component={Policy}/>
   </Switch>
 );

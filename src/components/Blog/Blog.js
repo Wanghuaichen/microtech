@@ -85,12 +85,12 @@ export default class Blog extends Component {
             <div className="sm-btn-twitter">
               <img className="twitter-follow" src={TwitterFollow} alt="Follow us on Twitter" width="20px"/>
               <div className="whitebreak"></div>
-              <p>Follow us on Twitter</p>
+              <a className="sm-alinks" href="https://twitter.com/Innovation_MT?lang=en" rel="noopener noreferrer" target="_blank"><p>Follow us on Twitter</p></a>
             </div>
             <div className="sm-btn-linkedin">
               <img className="linkedin-follow" src={LinkedInFollow} alt="Follow us on LinkedIn" width="20px"/>
               <div className="whitebreak"></div>
-              <p>Follow us on LinkedIn</p>
+              <a className="sm-alinks" href="https://www.linkedin.com/company/487996/" rel="noopener noreferrer" target="_blank"><p>Follow us on LinkedIn</p></a>
             </div>
           </div>
         </section>

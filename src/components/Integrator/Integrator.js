@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
 import { Link } from 'react-router-dom';
 import AnimatedNumber from 'react-animated-number';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 import IntegratorCover from '../../assets/Pics/Integrator_cover.png';
 import AppSolutions from '../../assets/Pics/App_solutions.png';
@@ -50,6 +50,7 @@ export default class Integrator extends Component {
   
 
   render() {
+    
     const { smallValue, mediumValue, bigValue } = this.state;
 
     return (

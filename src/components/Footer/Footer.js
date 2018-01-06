@@ -15,16 +15,29 @@ export default class Footer extends Component {
             <footer className="footer-home">
                 <div className="footer-nav">
                     <div className="footer-left">
+                        <Link to="/">
                         <img className="logo-footer" src={Logo} alt="Micro Technologies Logo" />
+                        </Link>
                     </div>
                     <div className="footer-right">
                         <nav className="social-links">
                             <div className="social-box">
-                                <img className="social-icon" src={HR} alt="HR Icon" />
-                                <img className="social-icon" src={Knowledge} alt="Knowledge Icon" />
-                                <img className="social-icon" src={LinkedIn} alt="LinkedIn Icon" />
-                                <img className="social-icon" src={Mail} alt="Mail Icon" />
-                                <img className="social-icon" src={Twitter} alt="Twitter Icon" />
+                    
+                                <Link to="/careers">
+                                <img className="social-icon" src={HR} alt="HR Icon" /></Link>
+
+                                <Link to="/blog">
+                                <img className="social-icon" src={Knowledge} alt="Knowledge Icon" /></Link>
+
+                                <a href="https://www.linkedin.com/company/487996/" rel="noopener noreferrer" target="_blank">
+                                <img className="social-icon" src={LinkedIn} alt="LinkedIn Icon" /></a>
+
+                                <Link to="/contact">
+                                <img className="social-icon" src={Mail} alt="Mail Icon" /></Link>
+
+                                <a href="https://twitter.com/Innovation_MT?lang=en" rel="noopener noreferrer" target="_blank">
+                                <img className="social-icon" src={Twitter} alt="Twitter Icon" /></a>
+
                                 <Link to='/contact'>
                                 <div className="contact-btn">CONTACT</div>
                                 </Link>
@@ -32,7 +45,9 @@ export default class Footer extends Component {
                         </nav>
                         <div className="terms">
                             <div className="policy-box">
-                            <p className="conditions privacy">TERMS & CONDITIONS </p><p className="conditions privacy policy">PRIVACY POLICY</p>
+                            <p className="conditions privacy">TERMS & CONDITIONS </p>
+                            <Link to="/policy">
+                            <p className="conditions privacy policy">PRIVACY POLICY</p></Link>
                             </div>
                             <p className="conditions">COPYRIGHT 2017 AMERISOURCEBERGEN CORPORATION. ALL RIGHTS RESERVED.</p>
                         </div>

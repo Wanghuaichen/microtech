@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import AnimatedNumber from 'react-animated-number';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+
 
 import DifferenceCover from '../../assets/Pics/Difference_Cover.png';
 import Quotes from '../../assets/Icons/quote.png';
@@ -13,7 +15,44 @@ import Family from '../../assets/Pics/Family.png';
 import ArrowDown from '../../assets/Pics/ArrowDown.svg';
 
 export default class Difference extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      smallValue: 0,
+      mediumValue: 0,
+      updates: 0
+    };
+  }
+
+  componentDidMount() {
+    this.interval = setInterval(() => this.update(), 2000);
+    this.interval = setInterval(() => this.mountUnmount(), 12000);
+  }
+
+  update() {
+    const { updates } = this.state;
+
+    this.setState({
+      smallValue: 20,
+      mediumValue: 25,
+      updates: updates + 1
+    });
+  }
+
+  mountUnmount() {
+    const { updates } = this.state;
+
+    this.setState({
+      updates: updates + 1
+    });
+  }
+  
+
   render() {
+
+    const { smallValue, mediumValue } = this.state;
+
     return (
       <section className="difference-container">
         <Header />
@@ -30,23 +69,72 @@ export default class Difference extends Component {
             <img className="difference-cover" src={DifferenceCover} alt="Difference Cover" />
           </section>
 
+
           <section className="white-banner-box">
             <div className="values-box">
               <div className="diff-box">
                 <h4 className="values-header">INNOVATION</h4>
-                <p className="values-numbers">20%</p>
+                <p className="values-numbers">
+
+                <AnimatedNumber
+                    style={{
+                      transition: '0.8s ease-out',
+                      transitionProperty:
+                        'background-color, color'
+                    }}
+                    frameStyle={perc => (
+                      perc === 100 ? {} : { backgroundColor: '#ffffff' }
+                    )}
+                    stepPrecision={0}
+                    value={smallValue}
+                    duration={1200}
+                    formatValue={n => `${n}%`} />
+
+                </p>
                 <div className="val-line"></div>
                 <p className="values-para">20% of every dollar earned is reinvested in research + development</p>
               </div>
               <div className="diff-box">
                 <h4 className="values-header">VALUE CREATION</h4>
-                <p className="values-numbers">20</p>
+                <p className="values-numbers">
+                
+                <AnimatedNumber
+                    style={{
+                      transition: '0.8s ease-out',
+                      transitionProperty:
+                        'background-color, color'
+                    }}
+                    frameStyle={perc => (
+                      perc === 100 ? {} : { backgroundColor: '#ffffff' }
+                    )}
+                    stepPrecision={0}
+                    value={smallValue}
+                    duration={1200}
+                    formatValue={n => `${n}`} />
+                
+                </p>
                 <div className="val-line"></div>
                 <p className="values-para">More than 20 useful inventions for animal agriculture</p>
               </div>
               <div className="diff-box">
                 <h4 className="values-header">SERVICE</h4>
-                <p className="values-numbers">25</p>
+                <p className="values-numbers">
+                
+                <AnimatedNumber
+                    style={{
+                      transition: '0.8s ease-out',
+                      transitionProperty:
+                        'background-color, color'
+                    }}
+                    frameStyle={perc => (
+                      perc === 100 ? {} : { backgroundColor: '#ffffff' }
+                    )}
+                    stepPrecision={0}
+                    value={mediumValue}
+                    duration={1200}
+                    formatValue={n => `${n}%`} />
+
+                </p>
                 <div className="val-line"></div>
                 <p className="values-para">The average length of our customer relationship is 25 years and growing</p>
               </div>
