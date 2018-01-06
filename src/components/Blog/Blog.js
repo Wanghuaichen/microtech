@@ -59,7 +59,7 @@ export default class Blog extends Component {
                   <h6 className="blog-author">BY: NAME NAME NAME</h6>
                   <h5 className="blog-date">Date</h5>
                 </div>
-                <img className="blog-new" src={BlogFiller} alt="Latest Blog" />
+                  <img className="blog-new" src={BlogFiller} alt="Latest Blog" />
               </div>
               <div className="blog-box">
                 <div className="blog-text">
@@ -80,25 +80,25 @@ export default class Blog extends Component {
             </div>
           </section>
 
-        <section className="followus-container">
-          <div className="followus-box">
-            <div className="sm-btn-twitter">
-              <img className="twitter-follow" src={TwitterFollow} alt="Follow us on Twitter" width="20px"/>
-              <div className="whitebreak"></div>
-              <a className="sm-alinks" href="https://twitter.com/Innovation_MT?lang=en" rel="noopener noreferrer" target="_blank"><p>Follow us on Twitter</p></a>
+          <section className="followus-container">
+            <div className="followus-box">
+              <div className="sm-btn-twitter">
+                <img className="twitter-follow" src={TwitterFollow} alt="Follow us on Twitter" width="20px" />
+                <div className="whitebreak"></div>
+                <a className="sm-alinks" href="https://twitter.com/Innovation_MT?lang=en" rel="noopener noreferrer" target="_blank"><p>Follow us on Twitter</p></a>
+              </div>
+              <div className="sm-btn-linkedin">
+                <img className="linkedin-follow" src={LinkedInFollow} alt="Follow us on LinkedIn" width="20px" />
+                <div className="whitebreak"></div>
+                <a className="sm-alinks" href="https://www.linkedin.com/company/487996/" rel="noopener noreferrer" target="_blank"><p>Follow us on LinkedIn</p></a>
+              </div>
             </div>
-            <div className="sm-btn-linkedin">
-              <img className="linkedin-follow" src={LinkedInFollow} alt="Follow us on LinkedIn" width="20px"/>
-              <div className="whitebreak"></div>
-              <a className="sm-alinks" href="https://www.linkedin.com/company/487996/" rel="noopener noreferrer" target="_blank"><p>Follow us on LinkedIn</p></a>
-            </div>
-          </div>
-        </section>
+          </section>
 
-        <section className="readmore-container">
-          <div className="readmore-button">
-          <h5 className="readmore-button-header">READ MORE</h5></div>
-        </section>
+          <section className="readmore-container">
+            <div className="readmore-button">
+              <h5 className="readmore-button-header">READ MORE</h5></div>
+          </section>
 
         </main>
 

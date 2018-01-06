@@ -16,10 +16,10 @@ export default class Header extends Component {
           </div>
           <nav className="nav-links">
             <ul>
-              <Link to="/stocker"><li>STOCKER</li></Link>
-              <Link to="/feedyard"><li>FEEDYARD</li></Link>
-              <Link to="/dairy"><li>DAIRY</li></Link>
-              <Link to="/integrator"><li>INTEGRATOR</li></Link>
+              <Link to="/stocker"><li className="nav-hover">STOCKER</li></Link>
+              <Link to="/feedyard"><li className="nav-hover">FEEDYARD</li></Link>
+              <Link to="/dairy"><li className="nav-hover">DAIRY</li></Link>
+              <Link to="/integrator"><li className="nav-hover">INTEGRATOR</li></Link>
               <Link to='/contact'><li className="white-btn">CONTACT</li></Link>
             </ul>
           </nav>

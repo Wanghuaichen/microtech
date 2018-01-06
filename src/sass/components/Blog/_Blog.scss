@@ -28,6 +28,7 @@
 .blog-readmore {
     text-decoration: underline;
     letter-spacing: 1.8px;
+    cursor: pointer;
 }
 
 .blog-nav {
@@ -46,6 +47,11 @@
     @include flexSetUp;
     @include filterBTN;
     margin-right: 15px;
+}
+
+.filter-btn:hover {
+    background-color: $text-dark;
+    color: $white;
 }
 
 input[type=text] {
@@ -72,6 +78,7 @@ input::placeholder {
 
 .blog-featured, .blog-box {
     position: relative;
+    cursor: pointer;
 }
 
 .blog-featured-top {
@@ -151,12 +158,21 @@ input::placeholder {
 }
 
 .sm-btn-twitter {
-    background-color: #41A7DF;
+    background-color: $fourth-blue;
     margin-right: 25px;
 }
 
 .sm-btn-linkedin{
-    background-color: #00539B;
+    background-color: $secondary-blue;
+}
+
+.sm-btn-twitter:hover {
+    background-color: $secondary-blue;
+    margin-right: 25px;
+}
+
+.sm-btn-linkedin:hover {
+    background-color: $fourth-blue;
 }
 
 .whitebreak {
@@ -180,6 +196,11 @@ input::placeholder {
     height: 46px;
     border-radius: 5px;
     padding-bottom: 2px;
+    cursor: pointer;
+}
+
+.readmore-button:hover {
+    background-color: $fourth-blue;
 }
 
 .readmore-button-header {
@@ -189,4 +210,10 @@ input::placeholder {
 
 .sm-alinks {
     color: $white;
+}
+
+.blog-box:hover {
+    box-shadow: 0 7px 24px 0 rgba(0,0,0,.25), 0 5px 5px 0 rgba(0,0,0,.26);
+    width: 320px;
+    height: 444px;
 }

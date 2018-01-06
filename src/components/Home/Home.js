@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Carousel from 'nuka-carousel';
+import ModalVideo from 'react-modal-video'
 
 
 // components
@@ -21,6 +22,17 @@ import Passionate from '../../assets/Pics/4th-Container-Photo.jpg';
 
 
 export default class Home extends Component {
+  constructor(){
+  super()
+  this.state = {
+    isOpen: false
+  }
+  this.openModal = this.openModal.bind(this)
+}
+
+openModal () {
+  this.setState({isOpen: true})
+}
 
   render() {
     return (
@@ -37,9 +49,10 @@ export default class Home extends Component {
           <div className="slider-text">
             <div className="center-box">
               <h3 className="vision-text">We innovate technologies that empower food producers to grow a safe, wholesome food supply more efficiently and more profitably.</h3>
-              <a href="https://www.youtube.com">
-                <div className="main-cta">WATCH VIDEO</div>
-              </a>
+
+              <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='Fy1iUp3r_c0' onClose={() => this.setState({isOpen: false})} />
+                <div className="main-cta" onClick={this.openModal}>WATCH VIDEO</div>
+
             </div>
           </div>
         </main>
@@ -50,22 +63,30 @@ export default class Home extends Component {
         </div>
 
         <section className="animal-icons">
-          <div className="animal-box">
-            <img className="animal" src={StockerIcon} alt="Stocker Icon" height="111px" />
-            <h4 className="animal-text">STOCKER</h4>
-          </div>
-          <div className="animal-box">
-            <img className="animal" src={FeedyardIcon} alt="Feedyard Icon" height="111px" />
-            <h4 className="animal-text">FEEDYARD</h4>
-          </div>
-          <div className="animal-box">
-            <img className="animal" src={DairyIcon} alt="Dairy Icon" height="111px" />
-            <h4 className="animal-text">DAIRY</h4>
-          </div>
-          <div className="animal-box">
-            <img className="animal" src={IntegratorIcon} alt="Integrator Icon" height="111px" />
-            <h4 className="animal-text">INTEGRATOR</h4>
-          </div>
+          <Link to="/stocker">
+            <div className="animal-box">
+              <img className="animal" src={StockerIcon} alt="Stocker Icon" height="111px" />
+              <h4 className="animal-text">STOCKER</h4>
+            </div>
+          </Link>
+          <Link to="/feedyard">
+            <div className="animal-box">
+              <img className="animal" src={FeedyardIcon} alt="Feedyard Icon" height="111px" />
+              <h4 className="animal-text">FEEDYARD</h4>
+            </div>
+          </Link>
+          <Link to="/dairy">
+            <div className="animal-box">
+              <img className="animal" src={DairyIcon} alt="Dairy Icon" height="111px" />
+              <h4 className="animal-text">DAIRY</h4>
+            </div>
+          </Link>
+          <Link to="/integrator">
+            <div className="animal-box">
+              <img className="animal" src={IntegratorIcon} alt="Integrator Icon" height="111px" />
+              <h4 className="animal-text">INTEGRATOR</h4>
+            </div>
+          </Link>
         </section>
 
         <section className="bluebanner-box">

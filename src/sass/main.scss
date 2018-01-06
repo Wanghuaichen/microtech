@@ -4,6 +4,8 @@
 /* modules */
 @import './modules/variables';
 @import './modules/mixins';
+@import 'node_modules/react-modal-video/scss/modal-video.scss';
+
 
 /* page layout */
 @import './components/App';

@@ -43,6 +43,11 @@
     @include secondCTA;
 }
 
+.btn-cta:hover {
+    @include secondCTA;
+    background-color: $fourth-blue;
+}
+
 .gray-banner-box {
     height: 500px;
     background-color: $bg-light;
