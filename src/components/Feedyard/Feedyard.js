@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import animated from 'animate.css';
+import WOW from 'wowjs';
 
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
@@ -15,8 +17,8 @@ import Quotes from '../../assets/Icons/quote.png';
 
 
 export default class Feedyard extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       show: 0,
       view: 0
@@ -33,15 +35,11 @@ export default class Feedyard extends Component {
     this.setState({ show: 1, view: 2 })
   }
 
-  // showDisplay2() {
-  //   this.setState({ show: 2, view: 3 })
-  // }
+  componentDidMount() {
+    new WOW.WOW().init();
+}
 
-  // showDisplay3() {
-  //   this.setState({ show: 3, view: 5 })
-  // }
-
-  render() {
+  render() {    
     return (
       <section className="feedyard-container">
         <Header />
@@ -144,15 +142,34 @@ export default class Feedyard extends Component {
             </div>
             <div className="slanted-line"></div>
             <div className="bluebanner-right">
-              <p className="operations-quote">“Micro’s technology gives us the flexibility we need to manage cattle on an individual or group basis.  If we were using any other technology  we would have to make a decision thirty days or forty-five days out. Today, with the technology that we have from Micro, we can make those decisions hour by hour, day by day, and incorporate that into better decisions for our operation.”</p>
-              <div className="operations-box">
+              <p className="operations-quote wow slideInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s" data-wow-offset="10">“Micro’s technology gives us the flexibility we need to manage cattle on an individual or group basis.  If we were using any other technology  we would have to make a decision thirty days or forty-five days out. Today, with the technology that we have from Micro, we can make those decisions hour by hour, day by day, and incorporate that into better decisions for our operation.”</p>
+              <div className="operations-box wow slideInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s" data-wow-offset="10">
                 <h5 className="operations-name">- Walt Garrison</h5>
                 <p className="operations-title"> DIRECTOR OF OPERATIONS
               </p>
                 <p className="operations-title">CACTUS FEEDERS  AMARILLO, TEXAS</p>
-              </div>
+              </div>              
             </div>
           </section>
+
+          <section className="bluebanner-box quotebox marginup">
+            <div className="bluebanner-left">
+              <img className="quotes" src={Quotes} alt="quotes icon" width="60px" />
+            </div>
+            <div className="slanted-line"></div>
+            <div className="bluebanner-right">
+              <p className="operations-quote wow slideInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s" data-wow-offset="10">“It takes the commitment of the entire feedyard to be invested in providing a product that is safe and wholesome that you can feed your children. When you have partners like Micro that have the same philosophy, it allows everything to align and to get the job done right.”</p>
+              <div className="operations-box wow slideInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s" data-wow-offset="10">
+                <h5 className="operations-name">-  Robby Kirkland</h5>
+                <p className="operations-title"> VICE PRESIDENT OF OPERATIONS
+              </p>
+                <p className="operations-title">KIRKLAND FEEDYARD | VEGA, TEXAS</p>
+              </div>              
+            </div>
+          </section>
+
+
+
 
           <section className="white-banner-flex">
             <div classname="transparent-banner-box">

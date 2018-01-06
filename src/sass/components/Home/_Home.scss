@@ -8,6 +8,77 @@
     overflow-x: hidden;
 }
 
+  
+
+  
+//   .slide-wrapper {
+//     width: 2500px;
+//     animation: slide 15s ease infinite;
+//     overflow: hidden;
+//     margin: 0 auto;
+//   }
+  
+//   .slide {
+//     width: 2500px
+//   }
+  
+//   @keyframes slide {
+//     0% {margin-left: 0px;}
+//     25% {margin-left: -1000px;}
+//     50% {margin: -1250px;}
+//     75% {margin-left: -1500px;}
+//     100% {margin-left: -2250px;}
+//   }
+  
+
+// .slider-height {
+//     height: 100vh;
+//     position: relative;
+//     margin-bottom: 50px;
+// }
+
+// .slider {
+//     position: relative;
+//     width: 100vw;
+//   }
+
+//   .slide1,.slide2,{
+//     position: absolute;
+//     height: 100vh;
+//     width: 100vw;
+//   }
+
+//   .slide1 {
+//     background: url('../assets/Pics/HomeHero.png')center;
+//     background-size: cover no-repeat;
+//     animation:fade 8s infinite;
+  
+//   } 
+
+//   .slide2 {
+//     background: url('../assets/Pics/HeroHome2.png')center;
+//     background-size: cover no-repeat;
+//     animation:fade2 8s infinite;
+//   }
+ 
+//   @keyframes fade
+//   {
+//     0%   {opacity:1}
+//     33.333% { opacity: 0}
+//     66.666% { opacity: 0}
+//     100% { opacity: 1}
+//   }
+//   @keyframes fade2
+//   {
+//     0%   {opacity:0}
+//     33.333% { opacity: 1}
+//     66.666% { opacity: 0 }
+//     100% { opacity: 0}
+//   }
+ 
+
+
+
 .slider-text {
     position: absolute;
     width: 100vw;
@@ -39,10 +110,17 @@
     margin-top: 300px;
 }
 
+.main-cta:hover {
+    background-color: $opacity-dark;
+    font-size: 28px;
+    letter-spacing: 2px;
+    padding-bottom: 3px;
+}
+
 .icon-box {
+    margin-top: 50px;
     background-color: $white;
-    height: 250px;
-    padding-top: 50px;
+    height: 250px;    
 }
 
 .icon-header {
@@ -156,6 +234,10 @@
     margin: auto;
     margin-top: 100px;
     letter-spacing: 2px;
+}
+
+.res-cta:hover {
+    background-color: $fourth-blue;
 }
 
 .flip-container {

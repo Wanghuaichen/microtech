@@ -107,5 +107,11 @@
     width: 212px;
     margin-bottom: 50px;
     padding-bottom: 4px;
+    opacity: 1.0;
+}
+
+.submit-btn:hover {
+    background-color: $fourth-blue;
+    opacity: 1.0;
 }
 

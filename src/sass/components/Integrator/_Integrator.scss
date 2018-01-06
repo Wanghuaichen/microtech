@@ -189,9 +189,19 @@
     @include watchVIDEO;
 }
 
+.pelleting-video-box:hover {
+    background-color: $primary-blue;
+    color: $white;
+}
+
 .enzyme-video-box {
     @include watchVIDEO;
     color: $primary-blue;
+}
+
+.enzyme-video-box:hover {
+    background-color: $fourth-blue;
+    color: $white;
 }
 
 .contact-video-box {
@@ -199,10 +209,20 @@
     color: $third-blue;
 }
 
+.contact-video-box:hover {
+    background-color: $primary-blue;
+    color: $white;
+}
+
 .weigh-flex-video-box {
     @include watchVIDEO;
     color: $bg-light;
     background-color: $secondary-blue;
+}
+
+.weigh-flex-video-box:hover {
+    background-color: $circle-gray;
+    color: $white;
 }
 
 .triangle-down {
@@ -415,6 +435,10 @@
 
 .weigh-btn {
     @include weighBTN;
+}
+
+.weigh-btn:hover {
+    background-color: $primary-blue;
 }
 
 .weigh-text {

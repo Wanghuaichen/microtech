@@ -16,6 +16,7 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "animate.css": "^3.5.2",
     "axios": "^0.17.1",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
@@ -36,6 +37,8 @@
     "react-scripts": "1.0.17",
     "react-toggle-display": "^2.2.0",
     "redux": "^3.7.2",
-    "redux-promise-middleware": "^5.0.0"
+    "redux-promise-middleware": "^5.0.0",
+    "video-react": "^0.9.3",
+    "wowjs": "^1.1.3"
   }
 }

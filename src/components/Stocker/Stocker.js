@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-import { Link } from 'react-router-dom';
+import Dialog from 'material-ui/Dialog';
+
 
 import StockerCover from '../../assets/Pics/Stocker_cover.png';
 import Inventory from '../../assets/Pics/inventory.jpg';
@@ -14,16 +16,21 @@ import RPT from '../../assets/Pics/rptgroupsummary.jpg';
 import OpSum from '../../assets/Pics/rptoperationsummary.jpg';
 import GP from '../../assets/Pics/groupprocessing.jpg';
 import Treatments from '../../assets/Pics/treatment1.jpg';
+import StockerVideo from '../../assets/Videos/Stocker1Final.mp4';
+
 
 export default class Stocker extends Component {
   constructor(props) {
     super(props);
     this.state = {
       tab: 0,
+      open: false
     }
     this.handleTab0 = this.handleTab0.bind(this);
     this.handleTab1 = this.handleTab1.bind(this);
     this.handleTab2 = this.handleTab2.bind(this);
+    this.handleOpen = this.handleOpen.bind(this);
+    this.handleClose = this.handleClose.bind(this)
   };
 
   handleTab0 = () => {
@@ -38,6 +45,16 @@ export default class Stocker extends Component {
     this.setState({ tab: 2 })
   }
 
+  handleOpen = () => {
+    this.setState({ open: true });
+  };
+
+  handleClose = () => {
+    this.setState({ open: false });
+  };
+
+
+
   render() {
     return (
       <section className="stocker-container">
@@ -50,7 +67,18 @@ export default class Stocker extends Component {
               <h5 className="stocker-cover-title-main">Stocker1™</h5>
               <h6>Management System for Stockers and Backgrounders.</h6>
               <p className="stocker-para">Stocker1™ is an Internet based system allowing stocker and backgrounding operations to access it from any location with internet capabilities. One look and you will know it was designed in the field with close interaction between stocker and backgrounder operators.</p>
-              <div className="stocker-watch-video">WATCH VIDEO</div>
+
+              <Dialog
+                modal={false}
+                open={this.state.open}
+                onRequestClose={this.handleClose}
+                contentStyle={{ maxWidth: 850 }}
+              >
+                <video width="800px" src={StockerVideo} id="myvideo" autoplay="autoplay" controls />
+              </Dialog>
+
+              <div className="stocker-watch-video" onClick={this.handleOpen}>WATCH VIDEO</div>
+
             </div>
             <img className="stocker-cover" src={StockerCover} alt="Stocker Cover" />
           </section>
@@ -78,8 +106,8 @@ export default class Stocker extends Component {
             {this.state.tab === 2 && <div className="stocker-text">
               <h6 className="stocker-nav-header3">INTUITIVE</h6>
               <p className="stocker-nav-para">Other expenses, some of which are often overlooked, can be setup to record automatically for you through the allocation system. Yardage, pasture, mileage, and other expenses can be setup for each location or even by individual group. The system will automatically apply these costs any time cattle are in the location, saving time entering data each day. One-time expenses, such as dropping in a bale of hay, or delivering salt or mineral can also be recorded. The goal of the system is to capture all costs.</p>
-              
-                <p className="stocker-nav-para">For more information, Contact your local Micro Technologies Representative or
+
+              <p className="stocker-nav-para">For more information, Contact your local Micro Technologies Representative or
                 <Link to="/contact" className="stocker-email">
                   email us.
                 </Link></p>

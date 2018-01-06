@@ -101,6 +101,11 @@
     color: $secondary-blue;
 }
 
+.blue-right-contact:hover {
+    background-color: $fourth-blue;
+    color: $white;
+}
+
 .blue-left-box {
     display: flex;
     flex-direction: column;

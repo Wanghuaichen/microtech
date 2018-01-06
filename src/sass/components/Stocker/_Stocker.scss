@@ -37,6 +37,10 @@
     margin-top: 40px;
 }
 
+.stocker-watch-video:hover {
+    background-color: $opacity-dark;
+}
+
 .stocker-section {
     @include flexSetUp;
     background-color: $primary-blue;
@@ -203,6 +207,11 @@
     background-color: $primary-blue;
     width: 220px;
     margin: 0px 75px;
+}
+
+.stocker-video-box:hover {
+    color: $white;
+    background-color: $fourth-blue;
 }
 
 .stocker-footer-text {
