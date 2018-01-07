@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../Header/Header';
+import History from '../About/History';
 import Footer from '../Footer/Footer';
 
 import CowboyCover from '../../assets/Pics/Cowboy_Cover.png';
@@ -38,10 +39,7 @@ export default class About extends Component {
             </div>
           </section>
 
-          <section className="history-circles">
-            <h3>1971</h3>
-            <p>Micro Technologies was founded in 1971 as Micro Chemical by Bill Pratt who recognized a need for revolutionary technology within the feedlot industry; a spark that fueled 46 years of continued innovation. Today, Micro serves the majority of the feedyard industry and has expanded into the dairy industry.</p>
-          </section>
+         <History />
 
           <section className="bluebanner-column about columnbanner">
             <div className="bluebanner-left ">

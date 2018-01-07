@@ -164,3 +164,78 @@
     margin: 10px;
     cursor: pointer;
 }
+
+@mixin circle5 {
+    width: 125px;
+    height: 125px;
+    font-size: 50px;
+    font-family: $btn-font;
+    letter-spacing: 3px;
+    @include flexSetUp;
+    border-radius: 50%;
+    background-color: $circle-gray;
+    color: $white;
+    margin: 5px;
+    @include flexSetUp;
+    cursor: pointer;
+}
+
+@mixin circle4 {
+    width: 99px;
+    height: 99px;
+    font-size: 40px;
+    font-family: $btn-font;
+    letter-spacing: 3px;
+    @include flexSetUp;
+    border-radius: 50%;
+    background-color: $circle-gray;
+    color: $white;
+    margin: 5px;
+    @include flexSetUp;
+    cursor: pointer;
+}
+
+@mixin circle3 {
+    width: 76px;
+    height: 76px;
+    font-size: 30px;
+    font-family: $btn-font;
+    letter-spacing: 3px;
+    @include flexSetUp;
+    border-radius: 50%;
+    background-color: $circle-gray;
+    color: $white;
+    margin: 5px;
+    @include flexSetUp;
+    cursor: pointer;
+}
+
+@mixin circle2 {
+    width: 59px;
+    height: 59px;
+    font-size: 20px;
+    font-family: $btn-font;
+    letter-spacing: 3px;
+    @include flexSetUp;
+    border-radius: 50%;
+    background-color: $circle-gray;
+    color: $white;
+    margin: 5px;
+    @include flexSetUp;
+    cursor: pointer;
+}
+
+@mixin circle1 {
+    width: 36px;
+    height: 36px;
+    font-size: 12px;
+    font-family: $btn-font;
+    letter-spacing: 2.5px;
+    @include flexSetUp;
+    border-radius: 50%;
+    background-color: $circle-gray;
+    color: $white;
+    margin: 5px;
+    @include flexSetUp;
+    cursor: pointer;
+}
