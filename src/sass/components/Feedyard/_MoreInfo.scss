@@ -44,7 +44,7 @@
 
 .moreinfo-side {
     width: 25vw;
-    height: 900px;
+    height: 950px;
     background-color: $bg-light;
 }
 
@@ -75,7 +75,7 @@
 
 .moreinfo-right {
     width: 75vw;
-    height: 900px;
+    height: 950px;
 }
 
 .moreinfo-display {
@@ -191,3 +191,46 @@
 .list-left {
     margin-right: 25px;
 }
+
+.slider {
+    &-decorator-0 { /* Previous */
+       & > button {
+         visibility: hidden;
+ 
+         &::after {
+           position: absolute;
+           margin-top: -189px;
+           left: 1450%;
+           padding-bottom: 15px;
+           visibility: visible !important;
+           width: 70px;
+           height: 33px;
+           background: $opacity-white;
+           color: $primary-blue;
+           content: '\2190';
+           font-size: 40px;
+         }
+       }
+     }
+ 
+     &-decorator-1 { /* Next */
+       & > button {
+         visibility: hidden;
+ 
+         &::after {
+           position: absolute;
+           margin-top: -189px;
+           border-left: 3px solid $primary-blue;
+           right: 0%;
+           padding-bottom: 15px;
+           visibility: visible !important;
+           width: 70px;
+           height: 33px;
+           background: $opacity-white;
+           color: $primary-blue;
+           content: '\2192';
+           font-size: 40px;
+         }
+       }
+     }
+ }

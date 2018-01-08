@@ -24,14 +24,14 @@ export default class View0 extends Component {
                 <li className="moreinfo-list">
                     Minimize shrink through a closed micro feed ingredient delivery system</li>
 
-                <Carousel autoplay={true}>
-                    <img className="tv-batcher" src={Slide1} alt="slide show" width="673px" />
-                    <img className="tv-batcher" src={Slide2} alt="slide show" width="673px" />
-                    <img className="tv-batcher" src={Slide3} alt="slide show" width="673px" />
-                    <img className="tv-batcher" src={Slide4} alt="slide show" width="673px" />
-                    <img className="tv-batcher" src={Slide5} alt="slide show" width="673px" />
-                    <img className="tv-batcher" src={Slide6} alt="slide show" width="673px" />
-                </Carousel>
+                    <Carousel decorators={Carousel.getDefaultProps().decorators.slice(0, 2)} autoplay={true} wrapAround={true} speed={600} >
+                    <img src={Slide1} alt="slide show" width="673px" onLoad={() => {window.dispatchEvent(new Event('resize'));}}  />
+                   <img src={Slide2} alt="slide show" width="673px" onLoad={() => {window.dispatchEvent(new Event('resize'));}}  />
+                   <img src={Slide3} alt="slide show" width="673px" onLoad={() => {window.dispatchEvent(new Event('resize'));}}  />
+                   <img src={Slide4} alt="slide show" width="673px" onLoad={() => {window.dispatchEvent(new Event('resize'));}}  />
+                   <img src={Slide5} alt="slide show" width="673px" onLoad={() => {window.dispatchEvent(new Event('resize'));}}  />
+                   <img src={Slide6} alt="slide show" width="673px" onLoad={() => {window.dispatchEvent(new Event('resize'));}}  />
+                </Carousel >
             </div>
         )
     }

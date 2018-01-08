@@ -2562,7 +2562,7 @@ input::placeholder {
 
 .moreinfo-side {
   width: 25vw;
-  height: 900px;
+  height: 950px;
   background-color: #F6F6F6; }
 
 .nav-side-box {
@@ -2591,7 +2591,7 @@ input::placeholder {
 
 .moreinfo-right {
   width: 75vw;
-  height: 900px; }
+  height: 950px; }
 
 .moreinfo-display {
   margin: 60px;
@@ -2698,6 +2698,41 @@ input::placeholder {
 
 .list-left {
   margin-right: 25px; }
+
+.slider-decorator-0 {
+  /* Previous */ }
+  .slider-decorator-0 > button {
+    visibility: hidden; }
+    .slider-decorator-0 > button::after {
+      position: absolute;
+      margin-top: -189px;
+      left: 1450%;
+      padding-bottom: 15px;
+      visibility: visible !important;
+      width: 70px;
+      height: 33px;
+      background: rgba(255, 255, 255, 0.8);
+      color: #1A2E5A;
+      content: '\2190';
+      font-size: 40px; }
+
+.slider-decorator-1 {
+  /* Next */ }
+  .slider-decorator-1 > button {
+    visibility: hidden; }
+    .slider-decorator-1 > button::after {
+      position: absolute;
+      margin-top: -189px;
+      border-left: 3px solid #1A2E5A;
+      right: 0%;
+      padding-bottom: 15px;
+      visibility: visible !important;
+      width: 70px;
+      height: 33px;
+      background: rgba(255, 255, 255, 0.8);
+      color: #1A2E5A;
+      content: '\2192';
+      font-size: 40px; }
 
 .dairy-top-nav {
   display: flex;

@@ -40,8 +40,8 @@ export default class Display0 extends Component {
   
                   <div onClick={() => this.handleView3()} className="nav-side-btn">
                     <div className={this.state.view === 2 || this.state.view === 3 ? "active-side" : null}></div>
-                    <h6 className="nav-side-label">CUBEX</h6>
-                    <h6 className="nav-side-label">DIGITAL INVENTORY MANAGEMENT</h6>
+                    <h6 className="nav-side-label">CUBEX DIGITAL</h6>
+                    <h6 className="nav-side-label">INVENTORY MANAGEMENT</h6>
                   </div>
   
                   <div onClick={() => this.handleView5()} className="nav-side-btn">
