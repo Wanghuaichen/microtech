@@ -6,301 +6,78 @@ export default class History extends Component {
         this.state = {
           circle: 12
         }
-        this.handleCircle1 = this.handleCircle1.bind(this);
-        this.handleCircle2 = this.handleCircle2.bind(this);
-        this.handleCircle3 = this.handleCircle3.bind(this);
-        this.handleCircle4 = this.handleCircle4.bind(this);
-        this.handleCircle5 = this.handleCircle5.bind(this);
-        this.handleCircle6 = this.handleCircle6.bind(this);
-        this.handleCircle7 = this.handleCircle7.bind(this);
-        this.handleCircle8 = this.handleCircle8.bind(this);
-        this.handleCircle9 = this.handleCircle9.bind(this);
-        this.handleCircle10 = this.handleCircle10.bind(this);
-        this.handleCircle11 = this.handleCircle11.bind(this);
-        this.handleCircle12 = this.handleCircle12.bind(this);
-        this.handleCircle13 = this.handleCircle13.bind(this);
-        this.handleCircle14 = this.handleCircle14.bind(this);
-        this.handleCircle15 = this.handleCircle15.bind(this);
-        this.handleCircle16 = this.handleCircle16.bind(this);
-        this.handleCircle17 = this.handleCircle17.bind(this);
-        this.handleCircle18 = this.handleCircle18.bind(this);
-        this.handleCircle19 = this.handleCircle19.bind(this);
-        this.handleCircle20 = this.handleCircle20.bind(this);
-        this.handleCircle21 = this.handleCircle21.bind(this);
-        this.handleCircle22 = this.handleCircle22.bind(this);
-        this.handleCircle23 = this.handleCircle23.bind(this);
-        this.handleCircle24 = this.handleCircle24.bind(this);
-        this.handleCircle25 = this.handleCircle25.bind(this);
-        this.handleCircle26 = this.handleCircle26.bind(this);
-        this.handleCircle27 = this.handleCircle27.bind(this);
-        this.handleCircle28 = this.handleCircle28.bind(this);
-        this.handleCircle29 = this.handleCircle29.bind(this);
-        this.handleCircle30 = this.handleCircle30.bind(this);
-        this.handleCircle31 = this.handleCircle31.bind(this);
-        this.handleCircle32 = this.handleCircle32.bind(this);
-        this.handleCircle33 = this.handleCircle33.bind(this);
-        this.handleCircle34 = this.handleCircle34.bind(this);
-        this.handleCircle35 = this.handleCircle35.bind(this);
-        this.handleCircle36 = this.handleCircle36.bind(this);
-        this.handleCircle37 = this.handleCircle37.bind(this);
-        this.handleCircle38 = this.handleCircle38.bind(this);
-        this.handleCircle39 = this.handleCircle39.bind(this);
-        this.handleCircle40 = this.handleCircle40.bind(this);
-        this.handleCircle41 = this.handleCircle41.bind(this);
-        this.handleCircle42 = this.handleCircle42.bind(this);
-        this.handleCircle43 = this.handleCircle43.bind(this);
-        this.handleCircle44 = this.handleCircle44.bind(this);
-        this.handleCircle45 = this.handleCircle45.bind(this);
+        this.handleCircle = this.handleCircle.bind(this);
       };
     
-      handleCircle1 = () => {
-        this.setState({ circle: 1 })
+      handleCircle = (id) => {
+          this.setState({ circle: id });
       }
-
-      handleCircle2 = () => {
-        this.setState({ circle: 2 })
-      }
-
-      handleCircle3 = () => {
-        this.setState({ circle: 3 })
-      }
-
-      handleCircle4 = () => {
-        this.setState({ circle: 4 })
-      }
-
-      handleCircle5 = () => {
-        this.setState({ circle: 5 })
-      }
-
-      handleCircle6 = () => {
-        this.setState({ circle: 6 })
-      }
-
-      handleCircle7 = () => {
-        this.setState({ circle: 7 })
-      }
-
-      handleCircle8 = () => {
-        this.setState({ circle: 8 })
-      }
-
-      handleCircle9 = () => {
-        this.setState({ circle: 9 })
-      }
-
-      handleCircle10 = () => {
-        this.setState({ circle: 10 })
-      }
-
-      handleCircle11 = () => {
-        this.setState({ circle: 11 })
-      }
-
-      handleCircle12 = () => {
-        this.setState({ circle: 12 })
-      }
-
-      handleCircle13 = () => {
-        this.setState({ circle: 13 })
-      }
-
-      handleCircle14 = () => {
-        this.setState({ circle: 14 })
-      }
-
-      handleCircle15 = () => {
-        this.setState({ circle: 15 })
-      }
-
-      handleCircle16 = () => {
-        this.setState({ circle: 16 })
-      }
-
-      handleCircle17 = () => {
-        this.setState({ circle: 17 })
-      }
-
-      handleCircle18 = () => {
-        this.setState({ circle: 18 })
-      }
-
-      handleCircle19 = () => {
-        this.setState({ circle: 19 })
-      }
-
-      handleCircle20 = () => {
-        this.setState({ circle: 20 })
-      }
-
-      handleCircle21 = () => {
-        this.setState({ circle: 21 })
-      }
-
-      handleCircle22 = () => {
-        this.setState({ circle: 22 })
-      }
-
-      handleCircle23 = () => {
-        this.setState({ circle: 23 })
-      }
-
-      handleCircle24 = () => {
-        this.setState({ circle: 24 })
-      }
-
-      handleCircle25 = () => {
-        this.setState({ circle: 25 })
-      }
-      
-      handleCircle26 = () => {
-        this.setState({ circle: 26 })
-      }
-
-      handleCircle27 = () => {
-        this.setState({ circle: 27 })
-      }
-
-      handleCircle28 = () => {
-        this.setState({ circle: 28 })
-      }
-
-      handleCircle29 = () => {
-        this.setState({ circle: 29 })
-      }
-
-      handleCircle30 = () => {
-        this.setState({ circle: 30 })
-      }
-
-      handleCircle31 = () => {
-        this.setState({ circle: 31 })
-      }
-
-      handleCircle32 = () => {
-        this.setState({ circle: 32 })
-      }
-
-      handleCircle33 = () => {
-        this.setState({ circle: 33 })
-      }
-
-      handleCircle34 = () => {
-        this.setState({ circle: 34 })
-      }
-
-      handleCircle35 = () => {
-        this.setState({ circle: 35 })
-      }
-
-      handleCircle36 = () => {
-        this.setState({ circle: 36 })
-      }
-
-      handleCircle37 = () => {
-        this.setState({ circle: 37 })
-      }
-
-      handleCircle38 = () => {
-        this.setState({ circle: 38 })
-      }
-
-      handleCircle39 = () => {
-        this.setState({ circle: 39 })
-      }
-    
-      handleCircle40 = () => {
-        this.setState({ circle: 40 })
-      }
-
-      handleCircle41 = () => {
-        this.setState({ circle: 41 })
-      }
-
-      handleCircle42 = () => {
-        this.setState({ circle: 42 })
-      }
-
-      handleCircle43 = () => {
-        this.setState({ circle: 43 })
-      }
-
-      handleCircle44 = () => {
-        this.setState({ circle: 44 })
-      }
-
-      handleCircle45 = () => {
-        this.setState({ circle: 45 })
-      }
-
-
-
-
+ 
     render() {
         return (
             <section className="history-circles">
                 <div className="history-circles-contaier">
                     <div className="circles-first">
-                        <div onClick={() => this.handleCircle1()} className={this.state.circle === 1 ? "active-history-btn5 c1" : "c1 circle-5" } >1971</div>
-                        <div onClick={() => this.handleCircle2()} className={this.state.circle === 2 ? "active-history-btn4 c2" : "c2 circle-4" } >1985</div>
-                        <div onClick={() => this.handleCircle3()} className={this.state.circle === 3 ? "active-history-btn4 c3" : "c3 circle-4" } >1991</div>
-                        <div onClick={() => this.handleCircle4()} className={this.state.circle === 4 ? "active-history-btn3 c4" : "c4 circle-3" } >1996</div>
-                        <div onClick={() => this.handleCircle5()} className={this.state.circle === 5 ? "active-history-btn4 c5" : "c5 circle-4" } >2001</div>
-                        <div onClick={() => this.handleCircle6()} className={this.state.circle === 6 ? "active-history-btn4 c6" : "c6 circle-4" } >2007</div>
-                        <div onClick={() => this.handleCircle7()} className={this.state.circle === 7 ? "active-history-btn5 c7" : "c7 circle-5" } >2007</div>
-                        <div onClick={() => this.handleCircle8()} className={this.state.circle === 8 ? "active-history-btn2 c8" : "c8 circle-2" } >2009</div>
-                        <div onClick={() => this.handleCircle9()} className={this.state.circle === 9 ? "active-history-btn2 c9" : "c9 circle-2" } >2010</div>
-                        <div onClick={() => this.handleCircle10()} className={this.state.circle === 10 ? "active-history-btn1 c11" : "c11 circle-1" } >2011</div>
-                        <div onClick={() => this.handleCircle11()} className={this.state.circle === 11 ? "active-history-btn5 c12" : "c12 circle-5" } >2011</div>
+                        <div onClick={() => this.handleCircle(1)} className={this.state.circle === 1 ? "active-history-btn5 c1" : "c1 circle-5" } >1971</div>
+                        <div onClick={() => this.handleCircle2(2)} className={this.state.circle === 2 ? "active-history-btn4 c2" : "c2 circle-4" } >1985</div>
+                        <div onClick={() => this.handleCircle(3)} className={this.state.circle === 3 ? "active-history-btn4 c3" : "c3 circle-4" } >1991</div>
+                        <div onClick={() => this.handleCircle(4)} className={this.state.circle === 4 ? "active-history-btn3 c4" : "c4 circle-3" } >1996</div>
+                        <div onClick={() => this.handleCircle(5)} className={this.state.circle === 5 ? "active-history-btn4 c5" : "c5 circle-4" } >2001</div>
+                        <div onClick={() => this.handleCircle(6)} className={this.state.circle === 6 ? "active-history-btn4 c6" : "c6 circle-4" } >2007</div>
+                        <div onClick={() => this.handleCircle(7)} className={this.state.circle === 7 ? "active-history-btn5 c7" : "c7 circle-5" } >2007</div>
+                        <div onClick={() => this.handleCircle(8)} className={this.state.circle === 8 ? "active-history-btn2 c8" : "c8 circle-2" } >2009</div>
+                        <div onClick={() => this.handleCircle(9)} className={this.state.circle === 9 ? "active-history-btn2 c9" : "c9 circle-2" } >2010</div>
+                        <div onClick={() => this.handleCircle(10)} className={this.state.circle === 10 ? "active-history-btn1 c11" : "c11 circle-1" } >2011</div>
+                        <div onClick={() => this.handleCircle(11)} className={this.state.circle === 11 ? "active-history-btn5 c12" : "c12 circle-5" } >2011</div>
                     </div>
 
                     <div className="circles-second">
-                        <div onClick={() => this.handleCircle12()} className={this.state.circle === 12 ? "active-history-btn5 c13" : "c13 circle-5" } >1971</div>
-                        <div onClick={() => this.handleCircle13()} className={this.state.circle === 13 ? "active-history-btn1 c14" : "c14 circle-1" } >1983</div>
-                        <div onClick={() => this.handleCircle14()} className={this.state.circle === 14 ? "active-history-btn4 c15" : "c15 circle-4" } >1984</div>
-                        <div onClick={() => this.handleCircle15()} className={this.state.circle === 15 ? "active-history-btn3 c16" : "c16 circle-3" } >1987</div>
-                        <div onClick={() => this.handleCircle16()} className={this.state.circle === 16 ? "active-history-btn5 c17" : "c17 circle-5" } >1994</div>
-                        <div onClick={() => this.handleCircle17()} className={this.state.circle === 17 ? "active-history-btn2 c18" : "c18 circle-2" } >1998</div>
-                        <div onClick={() => this.handleCircle18()} className={this.state.circle === 18 ? "active-history-btn3 c19" : "c19 circle-3" } >2003</div>
-                        <div onClick={() => this.handleCircle19()} className={this.state.circle === 19 ? "active-history-btn3 c20" : "c20 circle-3" } >2005</div>
-                        <div onClick={() => this.handleCircle20()} className={this.state.circle === 20 ? "active-history-btn3 c21" : "c21 circle-3" } >2007</div>
-                        <div onClick={() => this.handleCircle21()} className={this.state.circle === 21 ? "active-history-btn3 c22" : "c22 circle-3" } >2008</div>
-                        <div onClick={() => this.handleCircle22()} className={this.state.circle === 22 ? "active-history-btn4 c23" : "c23 circle-4" } >2009</div>
-                        <div onClick={() => this.handleCircle23()} className={this.state.circle === 23 ? "active-history-btn3 c24" : "c24 circle-3" } >2010</div>
-                        <div onClick={() => this.handleCircle24()} className={this.state.circle === 24 ? "active-history-btn3 c25" : "c25 circle-3" } >2012</div>
-                        <div onClick={() => this.handleCircle25()} className={this.state.circle === 25 ? "active-history-btn2 c26" : "c26 circle-2" } >2012</div>
+                        <div onClick={() => this.handleCircle(12)} className={this.state.circle === 12 ? "active-history-btn5 c13" : "c13 circle-5" } >1971</div>
+                        <div onClick={() => this.handleCircle(13)} className={this.state.circle === 13 ? "active-history-btn1 c14" : "c14 circle-1" } >1983</div>
+                        <div onClick={() => this.handleCircle(14)} className={this.state.circle === 14 ? "active-history-btn4 c15" : "c15 circle-4" } >1984</div>
+                        <div onClick={() => this.handleCircle(15)} className={this.state.circle === 15 ? "active-history-btn3 c16" : "c16 circle-3" } >1987</div>
+                        <div onClick={() => this.handleCircle(16)} className={this.state.circle === 16 ? "active-history-btn5 c17" : "c17 circle-5" } >1994</div>
+                        <div onClick={() => this.handleCircle(17)} className={this.state.circle === 17 ? "active-history-btn2 c18" : "c18 circle-2" } >1998</div>
+                        <div onClick={() => this.handleCircle(18)} className={this.state.circle === 18 ? "active-history-btn3 c19" : "c19 circle-3" } >2003</div>
+                        <div onClick={() => this.handleCircle(19)} className={this.state.circle === 19 ? "active-history-btn3 c20" : "c20 circle-3" } >2005</div>
+                        <div onClick={() => this.handleCircle(20)} className={this.state.circle === 20 ? "active-history-btn3 c21" : "c21 circle-3" } >2007</div>
+                        <div onClick={() => this.handleCircle(21)} className={this.state.circle === 21 ? "active-history-btn3 c22" : "c22 circle-3" } >2008</div>
+                        <div onClick={() => this.handleCircle(22)} className={this.state.circle === 22 ? "active-history-btn4 c23" : "c23 circle-4" } >2009</div>
+                        <div onClick={() => this.handleCircle(23)} className={this.state.circle === 23 ? "active-history-btn3 c24" : "c24 circle-3" } >2010</div>
+                        <div onClick={() => this.handleCircle(24)} className={this.state.circle === 24 ? "active-history-btn3 c25" : "c25 circle-3" } >2012</div>
+                        <div onClick={() => this.handleCircle(25)} className={this.state.circle === 25 ? "active-history-btn2 c26" : "c26 circle-2" } >2012</div>
                     </div>
 
                     <div className="circles-third">
-                        <div onClick={() => this.handleCircle26()} className={this.state.circle === 26 ? "active-history-btn3 c27" : "c27 circle-3" } >1983</div>
-                        <div onClick={() => this.handleCircle27()} className={this.state.circle === 27 ? "active-history-btn5 c28" : "c28 circle-5" } >1986</div>
-                        <div onClick={() => this.handleCircle28()} className={this.state.circle === 28 ? "active-history-btn2 c29" : "c29 circle-2" } >1992</div>
-                        <div onClick={() => this.handleCircle29()} className={this.state.circle === 29 ? "active-history-btn2 c30" : "c30 circle-2" } >1998</div>
-                        <div onClick={() => this.handleCircle30()} className={this.state.circle === 30 ? "active-history-btn1 c31" : "c31 circle-1" } >2003</div>
-                        <div onClick={() => this.handleCircle31()} className={this.state.circle === 31 ? "active-history-btn5 c32" : "c32 circle-5" } >2005</div>
-                        <div onClick={() => this.handleCircle32()} className={this.state.circle === 32 ? "active-history-btn3 c33" : "c33 circle-3" } >2007</div>
-                        <div onClick={() => this.handleCircle33()} className={this.state.circle === 33 ? "active-history-btn3 c34" : "c34 circle-3" } >2008</div>
-                        <div onClick={() => this.handleCircle34()} className={this.state.circle === 34 ? "active-history-btn3 c35" : "c35 circle-3" } >2009</div>
-                        <div onClick={() => this.handleCircle35()} className={this.state.circle === 35 ? "active-history-btn3 c36" : "c36 circle-3" } >2011</div>
-                        <div onClick={() => this.handleCircle36()} className={this.state.circle === 36 ? "active-history-btn3 c37" : "c37 circle-3" } >2011</div>
-                        <div onClick={() => this.handleCircle37()} className={this.state.circle === 37 ? "active-history-btn4 c38" : "c38 circle-4" } >2013</div>
-                        <div onClick={() => this.handleCircle38()} className={this.state.circle === 38 ? "active-history-btn3 c39" : "c39 circle-3" } >2013</div>
+                        <div onClick={() => this.handleCircle(26)} className={this.state.circle === 26 ? "active-history-btn3 c27" : "c27 circle-3" } >1983</div>
+                        <div onClick={() => this.handleCircle(27)} className={this.state.circle === 27 ? "active-history-btn5 c28" : "c28 circle-5" } >1986</div>
+                        <div onClick={() => this.handleCircle(28)} className={this.state.circle === 28 ? "active-history-btn2 c29" : "c29 circle-2" } >1992</div>
+                        <div onClick={() => this.handleCircle(29)} className={this.state.circle === 29 ? "active-history-btn2 c30" : "c30 circle-2" } >1998</div>
+                        <div onClick={() => this.handleCircle(30)} className={this.state.circle === 30 ? "active-history-btn1 c31" : "c31 circle-1" } >2003</div>
+                        <div onClick={() => this.handleCircle(31)} className={this.state.circle === 31 ? "active-history-btn5 c32" : "c32 circle-5" } >2005</div>
+                        <div onClick={() => this.handleCircle(32)} className={this.state.circle === 32 ? "active-history-btn3 c33" : "c33 circle-3" } >2007</div>
+                        <div onClick={() => this.handleCircle(33)} className={this.state.circle === 33 ? "active-history-btn3 c34" : "c34 circle-3" } >2008</div>
+                        <div onClick={() => this.handleCircle(34)} className={this.state.circle === 34 ? "active-history-btn3 c35" : "c35 circle-3" } >2009</div>
+                        <div onClick={() => this.handleCircle(35)} className={this.state.circle === 35 ? "active-history-btn3 c36" : "c36 circle-3" } >2011</div>
+                        <div onClick={() => this.handleCircle(36)} className={this.state.circle === 36 ? "active-history-btn3 c37" : "c37 circle-3" } >2011</div>
+                        <div onClick={() => this.handleCircle(37)} className={this.state.circle === 37 ? "active-history-btn4 c38" : "c38 circle-4" } >2013</div>
+                        <div onClick={() => this.handleCircle(38)} className={this.state.circle === 38 ? "active-history-btn3 c39" : "c39 circle-3" } >2013</div>
                     </div>
 
                     <div className="circles-fourth">
-                        <div onClick={() => this.handleCircle39()} className={this.state.circle === 39 ? "active-history-btn5 c40" : "c40 circle-5" } >2015</div>
-                        <div onClick={() => this.handleCircle40()} className={this.state.circle === 40 ? "active-history-btn4 c41" : "c41 circle-4" } >2014</div>
+                        <div onClick={() => this.handleCircle(39)} className={this.state.circle === 39 ? "active-history-btn5 c40" : "c40 circle-5" } >2015</div>
+                        <div onClick={() => this.handleCircle(40)} className={this.state.circle === 40 ? "active-history-btn4 c41" : "c41 circle-4" } >2014</div>
                     </div>
 
                     <div className="circles-fifth">
-                        <div onClick={() => this.handleCircle41()} className={this.state.circle === 41 ? "active-history-btn3 c42" : "c42 circle-3" } >2015</div>
-                        <div onClick={() => this.handleCircle42()} className={this.state.circle === 42 ? "active-history-btn3 c43" : "c43 circle-3" } >2015</div>
-                        <div onClick={() => this.handleCircle43()} className={this.state.circle === 43 ? "active-history-btn3 c44" : "c44 circle-3" } >2015</div>
+                        <div onClick={() => this.handleCircle(41)} className={this.state.circle === 41 ? "active-history-btn3 c42" : "c42 circle-3" } >2015</div>
+                        <div onClick={() => this.handleCircle(42)} className={this.state.circle === 42 ? "active-history-btn3 c43" : "c43 circle-3" } >2015</div>
+                        <div onClick={() => this.handleCircle(43)} className={this.state.circle === 43 ? "active-history-btn3 c44" : "c44 circle-3" } >2015</div>
                     </div>
 
                     <div className="circles-sixth">
-                        <div onClick={() => this.handleCircle44()} className={this.state.circle === 44 ? "active-history-btn3 c45" : "c45 circle-3" } >2016</div>
-                        <div onClick={() => this.handleCircle45()} className={this.state.circle === 45 ? "active-history-btn4 c46" : "c46 circle-4" } >2018</div>
+                        <div onClick={() => this.handleCircle(44)} className={this.state.circle === 44 ? "active-history-btn3 c45" : "c45 circle-3" } >2016</div>
+                        <div onClick={() => this.handleCircle(45)} className={this.state.circle === 45 ? "active-history-btn4 c46" : "c46 circle-4" } >2018</div>
                     </div>
 
                 </div>
