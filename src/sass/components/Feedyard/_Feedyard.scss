@@ -225,3 +225,26 @@
     position: absolute;
     cursor: pointer;
 }
+
+// .slides {
+//     position: relative;
+//     .slick-prev, .slick-next {
+//       position: absolute;
+//       top: 18%;      
+//     }
+//     .slick-prev {
+//       left: 85%;
+//       z-index: 2;
+//     }
+//     .slick-next {
+//       right: 5%;
+//     }
+//   }
+  
+//   .slick-slide { height: auto; 
+// min-height: 250px;}
+
+.slideshow-container {
+    display: flex;
+    justify-content: flex-start;
+}

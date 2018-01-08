@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Carousel from 'nuka-carousel';
 
-
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Display0 from './Display/Display0';
 import Display1 from './Display/Display1';
-
 
 import FeedyardCover from '../../assets/Pics/Feedyard_cover.png';
 import Accutrac from '../../assets/Icons/accutrac.png';
@@ -35,7 +33,7 @@ export default class Feedyard extends Component {
     this.setState({ show: 1, view: 2 })
   }
 
-  render() {    
+  render() {  
     return (
       <section className="feedyard-container">
         <Header />

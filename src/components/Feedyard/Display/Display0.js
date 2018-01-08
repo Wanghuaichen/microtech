@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import View0 from './Views/View0';
 import View2 from './Views/View2';
 import View4 from './Views/View4';
@@ -36,7 +37,6 @@ export default class Display0 extends Component {
 
     render() {
         return (
-
             <section className="moreinfo-full">
               <section className="moreinfo-side">
                 <div className="nav-side-box">
