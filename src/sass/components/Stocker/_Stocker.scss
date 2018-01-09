@@ -51,9 +51,10 @@
 
 .stocker-section-white {
     @include flexSetUp;
+    margin: auto;
     background-color: $white;
     color: $primary-blue;
-    width: 100vw;
+    width: 1200px;
     height: 550px;
     justify-content: space-around;
 }
@@ -76,16 +77,32 @@
 
 .stocker-paragraph-two {
     word-wrap: break-word;
-    width: 500px;
+    width: 510px;
     margin-bottom: 25px;
+}
+
+.stocker-paragraph-two2 {
+    word-wrap: break-word;
+    width: 510px;
+    margin-bottom: 25px;
+    margin-left: 25px;
 }
 
 .stocker-header {
     margin-bottom: 30px;
 }
 
+.stocker-capture-left-box {
+    margin-top: -170px;
+}
+
 .stocker-subheader {
     margin-bottom: 10px;
+}
+
+.stocker-subheader2 {
+    margin-bottom: 10px;
+    margin-left: 25px;
 }
 
 .stocker-capture {

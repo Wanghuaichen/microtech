@@ -1,3 +1,7 @@
+.history-box {
+    @include flexSetUp;
+}
+
 .about-cover {
     height: 100vh;
     width: 100vw;
@@ -48,13 +52,11 @@
 }
 
 .team-container {
+    @include flexSetUp;
     margin: 75px 0px;
-    display: flex;
 }
 
-.team-box {
-    margin-left: 100px;
-}
+
 
 .team-text {
     word-wrap: break-word;
@@ -134,10 +136,17 @@
     display: flex;
 }
 
+.responsibility-container {
+    @include flexSetUp;
+}
+
 .responsibility-box {
-    margin-left: 100px;
     word-wrap: break-word;
-    width: 500px;
+    width: 540px;
+}
+
+.res-text-left {
+    margin-right: 40px;
 }
 
 .responsibility-header {
@@ -151,7 +160,6 @@
     height: 400px;
     text-align: center;
     margin: 80px 0px 25px 0px;
-    margin-left: 35px;
     z-index: -1;
 }
 
@@ -159,19 +167,26 @@
     margin: 30px 0px;
 }
 
+.cowpen-box {
+    @include flexSetUp;
+}
+
 .cowpen-image {
     width: 1090px;
-    display: flex;
-    margin: auto;
     margin-top: -100px;
 }
 
+.map-container {
+    @include flexSetUp;
+}
+
 .map-box {
+    width: 1090px;
     margin-bottom: 50px;
 }
 
 .reach {
-    margin: 25px 0px 25px 100px;
+    margin: 25px 0px 25px 0px;
 }
 
 .map {

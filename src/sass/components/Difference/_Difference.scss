@@ -121,6 +121,7 @@
 .partnership-para {
     word-wrap: break-word;
     width: 960px;
+    color: $text-dark;
 }
 
 .nutrition-wide {
@@ -138,8 +139,13 @@
     color: $primary-blue;
 }
 
+.nutrition-subtitle {
+    color: $text-dark;
+}
+
 .nutrition-header {
     margin: 50px 25px;
+    color: $primary-blue;
 }
 
 .arrow-down {
@@ -172,11 +178,13 @@
 
 .passion-h2 {
     margin: 20px 0px;
+    color: $primary-blue;
 }
 
 .passion-h2-para {
     word-wrap: break-word;
     width: 600px;
+    color: $text-dark;
 }
 
 .third-cover {

@@ -48,10 +48,10 @@ export default class Blog extends Component {
             </div>
           </section>
 
+          <section className="blog-current">
           <div className="article-section-box">
             <h5 className="article-section-header">LATEST ARTICLE</h5>
           </div>
-          <section className="blog-current">
             <div className="blog-latest">
               <div className="blog-box">
                 <div className="blog-text">

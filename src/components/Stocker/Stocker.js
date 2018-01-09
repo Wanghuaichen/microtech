@@ -199,10 +199,12 @@ export default class Stocker extends Component {
           </section>
 
           <section className="stocker-section-white wider">
-            <img className="stocker-capture-left" src={RPT} alt="break even details" width="405px" />
+            <div className="stocker-capture-left-box">
+              <img className="stocker-capture-left" src={RPT} alt="break even details" width="405px" />
+            </div>
             <div className="stocker-info">
-              <h6 className="stocker-subheader">Reports</h6>
-              <p className="stocker-paragraph-two graytext">Stocker1™ has reports ranging from detail to summary reports. Billing can be submitted to customers using either the Billing Detail or Billing Summary reports depending on their needs. The Group Summary report can be used as a closeout report, but ran at any time to see valuable information on your groups. Yard sheet reports summarize where the cattle are located, as well as the basic information about them.</p>
+              <h6 className="stocker-subheader2">Reports</h6>
+              <p className="stocker-paragraph-two2 graytext">Stocker1™ has reports ranging from detail to summary reports. Billing can be submitted to customers using either the Billing Detail or Billing Summary reports depending on their needs. The Group Summary report can be used as a closeout report, but ran at any time to see valuable information on your groups. Yard sheet reports summarize where the cattle are located, as well as the basic information about them.</p>
               <img className="stocker-capture-left" src={OpSum} alt="break even details" width="690px" />
             </div>
           </section>

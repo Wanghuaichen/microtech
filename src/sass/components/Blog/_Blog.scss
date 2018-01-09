@@ -84,16 +84,14 @@ input::placeholder {
 .blog-featured-top {
     width: 940px;
     height: 424px;
-    
 }
 
 .article-section-box {
-    margin-top: -50px;
-    margin-bottom: -50px;
-    margin-left: -200px;
-    width: 940px;
     @include flexSetUp;
-
+    justify-content: flex-start;
+    width: 940px;
+    margin-bottom: 20px;
+    margin-top: -40px;
 }
 
 .article-section-header {

@@ -80,7 +80,7 @@
     top: 0;
     margin-top: 220px;
     position: absolute;
-    color: $primary-blue;
+    color: $circle-gray;
     text-align: center;
     word-wrap: break-word;
     width: 460px;
@@ -213,11 +213,13 @@
     margin-bottom: 20px;
     word-wrap: break-word;
     width: 800px;
+    color: $text-dark;
 }
 
 .liquid-text-two {
     word-wrap: break-word;
     width: 800px;
+    color: $text-dark;
 }
 
 .watch-video-container {
@@ -326,6 +328,12 @@
     background-color: $secondary-blue;
 }
 
+.procontrol-subheader {
+    text-transform: lowercase;
+    margin-top:-25px;
+    margin-bottom: 25px;
+}
+
 .color1 {
     background-color: $primary-blue;
 }
@@ -367,6 +375,7 @@
     width: 550px;
     text-align: center;
     margin: 20px 0px 60px 0px;
+    color: $primary-blue;
 }
 
 .enzyme-container {
@@ -439,6 +448,7 @@
 
 .options-info {
     margin-left: 20px;
+    margin-top: -40px;
 }
 
 .procontrol-header {
@@ -487,9 +497,9 @@
     @include weighBTN;
 }
 
-.weigh-btn:hover {
-    background-color: $primary-blue;
-}
+// .weigh-btn:hover {
+//     background-color: $primary-blue;
+// }
 
 .weigh-text {
     word-wrap: break-word;

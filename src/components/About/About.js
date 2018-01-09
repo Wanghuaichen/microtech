@@ -39,7 +39,9 @@ export default class About extends Component {
             </div>
           </section>
 
-         <History />
+          <div className="history-box">
+            <History />
+          </div>
 
           <section className="bluebanner-column about columnbanner">
             <div className="bluebanner-left ">
@@ -51,6 +53,7 @@ export default class About extends Component {
             </div>
           </section>
 
+          
           <section className="team-container">
             <div className="team-box">
               <h2>Leadership Team</h2>
@@ -156,11 +159,11 @@ export default class About extends Component {
             <div className="res-align">
               <div className="responsibility-box">
                 <h2 className="responsibility-header">Our Responsibility</h2>
-                <p>From the livestock management innovations of Micro Technologies to the distribution services of MWI Animal Health, as the AmerisourceBergen Family of animal health we are united in our responsibility to create healthier futures.</p>
+                <p className="res-text-left">From the livestock management innovations of Micro Technologies to the distribution services of MWI Animal Health, as the AmerisourceBergen Family of animal health we are united in our responsibility to create healthier futures.</p>
                 <br></br>
-                <p>As the world’s population grows we are challenged to produce more, higher-quality protein than ever before with the use of less natural resources. We believe a path to securing a safe, affordable and wholesome food supply will come primarily as a result of innovation.</p>
+                <p className="res-text-left">As the world’s population grows we are challenged to produce more, higher-quality protein than ever before with the use of less natural resources. We believe a path to securing a safe, affordable and wholesome food supply will come primarily as a result of innovation.</p>
                 <br></br>
-                <p>That is why at Micro we feel it is our responsibility to provide technologies in an effort to assure food quality, safety and security for our families, friends, neighbors and the world. </p>
+                <p className="res-text-left">That is why at Micro we feel it is our responsibility to provide technologies in an effort to assure food quality, safety and security for our families, friends, neighbors and the world. </p>
               </div>
 
               <div className="facts-box">
