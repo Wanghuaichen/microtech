@@ -21,7 +21,7 @@ export default class View0 extends Component {
                     Flexibility to customize diets to the nutritionist’s specifications</li>
                 <li className="moreinfo-list">
                     Access accurate reports to ensure accountability efficient inventory management</li>
-                <li className="moreinfo-list">
+                <li className="moreinfo-list2">
                     Minimize shrink through a closed micro feed ingredient delivery system</li>
 
                     <Carousel width={700} decorators={Carousel.getDefaultProps().decorators.slice(0, 2)} autoplay={true} wrapAround={true} speed={600} >

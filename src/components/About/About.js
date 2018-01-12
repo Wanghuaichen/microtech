@@ -3,7 +3,6 @@ import Header from '../Header/Header';
 import History from '../About/History';
 import Footer from '../Footer/Footer';
 
-import CowboyCover from '../../assets/Pics/Cowboy_Cover.png';
 import MWILogo from '../../assets/Logos/MWI_Animal_Health_White.png';
 import MTLogo from '../../assets/Logos/Micro_Technologies_White.png';
 import ABLogo from '../../assets/Logos/AmerisourceBergen_White.png';
@@ -21,9 +20,7 @@ export default class About extends Component {
         <Header />
 
         <main className="about-main">
-          <section className="about-cover-container">
-            <img className="about-cover" src={CowboyCover} alt="Cowboy with Rope" />
-          </section>
+         <div className="about-cover"></div>
 
           <section className="bluebanner-box about">
             <div className="bluebanner-left">
@@ -49,7 +46,7 @@ export default class About extends Component {
             </div>
             <div className="leadership-bottom">
               <p className="leadership-text left lead">
-                By combining deep experience in agriculture, science and technology, we aim to create superior value and contribute to the on going success of our customer every day.</p>
+                By combining deep experience in agriculture, science and technology, we aim to create superior value and contribute to the ongoing success of our customer every day.</p>
             </div>
           </section>
 

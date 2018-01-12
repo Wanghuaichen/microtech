@@ -12,6 +12,7 @@ import About from './components/About/About';
 import Blog from './components/Blog/Blog';
 import Careers from './components/Careers/Careers';
 import Policy from './components/Footer/PrivacyPolicy';
+import FourOhFour from './components/404/404';
 
 
 
@@ -31,5 +32,7 @@ export default (
     <Route path ='/careers' component={ Careers }/>
 
     <Route path ='/policy' component={Policy}/>
+    <Route path ='*' component={FourOhFour} />
+
   </Switch>
 );

@@ -11,6 +11,24 @@ import Quotes from '../../assets/Icons/quote.png';
 
 
 export default class Dairy extends Component {
+  constructor() {
+    super();
+    this.state = {
+      testimonies: []
+    }
+  }
+
+  // componentDidMount() {
+  //   let dataURL = "http://dev./wp-json/wp/v2/movies?_embed";
+  //   fetch(dataURL)
+  //     .then(res => res.json())
+  //     .then(res => {
+  //       this.setState({
+  //         movies: res
+  //       })
+  //     })
+  // }
+
   render() {
     return (
       <section className="dairy-container">
@@ -50,7 +68,9 @@ export default class Dairy extends Component {
               <h6 className="blue-left-text-two">FOR YOUR BUSINESS?</h6>
             </div>
             <div className="line-break-banner"></div>
+            <Link to ="/contact">
             <div className="blue-right-contact">CONTACT US</div>
+            </Link>
           </section>
 
           <section className="hear-customers-container">

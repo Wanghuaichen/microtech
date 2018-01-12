@@ -1,0 +1,18 @@
+.fourohfour-box {
+    display: flex;
+    justify-content: center;
+}
+
+.fourohfour-header {
+    @include flexSetUp;
+    position: absolute;
+    margin-top: 100px;
+    font-size: 76px;
+    color: $primary-blue;
+}
+
+.fourohfour-image {
+    @include flexSetUp;
+    height: 100vh;
+}
+

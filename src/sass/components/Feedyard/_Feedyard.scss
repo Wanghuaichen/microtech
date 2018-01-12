@@ -125,7 +125,7 @@
 
 .cowboy-testimony {
     width: 55vw;
-    height: 466px;
+    height: 465px;
 }
 
 .customer-lightblue {
@@ -134,7 +134,6 @@
     text-align: center;
     width: 45vw;
     height: 465px;
-    margin-left: -1px;
     @include flexSetUp;
     flex-direction: column;
 }

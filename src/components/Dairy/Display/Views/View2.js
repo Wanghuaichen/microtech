@@ -48,7 +48,7 @@ export default class View2 extends Component {
             <p className="click-left-para">Login to reorder or to set up an online account</p>
           </div>
           <a href="https://store.mwiah.com/sign-in?page=%2F">
-          <div className="click-me-btn"><h5>CLICK ME</h5></div></a>
+          <div className="click-me-btn"><h5>CLICK HERE</h5></div></a>
         </div>
       </div>
 

@@ -17,7 +17,7 @@ export default class Conact extends Component {
                     <section className="contact-container">
                         <div className="contact-form">
                             <h3 className="contact-spacing">Want to Learn More?</h3>
-                            <h6 className="contact-spacing">Contact us by filling out the form below or call us directly at (806)372-2369.</h6>
+                            <h6 className="contact-spacing">Contact us by filling out the form below or call us directly at 800.858.4330.</h6>
                             <div className="name-box">
                                 <div>
                                     <p>First Name *</p>

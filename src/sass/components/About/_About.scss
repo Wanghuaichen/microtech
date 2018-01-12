@@ -3,9 +3,13 @@
 }
 
 .about-cover {
-    height: 100vh;
+    @include flexSetUp;   
+    height: 80vh;
     width: 100vw;
-    margin-bottom: -5px;
+    background-image: url('../assets/Pics/Cowboy_Cover.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .bluebanner-box {
@@ -55,8 +59,6 @@
     @include flexSetUp;
     margin: 75px 0px;
 }
-
-
 
 .team-text {
     word-wrap: break-word;

@@ -90,7 +90,16 @@
 }
 
 .moreinfo-list {
-    margin: 15px 0px
+    margin: 15px 0px;
+    font-family: $body-font;
+    color: $primary-blue;
+}
+
+.moreinfo-list2 {
+    margin: 15px 0px;
+    margin-bottom: 40px;
+    font-family: $body-font;
+    color: $primary-blue;
 }
 
 .tv-batcher {
@@ -98,7 +107,7 @@
 }
 
 .tv-screen {
-    margin: 20px 0px 10px 20px;
+    margin: 20px 0px 30px 20px;
 }
 
 .tv-box {
@@ -165,6 +174,7 @@
 
 .iphone-text2 {
     margin-top: 20px;
+    color: $text-dark;
 }
 
 .monitor-header {

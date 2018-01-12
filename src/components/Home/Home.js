@@ -117,11 +117,11 @@ export default class Home extends Component {
 
           <div class="flip-container">
             <div className="mission-box flipper">
-              <div class="front">
+              <div className="front">
                 <img className="mission-gear" src={InnovationIcon} alt="Innovation Icon" width="100px" />
                 <h4>INNOVATION</h4>
               </div>
-              <div class="back">
+              <div className="back">
                 <h4 className="back-header">INNOVATION</h4>
                 <p className="back-numbers">20%</p>
                 <div className="back-line"></div>
@@ -132,11 +132,11 @@ export default class Home extends Component {
 
           <div class="flip-container">
             <div className="mission-box flipper">
-              <div class="front">
+              <div className="front">
                 <img className="mission-value" src={ValueIcon} alt="Value Creation Icon" width="100px" />
                 <h4>VALUE CREATION</h4>
               </div>
-              <div class="back">
+              <div className="back">
                 <h4 className="back-header">VALUE CREATION</h4>
                 <p className="back-numbers">20</p>
                 <div className="back-line"></div>
@@ -147,11 +147,11 @@ export default class Home extends Component {
 
           <div class="flip-container">
             <div className="mission-box flipper">
-              <div class="front">
+              <div className="front">
                 <img className="mission-service" src={ServiceIcon} alt="Service Icon" height="100px" />
                 <h4>SERVICE</h4>
               </div>
-              <div class="back">
+              <div className="back">
                 <h4 className="back-header">SERVICE</h4>
                 <p className="back-numbers">25</p>
                 <div className="back-line"></div>
@@ -168,7 +168,7 @@ export default class Home extends Component {
               <h3 className="fourth-header four">We are passionate about making a difference.</h3>
               <p className="fourth-para four">As the world's population grows, we are challenged to produce more higher-quality protein than ever before with the use of less natural resources. We believe the path to securing a safe, affordable and wholesome food supply will come primarily as a result of innovation. That is why we are committed to developing technologies to empower food producers, both as business owners and stewards.</p>
               <br></br>
-              <p>Learn more about Our Why and the passion that drives our everyday actions.</p>
+              <p className="fourth-para four">Learn more about Our Why and the passion that drives our everyday actions.</p>
               <Link to='/about'>
                 <div className="res-cta four">OUR RESPONSIBILITY</div>
               </Link>

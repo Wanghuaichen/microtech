@@ -66,7 +66,7 @@ export default class Stocker extends Component {
             <div className="transparent-stocker">
               <h5 className="stocker-cover-title-main">Stocker1™</h5>
               <h6>Management System for Stockers and Backgrounders.</h6>
-              <p className="stocker-para">Stocker1™ is an Internet based system allowing stocker and backgrounding operations to access it from any location with internet capabilities. One look and you will know it was designed in the field with close interaction between stocker and backgrounder operators.</p>
+              <p className="stocker-para">Stocker1™ is an internet based system allowing stocker and backgrounding operations to access it from any location with internet capabilities. One look and you will know it was designed in the field with close interaction between stocker and backgrounder operators.</p>
 
               <Dialog
                 modal={false}
@@ -100,12 +100,12 @@ export default class Stocker extends Component {
 
             {this.state.tab === 1 && <div className="stocker-text">
               <h6 className="stocker-nav-header2">FULL FEATURED</h6>
-              <p className="stocker-nav-para">Feeding, processing and treatment events are captured with Stocker1 as well. You can call feed (optional) and record the feed fed to any pen or pasture location where feeding takes place. Processing and treatment details are entered through the Health section of Stocker1. Protocols can be setup for each processing or treatment program to list details for the given event, applying the products and services, and capturing the costs and prices charged out for the items.</p>
+              <p className="stocker-nav-para">Feeding, processing and treatment events are captured with Stocker1 as well. You can call feed (optional) and record the feed fed to any pen or pasture location where feeding takes place. Processing and treatment details are entered through the Health section of Stocker1. Protocols can be set up for each processing or treatment program to list details for the given event, applying the products and services, and capturing the costs and prices charged out for the items.</p>
             </div>}
 
             {this.state.tab === 2 && <div className="stocker-text">
               <h6 className="stocker-nav-header3">INTUITIVE</h6>
-              <p className="stocker-nav-para">Other expenses, some of which are often overlooked, can be setup to record automatically for you through the allocation system. Yardage, pasture, mileage, and other expenses can be setup for each location or even by individual group. The system will automatically apply these costs any time cattle are in the location, saving time entering data each day. One-time expenses, such as dropping in a bale of hay, or delivering salt or mineral can also be recorded. The goal of the system is to capture all costs.</p>
+              <p className="stocker-nav-para">Other expenses, some of which are often overlooked, can be set up to record automatically for you through the allocation system. Yardage, pasture, mileage, and other expenses can be set up for each location or even by individual group. The system will automatically apply these costs any time cattle are in the location, saving time entering data each day. One-time expenses, such as dropping in a bale of hay, or delivering salt or mineral can also be recorded. The goal of the system is to capture all costs.</p>
 
               <p className="stocker-nav-para">For more information, Contact your local Micro Technologies Representative or
                 <Link to="/contact" className="stocker-email">
@@ -173,7 +173,7 @@ export default class Stocker extends Component {
             <img className="stocker-capture-left" src={Treatments} alt="break even details" width="690px" />
             <div className="stocker-info">
               <h6 className="stocker-subheader">Individual Treatments</h6>
-              <p className="stocker-paragraph-two individualtext graytext">Individual Treatments can be entered by selecting the animals tag number and color. Once selected it will pull up that calf’s Arrival Date, Buyer and Origin, previous treatment history, Estimated Current Weight and the Expected ADG. You then can select the method by which you treated, select protocol and enter any treatment notes such as temp or visual appearance.</p>
+              <p className="stocker-paragraph-two individualtext graytext">Individual Treatments can be entered by selecting the animal's tag number and color. Once selected it will pull up that calf’s Arrival Date, Buyer and Origin, previous treatment history, Estimated Current Weight and the Expected ADG. You then can select the method by which you treated, select protocol and enter any treatment notes such as temp or visual appearance.</p>
             </div>
           </section>
 
@@ -181,7 +181,7 @@ export default class Stocker extends Component {
             <div className="stocker-info">
               <h3 className="stocker-header">Allocations and Other Expenses</h3>
               <h6 className="stocker-subheader">Allocations</h6>
-              <p className="stocker-paragraph">In order to track all expenses that could be applied to a set of cattle, the system allows for the allocation of expenses to a Location or to a Group. These can be setup with a type of Per Day, Per Head Day, and Per Pound of Gain. The allocations can be used for those items that occur on a daily basis such as yardage or pasture rent. Having the system automatically apply these costs for you saves time and ensures that all expenses are accounted for.</p>
+              <p className="stocker-paragraph">In order to track all expenses that could be applied to a set of cattle, the system allows for the allocation of expenses to a Location or to a Group. These can be set up with a type of Per Day, Per Head Day, and Per Pound of Gain. The allocations can be used for those items that occur on a daily basis such as yardage or pasture rent. Having the system automatically apply these costs for you saves time and ensures that all expenses are accounted for.</p>
             </div>
             <img className="stocker-capture" src={Allocations} alt="system features screen capture" width="690px" />
           </section>

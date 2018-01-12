@@ -13,13 +13,14 @@ export default class History extends Component {
           this.setState({ circle: id });
       }
  
+      
     render() {
         return (
             <section className="history-circles">
                 <div className="history-circles-contaier">
                     <div className="circles-first">
                         <div onClick={() => this.handleCircle(1)} className={this.state.circle === 1 ? "active-history-btn5 c1" : "c1 circle-5" } >1971</div>
-                        <div onClick={() => this.handleCircle2(2)} className={this.state.circle === 2 ? "active-history-btn4 c2" : "c2 circle-4" } >1985</div>
+                        <div onClick={() => this.handleCircle(2)} className={this.state.circle === 2 ? "active-history-btn4 c2" : "c2 circle-4" } >1985</div>
                         <div onClick={() => this.handleCircle(3)} className={this.state.circle === 3 ? "active-history-btn4 c3" : "c3 circle-4" } >1991</div>
                         <div onClick={() => this.handleCircle(4)} className={this.state.circle === 4 ? "active-history-btn3 c4" : "c4 circle-3" } >1996</div>
                         <div onClick={() => this.handleCircle(5)} className={this.state.circle === 5 ? "active-history-btn4 c5" : "c5 circle-4" } >2001</div>
@@ -99,18 +100,18 @@ export default class History extends Component {
                 {this.state.circle === 26 &&
                 <main className="display-circle-text">
                     <h3 className="history-circles-header">1983 - First “15” Series Micro Weigh System</h3>
-                    <p className="history-circles-para">Mill efficiency was transformed when Micro created computer technology to operate a micro machine that would for the first time use weight, rather than volume and relay logic, to measure micronutrients. Customers received on-the-spot automated reporting and subsequently experi-enced increased ration accuracy and improved efficiency.</p>
+                    <p className="history-circles-para">Mill efficiency was transformed when Micro created computer technology to operate a micro machine that would for the first time use weight, rather than volume and relay logic, to measure micronutrients. Customers received on-the-spot automated reporting and subsequently experienced increased ration accuracy and improved efficiency.</p>
                 </main>}
 
                 {this.state.circle === 13 &&
                 <main className="display-circle-text">
                     <h3 className="history-circles-header">1983 - Nutriflex </h3>
-                    <p className="history-circles-para">Nutriflex was developed to utilize a customer’s own water and molasses supply to formulate liq-uid supplement on-site. The capability to blend salt, calcium, and phosphoric acid in customiza-ble sizes generated considerable savings, allowing customers the flexibility to implement imme-diate changes to their supplements rather than being forced to consume older inventory.</p>
+                    <p className="history-circles-para">Nutriflex was developed to utilize a customer’s own water and molasses supply to formulate liquid supplement on-site. The capability to blend salt, calcium, and phosphoric acid in customizable sizes generated considerable savings, allowing customers the flexibility to implement immediate changes to their supplements rather than being forced to consume older inventory.</p>
                 </main>}
 
                 {this.state.circle === 14 &&
                 <main className="display-circle-text">
-                    <h3 className="history-circles-header">1984- Pro-Control Batching System</h3>
+                    <h3 className="history-circles-header">1984 - Pro-Control Batching System</h3>
                     <p className="history-circles-para">The implementation of Micro Weigh Systems elicited numerous customer requests for Micro to computerize the feedlot’s entire feed manufacturing process, which led to the creation of the Pro-Control Batching System.</p>
                 </main>}
 
@@ -123,7 +124,7 @@ export default class History extends Component {
                 {this.state.circle === 27 &&
                 <main className="display-circle-text">
                     <h3 className="history-circles-header">1986 - Drug-Trac Chuteside Animal Health System</h3>
-                    <p className="history-circles-para">As drug inventory control was introduced to the feedlot industry, Micro envisioned and created Drug-Trac; a comprehensive chute-side and office system that tracked individual and group an-imal health treatments and protocols. Drug-Trac also ensured that all animals were compliant with respective drug withdrawal periods when harvested.</p>
+                    <p className="history-circles-para">As drug inventory control was introduced to the feedlot industry, Micro envisioned and created Drug-Trac; a comprehensive chute-side and office system that tracked individual and group animal health treatments and protocols. Drug-Trac also ensured that all animals were compliant with respective drug withdrawal periods when harvested.</p>
                 </main>}
 
                 {this.state.circle === 15 &&
@@ -135,31 +136,31 @@ export default class History extends Component {
                 {this.state.circle === 3 &&
                 <main className="display-circle-text">
                     <h3 className="history-circles-header">1991 - Read-N-Feed Bunk reader (DOS Based) / Feedtruck V. 1 System </h3>
-                    <p className="history-circles-para">Through evaluating existing customers’ needs, Micro identified the opportunity for bunk reading technology, and in 1991 purchased a software company primarily serving beef feedyards - Agri Systems, Inc., and acquired its feedyard bunk-reading system. The owner, Joe Shell, was wel-comed to the company and Micro immediately began offering the Read-N-Feed Bunk Reader systems to existing customers.  Within 4 years, Micro had acquired approximately 65 feedyard bunk-reading customers.</p>
+                    <p className="history-circles-para">Through evaluating existing customers’ needs, Micro identified the opportunity for bunk reading technology, and in 1991 purchased a software company primarily serving beef feedyards - Agri Systems, Inc., and acquired its feedyard bunk-reading system. The owner, Joe Shell, was welcomed to the company and Micro immediately began offering the Read-N-Feed Bunk Reader systems to existing customers.  Within 4 years, Micro had acquired approximately 65 feedyard bunk-reading customers.</p>
                 </main>}
 
                 {this.state.circle === 28 &&
                 <main className="display-circle-text">
                     <h3 className="history-circles-header">1992 – Feedlot Business System (FBS) </h3>
-                    <p className="history-circles-para">Feedlot Business System was introduced to the industry as a fully integrated Feedlot Account-ing System to provide immediate access of comprehensive financial transactions to feedlot management staff.  As an innovative product based on a relational database, it also provided a greatly expanded capability to develop business intelligence from collected data.</p>
+                    <p className="history-circles-para">Feedlot Business System was introduced to the industry as a fully integrated Feedlot Accounting System to provide immediate access of comprehensive financial transactions to feedlot management staff.  As an innovative product based on a relational database, it also provided a greatly expanded capability to develop business intelligence from collected data.</p>
                 </main>}
 
                 {this.state.circle === 16 &&
                 <main className="display-circle-text">
                     <h3 className="history-circles-header">1994 – Academic Advisory Steering Committee for ECM Development</h3>
-                    <p className="history-circles-para">An oversight group of more than 12 industry experts with backgrounds in Ruminant Nutrition, Genetics / Animal Selection, Meat Science, Ultrasound, and Veterinary Medicine were brought to Amarillo to dis-cuss the value of Individual Electronic Cattle Management.</p>
+                    <p className="history-circles-para">An oversight group of more than 12 industry experts with backgrounds in Ruminant Nutrition, Genetics / Animal Selection, Meat Science, Ultrasound, and Veterinary Medicine were brought to Amarillo to discuss the value of Individual Electronic Cattle Management.</p>
                 </main>}
 
                 {this.state.circle === 4 &&
                 <main className="display-circle-text">
                     <h3 className="history-circles-header">1996 – Electronic Cattle Management (ECM) </h3>
-                    <p className="history-circles-para">The introduction of ECM to the feedayrd industry allowed the user to measure and sort animals into complimentary groups for optimum end point marketing. The system was complementary to the Drug-Trac Animal Health System and Feedlot Business System packages, and with the use of electronic identification allowed the feedyard to effectively track an animal throughout its life at the feedyard. </p>
+                    <p className="history-circles-para">The introduction of ECM to the feedyard industry allowed the user to measure and sort animals into complimentary groups for optimum endpoint marketing. The system was complementary to the Drug-Trac Animal Health System and Feedlot Business System packages, and with the use of electronic identification allowed the feedyard to effectively track an animal throughout its life at the feedyard. </p>
                 </main>}
 
                 {this.state.circle === 29 &&
                 <main className="display-circle-text">
                     <h3 className="history-circles-header">1998 - Windows Based Read-N-Feed Bunk Reader  </h3>
-                    <p className="history-circles-para">In the mid 1990’s, Micro Technologies saw the need to upgrade the ‘original Bunk Reading Sys-tem’ to the new and improved ‘Read-N-Feed Bunk Reading System’ to provide a more user-friendly, Windows look and feel. Customers at that time were able to seamlessly convert to the new Read-N-Feed system, without losing essential existing features, as well as gain access to multiple new features.</p>
+                    <p className="history-circles-para">In the mid 1990’s, Micro Technologies saw the need to upgrade the ‘original Bunk Reading System’ to the new and improved ‘Read-N-Feed Bunk Reading System’ to provide a more user-friendly, Windows look and feel. Customers at that time were able to seamlessly convert to the new Read-N-Feed system, without losing essential existing features, as well as gain access to multiple new features.</p>
                 </main>}
 
                 {this.state.circle === 17 &&
@@ -171,7 +172,7 @@ export default class History extends Component {
                 {this.state.circle === 5 &&
                 <main className="display-circle-text">
                     <h3 className="history-circles-header">2001 - Micro Weigh System PC </h3>
-                    <p className="history-circles-para">22 years after the introduction of the “16” MWS, Micro introduced the PC version of the ex-tremely successful 16 machine. The upgrade allowed the system to be fully integrated into the Pro Control Plus Batching System as well as allowing for online access, enhanced reporting, data exports and many more features.  </p>
+                    <p className="history-circles-para">22 years after the introduction of the “16” MWS, Micro introduced the PC version of the extremely successful 16 machine. The upgrade allowed the system to be fully integrated into the Pro Control Plus Batching System as well as allowing for online access, enhanced reporting, data exports and many more features.  </p>
                 </main>}
 
                 {this.state.circle === 18 &&
@@ -183,19 +184,19 @@ export default class History extends Component {
                 {this.state.circle === 30 &&
                 <main className="display-circle-text">
                     <h3 className="history-circles-header">2003 - Beef Information Exchange: National Animal Identification System (NAIS)  </h3>
-                    <p className="history-circles-para">Impending changes in economic and regulatory requirements faced all segments of the U.S. beef industry, and new technologies to address these changes were necessary.  As data ser-vice providers to the beef industry, Micro, along with a coalition of leading agricultural data ser-vice companies, announced plans to create the beef industry’s first data exchange standards among the nation’s beef industry producers.  </p>
+                    <p className="history-circles-para">Impending changes in economic and regulatory requirements faced all segments of the U.S. beef industry, and new technologies to address these changes were necessary.  As data service providers to the beef industry, Micro, along with a coalition of leading agricultural data service companies, announced plans to create the beef industry’s first data exchange standards among the nation’s beef industry producers.  </p>
                 </main>}
 
                 {this.state.circle === 31 &&
                 <main className="display-circle-text">
                     <h3 className="history-circles-header">2005 – Started Dairy Division with Micro Dairy Logic </h3>
-                    <p className="history-circles-para">As dairies moved into the Texas panhandle region, with them came a growing need for innova-tive technologies in the dairy industry.  Relying on its already successful portfolio of existing technological offerings, Micro identified solutions for needs of dairy producers.  The first of these was Micro Daily Logic, which initiated the Dairy Division of Micro.</p>
+                    <p className="history-circles-para">As dairies moved into the Texas panhandle region, with them came a growing need for innovative technologies in the dairy industry.  Relying on its already successful portfolio of existing technological offerings, Micro identified solutions for needs of dairy producers.  The first of these was Micro Daily Logic, which initiated the Dairy Division of Micro.</p>
                 </main>}
 
                 {this.state.circle === 19 &&
                 <main className="display-circle-text">
                     <h3 className="history-circles-header">2005 - Pro-Control Statistical Process Control  </h3>
-                    <p className="history-circles-para">To further improve accuracy of the Pro Control Plus Batching System, Micro developed built-in SPC (Statistical Process Control) which allows for quick, powerful analysis of batching vari-ances, as well as generating automatic SPC exception notifications to specified employees, managers and consultants. </p>
+                    <p className="history-circles-para">To further improve accuracy of the Pro Control Plus Batching System, Micro developed built-in SPC (Statistical Process Control) which allows for quick, powerful analysis of batching variances, as well as generating automatic SPC exception notifications to specified employees, managers and consultants. </p>
                 </main>}
 
                 {this.state.circle === 7 &&
@@ -207,7 +208,7 @@ export default class History extends Component {
                 {this.state.circle === 20 &&
                 <main className="display-circle-text">
                     <h3 className="history-circles-header">2007 - Feed Truck System 2.0  </h3>
-                    <p className="history-circles-para">Knowing how essential the Feed Truck System was to its customers, Micro invested further into the technology by rewriting the entire program to have a simpler user interface and full integra-tion within the Read N Feed Bunk Reader.</p>
+                    <p className="history-circles-para">Knowing how essential the Feed Truck System was to its customers, Micro invested further into the technology by rewriting the entire program to have a simpler user interface and full integration within the Read-N-Feed Bunk Reader.</p>
                 </main>}
 
                 {this.state.circle === 32 &&
@@ -226,20 +227,20 @@ export default class History extends Component {
 
                 {this.state.circle === 21 &&
                 <main className="display-circle-text">
-                    <h3 className="history-circles-header">2008- Developed Micro PVP Verification Program </h3>
-                    <p className="history-circles-para">Micro’s PVP (Process Verified Program) was approved by USDA for Age and Source Verifica-tion, followed by the verification program for NHTC (Non Hormone Treated Cattle).  The USDA Process Verified Program is a verification service that offered applicants a unique way to market their products to customers using clearly defined, implemented, and transparent process points.  </p>
+                    <h3 className="history-circles-header">2008 - Developed Micro PVP Verification Program </h3>
+                    <p className="history-circles-para">Micro’s PVP (Process Verified Program) was approved by USDA for Age and Source Verification, followed by the verification program for NHTC (Non Hormone Treated Cattle).  The USDA Process Verified Program is a verification service that offered applicants a unique way to market their products to customers using clearly defined, implemented, and transparent process points.  </p>
                 </main>}
 
                 {this.state.circle === 33 &&
                 <main className="display-circle-text">
                     <h3 className="history-circles-header">2008 - Pro-Control Routing & Receiving </h3>
-                    <p className="history-circles-para">Micro improved upon the Pro-Control Plus Batching System to encompass monitoring and con-trolling other feed mill functions beyond the batching process, including receiving and routing of commodities and management of bin storage and automatic refilling. </p>
+                    <p className="history-circles-para">Micro improved upon the Pro-Control Plus Batching System to encompass monitoring and controlling other feed mill functions beyond the batching process, including receiving and routing of commodities and management of bin storage and automatic refilling. </p>
                 </main>}
 
                 {this.state.circle === 22 &&
                 <main className="display-circle-text">
                     <h3 className="history-circles-header">2009 - First Accu-Trac System </h3>
-                    <p className="history-circles-para">After many years with standalone systems, Micro embarked on a plan to create a fully integrat-ed feedyard management system. The first module to be released under the ACCU TRAC suite was the Drug Trac Animal Health System. The new system provided users many enhanced fea-tures including online access, automated exception management, enhanced reporting plus a strong growth path for future features and benefits. </p>
+                    <p className="history-circles-para">After many years with standalone systems, Micro embarked on a plan to create a fully integrated feedyard management system. The first module to be released under the ACCU TRAC suite was the Drug Trac Animal Health System. The new system provided users many enhanced features including online access, automated exception management, enhanced reporting plus a strong growth path for future features and benefits. </p>
                 </main>}
 
                 {this.state.circle === 34 &&
@@ -257,13 +258,13 @@ export default class History extends Component {
                 {this.state.circle === 9 &&
                 <main className="display-circle-text">
                     <h3 className="history-circles-header">2010 - Read-N-Feed Dairy  </h3>
-                    <p className="history-circles-para">Micro recognized that its Read-N-Feed technology was applicable to dairies and began to intro-duce and install this technology, to the benefit of multiple dairy customers.</p>
+                    <p className="history-circles-para">Micro recognized that its Read-N-Feed technology was applicable to dairies and began to introduce and install this technology, to the benefit of multiple dairy customers.</p>
                 </main>}
 
                 {this.state.circle === 23 &&
                 <main className="display-circle-text">
                     <h3 className="history-circles-header">2010 - Pro-Control Parlor </h3>
-                    <p className="history-circles-para">With the ever-growing cost of business and tougher regulations being enforced on dairies, it was evident that a solution was needed to help dairy farmers lower their overhead cost and standardize the Cleaning in Place (CIP) process. This resulted in the development of a fully au-tomated wash system called Pro-Control Parlor. </p>
+                    <p className="history-circles-para">With the ever-growing cost of business and tougher regulations being enforced on dairies, it was evident that a solution was needed to help dairy farmers lower their overhead cost and standardize the Cleaning in Place (CIP) process. This resulted in the development of a fully automated wash system called Pro-Control Parlor. </p>
                 </main>}
 
                 {this.state.circle === 10 &&
@@ -281,19 +282,19 @@ export default class History extends Component {
                 {this.state.circle === 11 &&
                 <main className="display-circle-text">
                     <h3 className="history-circles-header">2011 - Micro Beef Technologies acquired by MWI Veterinary Supply   </h3>
-                    <p className="history-circles-para">The synergies of the two animal health companies presented exciting potential for food animal pro-duction by combining the technology-based programs and services from Micro with the well-established animal health distribution and logistics business of MWI Animal Health.</p>
+                    <p className="history-circles-para">The synergies of the two animal health companies presented exciting potential for food animal production by combining the technology-based programs and services from Micro with the well-established animal health distribution and logistics business of MWI Animal Health.</p>
                 </main>}
 
                 {this.state.circle === 36 &&
                 <main className="display-circle-text">
                     <h3 className="history-circles-header">2011 - First “17” series Micro Weigh System </h3>
-                    <p className="history-circles-para">As product mixes changed within the Micro customer base, there was a need for a new Micro Weigh System which would increase the ability for the user to use an enhanced array of prod-ucts while making sure the flexibility and accuracy was not compromised. The 17 MWS was de-signed to accomplish this task.</p>
+                    <p className="history-circles-para">As product mixes changed within the Micro customer base, there was a need for a new Micro Weigh System which would increase the ability for the user to use an enhanced array of products while making sure the flexibility and accuracy was not compromised. The 17 MWS was designed to accomplish this task.</p>
                 </main>}
 
                 {this.state.circle === 24 &&
                 <main className="display-circle-text">
                     <h3 className="history-circles-header">2012 – First Cubex System installed </h3>
-                    <p className="history-circles-para">Micro identified the need to provide a solution for automating the manual processes of product inventory for their customers and knew the cost savings would impact their custom-ers’ bottom line. Through the installation of the Cubex system, customers experienced an improvement in supply and pharmaceutical organization, inventory accuracy, security, op-erational efficiency and elimination of inventory stock-outs and/or overages. </p>
+                    <p className="history-circles-para">Micro identified the need to provide a solution for automating the manual processes of product inventory for their customers and knew the cost savings would impact their customers’ bottom line. Through the installation of the Cubex system, customers experienced an improvement in supply and pharmaceutical organization, inventory accuracy, security, operational efficiency and elimination of inventory stock-outs and/or overages. </p>
                 </main>}
 
                 {this.state.circle === 25 &&
@@ -305,13 +306,13 @@ export default class History extends Component {
                 {this.state.circle === 37 &&
                 <main className="display-circle-text">
                     <h3 className="history-circles-header">2013 – Relocation of Office and Warehouses to Amarillo Business Park  </h3>
-                    <p className="history-circles-para">In November of 2014, Micro moved its corporate office and various warehouse locations to the AEDC business park in Amarillo, TX to combine its business operations into one convenient lo-cation.  </p>
+                    <p className="history-circles-para">In November of 2014, Micro moved its corporate office and various warehouse locations to the AEDC business park in Amarillo, TX to combine its business operations into one convenient location.  </p>
                 </main>}
 
                 {this.state.circle === 38 &&
                 <main className="display-circle-text">
                     <h3 className="history-circles-header">2013 - Acquired distribution rights to the Whisper Veterinary Stethoscope   </h3>
-                    <p className="history-circles-para">Micro partnered with Geissler Corporation to market, install and service the Whisper Digital Stethoscope. Whisper is the first objective tool developed to score severity of Bovine Respirato-ry Disease (BRD) in cattle. In 2016, Merck Animal Health purchased Whisper from Geissler Corporation and Micro continues to market, install and service Whisper in feed yards and large backgrounding operations in cooperation with Merck Animal Health. </p>
+                    <p className="history-circles-para">Micro partnered with Geissler Corporation to market, install and service the Whisper Digital Stethoscope. Whisper is the first objective tool developed to score severity of Bovine Respiratory Disease (BRD) in cattle. In 2016, Merck Animal Health purchased Whisper from Geissler Corporation and Micro continues to market, install and service Whisper in feed yards and large backgrounding operations in cooperation with Merck Animal Health. </p>
                 </main>}
 
                 {this.state.circle === 40 &&
@@ -327,13 +328,13 @@ export default class History extends Component {
                     <h3 className="history-circles-header">2015 - MWI Animal Health and Micro Technologies acquired by</h3>
                     <h3 className="history-circles-header">
                     AmerisourceBergen </h3>
-                    <p className="history-circles-para">Capitalizing on AmerisourceBergen’s knowledge of manufacturer and provider services, in addi-tion to its global reach and partnership philosophy, MWI joined forces with its expertise in veter-inary and agricultural markets to collaboratively launch the next generation of superior animal health products and services. With some of the most advanced technology and operations for distribution in the world, the acquisition has allowed Micro to deliver even greater quality and more effective service to its customers. </p>
+                    <p className="history-circles-para">Capitalizing on AmerisourceBergen’s knowledge of manufacturer and provider services, in addition to its global reach and partnership philosophy, MWI joined forces with its expertise in veterinary and agricultural markets to collaboratively launch the next generation of superior animal health products and services. With some of the most advanced technology and operations for distribution in the world, the acquisition has allowed Micro to deliver even greater quality and more effective service to its customers. </p>
                 </main>}
 
                 {this.state.circle === 41 &&
                 <main className="display-circle-text">
                     <h3 className="history-circles-header">2015 - Micro Technologies acquires Comco Liquimatics </h3>
-                    <p className="history-circles-para">In 2015, Micro acquired the assets of Comco Liquimatics, a leading supplier of Post Pellet Liq-uid Application technology for the pork and poultry industry. The acquired systems became part of the Micro offerings, strategically expanding the suite of industry-leading animal health and nutrition management systems.  </p>
+                    <p className="history-circles-para">In 2015, Micro acquired the assets of Comco Liquimatics, a leading supplier of Post Pellet Liquid Application technology for the pork and poultry industry. The acquired systems became part of the Micro offerings, strategically expanding the suite of industry-leading animal health and nutrition management systems.  </p>
                 </main>}
 
                 {this.state.circle === 42 &&
@@ -345,13 +346,13 @@ export default class History extends Component {
                 {this.state.circle === 43 &&
                 <main className="display-circle-text">
                     <h3 className="history-circles-header">2015 - First integrated Read-N-Feed / Accu-Trac system  </h3>
-                    <p className="history-circles-para">The Read-N-Feed system was introduced to the suite of Accu-Trac products to allow for a more integrated and robust system.  Accu-Trac allowed for Read-N-Feed and Drug-Trac to share sin-gle cattle inventory, as well as giving the system a new and polished look.  </p>
+                    <p className="history-circles-para">The Read-N-Feed system was introduced to the suite of Accu-Trac products to allow for a more integrated and robust system.  Accu-Trac allowed for Read-N-Feed and Drug-Trac to share single cattle inventory, as well as giving the system a new and polished look.  </p>
                 </main>}
 
                 {this.state.circle === 44 &&
                 <main className="display-circle-text">
-                    <h3 className="history-circles-header">2016 - Pro Control Mixer   </h3>
-                    <p className="history-circles-para">The Pro-Control Mixer is a weight-based blending system that was created to equip dairy farm-ers with the flexibility of adjusting udder hygiene mixtures. This technology system has provided the dairy farmer with endless product-mixing capabilities from multiple concentrates, reducing freight costs and product waste as a result of improved product-usage accuracy.  </p>
+                    <h3 className="history-circles-header">2016 - Pro-Control Mixer   </h3>
+                    <p className="history-circles-para">The Pro-Control Mixer is a weight-based blending system that was created to equip dairy farmers with the flexibility of adjusting udder hygiene mixtures. This technology system has provided the dairy farmer with endless product-mixing capabilities from multiple concentrates, reducing freight costs and product waste as a result of improved product-usage accuracy.  </p>
                 </main>}
 
                 {this.state.circle === 45 &&

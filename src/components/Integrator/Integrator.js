@@ -82,7 +82,7 @@ export default class Integrator extends Component {
           <section className="team-container">
             <div className="team-box">
               <div className="president">
-                <h5 className="pres-name">Experienced Partnership</h5>
+                <h3 className="pres-name">Experienced Partnership</h3>
               </div>
               <p className="experience-text">Experience and versatility are paramount in finding the right partner to assist you with your feed additive application project.</p>
               <p className="experience-text-two">With over 20 years of experience with feed additive application, we have installations in over 300 feed mills in more than 20 countries around the world. We have been recognized as the feed industry’s leader in accurately measuring and applying liquid and dry products. We are proud to have partnered with many leading ingredient suppliers in all segments of the industry.</p>
@@ -171,7 +171,7 @@ export default class Integrator extends Component {
 
               <p className="app-solutions-text-subheader">Project Management</p>
 
-              <p className="app-solutions-text">Our  results-focused project management style delivers on time and budget while keeping your fully informed on progress.</p>
+              <p className="app-solutions-text">Our  results-focused project management style delivers on time and budget while keeping you fully informed on progress.</p>
 
               <p className="app-solutions-text-subheader">Service and Support</p>
 
@@ -184,7 +184,7 @@ export default class Integrator extends Component {
             <img className="wheel" src={Wheel} alt="Integrator Wheel" width="500px" />
           </section>
 
-          <section className="liquid-container">
+          {/* <section className="liquid-container">
             <div className="liquid-box">
               <div className="liquid-left">
                 <h3 className="liquid-name">Liquid Applications</h3>
@@ -196,7 +196,7 @@ export default class Integrator extends Component {
                 <p className="liquid-text-two">We offer customized solutions to apply liquids at the mixer or other application points, and have testing facilities for assisting manufacturers with application requirements on new to market product testing.</p>
               </div>
             </div>
-          </section>
+          </section> */}
 
           <section className="watch-video-container">
             <div className="pelleting-box">
@@ -260,7 +260,7 @@ export default class Integrator extends Component {
           <section className="weigh-flex-container">
             <div className="weigh-flex-info color5">
               <h3 className="weigh-flex-header">WeighFlex</h3>
-              <p className="weigh-flex-text">The WeighFlex DF is a In-Line dry material feeding and measurement device. The innovative design measures the force, due to material flow, against a curved deflection chute. The WeighFlex DF can be used for many types of products including animal feed, oilseeds, pulses, & cereal grains.</p>
+              <p className="weigh-flex-text">The WeighFlex DF is an In-Line dry material feeding and measurement device. The innovative design measures the force, due to material flow, against a curved deflection chute. The WeighFlex DF can be used for many types of products including animal feed, oilseeds, pulses, & cereal grains.</p>
               <div className="weigh-flex-video-box">WATCH VIDEO</div>
             </div>
             <div className="weigh-flex-machine-box">
@@ -358,8 +358,8 @@ export default class Integrator extends Component {
 
           <section className="watch-video-container-footer">
             <div className="customized-box">
-              <h3 className="customized-header">INTERESTED IN A
-                CUSTOMIZED SOLUTION?</h3>
+              <h3 className="customized-header">INTERESTED IN A</h3>
+              <h3 className="customized-header">CUSTOMIZED SOLUTION?</h3>
             </div>
             <div className="customized-line"></div>
             <Link to="/contact">

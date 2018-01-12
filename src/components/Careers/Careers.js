@@ -16,7 +16,7 @@ export default class Careers extends Component {
 
           <section className="careers-top">
             <div className="transparent-half">
-              <h4>Professions with Purpose</h4>
+              <h3>Professions with Purpose</h3>
               <br></br>
               <br></br>
               <p className="careers-subheader">At Micro Technologies we offer lifelong career opportunities that impact lives. We foster relationships with our customers through a deep understanding that healthier animals contribute to a healthier society.</p>

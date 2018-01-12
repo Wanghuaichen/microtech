@@ -187,14 +187,17 @@ h4 {
   line-height: 1.3; }
 
 h5 {
-  font-family: "acumin-pro-condensed", sans-serif;
-  font-weight: light;
-  font-size: 26px; }
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  letter-spacing: 1.6px; }
 
 h6 {
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
   font-size: 20px;
-  text-transform: uppercase; }
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.6px; }
 
 p {
   font-family: "Open Sans", sans-serif;
@@ -239,12 +242,14 @@ textarea {
   position: absolute;
   word-wrap: break-word;
   width: 800px;
-  text-shadow: 2px 2px 6px gray; }
+  text-shadow: 2px 2px 6px gray;
+  text-align: center; }
 
 .main-cta {
   color: #FFFFFF;
   background-color: #00539B;
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-weight: 300;
   opacity: 0.8;
   border-radius: 7px;
   width: 300px;
@@ -364,7 +369,8 @@ textarea {
 .res-cta {
   color: #FFFFFF;
   background-color: #00539B;
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-weight: 300;
   opacity: 0.8;
   border-radius: 7px;
   width: 300px;
@@ -530,7 +536,8 @@ textarea {
 .submit-btn {
   color: #FFFFFF;
   background-color: #00539B;
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-weight: 300;
   opacity: 0.8;
   border-radius: 7px;
   width: 300px;
@@ -571,10 +578,13 @@ textarea {
   height: 8vh;
   display: flex;
   justify-content: flex-end;
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
   font-size: 20px;
+  font-weight: 400;
   text-transform: uppercase;
-  margin-right: -27px; }
+  letter-spacing: 1.6px;
+  margin-right: -27px;
+  letter-spacing: 2px; }
 
 .nav-hover:hover {
   line-height: 1.5;
@@ -593,7 +603,9 @@ li {
   width: 110px;
   color: #1A2E5A;
   border-radius: 6px;
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -610,7 +622,9 @@ li {
   justify-content: flex-end;
   color: #1A2E5A;
   font-size: 16px;
-  font-family: "acumin-pro-condensed", sans-serif; }
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px; }
 
 .nav-links a {
   color: #FFFFFF; }
@@ -656,14 +670,14 @@ li {
   background-color: #1A2E5A;
   color: #FFFFFF;
   border-radius: 6px;
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
   height: 37px;
   width: 148px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 20px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   font-size: 26px;
   padding-bottom: 2px; }
 
@@ -727,9 +741,15 @@ li {
   align-items: center; }
 
 .about-cover {
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
   width: 100vw;
-  margin-bottom: -5px; }
+  background-image: url("../assets/Pics/Cowboy_Cover.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
 
 .bluebanner-box {
   background-color: #1A2E5A;
@@ -958,12 +978,14 @@ li {
   color: #00539B;
   background-color: #EAEAEA;
   border-radius: 5px;
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-weight: 300;
   font-size: 26px;
   text-transform: uppercase;
   height: 53px;
   padding: 0px 25px 2px 25px;
   cursor: pointer;
+  letter-spacing: 2px;
   margin-right: 15px; }
 
 .filter-btn:hover {
@@ -978,9 +1000,10 @@ input[type=text] {
   padding: 12px 20px;
   box-sizing: border-box;
   border: none;
-  font-family: "acumin-pro-condensed", sans-serif;
-  font-weight: light;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-weight: 400;
   font-size: 26px;
+  letter-spacing: 1.6px;
   margin: 8px 25px; }
 
 input::placeholder {
@@ -1158,7 +1181,8 @@ input::placeholder {
 .btn-cta {
   color: #FFFFFF;
   background-color: #1A2E5A;
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-weight: 300;
   border-radius: 7px;
   width: 325px;
   height: 60px;
@@ -1174,7 +1198,8 @@ input::placeholder {
 .btn-cta:hover {
   color: #FFFFFF;
   background-color: #1A2E5A;
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-weight: 300;
   border-radius: 7px;
   width: 325px;
   height: 60px;
@@ -1564,6 +1589,9 @@ input::placeholder {
   word-wrap: break-word;
   width: 800px; }
 
+.pres-name {
+  color: #1A2E5A; }
+
 .text-animated {
   margin-top: 130px;
   position: absolute;
@@ -1779,7 +1807,8 @@ input::placeholder {
   height: 61px;
   color: #00539B;
   background-color: #FFFFFF;
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-weight: 400;
   font-size: 26px;
   letter-spacing: 1.8px;
   display: flex;
@@ -1798,7 +1827,8 @@ input::placeholder {
   height: 61px;
   color: #00539B;
   background-color: #FFFFFF;
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-weight: 400;
   font-size: 26px;
   letter-spacing: 1.8px;
   display: flex;
@@ -1818,7 +1848,8 @@ input::placeholder {
   height: 61px;
   color: #00539B;
   background-color: #FFFFFF;
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-weight: 400;
   font-size: 26px;
   letter-spacing: 1.8px;
   display: flex;
@@ -1838,7 +1869,8 @@ input::placeholder {
   height: 61px;
   color: #00539B;
   background-color: #FFFFFF;
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-weight: 400;
   font-size: 26px;
   letter-spacing: 1.8px;
   display: flex;
@@ -2041,11 +2073,10 @@ input::placeholder {
   align-items: center; }
 
 .customized-header {
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
   font-size: 31px;
-  word-wrap: break-word;
-  width: 300px;
-  text-align: center; }
+  text-align: center;
+  letter-spacing: 2px; }
 
 .customized-line {
   background-color: #FFFFFF;
@@ -2124,7 +2155,8 @@ input::placeholder {
   height: 61px;
   color: #00539B;
   background-color: #FFFFFF;
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-weight: 400;
   font-size: 26px;
   letter-spacing: 1.8px;
   display: flex;
@@ -2229,17 +2261,17 @@ input::placeholder {
 
 .stocker-nav-header {
   margin-bottom: 15px;
-  margin-left: -875px;
+  margin-left: -879px;
   color: #1A2E5A; }
 
 .stocker-nav-header2 {
   margin-bottom: 15px;
-  margin-left: -852px;
+  margin-left: -860px;
   color: #1A2E5A; }
 
 .stocker-nav-header3 {
   margin-bottom: 15px;
-  margin-left: -895px;
+  margin-left: -894px;
   color: #1A2E5A; }
 
 .stocker-nav-para {
@@ -2256,9 +2288,11 @@ input::placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
   font-size: 20px;
+  font-weight: 400;
   text-transform: uppercase;
+  letter-spacing: 1.6px;
   letter-spacing: 0.91px;
   color: #1A2E5A;
   background-color: #F6F6F6;
@@ -2270,9 +2304,11 @@ input::placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
   font-size: 20px;
+  font-weight: 400;
   text-transform: uppercase;
+  letter-spacing: 1.6px;
   letter-spacing: 0.91px;
   color: #FFFFFF;
   background-color: #00539B;
@@ -2308,7 +2344,8 @@ input::placeholder {
   height: 61px;
   color: #00539B;
   background-color: #FFFFFF;
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-weight: 400;
   font-size: 26px;
   letter-spacing: 1.8px;
   display: flex;
@@ -2429,7 +2466,8 @@ input::placeholder {
   height: 61px;
   color: #00539B;
   background-color: #FFFFFF;
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-weight: 400;
   font-size: 26px;
   letter-spacing: 1.8px;
   display: flex;
@@ -2462,7 +2500,7 @@ input::placeholder {
 
 .cowboy-testimony {
   width: 55vw;
-  height: 466px; }
+  height: 465px; }
 
 .customer-lightblue {
   background-color: #00539B;
@@ -2470,7 +2508,6 @@ input::placeholder {
   text-align: center;
   width: 45vw;
   height: 465px;
-  margin-left: -1px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2648,13 +2685,21 @@ input::placeholder {
   margin-bottom: 25 px; }
 
 .moreinfo-list {
-  margin: 15px 0px; }
+  margin: 15px 0px;
+  font-family: "Open Sans", sans-serif;
+  color: #1A2E5A; }
+
+.moreinfo-list2 {
+  margin: 15px 0px;
+  margin-bottom: 40px;
+  font-family: "Open Sans", sans-serif;
+  color: #1A2E5A; }
 
 .tv-batcher {
   margin-top: 40px; }
 
 .tv-screen {
-  margin: 20px 0px 10px 20px; }
+  margin: 20px 0px 30px 20px; }
 
 .tv-box {
   display: flex;
@@ -2697,7 +2742,8 @@ input::placeholder {
   width: 236px;
   color: #FFFFFF;
   background-color: #1A2E5A;
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-weight: 300;
   letter-spacing: 1.8px;
   margin: 10px;
   cursor: pointer; }
@@ -2722,7 +2768,8 @@ input::placeholder {
   margin: 20px 50px; }
 
 .iphone-text2 {
-  margin-top: 20px; }
+  margin-top: 20px;
+  color: #838383; }
 
 .monitor-header {
   color: #1A2E5A;
@@ -2817,7 +2864,8 @@ input::placeholder {
   width: 125px;
   height: 125px;
   font-size: 50px;
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-weight: 300;
   letter-spacing: 3px;
   display: flex;
   justify-content: center;
@@ -2835,7 +2883,8 @@ input::placeholder {
   width: 99px;
   height: 99px;
   font-size: 40px;
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-weight: 300;
   letter-spacing: 3px;
   display: flex;
   justify-content: center;
@@ -2853,7 +2902,8 @@ input::placeholder {
   width: 76px;
   height: 76px;
   font-size: 30px;
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-weight: 300;
   letter-spacing: 3px;
   display: flex;
   justify-content: center;
@@ -2871,7 +2921,8 @@ input::placeholder {
   width: 59px;
   height: 59px;
   font-size: 20px;
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-weight: 300;
   letter-spacing: 3px;
   display: flex;
   justify-content: center;
@@ -2889,7 +2940,8 @@ input::placeholder {
   width: 36px;
   height: 36px;
   font-size: 12px;
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-weight: 300;
   letter-spacing: 2.5px;
   display: flex;
   justify-content: center;
@@ -2907,7 +2959,8 @@ input::placeholder {
   width: 125px;
   height: 125px;
   font-size: 50px;
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-weight: 300;
   letter-spacing: 3px;
   display: flex;
   justify-content: center;
@@ -2926,7 +2979,8 @@ input::placeholder {
   width: 99px;
   height: 99px;
   font-size: 40px;
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-weight: 300;
   letter-spacing: 3px;
   display: flex;
   justify-content: center;
@@ -2945,7 +2999,8 @@ input::placeholder {
   width: 76px;
   height: 76px;
   font-size: 30px;
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-weight: 300;
   letter-spacing: 3px;
   display: flex;
   justify-content: center;
@@ -2964,7 +3019,8 @@ input::placeholder {
   width: 59px;
   height: 59px;
   font-size: 20px;
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-weight: 300;
   letter-spacing: 3px;
   display: flex;
   justify-content: center;
@@ -2983,7 +3039,8 @@ input::placeholder {
   width: 36px;
   height: 36px;
   font-size: 12px;
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-weight: 300;
   letter-spacing: 2.5px;
   display: flex;
   justify-content: center;
@@ -3170,3 +3227,22 @@ input::placeholder {
 .c46 {
   margin-right: 20px;
   margin-bottom: 20px; }
+
+.fourohfour-box {
+  display: flex;
+  justify-content: center; }
+
+.fourohfour-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: 100px;
+  font-size: 76px;
+  color: #1A2E5A; }
+
+.fourohfour-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }

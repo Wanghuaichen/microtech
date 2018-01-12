@@ -9,7 +9,7 @@ import Display1 from './Display/Display1';
 
 import FeedyardCover from '../../assets/Pics/Feedyard_cover.png';
 import Accutrac from '../../assets/Icons/accutrac.png';
-import CowboyTestimony from '../../assets/Pics/VideoPhoto2.jpg';
+import CowboyTestimony from '../../assets/Pics/VideoPhoto2.png';
 import Comprehensive from '../../assets/Pics/Comprehensive.png';
 import Quotes from '../../assets/Icons/quote.png';
 
@@ -107,7 +107,9 @@ export default class Feedyard extends Component {
               <h6 className="blue-left-text-two">FOR YOUR BUSINESS?</h6>
             </div>
             <div className="line-break-banner"></div>
+            <Link to ="/contact">
             <div className="blue-right-contact">CONTACT US</div>
+            </Link>
           </section>
 
           <section className="hear-customers-container">
@@ -120,7 +122,7 @@ export default class Feedyard extends Component {
 
 
           <section className="transparent-banner-flex">
-            <div classname="transparent-banner-box">
+            <div className="transparent-banner-box">
               <h3 className="transparent-left-text">Comprehensive Solutions</h3>
               <h6 className="transparent-left-subtext">THAT WORK FOR YOU</h6>
             </div>
@@ -169,7 +171,7 @@ export default class Feedyard extends Component {
 
 
           <section className="white-banner-flex">
-            <div classname="transparent-banner-box">
+            <div className="transparent-banner-box">
               <h3 className="transparent-left-text">Dedicated Technical</h3>
               <h6 className="transparent-left-subtext">SERVICE & SUPPORT</h6>
             </div>
