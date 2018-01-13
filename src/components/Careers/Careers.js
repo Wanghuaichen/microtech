@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import MetaTags from 'react-meta-tags';
+
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
@@ -10,6 +12,12 @@ export default class Careers extends Component {
   render() {
     return (
       <section className="careers-container">
+
+        <MetaTags>
+          <title>Careers</title>
+          <meta name="description" content="At Micro Technologies we offer lifelong career opportunities that impact lives. We foster relationships with our customers through a deep understanding that healthier animals contribute to a healthier society." />
+        </MetaTags>
+      
         <Header />
 
         <main className="careers-main">

@@ -29,7 +29,6 @@
     text-align: center;
 }
 
-
 .main-cta {
     @include mainCTA;
     margin-top: 300px;
@@ -152,6 +151,7 @@
 
 .four {
     margin: 20px;
+    color: $primary-blue;
 }
 
 .res-cta {

@@ -1,6 +1,10 @@
+.stocker-top {
+    display: flex;
+    align-items: center;
+}
+
 .transparent-stocker {
     width: 50vw;
-    height: 80vh;
     color: $primary-blue;
     position: absolute;
     @include flexSetUp;
@@ -27,7 +31,7 @@
 }
 
 .stocker-para {
-    margin: 10px 120px;
+    margin: 10px 50px;
 }
 
 .stocker-watch-video {

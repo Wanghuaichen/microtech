@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Carousel from 'nuka-carousel';
+import ModalVideo from 'react-modal-video';
+import MetaTags from 'react-meta-tags';
 
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
@@ -19,10 +21,12 @@ export default class Feedyard extends Component {
     super();
     this.state = {
       show: 0,
-      view: 0
+      view: 0,
+      isOpen: false
     }
     this.showDisplay0 = this.showDisplay0.bind(this);
     this.showDisplay1 = this.showDisplay1.bind(this);
+    this.openModal = this.openModal.bind(this)
   };
 
   showDisplay0() {
@@ -33,9 +37,18 @@ export default class Feedyard extends Component {
     this.setState({ show: 1, view: 2 })
   }
 
-  render() {  
+  openModal() {
+    this.setState({ isOpen: true })
+  }
+
+  render() {
     return (
       <section className="feedyard-container">
+        <MetaTags>
+          <title>Feedyard</title>
+          <meta name="description" content="A complete, truly integrated feedyard management solution" />
+        </MetaTags>
+
         <Header />
 
         <main className="feedyard-main">
@@ -73,31 +86,31 @@ export default class Feedyard extends Component {
 
 
           <main className="moreinfo-container">
-                <section className="moreinfo-top">
-                    <div className="moreinfo-top-btns">
-                        <div onClick={() => this.showDisplay0()}className="moreinfo-top-nav">
-                            <h4 className="moreinfo-top-nav-header">Precision Feed</h4>
-                            <h4 className="moreinfo-top-nav-header">Management Solutions</h4>
-                            <div className={this.state.show === 0 ?"feedyard-blueactive" : null}></div>
-                        </div>
-                        <div onClick={() => this.showDisplay1()}className="moreinfo-top-nav">
-                            <h4 className="moreinfo-top-nav-header">Animal</h4>
-                            <h4 className="moreinfo-top-nav-header">Health Solutions</h4>
-                            <div className={this.state.show === 1 ?"feedyard-blueactive" : null}></div>
-                        </div>
-                    </div>
-                    <div className="moreinfo-top-textbox">
-                        <p className="moreinfo-top-text">Our precision feed management solutions help optimize animal performance potential. We ensure consistency, accuracy, ration flexibility and verification, real-time data and accountability. Each system is custom configured to fit your feed processes allowing you more control over inventory and shrink.</p>
-                    </div>
-                </section>
-                </main>
+            <section className="moreinfo-top">
+              <div className="moreinfo-top-btns">
+                <div onClick={() => this.showDisplay0()} className="moreinfo-top-nav">
+                  <h4 className="moreinfo-top-nav-header">Precision Feed</h4>
+                  <h4 className="moreinfo-top-nav-header">Management Solutions</h4>
+                  <div className={this.state.show === 0 ? "feedyard-blueactive" : null}></div>
+                </div>
+                <div onClick={() => this.showDisplay1()} className="moreinfo-top-nav">
+                  <h4 className="moreinfo-top-nav-header">Animal</h4>
+                  <h4 className="moreinfo-top-nav-header">Health Solutions</h4>
+                  <div className={this.state.show === 1 ? "feedyard-blueactive" : null}></div>
+                </div>
+              </div>
+              <div className="moreinfo-top-textbox">
+                <p className="moreinfo-top-text">Our precision feed management solutions help optimize animal performance potential. We ensure consistency, accuracy, ration flexibility and verification, real-time data and accountability. Each system is custom configured to fit your feed processes allowing you more control over inventory and shrink.</p>
+              </div>
+            </section>
+          </main>
 
-                <main className="moreinfo-container">
+          <main className="moreinfo-container">
 
-                    {this.state.show === 0 && <Display0 />}
-                    {this.state.show === 1 && <Display1 />}
+            {this.state.show === 0 && <Display0 />}
+            {this.state.show === 1 && <Display1 />}
 
-                </main>
+          </main>
 
 
           <section className="blue-banner-flex-m">
@@ -107,8 +120,8 @@ export default class Feedyard extends Component {
               <h6 className="blue-left-text-two">FOR YOUR BUSINESS?</h6>
             </div>
             <div className="line-break-banner"></div>
-            <Link to ="/contact">
-            <div className="blue-right-contact">CONTACT US</div>
+            <Link to="/contact">
+              <div className="blue-right-contact">CONTACT US</div>
             </Link>
           </section>
 
@@ -116,7 +129,8 @@ export default class Feedyard extends Component {
             <img className="cowboy-testimony" src={CowboyTestimony} alt="Customer Headshot" />
             <div className="customer-lightblue">
               <h6 className="customer-header">HEAR FROM OUR CUSTOMERS</h6>
-              <h6 className="customer-watchvideo">WATCH VIDEO NOW</h6>
+              <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='i4wzef1I-Kk' onClose={() => this.setState({ isOpen: false })} />
+              <h6 className="customer-watchvideo" onClick={this.openModal}>WATCH VIDEO NOW</h6>
             </div>
           </section>
 
@@ -131,41 +145,41 @@ export default class Feedyard extends Component {
           </section>
 
           <img className="comprehensive-solutions" src={Comprehensive} alt="herd of cows" height="528px" />
-          
+
           <Carousel decorators={false} autoplay={true}
             wrapAround={true} speed={600} className="carousel-frame">
 
-          <section className="bluebanner-box quotebox">
-            <div className="bluebanner-left">
-              <img className="quotes" src={Quotes} alt="quotes icon" width="60px" />
-            </div>
-            <div className="slanted-line"></div>
-            <div className="bluebanner-right">
-              <p className="operations-quote">“Micro’s technology gives us the flexibility we need to manage cattle on an individual or group basis.  If we were using any other technology  we would have to make a decision thirty days or forty-five days out. Today, with the technology that we have from Micro, we can make those decisions hour by hour, day by day, and incorporate that into better decisions for our operation.”</p>
-              <div className="operations-box">
-                <h5 className="operations-name">- Walt Garrison</h5>
-                <p className="operations-title"> DIRECTOR OF OPERATIONS
+            <section className="bluebanner-box quotebox">
+              <div className="bluebanner-left">
+                <img className="quotes" src={Quotes} alt="quotes icon" width="60px" />
+              </div>
+              <div className="slanted-line"></div>
+              <div className="bluebanner-right">
+                <p className="operations-quote">“Micro’s technology gives us the flexibility we need to manage cattle on an individual or group basis.  If we were using any other technology  we would have to make a decision thirty days or forty-five days out. Today, with the technology that we have from Micro, we can make those decisions hour by hour, day by day, and incorporate that into better decisions for our operation.”</p>
+                <div className="operations-box">
+                  <h5 className="operations-name">- Walt Garrison</h5>
+                  <p className="operations-title"> DIRECTOR OF OPERATIONS
               </p>
-                <p className="operations-title">CACTUS FEEDERS  AMARILLO, TEXAS</p>
-              </div>              
-            </div>
-          </section>
+                  <p className="operations-title">CACTUS FEEDERS  AMARILLO, TEXAS</p>
+                </div>
+              </div>
+            </section>
 
-          <section className="bluebanner-box quotebox">
-            <div className="bluebanner-left">
-              <img className="quotes" src={Quotes} alt="quotes icon" width="60px" />
-            </div>
-            <div className="slanted-line"></div>
-            <div className="bluebanner-right">
-              <p className="operations-quote">“It takes the commitment of the entire feedyard to be invested in providing a product that is safe and wholesome that you can feed your children. When you have partners like Micro that have the same philosophy, it allows everything to align and to get the job done right.”</p>
-              <div className="operations-box">
-                <h5 className="operations-name">-  Robby Kirkland</h5>
-                <p className="operations-title"> VICE PRESIDENT OF OPERATIONS
+            <section className="bluebanner-box quotebox">
+              <div className="bluebanner-left">
+                <img className="quotes" src={Quotes} alt="quotes icon" width="60px" />
+              </div>
+              <div className="slanted-line"></div>
+              <div className="bluebanner-right">
+                <p className="operations-quote">“It takes the commitment of the entire feedyard to be invested in providing a product that is safe and wholesome that you can feed your children. When you have partners like Micro that have the same philosophy, it allows everything to align and to get the job done right.”</p>
+                <div className="operations-box">
+                  <h5 className="operations-name">-  Robby Kirkland</h5>
+                  <p className="operations-title"> VICE PRESIDENT OF OPERATIONS
               </p>
-                <p className="operations-title">KIRKLAND FEEDYARD | VEGA, TEXAS</p>
-              </div>              
-            </div>
-          </section>
+                  <p className="operations-title">KIRKLAND FEEDYARD | VEGA, TEXAS</p>
+                </div>
+              </div>
+            </section>
           </Carousel>
 
 

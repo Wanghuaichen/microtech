@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './sass/main.css';
 import routes from './routes';
+import 'babel-polyfill';
 
 class App extends Component {
   render() {

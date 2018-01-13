@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import ModalVideo from 'react-modal-video';
+import MetaTags from 'react-meta-tags';
+
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import DairyInfo from '../Dairy/DairyInfo';
@@ -14,8 +17,14 @@ export default class Dairy extends Component {
   constructor() {
     super();
     this.state = {
-      testimonies: []
+      testimonies: [],
+      isOpen: false
     }
+    this.openModal = this.openModal.bind(this)
+  }
+
+  openModal() {
+    this.setState({ isOpen: true })
   }
 
   // componentDidMount() {
@@ -32,6 +41,11 @@ export default class Dairy extends Component {
   render() {
     return (
       <section className="dairy-container">
+        <MetaTags>
+          <title>Dairy</title>
+          <meta name="description" content="Simply put, we help dairies through the use of our technologies and processes, produce a safe, wholesome product more efficiently and more profitably." />
+        </MetaTags>
+
         <Header />
 
         <main className="dairy-main">
@@ -77,7 +91,8 @@ export default class Dairy extends Component {
             <img className="customer-testimony" src={Testimony1} alt="Customer Headshot" />
             <div className="customer-lightblue2">
               <h6 className="customer-header">HEAR FROM OUR CUSTOMERS</h6>
-              <h6 className="customer-watchvideo">WATCH VIDEO NOW</h6>
+              <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='LT04hYXqg1c' onClose={() => this.setState({ isOpen: false })} />
+              <h6 className="customer-watchvideo" onClick={this.openModal}>WATCH VIDEO NOW</h6>
             </div>
           </section>
 

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import AnimatedNumber from 'react-animated-number';
+import MetaTags from 'react-meta-tags';
+
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-
 
 import DifferenceCover from '../../assets/Pics/Difference_Cover.png';
 import Quotes from '../../assets/Icons/quote.png';
@@ -54,6 +55,12 @@ export default class Difference extends Component {
 
     return (
       <section className="difference-container">
+
+        <MetaTags>
+          <title>The Micro Difference</title>
+          <meta name="description" content="We are passionate about making a difference in the lives of our associates, customers, animals and the food supply we consume." />
+        </MetaTags>
+
         <Header />
 
         <main className="difference-main">

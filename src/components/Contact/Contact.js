@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import MetaTags from 'react-meta-tags';
+
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
@@ -11,6 +13,12 @@ export default class Conact extends Component {
     render() {
         return (
             <section className="contact-container">
+
+                <MetaTags>
+                    <title>Contact</title>
+                    <meta name="description" content="Contact us by filling out the form below or call us directly at 800.858.4330." />
+                </MetaTags>
+
                 <Header />
 
                 <main className="contact-main">
@@ -66,7 +74,7 @@ export default class Conact extends Component {
                             </div>
                             <div className="submit-btn">SUBMIT</div>
                         </div>
-                        
+
                         <img className="contact-photo" src={ContactCover} alt="Warehouse" />
 
                     </section>

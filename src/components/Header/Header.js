@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
+import MetaTags from 'react-meta-tags';
 
 import Logo from '../../assets/Logos/MicroTech_MED.jpg'
 
@@ -8,10 +8,16 @@ export default class Header extends Component {
   render() {
     return (
       <header className="header-home">
+
+        <MetaTags>
+          <title>Micro Technologies Navigation</title>
+          <meta name="description" content="Stocker, Feedyard, Dairy, Integrator, Contact, The Micro Difference, About, Knowledge Base, Careers" />
+        </MetaTags>
+
         <div className="header-nav">
           <div className="logo-container">
             <Link to="/">
-            <img className="logo" src={Logo} alt="Micro Technologies Logo" />
+              <img className="logo" src={Logo} alt="Micro Technologies Logo" />
             </Link>
           </div>
           <nav className="nav-links">

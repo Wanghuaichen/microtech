@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
+import 'babel-polyfill';
 
 import Home from './components/Home/Home';
 import Stocker from './components/Stocker/Stocker';

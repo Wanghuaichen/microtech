@@ -1,8 +1,9 @@
+// dependencies
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import ModalVideo from 'react-modal-video';
 import Carousel from 'nuka-carousel';
-
+import MetaTags from 'react-meta-tags';
 
 // components
 import Header from '../Header/Header';
@@ -39,24 +40,29 @@ export default class Home extends Component {
     return (
       <section className="home-container">
 
+        <MetaTags>
+          <title>Micro Technologies</title>
+          <meta name="description" content="We innovate technologies that empower food producers to grow a safe, wholesome food supply more efficiently and more profitably." />
+        </MetaTags>
+
         <main className="slider-home">
           <Header />
 
           <Carousel decorators={false} autoplay={true}
-             wrapAround={true} speed={600} >
-            <img src={HomeHero} alt="Home Cow Cover" onLoad={() => {window.dispatchEvent(new Event('resize'));}}  />
-            <img src={HomeHero2} alt="Home Cow Cover" onLoad={() => {window.dispatchEvent(new Event('resize'));}}  />
+            wrapAround={true} speed={600} >
+            <img src={HomeHero} alt="Home Cow Cover" onLoad={() => { window.dispatchEvent(new Event('resize')); }} />
+            <img src={HomeHero2} alt="Home Cow Cover" onLoad={() => { window.dispatchEvent(new Event('resize')); }} />
           </Carousel>
 
-          <div className="slider-text">
+          <head className="slider-text">
             <div className="center-box">
               <h3 className="vision-text">We innovate technologies that empower food producers to grow a safe, wholesome food supply more efficiently and more profitably.</h3>
 
-              <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='Fy1iUp3r_c0' onClose={() => this.setState({ isOpen: false })} />
+              <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='wUlPN0sZffY' onClose={() => this.setState({ isOpen: false })} />
               <div className="main-cta" onClick={this.openModal}>WATCH VIDEO</div>
 
             </div>
-          </div>
+          </head>
         </main>
 
         <section className="icon-animal-box">

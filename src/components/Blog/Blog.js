@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import MetaTags from 'react-meta-tags';
+
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
@@ -8,11 +10,16 @@ import BlogFiller from '../../assets/Pics/Blog_filler.png';
 import TwitterFollow from '../../assets/Icons/Twitter.png';
 import LinkedInFollow from '../../assets/Icons/Linkedin.png';
 
-
 export default class Blog extends Component {
   render() {
     return (
       <section className="blog-container">
+      
+        <MetaTags>
+          <title>Micro Technologies</title>
+          <meta name="description" content="Micro Technologies Knowledge Base Blog" />
+        </MetaTags>
+
         <Header />
 
         <main className="blog-main">

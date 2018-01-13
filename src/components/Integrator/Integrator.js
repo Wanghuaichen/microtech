@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedNumber from 'react-animated-number';
+import MetaTags from 'react-meta-tags';
+
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-
 
 import IntegratorCover from '../../assets/Pics/Integrator_cover.png';
 import AppSolutions from '../../assets/Pics/App_solutions.png';
@@ -55,6 +56,11 @@ export default class Integrator extends Component {
 
     return (
       <section className="integrator-container">
+        <MetaTags>
+          <title>Stocker</title>
+          <meta name="description" content="Stocker1™ is an internet based system allowing stocker and backgrounding operations to access it from any location with internet capabilities. One look and you will know it was designed in the field with close interaction between stocker and backgrounder operators." />
+        </MetaTags>
+
         <Header />
 
         <main className="integrator-main">

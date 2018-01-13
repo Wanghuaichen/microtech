@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Dialog from 'material-ui/Dialog';
+import MetaTags from 'react-meta-tags';
+
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-import Dialog from 'material-ui/Dialog';
-
 
 import StockerCover from '../../assets/Pics/Stocker_cover.png';
 import Inventory from '../../assets/Pics/inventory.jpg';
@@ -58,6 +59,11 @@ export default class Stocker extends Component {
   render() {
     return (
       <section className="stocker-container">
+        <MetaTags>
+          <title>Stocker</title>
+          <meta name="description" content="Stocker1™ is an internet based system allowing stocker and backgrounding operations to access it from any location with internet capabilities. One look and you will know it was designed in the field with close interaction between stocker and backgrounder operators." />
+        </MetaTags>
+
         <Header />
 
         <main className="stocker-main">
