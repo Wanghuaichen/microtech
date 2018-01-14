@@ -227,7 +227,8 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  grid-area: slider-home; }
 
 .slider-one {
   width: 100vw;
@@ -250,7 +251,7 @@ textarea {
   color: #1A2E5A;
   position: absolute;
   word-wrap: break-word;
-  width: 800px;
+  width: 45vw;
   text-shadow: 2px 2px 6px gray;
   text-align: center; }
 
@@ -277,6 +278,9 @@ textarea {
   letter-spacing: 2px;
   padding-bottom: 3px; }
 
+.icon-animal-box {
+  grid-area: icon-animal-box; }
+
 .icon-box {
   margin-top: 50px;
   background-color: #FFFFFF;
@@ -297,7 +301,8 @@ textarea {
   justify-content: space-around;
   width: 100vw;
   text-align: center;
-  margin: auto; }
+  margin: auto;
+  grid-area: animal-icons; }
 
 .home-container {
   display: flex;
@@ -312,7 +317,8 @@ textarea {
   font-size: 15px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  grid-area: bluebanner-box; }
 
 .bluebanner-text {
   word-wrap: break-word;
@@ -329,7 +335,8 @@ textarea {
   justify-content: center;
   align-items: center;
   height: 500px;
-  vertical-align: center; }
+  vertical-align: center;
+  grid-area: mission-boxes; }
 
 .mission-box {
   justify-content: center;
@@ -351,7 +358,8 @@ textarea {
 .fourth-main {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  grid-area: fourth-main; }
 
 .fourth-container {
   height: 700px;
@@ -456,6 +464,30 @@ textarea {
   margin-top: 20px;
   color: #838383;
   text-align: center; }
+
+@media screen and (max-width: 1025px) {
+  .home-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "slider-home"  "icon-animal-box" "animal-icons" "bluebanner-box" "mission-boxes" "fourth-main" "footer-nav"; }
+  .slider-home {
+    height: 100vh;
+    width: 100vw; }
+    .slider-home .vision-text {
+      font-size: 24px;
+      width: 75vw; }
+  .slider {
+    height: 100vh !important; }
+  .main-cta {
+    margin-top: 350px; }
+  .icon-animal-box, .icon-box, .animal-icons, .icon-header, .icon-subheader, .animal, .animal-text, .animal-icons, .home-container, .bluebanner-box, .bluebanner-text, .mission-boxes, .mission-box, .fourth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .icon-header, .icon-subheader, .bluebanner-text, .bluebanner-header, .fourth-text, .fourth-para, .center-container {
+    word-wrap: break-word;
+    width: 75vw; } }
 
 .contact-main {
   display: flex;
@@ -583,7 +615,8 @@ textarea {
 
 .header-home {
   z-index: 10;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  grid-area: header-home; }
 
 .header-nav {
   display: flex;
@@ -663,7 +696,8 @@ li {
   justify-content: center;
   align-items: center;
   height: 150px;
-  border-top: 0.5px solid #eee; }
+  border-top: 0.5px solid #eee;
+  grid-area: footer-nav; }
 
 .logo-footer {
   width: 25vw;

@@ -70,13 +70,13 @@ export default class Home extends Component {
           </Carousel>
 
           <div className="slider-text">
-            <div className="center-box">
+            <header className="center-box">
               <h3 className="vision-text">We innovate technologies that empower food producers to grow a safe, wholesome food supply more efficiently and more profitably.</h3>
 
               <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='wUlPN0sZffY' onClose={() => this.setState({ isOpen: false })} />
               <div className="main-cta" onClick={this.openModal}>WATCH VIDEO</div>
 
-            </div>
+            </header>
           </div>
         </main>
 

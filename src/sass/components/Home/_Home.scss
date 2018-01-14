@@ -10,6 +10,7 @@
 .slider-home {
     @include flexSetUp;
     flex-direction: column; 
+    grid-area: slider-home;
 }
 
 .slider-one {
@@ -32,7 +33,7 @@
     color: $primary-blue;
     position: absolute;
     word-wrap: break-word;
-    width: 800px; 
+    width: 45vw; 
     text-shadow: 2px 2px 6px gray;
     text-align: center;
 }
@@ -47,6 +48,10 @@
     font-size: 28px;
     letter-spacing: 2px;
     padding-bottom: 3px;
+}
+
+.icon-animal-box {
+    grid-area: icon-animal-box;
 }
 
 .icon-box {
@@ -73,6 +78,7 @@
     width: 100vw;
     text-align: center;  
     margin: auto; 
+    grid-area: animal-icons;
 }
 
 .home-container {
@@ -86,6 +92,7 @@
     color: $white;
     @include bodySetUp;
     @include flexSetUp;
+    grid-area: bluebanner-box;
 }
 
 .bluebanner-text {
@@ -105,6 +112,7 @@
     @include flexSetUp;
     height: 500px;
     vertical-align: center;
+    grid-area: mission-boxes;
 }
 
 .mission-box {
@@ -131,7 +139,8 @@
 .fourth-main {
     display: flex;
     flex-direction: column; 
-    align-items: center;    
+    align-items: center;  
+    grid-area: fourth-main;  
 }
 
 .fourth-container {
@@ -239,3 +248,62 @@
     color: $text-dark;
     text-align: center;
 }
+
+// mobile to ipad pro responsive 
+
+@media screen and (max-width: 1025px){
+    .home-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "slider-home" 
+        "icon-animal-box"
+        "animal-icons"
+        "bluebanner-box"
+        "mission-boxes"
+        "fourth-main"
+        "footer-nav";
+    }
+
+    .slider-home {
+        height: 100vh;
+        width: 100vw;
+        .vision-text {
+            font-size: 24px;
+            width: 75vw;
+        }
+    }
+
+    .slider {
+        height: 100vh !important;
+    }
+
+    .main-cta {
+        margin-top: 350px;
+    }
+
+    .icon-animal-box, .icon-box, .animal-icons, .icon-header, .icon-subheader, .animal, .animal-text, .animal-icons, .home-container, .bluebanner-box, .bluebanner-text, .mission-boxes, .mission-box, .fourth-container   {
+        @include flexSetUp;
+        flex-direction: column;
+    }
+
+    .icon-header, .icon-subheader, .bluebanner-text, .bluebanner-header, .fourth-text, .fourth-para, .center-container    {
+        word-wrap: break-word;
+        width: 75vw;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
