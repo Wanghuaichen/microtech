@@ -25,7 +25,7 @@ export default class Conact extends Component {
                     <section className="contact-container">
                         <div className="contact-form">
                             <h3 className="contact-spacing">Want to Learn More?</h3>
-                            <h6 className="contact-spacing">Contact us by filling out the form below or call us directly at 800.858.4330.</h6>
+                            <h6 className="contact-spacing">Contact us by filling out the form below or call us directly at <a className="contact-alink" href="tel:800-858-4330">800.858.4330.</a></h6>
                             <div className="name-box">
                                 <div>
                                     <p>First Name *</p>
@@ -43,11 +43,18 @@ export default class Conact extends Component {
                             <div className="input-field">
                                 <p>Business Type</p>
                                 <div className="radio-input">
-
-                                    <input type="radio" name="type" value="dairy" /> <p className="radio-option">Dairy</p>
-                                    <input type="radio" name="type" value="stocker" /> <p className="radio-option">Stocker</p>
-                                    <input type="radio" name="type" value="feedyard" /> <p className="radio-option">Feedyard</p>
-                                    <input type="radio" name="type" value="integrator" /> <p className="radio-option">Integrator</p>
+                                    <div className="radio-box">
+                                        <input type="radio" name="type" value="dairy" /> <p className="radio-option">Dairy</p>
+                                    </div>
+                                    <div className="radio-box">
+                                        <input type="radio" name="type" value="stocker" /> <p className="radio-option">Stocker</p>
+                                    </div>
+                                    <div className="radio-box">
+                                        <input type="radio" name="type" value="feedyard" /> <p className="radio-option">Feedyard</p>
+                                    </div>
+                                    <div className="radio-box">
+                                        <input type="radio" name="type" value="integrator" /> <p className="radio-option">Integrator</p>
+                                    </div>
                                 </div>
 
                             </div>
@@ -90,8 +97,8 @@ export default class Conact extends Component {
                         <img className="contact-icon" src={LocationIcon} alt="location icon" />
                     </div>
                     <div className="contact-info">
-                        <h4 className="contact-subheader">800.858.4330</h4>
-                        <h4 className="contact-subheader">Info@MicroTechnologies.com</h4>
+                        <h4 className="contact-subheader"><a className="contact-alink-white" href="tel:800-858-4330">800.858.4330.</a></h4>
+                        <h4 className="contact-subheader"><a className="contact-alink-white" href="mailto:Info@MicroTechnologies.com">Info@MicroTechnologies.com</a></h4>
                         <h4 className="contact-subheader address">8701 Centerport Blvd, Amarillo, TX 79108</h4>
                     </div>
                 </div>

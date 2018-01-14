@@ -58,46 +58,60 @@
     margin: auto;
     background-color: $white;
     color: $primary-blue;
-    width: 1200px;
-    height: 550px;
+    width: 100vw;
+    height: 600px;
     justify-content: space-around;
 }
 
-.wider {
+.stocker-section-white-wider {
+    @include flexSetUp;
+    background-color: $white;
+    color: $primary-blue;
+    width: 100vw;
     height: 675px;
+    justify-content: space-around;
+    margin-top: 30px;
 }
 
 .stocker-paragraph {
     word-wrap: break-word;
-    width: 500px;
-    margin-bottom: 125px;
+    width: 40vw;
 }
 
 .stocker-paragraph-three {
     word-wrap: break-word;
-    width: 500px;
+    width: 40vw;
     margin-bottom: 40px;
 }
 
 .stocker-paragraph-two {
     word-wrap: break-word;
-    width: 510px;
+    width: 40vw;
     margin-bottom: 25px;
 }
 
 .stocker-paragraph-two2 {
     word-wrap: break-word;
-    width: 510px;
+    width: 40vw;
     margin-bottom: 25px;
-    margin-left: 25px;
 }
 
 .stocker-header {
     margin-bottom: 30px;
 }
 
-.stocker-capture-left-box {
-    margin-top: -170px;
+.stocker-header-break {
+    margin-bottom: 30px;
+    word-wrap: break-word;
+    width: 40vw;
+}
+
+.stocker-capture-left {
+    width: 45vw;
+}
+
+.stocker-capture-left2 {
+    width: 60vw;
 }
 
 .stocker-subheader {
@@ -106,11 +120,11 @@
 
 .stocker-subheader2 {
     margin-bottom: 10px;
-    margin-left: 25px;
 }
 
 .stocker-capture {
-    margin-left: 20px;
+    margin-left: 30px;
+    width: 45vw;
 }
 
 .line-stocker-box {
@@ -181,7 +195,7 @@
     letter-spacing: 0.91px;
     color: $primary-blue;
     background-color: $bg-light;
-    width: 33vw;
+    width: calc(100vw / 3);
     height: 60px;
     cursor: pointer;
 }
@@ -192,7 +206,7 @@
     letter-spacing: 0.91px;
     color: $white;
     background-color: $secondary-blue;
-    width: 33vw;
+    width: calc(100vw / 3);
     height: 60px;
     cursor: pointer;
 }
@@ -203,7 +217,8 @@
 
 .individualtext {
     word-wrap: break-word;
-    width: 300px;
+    width: 28vw;
+    margin-left: -50px;
 }
 
 .watch-video-stocker-footer {

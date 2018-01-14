@@ -1,5 +1,14 @@
+.loading {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 100;
+    background-color: $white;
+    @include flexSetUp;
+}
+
 .slider-home {
-    display: flex;
+    @include flexSetUp;
     flex-direction: column; 
 }
 
@@ -17,7 +26,6 @@
 
 .center-box {
     @include flexSetUp;
-    margin-top: -50px;
 }
 
 .vision-text {
@@ -49,7 +57,7 @@
 
 .icon-header {
     word-wrap: break-word;
-    width: 1050px; 
+    width: 82vw; 
 }
 
 .icon-header, .icon-subheader, .animal, .animal-text {
@@ -62,7 +70,7 @@
 .animal-icons {
     display: flex;
     justify-content: space-around;
-    width: 1200px;
+    width: 100vw;
     text-align: center;  
     margin: auto; 
 }

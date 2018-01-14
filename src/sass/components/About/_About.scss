@@ -131,7 +131,7 @@
     background-color: $secondary-blue;
     width: 1px;
     height: 375px;
-    margin: 0px 90px;
+    margin: 0px 60px;
 }
 
 .res-align {
@@ -144,7 +144,7 @@
 
 .responsibility-box {
     word-wrap: break-word;
-    width: 540px;
+    width: 45vw;
 }
 
 .res-text-left {
@@ -158,10 +158,10 @@
 .facts-box {
     background-color: $secondary-blue;
     color: $white;
-    width: 550px;
+    width: 45vw;;
     height: 400px;
     text-align: center;
-    margin: 80px 0px 25px 0px;
+    margin: 80px 1.5px 25px 0px;
     z-index: -1;
 }
 
@@ -174,7 +174,7 @@
 }
 
 .cowpen-image {
-    width: 1090px;
+    width: 90vw;
     margin-top: -100px;
 }
 
@@ -183,7 +183,7 @@
 }
 
 .map-box {
-    width: 1090px;
+    width: 90vw;
     margin-bottom: 50px;
 }
 
@@ -192,7 +192,7 @@
 }
 
 .map {
-    width: 500px;
+    width: 60vw;
     display: flex;
     margin: auto;    
 }
@@ -214,4 +214,12 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.pres-alinks {
+    color: $primary-blue;
+}
+
+.leadership-alinks {
+    color: $text-dark;
 }

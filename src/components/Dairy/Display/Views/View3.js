@@ -21,7 +21,7 @@ export default class View3 extends Component {
                     </div>
                     <img className="tv-screen-frame" src={TVParlor} alt="slide show" height="275px" />
                 </div>
-                <div className="phone-container">
+                <div className="phone-container3">
                     <img className="iphone" src={iPhone} alt="iphone display" height="279px" />
                     <div className="iphone-text-box">
                         <h5 className="iphone-header">24/7 REAL-TIME MONITORING & ALERT</h5>

@@ -17,6 +17,8 @@
 
 .contact-spacing {
     margin: 15px 0px;
+    word-wrap: break-word;
+    width: 44vw;
 }
 
 .contact-photo  {
@@ -37,16 +39,21 @@
 .radio-input {
     display: flex;
     align-items: center;
-    width: 45vw;
+    justify-content: space-between;
+    width: 40vw;
     margin: 15px 0px 25px 0px;    
 }
 
+.radio-box {
+    display: flex;
+}
+
 .radio-option {
-    margin: 0px 70px 0px 10px;
+    margin-left: 8px
 }
 
 .input-one {
-    width: 45vw;
+    width: 43vw;
     height: 25px;
 }
 
@@ -57,7 +64,7 @@
 }
 
 .input-four {
-    width: 45vw;
+    width: 43vw;
     height: 100px;
     word-wrap: break-word;
     word-break: break-all;
@@ -115,3 +122,10 @@
     opacity: 1.0;
 }
 
+.contact-alink {
+    color: $third-blue;
+}
+
+.contact-alink-white {
+    color: $white
+}

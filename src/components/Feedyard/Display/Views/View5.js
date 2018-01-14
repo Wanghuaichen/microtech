@@ -18,7 +18,7 @@ export default class View5 extends Component {
             <li className="moreinfo-list">Specialized integrated software which analyzes sounds and provides a platform which supports diagnosis and treatment</li>
             <p className="view2-text">Measures 5 different levels of lung health and provides for a visual assessment that is clear and objective:</p>
             <img className="color-pallete" src={ColorPallete} alt="pain scale" width="700px"/>
-            <img class="stethoscope" src={Doctor} alt="doctor" width="700px" />
+            <img className="stethoscope" src={Doctor} alt="doctor" width="700px" />
           </div>
         </div>
       </div>

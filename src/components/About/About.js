@@ -69,11 +69,11 @@ export default class About extends Component {
               <p className="team-text">“We are united in our responsibility of creating healthier futures. At Micro Technologies™, we commit our time and efforts on a daily basis in order to uncover needs of our customers, innovate the tools and technologies they need to run a more profitable, efficient operation and do all of this with the shared responsibility of feeding a growing population.”</p>
               <div className="email-information">
                 <img className="email-tiny" src={PhoneTiny} alt="phone icon" />
-                <p className="email-tiny-text pres">800.858.4330</p>
+                <a className="pres-alinks" href="tel:800-858-4330"><p className="email-tiny-text pres">800.858.4330</p></a>
               </div>
               <div className="email-information">
                 <img className="email-tiny" src={EmailBlue} alt="phone icon" />
-                <p className="email-tiny-text">TPEART@MICROTECHNOLOGIES.COM</p>
+                <a className="pres-alinks" href="mailto:TPEART@MICROTECHNOLOGIES.COM"><p className="email-tiny-text">TPEART@MICROTECHNOLOGIES.COM</p></a>
               </div>
             </div>
 
@@ -87,7 +87,7 @@ export default class About extends Component {
                 </div>
                 <div className="company-information company">
                   <img className="email-tiny" src={EmailTiny} alt="phone icon" />
-                  <p className="email-tiny-text-exec">DBISHOP@MICROTECHNOLOGIES.COM</p>
+                  <a className="leadership-alinks" href="mailto:DBISHOP@MICROTECHNOLOGIES.COM"><p className="email-tiny-text-exec">DBISHOP@MICROTECHNOLOGIES.COM</p></a>
                 </div>
               </div>
               <div className="execs-box">
@@ -97,7 +97,7 @@ export default class About extends Component {
                 </div>
                 <div className="company-information company">
                   <img className="email-tiny" src={EmailTiny} alt="phone icon" />
-                  <p className="email-tiny-text-exec">JCORMAN@MICROTECHNOLOGIES.COM</p>
+                  <a className="leadership-alinks" href="mailto:JCORMAN@MICROTECHNOLOGIES.COM"><p className="email-tiny-text-exec">JCORMAN@MICROTECHNOLOGIES.COM</p></a>
                 </div>
               </div>
               <div className="execs-box">
@@ -108,7 +108,7 @@ export default class About extends Component {
                 </div>
                 <div className="company-information company">
                   <img className="email-tiny" src={EmailTiny} alt="phone icon" />
-                  <p className="email-tiny-text-exec">MDORSEY@MICROTECHNOLOGIES.COM</p>
+                  <a className="leadership-alinks" href="mailto:MDORSEY@MICROTECHNOLOGIES.COM"><p className="email-tiny-text-exec">MDORSEY@MICROTECHNOLOGIES.COM</p></a>
                 </div>
               </div>
               <div className="execs-box">
@@ -118,7 +118,7 @@ export default class About extends Component {
                 </div>
                 <div className="company-information company">
                   <img className="email-tiny" src={EmailTiny} alt="phone icon" />
-                  <p className="email-tiny-text-exec">MKOSTER@MICROTECHNOLOGIES.COM</p>
+                  <a className="leadership-alinks" href="mailto:MKOSTER@MICROTECHNOLOGIES.COM"><p className="email-tiny-text-exec">MKOSTER@MICROTECHNOLOGIES.COM</p></a>
                 </div>
               </div>
               <div className="execs-box">
@@ -129,7 +129,7 @@ export default class About extends Component {
                 </div>
                 <div className="company-information company">
                   <img className="email-tiny" src={EmailTiny} alt="phone icon" />
-                  <p className="email-tiny-text-exec">DLOMAX@MICROTECHNOLOGIES.COM</p>
+                  <a className="leadership-alinks" href="mailto:DLOMAX@MICROTECHNOLOGIES.COM"><p className="email-tiny-text-exec">DLOMAX@MICROTECHNOLOGIES.COM</p></a>
                 </div>
               </div>
               <div className="execs-box">
@@ -139,7 +139,7 @@ export default class About extends Component {
                 </div>
                 <div className="company-information company">
                   <img className="email-tiny" src={EmailTiny} alt="phone icon" />
-                  <p className="email-tiny-text-exec">JYOUNG@MICROTECHNOLOGIES.COM</p>
+                  <a className="leadership-alinks" href="mailto:JYOUNG@MICROTECHNOLOGIES.COM"><p className="email-tiny-text-exec">JYOUNG@MICROTECHNOLOGIES.COM</p></a>
                 </div>
               </div>
             </div>

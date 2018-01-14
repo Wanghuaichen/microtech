@@ -15,30 +15,32 @@
 
 .transparent-stocker2 {
     width: 50vw;
-    height: 80vh;
+    height: 100%;
     color: $primary-blue;
     position: absolute;
     @include flexSetUp;
     flex-direction: column;
-    align-items: flex-start;
-    margin: 80px;
+    text-align: left;
 }
 
 .transparent-left-text2 {
-    @include flexSetUp;
     flex-direction: column;
     letter-spacing: 0.3px;
+    word-wrap: break-word;
+    width: 40vw;
 }
 
 .transparent-left-subtext2 {
     letter-spacing: 1.8px;
     margin-bottom: 30px;
+    word-wrap: break-word;
+    width: 40vw;
 }
 
 .comp-para {
     color: $primary-blue;
     word-wrap: break-word;
-    width: 470px;
+    width: 40vw;
     margin-bottom: 20px;
 }
 

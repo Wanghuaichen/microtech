@@ -1,12 +1,14 @@
+.difference-top {
+    display: flex;
+}
+
 .transparent-white {
     width: 50vw;
-    height: 80vh;
+    height: 100%;
     color: $primary-blue;
     position: absolute;
-    display: flex;
-    justify-content: center;
+    @include flexSetUp;
     flex-direction: column;
-    margin: 50px 0px 0px 160px;
     text-transform: uppercase;
 }
 
@@ -17,6 +19,7 @@
 
 .differce-cover-title {
     font-size: 46px;
+    margin-bottom: 20px;
 }
 
 .difference-subheader {
@@ -120,7 +123,7 @@
 
 .partnership-para {
     word-wrap: break-word;
-    width: 960px;
+    width: 75vw;
     color: $text-dark;
 }
 
@@ -137,6 +140,7 @@
     display: flex;
     align-items: center;
     color: $primary-blue;
+    width: 45vw;
 }
 
 .nutrition-subtitle {
@@ -155,16 +159,16 @@
 
 .nutrition-para {
     word-wrap: break-word;
-    width: 500px;
+    width: 40vw;
     margin: 10px 25px 50px 25px;
     color: $text-dark;
 }
 
 .slantedbar {
-    width: 120vw;
+    width: 100vw;
     height: 8px;
     background-color: $primary-blue;
-    transform: rotate(-9deg) translateY(0px) translateX(-30px);
+    transform: rotate(-9deg) translateY(0px);
     overflow-x: hidden;
     margin: 100px 0px;
 }
@@ -193,33 +197,21 @@
     margin-bottom: 40px;
 }
 
-.centertext {
-    @include flexSetUp;
+.ourpeople-box {
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    width: 100vw;
+    justify-content: space-around;
     height: 90vh;
+    width: 100vw;
 }
 
 .threePs-title, .threePs-title2, .threePs-para {
-    position: absolute;
     color: $white;
     text-align: center;
     word-wrap: break-word;
-    width: 740px;
-}
-
-.threePs-title {
-    top: 0;
-    margin-top: 100px;
-}
-
-.threePs-title2 {
-    bottom: 0;
-    margin-bottom: 110px;
-}
-
-.threePs-para {
-    bottom: 0;
+    width: 58vw;
+    margin: 10px;
 }
 
 .passion-container {
@@ -235,13 +227,13 @@
 }
 
 .passion-image {
-    width: 250px;
+    width: 20vw;
 }
 
 .bluesub {
     background-color: $opacity-dark;
     color: $white;
-    width: 250px;
+    width: 20vw;
     height: 100px;
     z-index: 1;
     @include flexSetUp;
@@ -250,7 +242,7 @@
 
 .subblue-subtitle {
     word-wrap: break-word;
-    width: 200px;
+    width: 15vw;
 }
 
 .graypassion {
@@ -262,7 +254,7 @@
     color: $text-dark;
     font-size: 12px;
     word-wrap: break-word;
-    width: 250px;
+    width: 20vw;
     text-align: left;
     margin: 20px 0px;
     height: 150px;

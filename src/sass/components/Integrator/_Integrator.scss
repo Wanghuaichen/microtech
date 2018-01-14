@@ -22,8 +22,6 @@
     position: absolute;
     color: $primary-blue;
     text-align: center;
-    word-wrap: break-word;
-    width: 800px;
 }
 
 .pres-name {
@@ -79,51 +77,49 @@
 
 .integrator-top-subtitle {
     top: 0;
-    margin-top: 220px;
+    margin-top: 200px;
     position: absolute;
     color: $circle-gray;
     text-align: center;
     word-wrap: break-word;
-    width: 460px;
+    width: 40vw;
 }
+
 
 
 .bluecover-banner-left {
     @include flexSetUp;
     flex-direction: column;
+    align-items: flex-start;
     word-wrap: break-word;
-    width: 515px;
+    width: 40vw;
     margin: 30px;
 }
 
 .bluecover-banner-right {
     @include flexSetUp;
     flex-direction: column;
+    align-items: flex-start;
     word-wrap: break-word;
-    width: 600px;
+    width: 40vw;
     margin: 30px;
+    text-align: left;
 }
 
-.bluecover-title-left {
+.bluecover-title-left, .bluecover-title-right  {
     margin-bottom: 20px;
-    margin-left: -120px;
-}
-
-.bluecover-title-right {
-    margin-bottom: 20px;
-    margin-left: -180px;
 }
 
 .experience-text {
     word-wrap: break-word;
-    width: 550px;
+    width: 40vw;
     margin-bottom: 45px;
     color: $text-dark;
 }
 
 .experience-text-two {
     word-wrap: break-word;
-    width: 550px;
+    width: 40vw;
     margin-bottom: 45px;
     margin-top: -20px;
     color: $text-dark;
@@ -133,6 +129,8 @@
     @include flexSetUp;
     flex-direction: column;
     margin: 0px 0px 50px 40px;
+    word-wrap: break-word;
+    width: 45vw;
 }
 
 .circle-num {
@@ -144,7 +142,7 @@
     font-family: $main-font;
     font-size: 20px;
     word-wrap: break-word;
-    width: 330px;
+    width: 27vw;
     margin-left: 30px;
 }
 
@@ -157,34 +155,53 @@
     width: 100vw;
     height: 600px;
     @include flexSetUp;
+    justify-content: space-around;
 }
 
-.app-solutions {
-   margin: 0px 80px 50px 0px;
+.wheel {
+    width: 40vw;
 }
+
 
 .app-solutions-box {
-    position: absolute;
+    @include flexSetUp;
+    flex-direction: column;
     color: $white;
     word-wrap: break-word;
-    width: 500px;
-    margin-left: -285px;
+    position: relative;
+    margin-left: 30px;
+}
+
+.app-solutions-image {
+    width: 525px;
+    margin-bottom: 53px;
+}
+
+.app-solutions-wrapper {
+    position: absolute;
+
 }
 
 .app-solutions-header {
-    margin-left: -70px;
-    word-wrap: break-word;
-    width: 800px;
     margin-bottom: 20px;
+    margin-left: -70px;
+}
+
+.app-solutions-text {
+    word-wrap: break-word;
+    width: 450px;
 }
 
 .app-solutions-text-subheader {
+    text-align: left;
     font-weight: bolder;
     margin: 20px 0px;
 }
 
 .app-solutions-text-last {
     margin: 20px 0px;
+    word-wrap: break-word;
+    width: 450px;
 }
 
 .liquid-container {
@@ -230,6 +247,7 @@
     background-color: $secondary-blue;
     @include flexSetUp;
     justify-content: space-around;
+    z-index: 100;
 }
 
 .pelleting-subtitle {
@@ -295,7 +313,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 549px;
+    width: 40vw;
     height: 132px;
     box-shadow: 2px 4px 9px 1px #ccc;
     margin: 30px;
@@ -305,7 +323,7 @@
     @include flexSetUp;
     flex-direction: column;
     text-align: center;
-    width: 549px;
+    width: 40vw;
     height: 132px;
     box-shadow: 2px 4px 9px 1px #ccc;
     margin: 30px;
@@ -371,9 +389,13 @@
     margin-top: 10px;
 }
 
+.weigh-flex-machine {
+    width: 45vw;
+}
+
 .weigh-flex-text {
     word-wrap: break-word;
-    width: 550px;
+    width: 41vw;
     text-align: center;
     margin: 20px 0px 60px 0px;
     color: $primary-blue;
@@ -393,7 +415,7 @@
 
 .enzyme-text {
     word-wrap: break-word;
-    width: 550px;
+    width: 40vw;
     text-align: center;
     margin: 20px 0px 60px 0px;
 }
@@ -413,7 +435,7 @@
 
 .batching-unit-four {
     width: 25vw; 
-    height: 380px;
+    height: 395px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -432,6 +454,7 @@
 
 .procontrol-screen {
     margin: 0px 70px 0px 50px;
+    width: 45vw;
 }
 
 .procontrol-container {
@@ -450,6 +473,7 @@
 .options-info {
     margin-left: 20px;
     margin-top: -40px;
+    width: 45vw;
 }
 
 .procontrol-header {
@@ -459,12 +483,11 @@
 .procontrol-list {
     color: $text-dark;
     word-wrap: break-word;
-    width: 500px;
+    width: 40vw;
     @include bodySetUp;
     padding-left: 25px;
     text-indent: -1.5em;
 }
-
 
 .watch-video-container-footer {
     height: 260px;
@@ -488,22 +511,16 @@
     margin: 0px 60px;
 }
 
+.weighpro-screen {
+    width: 45vw;
+}
+
 .weigh-btn-container {
     @include flexSetUp;
-
 }
 
 .weigh-btn {
     @include weighBTN;
-}
-
-// .weigh-btn:hover {
-//     background-color: $primary-blue;
-// }
-
-.weigh-text {
-    word-wrap: break-word;
-    width: 170px;
 }
 
 .arrow-circle {

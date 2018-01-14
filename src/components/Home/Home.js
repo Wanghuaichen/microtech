@@ -8,6 +8,7 @@ import MetaTags from 'react-meta-tags';
 // components
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import Loading from '../Loading/Loading';
 
 // images
 import HomeHero from '../../assets/Pics/HomeHero.png';
@@ -26,18 +27,31 @@ export default class Home extends Component {
   constructor() {
     super()
     this.state = {
-      isOpen: false
+      isOpen: false,
+      isLoading: true
     }
     this.openModal = this.openModal.bind(this)
   }
 
   openModal() {
-    this.setState({ isOpen: true })
+    this.setState({ isOpen: false })
   }
 
+  componentDidMount() { 
+    this.setState ({isLoading: false})
+  };
 
+  
   render() {
-    return (
+    return(
+      this.state.isLoading 
+      
+      ? 
+      
+      <Loading /> 
+      
+      : 
+
       <section className="home-container">
 
         <MetaTags>
@@ -54,7 +68,7 @@ export default class Home extends Component {
             <img src={HomeHero2} alt="Home Cow Cover" onLoad={() => { window.dispatchEvent(new Event('resize')); }} />
           </Carousel>
 
-          <head className="slider-text">
+          <div className="slider-text">
             <div className="center-box">
               <h3 className="vision-text">We innovate technologies that empower food producers to grow a safe, wholesome food supply more efficiently and more profitably.</h3>
 
@@ -62,7 +76,7 @@ export default class Home extends Component {
               <div className="main-cta" onClick={this.openModal}>WATCH VIDEO</div>
 
             </div>
-          </head>
+          </div>
         </main>
 
         <section className="icon-animal-box">
@@ -121,7 +135,7 @@ export default class Home extends Component {
 
         <section className="mission-boxes">
 
-          <div class="flip-container">
+          <div className="flip-container">
             <div className="mission-box flipper">
               <div className="front">
                 <img className="mission-gear" src={InnovationIcon} alt="Innovation Icon" width="100px" />
@@ -136,7 +150,7 @@ export default class Home extends Component {
             </div>
           </div>
 
-          <div class="flip-container">
+          <div className="flip-container">
             <div className="mission-box flipper">
               <div className="front">
                 <img className="mission-value" src={ValueIcon} alt="Value Creation Icon" width="100px" />
@@ -151,7 +165,7 @@ export default class Home extends Component {
             </div>
           </div>
 
-          <div class="flip-container">
+          <div className="flip-container">
             <div className="mission-box flipper">
               <div className="front">
                 <img className="mission-service" src={ServiceIcon} alt="Service Icon" height="100px" />
@@ -181,9 +195,10 @@ export default class Home extends Component {
             </div>
           </div>
         </section>
-
+        
         <Footer />
       </section>
     )
+    
   }
 }

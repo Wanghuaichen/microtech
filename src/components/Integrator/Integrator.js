@@ -67,9 +67,9 @@ export default class Integrator extends Component {
           <section className="bluecover-top">
             <div className="bluecover-text-box">
               <h3 className="integrator-top-text">Looking to increase the</h3>
-                <h3 className='text-animated' id="fadeout">
+              <h3 className='text-animated' id="fadeout">
                 effectiveness of your feed additive ingredients?</h3>
-                <h3 className="fadeinlast">efficiency of your production processes?</h3>
+              <h3 className="fadeinlast">efficiency of your production processes?</h3>
               <p className="integrator-top-subtitle">We provide innovative feed additive dosing systems that improve performance and profitability and ensure the success of our partners by providing unparalleled service and support.</p>
             </div>
             <div className="bluecover-container">
@@ -172,22 +172,24 @@ export default class Integrator extends Component {
 
           <section className="int-wheel-container">
             <div className="app-solutions-box">
-              <h3 className="app-solutions-header">Complete Application Solutions:</h3>
-              <p className="app-solutions-text">Micro provides a complete solution including equipment, software, documentation, training, and support ensuring maximized efficiencies and minimized downtime.</p>
+              <img className="app-solutions-image" src={AppSolutions} alt="Complete Applications Solutions" />
+              <div className="app-solutions-wrapper">
+                <h3 className="app-solutions-header">Complete Application Solutions:</h3>
+                <p className="app-solutions-text">Micro provides a complete solution including equipment, software, documentation, training, and support ensuring maximized efficiencies and minimized downtime.</p>
 
-              <p className="app-solutions-text-subheader">Project Management</p>
+                <p className="app-solutions-text-subheader">Project Management</p>
 
-              <p className="app-solutions-text">Our  results-focused project management style delivers on time and budget while keeping you fully informed on progress.</p>
+                <p className="app-solutions-text">Our  results-focused project management style delivers on time and budget while keeping you fully informed on progress.</p>
 
-              <p className="app-solutions-text-subheader">Service and Support</p>
+                <p className="app-solutions-text-subheader">Service and Support</p>
 
-              <p className="app-solutions-text">We know that preventive and corrective maintenance of the equipment makes it less vulnerable to unscheduled interruptions. It increases the reliability and ensures that the downtime of your production line is minimized. That is why we are committed to providing unparalleled service and support through our extensive U.S. teams and by also offering remote access technical assistance in order to protect your investment even further.</p>
+                <p className="app-solutions-text">We know that preventive and corrective maintenance of the equipment makes it less vulnerable to unscheduled interruptions. It increases the reliability and ensures that the downtime of your production line is minimized. That is why we are committed to providing unparalleled service and support through our extensive U.S. teams and by also offering remote access technical assistance in order to protect your investment even further.</p>
 
-              <p className="app-solutions-text-last">In addition to our extensive U.S. service and support team we have expanded our international partner network to ensure the success of our systems.</p>
-
+                <p className="app-solutions-text-last">In addition to our extensive U.S. service and support team we have expanded our international partner network to ensure the success of our systems.</p>
+              </div>
             </div>
-            <img className="app-solutions" src={AppSolutions} alt="Complete Applications Solutions" width="523px" />
-            <img className="wheel" src={Wheel} alt="Integrator Wheel" width="500px" />
+
+            <img className="wheel" src={Wheel} alt="Integrator Wheel" />
           </section>
 
           {/* <section className="liquid-container">
@@ -254,10 +256,10 @@ export default class Integrator extends Component {
               <li className="procontrol-list">IBC handling & automated refill options </li>
             </div>
             <div className="weighpro-box">
-              <img className="weighpro-screen" src={WeighPro} alt="Pro Control Plus Software Screen" width="578px" />
+              <img className="weighpro-screen" src={WeighPro} alt="Pro Control Plus Software Screen" />
               <div className="weigh-btn-container">
                 <div className="weigh-btn"><p className="weigh-text">Enhanced Reporting -  View  >  Print  >  Export</p></div>
-                <div className="weigh-btn"><p className="weigh-text">Remote Support Login capability</p></div>
+                <div className="weigh-btn"><p className="weigh-text">Remote Support Login Capability</p></div>
                 <div className="weigh-btn"><p className="weigh-text">Detailed alarm, settings, calibration, and formula entry screens</p></div>
               </div>
             </div>
@@ -270,7 +272,7 @@ export default class Integrator extends Component {
               <div className="weigh-flex-video-box">WATCH VIDEO</div>
             </div>
             <div className="weigh-flex-machine-box">
-              <img className="weigh-flex-machine" src={WeighFlex} alt="Weigh Flex Machine" width="548px" />
+              <img className="weigh-flex-machine" src={WeighFlex} alt="Weigh Flex Machine" />
             </div>
           </section>
 
@@ -350,7 +352,7 @@ export default class Integrator extends Component {
           </section>
 
           <section className="procontrol-container">
-            <img className="procontrol-screen" src={ProControl} alt="Pro Control Plus Software Screen" width="573px" />
+            <img className="procontrol-screen" src={ProControl} alt="Pro Control Plus Software Screen" />
             <div className="procontrol-info">
               <h3 className="procontrol-header">Pro-Control  Plus  Software</h3>
               <li className="procontrol-list">Easy to use graphic interface</li>

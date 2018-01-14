@@ -5,6 +5,7 @@ import MetaTags from 'react-meta-tags';
 
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import Loading from '../Loading/Loading';
 
 import StockerCover from '../../assets/Pics/Stocker_cover.png';
 import Inventory from '../../assets/Pics/inventory.jpg';
@@ -21,11 +22,12 @@ import StockerVideo from '../../assets/Videos/Stocker1Final.mp4';
 
 
 export default class Stocker extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       tab: 0,
-      open: false
+      open: false,
+      isLoading: true
     }
     this.handleTab0 = this.handleTab0.bind(this);
     this.handleTab1 = this.handleTab1.bind(this);
@@ -54,10 +56,22 @@ export default class Stocker extends Component {
     this.setState({ open: false });
   };
 
+  componentDidMount() { 
+    this.setState ({isLoading: false})
+  };
 
 
   render() {
+
     return (
+      this.state.isLoading
+        
+      ?
+
+      <Loading />
+      
+      :
+      
       <section className="stocker-container">
         <MetaTags>
           <title>Stocker</title>
@@ -128,7 +142,7 @@ export default class Stocker extends Component {
               <h6 className="stocker-subheader">Cattle Inventories</h6>
               <p className="stocker-paragraph">The Inventory screen shows the inventory by Group, by Location, or by your Closed Groups (sold cattle). Users can view the overview for each of the groups or locations and then and then drill down thru all of the transactions for each. Current and Closed group inventory summaries can be exported for offline use.</p>
             </div>
-            <img className="stocker-capture" src={Inventory} alt="system features screen capture" width="690px" />
+            <img className="stocker-capture" src={Inventory} alt="system features screen capture" />
           </section>
 
           <section className="stocker-section-white">
@@ -146,7 +160,7 @@ export default class Stocker extends Component {
               <h6 className="stocker-subheader">Calling Feed</h6>
               <p className="stocker-paragraph">The Call Feed option allows you to Record your feed calls for each day, for each location. The system will allow the user to select the Feed Call as the last amount fed, or allow the user to enter new values for each location. The rations can be changed at any time and will default to the last ration fed to that location.</p>
             </div>
-            <img className="stocker-capture" src={CallFeed} alt="system features screen capture" width="690px" />
+            <img className="stocker-capture" src={CallFeed} alt="system features screen capture" />
           </section>
 
           <section className="line-stocker-box">
@@ -159,7 +173,7 @@ export default class Stocker extends Component {
               <p className="stocker-paragraph-two">Stocker1™ also allows the user to record the amount of feed fed to a location as well as what ration was fed. The system will show the Head Fed based on the current head in the location and the Feed Call from the days call. The amount fed can be entered directly based on actual feed fed, or be populated based on the feed call.</p>
               <p className="stocker-paragraph-three">Users are not restricted to a single ration for a location for the day. Additional rations may be fed to a location such as stepping up with a starter ration in the morning and grower ration for the afternoon feeding.</p>
             </div>
-            <img className="stocker-capture" src={Charges} alt="system features screen capture" width="690px" />
+            <img className="stocker-capture" src={Charges} alt="system features screen capture" />
           </section>
 
           <section className="stocker-section-white">
@@ -176,20 +190,20 @@ export default class Stocker extends Component {
           </section>
 
           <section className="stocker-section-white">
-            <img className="stocker-capture-left" src={Treatments} alt="break even details" width="690px" />
+            <img className="stocker-capture-left2" src={Treatments} alt="break even details" />
             <div className="stocker-info">
-              <h6 className="stocker-subheader">Individual Treatments</h6>
+              <h6 className="stocker-subheader individualtext">Individual Treatments</h6>
               <p className="stocker-paragraph-two individualtext graytext">Individual Treatments can be entered by selecting the animal's tag number and color. Once selected it will pull up that calf’s Arrival Date, Buyer and Origin, previous treatment history, Estimated Current Weight and the Expected ADG. You then can select the method by which you treated, select protocol and enter any treatment notes such as temp or visual appearance.</p>
             </div>
           </section>
 
           <section className="stocker-section">
             <div className="stocker-info">
-              <h3 className="stocker-header">Allocations and Other Expenses</h3>
+              <h3 className="stocker-header-break">Allocations and Other Expenses</h3>
               <h6 className="stocker-subheader">Allocations</h6>
               <p className="stocker-paragraph">In order to track all expenses that could be applied to a set of cattle, the system allows for the allocation of expenses to a Location or to a Group. These can be set up with a type of Per Day, Per Head Day, and Per Pound of Gain. The allocations can be used for those items that occur on a daily basis such as yardage or pasture rent. Having the system automatically apply these costs for you saves time and ensures that all expenses are accounted for.</p>
             </div>
-            <img className="stocker-capture" src={Allocations} alt="system features screen capture" width="690px" />
+            <img className="stocker-capture" src={Allocations} alt="system features screen capture" />
           </section>
 
           <section className="line-stocker-box">
@@ -201,17 +215,17 @@ export default class Stocker extends Component {
               <h6 className="stocker-subheader">Expenses</h6>
               <p className="stocker-paragraph">Stocker1™ allows you to track various expense categories such as hay, mineral, supplements, trucking, and other items to a particular location or pasture. The expense can be tied to a particular group or location.</p>
             </div>
-            <img className="stocker-capture" src={ReportFeed} alt="system features screen capture" width="690px" />
+            <img className="stocker-capture" src={ReportFeed} alt="system features screen capture" />
           </section>
 
-          <section className="stocker-section-white wider">
+          <section className="stocker-section-white-wider">
             <div className="stocker-capture-left-box">
-              <img className="stocker-capture-left" src={RPT} alt="break even details" width="405px" />
+              <img className="stocker-capture-left" src={RPT} alt="break even details"  />
             </div>
             <div className="stocker-info">
               <h6 className="stocker-subheader2">Reports</h6>
               <p className="stocker-paragraph-two2 graytext">Stocker1™ has reports ranging from detail to summary reports. Billing can be submitted to customers using either the Billing Detail or Billing Summary reports depending on their needs. The Group Summary report can be used as a closeout report, but ran at any time to see valuable information on your groups. Yard sheet reports summarize where the cattle are located, as well as the basic information about them.</p>
-              <img className="stocker-capture-left" src={OpSum} alt="break even details" width="690px" />
+              <img className="stocker-capture-left" src={OpSum} alt="break even details" />
             </div>
           </section>
 

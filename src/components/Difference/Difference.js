@@ -47,7 +47,7 @@ export default class Difference extends Component {
       updates: updates + 1
     });
   }
-  
+
 
   render() {
 
@@ -67,10 +67,11 @@ export default class Difference extends Component {
 
           <section className="difference-top">
             <div className="transparent-white">
-              <h4 className="differce-cover-title">Since 1971</h4>
-              <br></br>
-              <h6 className="difference-subheader">we have delivered a commitment based upon a business philosophy centered around three key principles;
+              <div className="center-difference-box">
+                <h4 className="differce-cover-title">Since 1971</h4>
+                <h6 className="difference-subheader">we have delivered a commitment based upon a business philosophy centered around three key principles;
               Innovation, Value Creation and Service.</h6>
+              </div>
             </div>
             <img className="difference-cover" src={DifferenceCover} alt="Difference Cover" />
           </section>
@@ -82,7 +83,7 @@ export default class Difference extends Component {
                 <h4 className="values-header">INNOVATION</h4>
                 <p className="values-numbers">
 
-                <AnimatedNumber
+                  <AnimatedNumber
                     style={{
                       transition: '0.8s ease-out',
                       transitionProperty:
@@ -103,8 +104,8 @@ export default class Difference extends Component {
               <div className="diff-box">
                 <h4 className="values-header">VALUE CREATION</h4>
                 <p className="values-numbers">
-                
-                <AnimatedNumber
+
+                  <AnimatedNumber
                     style={{
                       transition: '0.8s ease-out',
                       transitionProperty:
@@ -117,7 +118,7 @@ export default class Difference extends Component {
                     value={smallValue}
                     duration={1200}
                     formatValue={n => `${n}`} />
-                
+
                 </p>
                 <div className="val-line"></div>
                 <p className="values-para">More than 20 useful inventions for animal agriculture</p>
@@ -125,8 +126,8 @@ export default class Difference extends Component {
               <div className="diff-box">
                 <h4 className="values-header">SERVICE</h4>
                 <p className="values-numbers">
-                
-                <AnimatedNumber
+
+                  <AnimatedNumber
                     style={{
                       transition: '0.8s ease-out',
                       transitionProperty:
@@ -168,12 +169,18 @@ export default class Difference extends Component {
 
 
           <section className="third-diff-section">
-            <div className="centertext">
-              <h3 className="threePs-title">Our people, partnership and passion are what makes the difference.</h3>
-            </div>
-            <div className="centertext">
-              <h3 className="threePs-title2">Our People</h3>
-              <p className="threePs-para">Our associates are our greatest asset and the cornerstone on which we have built our success. We realize that our customers have a multitude of things to manage every day to run their feedyards and dairies and our goal is to provide technologies, systems and people that allow them the peace of mind to know that certain components of their business “just work”. Many of our associates have a deep understanding of the challenges our customers face every day because of their backgrounds in agriculture.</p>
+            <div className="ourpeople-box">
+              <div className="ourpeople-text">
+                <center>
+                  <h3 className="threePs-title">Our people, partnership and passion are what makes the difference.</h3>
+                </center>
+              </div>
+              <div className="ourpeople-text">
+                <center>
+                  <h3 className="threePs-title2">Our People</h3>
+                  <p className="threePs-para">Our associates are our greatest asset and the cornerstone on which we have built our success. We realize that our customers have a multitude of things to manage every day to run their feedyards and dairies and our goal is to provide technologies, systems and people that allow them the peace of mind to know that certain components of their business “just work”. Many of our associates have a deep understanding of the challenges our customers face every day because of their backgrounds in agriculture.</p>
+                </center>
+              </div>
             </div>
             <img className="third-cover" src={ThirdCover} alt="conveyor belt cover" />
           </section>
@@ -201,28 +208,28 @@ export default class Difference extends Component {
                 <h6 className="nutrition-subtitle">REGULATORY COMPLIANCE SUPPORT</h6>
               </div>
               <p className="nutrition-para">We act as your partner in regulatory compliance and offer unparalleled technical service and support for all of our technologies.</p>
-              </section>
+            </section>
 
 
-              <section className="nutrition-container">
-                <h4 className="nutrition-header">Manufacturer Partners</h4>
-                <div className="nutrition-box">
-                  <img className="arrow-down" src={ArrowDown} alt="drop down arrow" />
-                  <h6 className="nutrition-subtitle">ENSURING OPTIMAL PRODUCT RESULTS</h6>
-                </div>
-                <p className="nutrition-para">Match product levels more accurately to target animals based upon days on feed, animal size and type, daily intake, animal health condition, nutritional content of the ration, performance level, animal genetics, and other criteria to achieve optimal performance rather than one level for all animals.</p>
-                <div className="nutrition-box">
-                  <img className="arrow-down" src={ArrowDown} alt="drop down arrow" />
-                  <h6 className="nutrition-subtitle">ACCURATE DELIVERY & VERIFICATION</h6>
-                </div>
-                <p className="nutrition-para">Our technology supports our customers in accurately delivering the products you manufacture to ensure responsible animal production while maintaining product identity all the way to the bunk.</p>
-                <div className="nutrition-box">
-                  <img className="arrow-down" src={ArrowDown} alt="drop down arrow" />
-                  <h6 className="nutrition-subtitle">END USER TRAINING, SERVICE & SUPPORT</h6>
-                </div>
-                <p className="nutrition-para">We strive to ensure a safe food supply and our customers’ long term success, as such, we are committed to providing exceptional end user training, service and on-going support of the use of products, processes and technologies.</p>
+            <section className="nutrition-container">
+              <h4 className="nutrition-header">Manufacturer Partners</h4>
+              <div className="nutrition-box">
+                <img className="arrow-down" src={ArrowDown} alt="drop down arrow" />
+                <h6 className="nutrition-subtitle">ENSURING OPTIMAL PRODUCT RESULTS</h6>
+              </div>
+              <p className="nutrition-para">Match product levels more accurately to target animals based upon days on feed, animal size and type, daily intake, animal health condition, nutritional content of the ration, performance level, animal genetics, and other criteria to achieve optimal performance rather than one level for all animals.</p>
+              <div className="nutrition-box">
+                <img className="arrow-down" src={ArrowDown} alt="drop down arrow" />
+                <h6 className="nutrition-subtitle">ACCURATE DELIVERY & VERIFICATION</h6>
+              </div>
+              <p className="nutrition-para">Our technology supports our customers in accurately delivering the products you manufacture to ensure responsible animal production while maintaining product identity all the way to the bunk.</p>
+              <div className="nutrition-box">
+                <img className="arrow-down" src={ArrowDown} alt="drop down arrow" />
+                <h6 className="nutrition-subtitle">END USER TRAINING, SERVICE & SUPPORT</h6>
+              </div>
+              <p className="nutrition-para">We strive to ensure a safe food supply and our customers’ long term success, as such, we are committed to providing exceptional end user training, service and on-going support of the use of products, processes and technologies.</p>
             </section>
-            </section>
+          </section>
 
           <section className="slantedbar"></section>
 
@@ -271,7 +278,7 @@ export default class Difference extends Component {
         </main>
         <Footer />
 
-      </section>
+      </section >
     )
   }
 }
