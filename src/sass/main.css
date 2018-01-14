@@ -5,8 +5,6 @@
 */
 @import url("https://fonts.googleapis.com/css?family=Arvo");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
-@import url(~slick-carousel/slick/slick.css);
-@import url(~slick-carousel/slick/slick-theme.css);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -1763,7 +1761,7 @@ input::placeholder {
   justify-content: space-around; }
 
 .wheel {
-  width: 40vw; }
+  max-width: 33vw; }
 
 .app-solutions-box {
   display: flex;
@@ -2017,7 +2015,7 @@ input::placeholder {
   margin-top: 10px; }
 
 .weigh-flex-machine {
-  width: 45vw; }
+  max-width: 33vw; }
 
 .weigh-flex-text {
   word-wrap: break-word;
@@ -2079,14 +2077,15 @@ input::placeholder {
 
 .procontrol-screen {
   margin: 0px 70px 0px 50px;
-  width: 45vw; }
+  max-width: 33vw; }
 
 .procontrol-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 500px;
-  color: #1A2E5A; }
+  color: #1A2E5A;
+  justify-content: space-around; }
 
 .options-container {
   display: flex;
@@ -2135,16 +2134,23 @@ input::placeholder {
   height: 150px;
   margin: 0px 60px; }
 
+.weighpro-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
 .weighpro-screen {
-  width: 45vw; }
+  max-width: 33vw; }
 
 .weigh-btn-container {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-top: 10px; }
 
 .weigh-btn {
-  width: calc(43vw / 3);
+  width: calc(40vw / 3);
   height: 70px;
   color: #FFFFFF;
   background-color: #00539B;
@@ -2284,10 +2290,10 @@ input::placeholder {
   width: 40vw; }
 
 .stocker-capture-left {
-  width: 45vw; }
+  max-width: 43vw; }
 
 .stocker-capture-left2 {
-  width: 60vw; }
+  max-width: 50vw; }
 
 .stocker-subheader {
   margin-bottom: 10px; }
@@ -2606,7 +2612,6 @@ input::placeholder {
 .transparent-left-text {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   letter-spacing: 0.3px;
   word-wrap: break-word;
@@ -3152,7 +3157,7 @@ input::placeholder {
 .history-circles-para {
   color: #838383;
   word-wrap: break-word;
-  width: 60vw; }
+  width: 850px; }
 
 .c1 {
   margin-left: 90px; }

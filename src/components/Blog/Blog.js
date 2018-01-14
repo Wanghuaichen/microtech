@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MetaTags from 'react-meta-tags';
+import {Helmet} from "react-helmet";
 
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
@@ -15,10 +15,10 @@ export default class Blog extends Component {
     return (
       <section className="blog-container">
       
-        <MetaTags>
+        <Helmet>
           <title>Micro Technologies</title>
           <meta name="description" content="Micro Technologies Knowledge Base Blog" />
-        </MetaTags>
+        </Helmet>
 
         <Header />
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import MetaTags from 'react-meta-tags';
+import {Helmet} from "react-helmet";
 
 import Logo from '../../assets/Logos/MicroTech_MED.jpg'
 import HR from '../../assets/Icons/HR_white.png';
@@ -14,10 +14,10 @@ export default class Footer extends Component {
         return (
             <footer className="footer-home">
 
-                <MetaTags>
-                    <title>Micro Technologies Footer</title>
-                    <meta name="description" content="Mirco Technologies AmerisourceBergen Careers, Knowledge Base Blog, LinkedIn, Contact Us, Twitter" />
-                </MetaTags>
+                <Helmet>
+                    <title>Micro Technologies</title>
+                    <meta name="description" content="We innovate technologies that empower food producers to grow a safe, wholesome food supply more efficiently and more profitably." />
+                </Helmet>
 
                 <div className="footer-nav">
                     <div className="footer-left">

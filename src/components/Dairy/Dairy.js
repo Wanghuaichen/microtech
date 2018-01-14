@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import ModalVideo from 'react-modal-video';
-import MetaTags from 'react-meta-tags';
+import {Helmet} from "react-helmet";
 
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
@@ -41,10 +41,10 @@ export default class Dairy extends Component {
   render() {
     return (
       <section className="dairy-container">
-        <MetaTags>
+        <Helmet>
           <title>Dairy</title>
           <meta name="description" content="Simply put, we help dairies through the use of our technologies and processes, produce a safe, wholesome product more efficiently and more profitably." />
-        </MetaTags>
+        </Helmet>
 
         <Header />
 

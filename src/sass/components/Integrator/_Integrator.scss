@@ -159,7 +159,7 @@
 }
 
 .wheel {
-    width: 40vw;
+    max-width: 33vw;
 }
 
 
@@ -390,7 +390,7 @@
 }
 
 .weigh-flex-machine {
-    width: 45vw;
+    max-width: 33vw;
 }
 
 .weigh-flex-text {
@@ -454,13 +454,14 @@
 
 .procontrol-screen {
     margin: 0px 70px 0px 50px;
-    width: 45vw;
+    max-width: 33vw;
 }
 
 .procontrol-container {
     @include flexSetUp;
     height: 500px;
     color: $primary-blue;
+    justify-content: space-around;
 }
 
 .options-container {
@@ -511,12 +512,18 @@
     margin: 0px 60px;
 }
 
+.weighpro-box {
+    @include flexSetUp;
+    flex-direction: column;
+}
+
 .weighpro-screen {
-    width: 45vw;
+    max-width: 33vw;
 }
 
 .weigh-btn-container {
     @include flexSetUp;
+    margin-top: 10px;
 }
 
 .weigh-btn {

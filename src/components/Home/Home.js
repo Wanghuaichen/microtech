@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import ModalVideo from 'react-modal-video';
 import Carousel from 'nuka-carousel';
-import MetaTags from 'react-meta-tags';
+// import MetaTags from 'react-meta-tags';
+import {Helmet} from "react-helmet";
 
 // components
 import Header from '../Header/Header';
@@ -54,10 +55,10 @@ export default class Home extends Component {
 
       <section className="home-container">
 
-        <MetaTags>
+        <Helmet>
           <title>Micro Technologies</title>
           <meta name="description" content="We innovate technologies that empower food producers to grow a safe, wholesome food supply more efficiently and more profitably." />
-        </MetaTags>
+        </Helmet>
 
         <main className="slider-home">
           <Header />

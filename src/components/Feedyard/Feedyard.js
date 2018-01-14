@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Carousel from 'nuka-carousel';
 import ModalVideo from 'react-modal-video';
-import MetaTags from 'react-meta-tags';
+import {Helmet} from "react-helmet";
 
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
@@ -44,10 +44,11 @@ export default class Feedyard extends Component {
   render() {
     return (
       <section className="feedyard-container">
-        <MetaTags>
+
+        <Helmet>
           <title>Feedyard</title>
           <meta name="description" content="A complete, truly integrated feedyard management solution" />
-        </MetaTags>
+        </Helmet>
 
         <Header />
 

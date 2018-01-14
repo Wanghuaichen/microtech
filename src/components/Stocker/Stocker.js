@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Dialog from 'material-ui/Dialog';
-import MetaTags from 'react-meta-tags';
+import {Helmet} from "react-helmet";
 
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
@@ -73,10 +73,11 @@ export default class Stocker extends Component {
       :
       
       <section className="stocker-container">
-        <MetaTags>
+
+        <Helmet>
           <title>Stocker</title>
           <meta name="description" content="Stocker1™ is an internet based system allowing stocker and backgrounding operations to access it from any location with internet capabilities. One look and you will know it was designed in the field with close interaction between stocker and backgrounder operators." />
-        </MetaTags>
+        </Helmet>
 
         <Header />
 

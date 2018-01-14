@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MetaTags from 'react-meta-tags';
+import {Helmet} from "react-helmet";
 
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
@@ -13,10 +13,10 @@ export default class Careers extends Component {
     return (
       <section className="careers-container">
 
-        <MetaTags>
+        <Helmet>
           <title>Careers</title>
           <meta name="description" content="At Micro Technologies we offer lifelong career opportunities that impact lives. We foster relationships with our customers through a deep understanding that healthier animals contribute to a healthier society." />
-        </MetaTags>
+        </Helmet>
       
         <Header />
 

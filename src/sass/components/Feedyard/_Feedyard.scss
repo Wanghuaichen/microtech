@@ -162,7 +162,8 @@
 }
 
 .transparent-left-text {
-    @include flexSetUp;
+    display: flex;
+    justify-content: center;
     flex-direction: column;
     letter-spacing: 0.3px;
     word-wrap: break-word;

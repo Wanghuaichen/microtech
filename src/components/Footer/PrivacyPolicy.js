@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import MetaTags from 'react-meta-tags';
+import {Helmet} from "react-helmet";
 
 export default class PrivacyPolicy extends Component {
     render() {
         return (
             <section className="policy-footer">
 
-                <MetaTags>
+                <Helmet>
                     <title>Micro Technologies Privacy Policy</title>
                     <meta name="description" content="Micro Technologies Terms of Service" />
-                </MetaTags>
+                </Helmet>
 
                 <h2 className="privacy-policy-header">Micro Technologies Terms of Service</h2>
                 <h3 className="privacy-policy-header">1. Terms</h3>

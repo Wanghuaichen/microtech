@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedNumber from 'react-animated-number';
-import MetaTags from 'react-meta-tags';
+import {Helmet} from "react-helmet";
 
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
@@ -24,6 +24,8 @@ export default class Integrator extends Component {
       bigValue: 0,
       updates: 0
     };
+    this.update = this.update.bind(this);
+    this.mountUnmount = this.mountUnmount.bind(this);
   }
 
   componentDidMount() {
@@ -56,10 +58,11 @@ export default class Integrator extends Component {
 
     return (
       <section className="integrator-container">
-        <MetaTags>
-          <title>Stocker</title>
-          <meta name="description" content="Stocker1™ is an internet based system allowing stocker and backgrounding operations to access it from any location with internet capabilities. One look and you will know it was designed in the field with close interaction between stocker and backgrounder operators." />
-        </MetaTags>
+
+        <Helmet>
+            <title>Integrator</title>
+            <meta name="description" content="We provide innovative feed additive dosing systems that improve performance and profitability and ensure the success of our partners by providing unparalleled service and support." />
+        </Helmet>
 
         <Header />
 
