@@ -4,6 +4,7 @@ import AnimatedNumber from 'react-animated-number';
 import {Helmet} from "react-helmet";
 
 import Header from '../Header/Header';
+import MobileHeader from '../Header/MobileHeader';
 import Footer from '../Footer/Footer';
 
 import IntegratorCover from '../../assets/Pics/Integrator_cover.png';
@@ -65,6 +66,7 @@ export default class Integrator extends Component {
         </Helmet>
 
         <Header />
+        <MobileHeader />
 
         <main className="integrator-main">
           <section className="bluecover-top">

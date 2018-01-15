@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Helmet} from "react-helmet";
 
 import Header from '../Header/Header';
+import MobileHeader from '../Header/MobileHeader';
 import Footer from '../Footer/Footer';
 
 import ContactCover from '../../assets/Pics/Contact_cover.png';
@@ -20,6 +21,7 @@ export default class Conact extends Component {
                 </Helmet>
 
                 <Header />
+                <MobileHeader />
 
                 <main className="contact-main">
                     <section className="contact-container">

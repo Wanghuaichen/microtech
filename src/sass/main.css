@@ -491,7 +491,8 @@ textarea {
     align-items: center;
     position: absolute;
     z-index: 1000;
-    top: 0; }
+    top: 0;
+    background-color: #FFFFFF; }
   .menu-container {
     display: flex;
     justify-content: center;
@@ -583,10 +584,8 @@ textarea {
     width: 100vw;
     display: flex;
     justify-content: space-around; }
-  .social-links {
-    margin-left: 10px; }
   .contact-btn {
-    margin-right: 30px; }
+    margin-right: 20px; }
   .social-icon {
     width: 25px !important; } }
 

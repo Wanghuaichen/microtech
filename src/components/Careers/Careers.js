@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Helmet} from "react-helmet";
 
 import Header from '../Header/Header';
+import MobileHeader from '../Header/MobileHeader';
 import Footer from '../Footer/Footer';
 
 import CareersCover from '../../assets/Pics/Careers_cover.svg';
@@ -19,6 +20,7 @@ export default class Careers extends Component {
         </Helmet>
       
         <Header />
+        <MobileHeader />
 
         <main className="careers-main">
 

@@ -3,6 +3,7 @@ import Header from '../Header/Header';
 import {Helmet} from "react-helmet";
 
 import History from '../About/History';
+import MobileHeader from '../Header/MobileHeader';
 import Footer from '../Footer/Footer';
 
 import MWILogo from '../../assets/Logos/MWI_Animal_Health_White.png';
@@ -26,6 +27,7 @@ export default class About extends Component {
         </Helmet>
 
         <Header />
+        <MobileHeader />
 
         <main className="about-main">
          <div className="about-cover"></div>

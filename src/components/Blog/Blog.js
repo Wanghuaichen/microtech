@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Helmet} from "react-helmet";
 
 import Header from '../Header/Header';
+import MobileHeader from '../Header/MobileHeader';
 import Footer from '../Footer/Footer';
 
 import BlogCover from '../../assets/Pics/Blog_cover.png';
@@ -21,6 +22,7 @@ export default class Blog extends Component {
         </Helmet>
 
         <Header />
+        <MobileHeader />
 
         <main className="blog-main">
           <section className="cover-top">

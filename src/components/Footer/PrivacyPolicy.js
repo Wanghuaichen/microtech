@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import Header from '../Header/Header';
+import MobileHeader from '../Header/MobileHeader';
+
 import {Helmet} from "react-helmet";
 
 export default class PrivacyPolicy extends Component {
@@ -10,6 +13,9 @@ export default class PrivacyPolicy extends Component {
                     <title>Micro Technologies Privacy Policy</title>
                     <meta name="description" content="Micro Technologies Terms of Service" />
                 </Helmet>
+
+                <Header />
+                <MobileHeader />
 
                 <h2 className="privacy-policy-header">Micro Technologies Terms of Service</h2>
                 <h3 className="privacy-policy-header">1. Terms</h3>

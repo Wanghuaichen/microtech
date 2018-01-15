@@ -294,6 +294,7 @@
         position: absolute;
         z-index: 1000;
         top: 0;
+        background-color: $white;
     }
 
     .menu-container {
@@ -381,7 +382,6 @@
         margin-top: -50px;
     }
 
-
     .mission-boxes {
         margin-top: 260px;
         height: 600px;
@@ -415,12 +415,8 @@
         justify-content: space-around;
     }
 
-    .social-links {
-        margin-left: 10px;
-    }
-
     .contact-btn {
-        margin-right: 30px;
+        margin-right: 20px;
     }
 
     .social-icon {

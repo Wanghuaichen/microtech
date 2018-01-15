@@ -4,6 +4,7 @@ import ModalVideo from 'react-modal-video';
 import {Helmet} from "react-helmet";
 
 import Header from '../Header/Header';
+import MobileHeader from '../Header/MobileHeader';
 import Footer from '../Footer/Footer';
 import DairyInfo from '../Dairy/DairyInfo';
 
@@ -47,6 +48,7 @@ export default class Dairy extends Component {
         </Helmet>
 
         <Header />
+        <MobileHeader />
 
         <main className="dairy-main">
           <section className="feedyard-top">

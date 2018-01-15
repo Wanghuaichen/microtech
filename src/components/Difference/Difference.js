@@ -3,6 +3,7 @@ import AnimatedNumber from 'react-animated-number';
 import {Helmet} from "react-helmet";
 
 import Header from '../Header/Header';
+import MobileHeader from '../Header/MobileHeader';
 import Footer from '../Footer/Footer';
 
 import DifferenceCover from '../../assets/Pics/Difference_Cover.png';
@@ -62,6 +63,7 @@ export default class Difference extends Component {
         </Helmet>
 
         <Header />
+        <MobileHeader />
 
         <main className="difference-main">
 

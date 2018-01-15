@@ -4,6 +4,7 @@ import Dialog from 'material-ui/Dialog';
 import {Helmet} from "react-helmet";
 
 import Header from '../Header/Header';
+import MobileHeader from '../Header/MobileHeader';
 import Footer from '../Footer/Footer';
 import Loading from '../Loading/Loading';
 
@@ -80,6 +81,7 @@ export default class Stocker extends Component {
         </Helmet>
 
         <Header />
+        <MobileHeader />
 
         <main className="stocker-main">
 

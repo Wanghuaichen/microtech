@@ -5,6 +5,7 @@ import ModalVideo from 'react-modal-video';
 import {Helmet} from "react-helmet";
 
 import Header from '../Header/Header';
+import MobileHeader from '../Header/MobileHeader';
 import Footer from '../Footer/Footer';
 import Display0 from './Display/Display0';
 import Display1 from './Display/Display1';
@@ -51,6 +52,7 @@ export default class Feedyard extends Component {
         </Helmet>
 
         <Header />
+        <MobileHeader />
 
         <main className="feedyard-main">
 
