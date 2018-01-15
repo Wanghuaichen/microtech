@@ -258,9 +258,8 @@
     display: none;
 }
 
-// mobile to ipad pro responsive 
-
-@media screen and (max-width: 1025px){
+// ipad responsive 
+@media only screen and (min-width : 766px) and (max-width : 1024px) {
     .home-container{
         display: grid;
         grid-template-columns: 1fr;
@@ -273,6 +272,193 @@
         "mission-boxes"
         "fourth-main"
         "footer-nav";
+    }
+
+    .home-container {
+        overflow-x: hidden;
+    }
+
+    .header-home, .footer-left, .terms {
+        display: none;
+    }
+
+    .slider {
+        display: none !important;
+    }
+
+    .mobile-header-container, .logo-icon, .menu-container, .logo-icon-image, .menu-box, .btn-mui , .menu-drawer, .mobile-home {
+        display: block;
+    }
+
+    .mobile-header-container {
+        margin-top: 10px;
+        width: 100vw;
+        @include flexSetUp;
+        position: absolute;
+        z-index: 1000;
+        top: 0;
+        background-color: $white;
+    }
+
+    .menu-container {
+        @include flexSetUp;
+        justify-content: space-between;
+        width: 100vw;
+        height: 80px;
+    }
+    
+    .logo-icon {
+        @include flexSetUp;
+        background-color: $white;
+        margin-left: 20px;
+    }
+
+    .logo-icon-image {
+        margin-top: 5px;
+        width: 30vw;
+    }
+
+    .menu-box {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background-color: $primary-blue;
+        height: 50px;
+        width: 60vw;
+    }
+
+    .btn-mui {
+        @include whiteContact;
+        margin-right: 20px;
+    }
+
+    .mobile-home {
+        width: 100vw;
+    }
+   
+    .slider-home {
+        height: 100vh;
+        width: 100vw;
+        .vision-text {
+            font-size: 24px;
+            width: 75vw;
+            margin-top: -40px;
+        }
+    }
+
+    .main-cta {
+        margin-top: 280px;
+        width: 75vw;
+    }
+
+     .icon-box, .icon-header, .icon-subheader, .animal-text, .home-container,.bluebanner-text, .mission-boxes, .mission-box, .fourth-container   {
+        @include flexSetUp;
+        flex-direction: column;
+    }
+
+    .icon-header, .icon-subheader, .bluebanner-text, .bluebanner-header, .fourth-text, .fourth-para, .center-container    {
+        word-wrap: break-word;
+        width: 75vw;
+    }
+
+    .icon-animal-box, .icon-header, .animal-icons {
+        margin-top: 300px;
+    }
+
+    .animal {
+        height: 10vw;
+        margin-top: -30px;
+    }
+
+    .animal-text {
+        margin-bottom: 120px;
+    }
+
+    
+
+    .icon-subheader {
+        margin-top: 175px;
+    }
+
+    .bluebanner-box {
+        width: 100vw;
+        @include flexSetUp;
+        flex-direction: column;
+        height: 600px !important;
+    }
+
+    .bluebanner-header {
+        font-size: 80px;
+    }
+
+    .bluebanner-est {
+        margin-left: -100px;
+        margin-top: -50px;
+        margin-bottom: 50px;
+    }
+
+    .mission-boxes {
+        margin-top: 260px;
+        height: 650px;
+    }
+
+    .fourth-main {
+        margin-top: 290px;
+    }
+
+    .fourth-header {
+        font-size: 24px;
+    }
+
+    .fourth-para.four {
+        margin: 0;
+    }
+
+    .res-cta {
+        margin-top: 20px;
+        width: 75vw;
+    }
+
+    .footer-nav {
+        height: 100px !important;
+    }
+
+    .social-box {
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .contact-btn {
+        margin-right: 80px;
+    }
+
+    .social-icon {
+        width: 25px !important;
+    }
+}
+
+
+
+// mobile responsive 
+
+@media screen and (max-width: 765px){
+    .home-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "mobile-header-container"
+        "slider-home" 
+        "icon-animal-box"
+        "animal-icons"
+        "bluebanner-box"
+        "mission-boxes"
+        "fourth-main"
+        "footer-nav";
+    }
+
+    .home-container {
+        overflow-x: hidden;
     }
 
     .header-home, .footer-left, .terms {
