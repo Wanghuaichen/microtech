@@ -15,15 +15,6 @@ import Careers from './components/Careers/Careers';
 import Policy from './components/Footer/PrivacyPolicy';
 import FourOhFour from './components/404/404';
 
-class Stockerpage extends Component {
-	render() {
-		return (
-			<div>
-				<h1>Stocker1™</h1>
-			</div>
-		);
-	}
-}
 
 export default (
   <Switch>

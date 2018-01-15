@@ -5,7 +5,7 @@ const Sitemap = require('../').default;
 
 (   
     new Sitemap(router)
-    .build('http://my-site.ru')
+    .build('https://dev.microtechnologies.com')
     .save('./sitemap.xml')
 
 );
