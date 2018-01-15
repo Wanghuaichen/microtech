@@ -3,11 +3,12 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import ModalVideo from 'react-modal-video';
 import Carousel from 'nuka-carousel';
-// import MetaTags from 'react-meta-tags';
 import {Helmet} from "react-helmet";
+// import MetaTags from 'react-meta-tags';
 
 // components
 import Header from '../Header/Header';
+import MobileHeader from '../Header/MobileHeader';
 import Footer from '../Footer/Footer';
 import Loading from '../Loading/Loading';
 
@@ -22,6 +23,7 @@ import InnovationIcon from '../../assets/Icons/Innovation.png';
 import ValueIcon from '../../assets/Icons/Value.png';
 import ServiceIcon from '../../assets/Icons/Service.png';
 import Passionate from '../../assets/Pics/4th-Container-Photo.jpg';
+import MobileHome from '../../assets/Pics/MobileHome.png';
 
 
 export default class Home extends Component {
@@ -62,6 +64,8 @@ export default class Home extends Component {
 
         <main className="slider-home">
           <Header />
+          <MobileHeader />
+          <img className="mobile-home" src={MobileHome} alt="Micro Technologies Home" />
 
           <Carousel decorators={false} autoplay={true}
             wrapAround={true} speed={600} >
@@ -75,7 +79,7 @@ export default class Home extends Component {
 
               <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='wUlPN0sZffY' onClose={() => this.setState({ isOpen: false })} />
               <div className="main-cta" onClick={this.openModal}>WATCH VIDEO</div>
-
+              
             </header>
           </div>
         </main>

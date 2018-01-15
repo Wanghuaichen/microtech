@@ -249,6 +249,15 @@
     text-align: center;
 }
 
+.mobile-header-container  {
+    display: none;
+    grid-area: mobile-header-container;
+}
+
+.logo-icon, .menu-container, .menu-drawer, .mobile-nav-box, .mobile-home {
+    display: none;
+}
+
 // mobile to ipad pro responsive 
 
 @media screen and (max-width: 1025px){
@@ -256,7 +265,7 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: 
-        "header"
+        "mobile-header-container"
         "slider-home" 
         "icon-animal-box"
         "animal-icons"
@@ -266,24 +275,79 @@
         "footer-nav";
     }
 
+    .header-home, .footer-left, .terms {
+        display: none;
+    }
+
+    .slider {
+        display: none !important;
+    }
+
+    .mobile-header-container, .logo-icon, .menu-container, .logo-icon-image, .menu-box, .btn-mui , .menu-drawer, .mobile-home {
+        display: block;
+    }
+
+    .mobile-header-container {
+        margin-top: 10px;
+        width: 100vw;
+        @include flexSetUp;
+        position: absolute;
+        z-index: 1000;
+        top: 0;
+    }
+
+    .menu-container {
+        @include flexSetUp;
+        justify-content: space-between;
+        width: 100vw;
+        height: 80px;
+    }
+    
+    .logo-icon {
+        @include flexSetUp;
+        background-color: $white;
+        margin-left: 20px;
+    }
+
+    .logo-icon-image {
+        margin-top: 5px;
+        width: 30vw;
+    }
+
+    .menu-box {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background-color: $primary-blue;
+        height: 50px;
+        width: 60vw;
+    }
+
+    .btn-mui {
+        @include whiteContact;
+        margin-right: 20px;
+    }
+
+    .mobile-home {
+        width: 100vw;
+    }
+   
     .slider-home {
         height: 100vh;
         width: 100vw;
         .vision-text {
             font-size: 24px;
             width: 75vw;
+            margin-top: -40px;
         }
     }
 
-    .slider {
-        height: 100vh !important;
-    }
-
     .main-cta {
-        margin-top: 350px;
+        margin-top: 280px;
+        width: 75vw;
     }
 
-    .icon-animal-box, .icon-box, .animal-icons, .icon-header, .icon-subheader, .animal, .animal-text, .animal-icons, .home-container, .bluebanner-box, .bluebanner-text, .mission-boxes, .mission-box, .fourth-container   {
+    .icon-animal-box, .icon-box, .animal-icons, .icon-header, .icon-subheader, .animal, .animal-text, .animal-icons, .home-container,.bluebanner-text, .mission-boxes, .mission-box, .fourth-container   {
         @include flexSetUp;
         flex-direction: column;
     }
@@ -292,6 +356,77 @@
         word-wrap: break-word;
         width: 75vw;
     }
+
+    .icon-animal-box, .icon-header, .animal-icons {
+        margin-top: 200px;
+    }
+
+    .icon-subheader {
+        margin-top: 230px;
+    }
+
+    .bluebanner-box {
+        width: 100vw;
+        @include flexSetUp;
+        flex-direction: column;
+        height: 600px !important;
+    }
+
+    .bluebanner-header {
+        font-size: 80px;
+    }
+
+    .bluebanner-est {
+        margin: 0px 0px 50px 130px;
+        margin-top: -50px;
+    }
+
+
+    .mission-boxes {
+        margin-top: 260px;
+        height: 600px;
+    }
+
+    .fourth-main {
+        margin-top: 290px;
+    }
+
+    .fourth-header {
+        font-size: 24px;
+        margin-top: -40px;
+    }
+
+    .fourth-para.four {
+        margin: 0;
+    }
+
+    .res-cta {
+        margin-top: 20px;
+        width: 75vw;
+    }
+
+    .footer-nav {
+        height: 100px !important;
+    }
+
+    .social-box {
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .social-links {
+        margin-left: 10px;
+    }
+
+    .contact-btn {
+        margin-right: 30px;
+    }
+
+    .social-icon {
+        width: 25px !important;
+    }
+    
 
 
 

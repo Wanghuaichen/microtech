@@ -39,15 +39,7 @@ li {
 }
 
 .white-btn {
-    background-color: $white;
-    height: 35px;
-    width: 110px;
-    color: $primary-blue;
-    border-radius: 6px;
-    font-family: $btn-font; 
-    font-weight: 400;
-    letter-spacing: 2px;  
-    @include flexSetUp; 
+    @include whiteContact;
 }
 
 .white-btn:hover {

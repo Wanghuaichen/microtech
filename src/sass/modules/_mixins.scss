@@ -91,6 +91,18 @@
     cursor: pointer;
 }
 
+@mixin whiteContact {
+    background-color: $white;
+    height: 35px;
+    width: 110px;
+    color: $primary-blue;
+    border-radius: 6px;
+    font-family: $btn-font; 
+    font-weight: 400;
+    letter-spacing: 2px;  
+    @include flexSetUp; 
+}
+
 @mixin filterBTN {
     color: $secondary-blue;
     background-color: $filter-bg;
