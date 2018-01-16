@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 import Header from '../Header/Header';
 import MobileHeader from '../Header/MobileHeader';
 import Footer from '../Footer/Footer';
 
 import CareersCover from '../../assets/Pics/Careers_cover.svg';
+import CareerMobile from '../../assets/Mobile/CareersMobile.png';
 import WhiteArrow from '../../assets/Icons/White →.png'
 
 
@@ -18,11 +19,13 @@ export default class Careers extends Component {
           <title>Careers</title>
           <meta name="description" content="At Micro Technologies we offer lifelong career opportunities that impact lives. We foster relationships with our customers through a deep understanding that healthier animals contribute to a healthier society." />
         </Helmet>
-      
+
+        <main className="careers-main">
+
         <Header />
         <MobileHeader />
 
-        <main className="careers-main">
+        <img className="careers-mobile-cover" src={CareerMobile} alt="Warehouse Forklift" />
 
           <section className="careers-top">
             <div className="transparent-half">
@@ -43,8 +46,10 @@ export default class Careers extends Component {
           </section>
 
           <section className="gray-banner-box">
+            <div className="careers-gray-box">
             <h5 className="careers-title">PERKS AND BENEFITS</h5>
             <p className="careers-para-gray">We are committed to offering benefits and programs that are comprehensive, competitive and will meet the needs of our associates. Some of our benefits include:</p>
+            </div>
             <div className="perks-box">
               <div className="benefits">
                 <h6 className="benefits-title">health and wellness</h6>

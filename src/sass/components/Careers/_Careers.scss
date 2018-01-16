@@ -13,6 +13,10 @@
     flex-direction: column;
 }
 
+.careers-top {
+    grid-area: careers-top;
+}
+
 .careers-top-header {
     margin-bottom: 20px;
     word-wrap: break-word;
@@ -28,6 +32,7 @@
     height: 300px;
     background-color: $white;
     text-align: center;
+    grid-area: white-banner-box;
 }
 
 .careers-title {
@@ -60,6 +65,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    grid-area: gray-banner-box;
 }
 
 .perks-box {
@@ -94,6 +100,7 @@
 
 .expandedbox {
     height: 650px;
+    grid-area: expandedbox;
 }
 
 .vision-subheader {
@@ -105,4 +112,154 @@
 .white-arrow {
     margin-left: 5px;
     width: 15px;
+}
+
+.careers-mobile-cover {
+    display: none;
+}
+
+.careers-gray-box {
+    grid-area: careers-gray-box;
+}
+
+// ipad responsive 
+
+@media only screen and (min-width : 766px) and (max-width : 1024px) {
+    .transparent-half {
+        height: 35vh;
+    }
+
+    .careers-para-gray {
+        word-wrap: break-word;
+        width: 70vw;
+    }
+
+    .benefits {
+        height: 205px;
+    }
+
+    .white-banner-box, .expandedbox, {
+        margin-bottom: 50px;
+    }
+
+    .gray-banner-box {
+        padding-bottom: 50px;
+    }
+
+}
+
+
+// mobile responsive 
+
+@media screen and (max-width: 765px){
+    .careers-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "mobile-header-container"
+        "careers-top" 
+        "white-banner-box"
+        "careers-gray-box"
+        "perks-box"
+        "white-banner-box"
+        "footer-nav";
+    }
+
+
+    .careers-cover {
+        display: none;
+    }
+
+    .careers-mobile-cover {
+        display: block;
+        width: 100vw;
+    }
+
+    .careers-container {
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        width: 100vw;
+    }
+
+    .careers-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .transparent-half {
+        width: 100vw;
+        background-color: $primary-blue;
+        position: static;
+        height: 300px;
+        margin-top: -10px;
+    }
+
+    .white-banner-box {
+        width: 100vw;
+        margin: 50px 0px 200px 0px;
+    }
+
+    .btn-cta {
+        width: 80vw;
+    }
+
+    .btn-cta:hover {
+        width: 80vw;
+    }
+
+    .gray-banner-box {
+        position: static;
+        background-color: $bg-light;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .careers-gray-box {
+        width: 100vw;
+        background-color: $bg-light;
+        padding: 50px 0px 700px 0px;
+    }
+
+    .careers-title {
+        word-wrap: break-word;
+        width: 85vw;
+        margin: auto;
+    } 
+
+    .careers-para-gray {        
+        word-wrap: break-word;
+        width: 85vw;
+        margin: auto;
+        padding-top: 20px;
+    }
+
+    .perks-box {
+        display: flex;
+        flex-direction: column;
+        background-color: $bg-light;
+        margin-top: -350px;
+    }
+
+    .benefits {
+        width: 80vw;
+        padding-bottom: 5px 0px 10px 0px;
+    }
+
+    .careers-top-header, .careers-subheader {
+        word-wrap: break-word;
+        width: 85vw;
+        margin: 10px 20px;
+    }
+
+    .expandedbox {
+        height: 750px;
+        margin-top: 950px;
+    }
+
+    .careers-para {
+        margin-bottom: 20px;
+    }
+
 }

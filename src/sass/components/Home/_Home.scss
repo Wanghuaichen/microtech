@@ -259,6 +259,7 @@
 }
 
 // ipad responsive 
+
 @media only screen and (min-width : 766px) and (max-width : 1024px) {
     .home-container{
         display: grid;
@@ -291,12 +292,9 @@
     }
 
     .mobile-header-container {
-        margin-top: 10px;
         width: 100vw;
         @include flexSetUp;
-        position: absolute;
-        z-index: 1000;
-        top: 0;
+        z-index: 500;
         background-color: $white;
     }
 
@@ -340,7 +338,7 @@
         height: 100vh;
         width: 100vw;
         .vision-text {
-            font-size: 24px;
+            font-size: 34px;
             width: 75vw;
             margin-top: -40px;
         }
@@ -349,6 +347,7 @@
     .main-cta {
         margin-top: 280px;
         width: 75vw;
+        z-index: 400;
     }
 
      .icon-box, .icon-header, .icon-subheader, .animal-text, .home-container,.bluebanner-text, .mission-boxes, .mission-box, .fourth-container   {
@@ -374,8 +373,6 @@
         margin-bottom: 120px;
     }
 
-    
-
     .icon-subheader {
         margin-top: 175px;
     }
@@ -398,8 +395,8 @@
     }
 
     .mission-boxes {
-        margin-top: 260px;
-        height: 650px;
+        margin: 260px 20px 0px 0px;
+        height: 600px;
     }
 
     .fourth-main {
@@ -407,7 +404,7 @@
     }
 
     .fourth-header {
-        font-size: 24px;
+        font-size: 34px;
     }
 
     .fourth-para.four {
@@ -415,7 +412,7 @@
     }
 
     .res-cta {
-        margin-top: 20px;
+        margin-top: 40px;
         width: 75vw;
     }
 
@@ -474,11 +471,10 @@
     }
 
     .mobile-header-container {
-        margin-top: 10px;
         width: 100vw;
         @include flexSetUp;
+        z-index: 500;
         position: absolute;
-        z-index: 1000;
         top: 0;
         background-color: $white;
     }
@@ -532,6 +528,7 @@
     .main-cta {
         margin-top: 280px;
         width: 75vw;
+        z-index: 400;
     }
 
     .icon-animal-box, .icon-box, .animal-icons, .icon-header, .icon-subheader, .animal, .animal-text, .animal-icons, .home-container,.bluebanner-text, .mission-boxes, .mission-box, .fourth-container   {
@@ -569,7 +566,7 @@
     }
 
     .mission-boxes {
-        margin-top: 260px;
+        margin: 260px 20px 0px 0px;
         height: 600px;
     }
 
@@ -609,14 +606,6 @@
         width: 25px !important;
     }
     
-
-
-
-
-
-
-
-
 
 }
 

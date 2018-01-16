@@ -486,14 +486,11 @@ textarea {
   .mobile-header-container, .logo-icon, .menu-container, .logo-icon-image, .menu-box, .btn-mui, .menu-drawer, .mobile-home {
     display: block; }
   .mobile-header-container {
-    margin-top: 10px;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    z-index: 1000;
-    top: 0;
+    z-index: 500;
     background-color: #FFFFFF; }
   .menu-container {
     display: flex;
@@ -537,12 +534,13 @@ textarea {
     height: 100vh;
     width: 100vw; }
     .slider-home .vision-text {
-      font-size: 24px;
+      font-size: 34px;
       width: 75vw;
       margin-top: -40px; }
   .main-cta {
     margin-top: 280px;
-    width: 75vw; }
+    width: 75vw;
+    z-index: 400; }
   .icon-box, .icon-header, .icon-subheader, .animal-text, .home-container, .bluebanner-text, .mission-boxes, .mission-box, .fourth-container {
     display: flex;
     justify-content: center;
@@ -574,16 +572,16 @@ textarea {
     margin-top: -50px;
     margin-bottom: 50px; }
   .mission-boxes {
-    margin-top: 260px;
-    height: 650px; }
+    margin: 260px 20px 0px 0px;
+    height: 600px; }
   .fourth-main {
     margin-top: 290px; }
   .fourth-header {
-    font-size: 24px; }
+    font-size: 34px; }
   .fourth-para.four {
     margin: 0; }
   .res-cta {
-    margin-top: 20px;
+    margin-top: 40px;
     width: 75vw; }
   .footer-nav {
     height: 100px !important; }
@@ -610,13 +608,12 @@ textarea {
   .mobile-header-container, .logo-icon, .menu-container, .logo-icon-image, .menu-box, .btn-mui, .menu-drawer, .mobile-home {
     display: block; }
   .mobile-header-container {
-    margin-top: 10px;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 500;
     position: absolute;
-    z-index: 1000;
     top: 0;
     background-color: #FFFFFF; }
   .menu-container {
@@ -666,7 +663,8 @@ textarea {
       margin-top: -40px; }
   .main-cta {
     margin-top: 280px;
-    width: 75vw; }
+    width: 75vw;
+    z-index: 400; }
   .icon-animal-box, .icon-box, .animal-icons, .icon-header, .icon-subheader, .animal, .animal-text, .animal-icons, .home-container, .bluebanner-text, .mission-boxes, .mission-box, .fourth-container {
     display: flex;
     justify-content: center;
@@ -692,7 +690,7 @@ textarea {
     margin: 0px 0px 50px 130px;
     margin-top: -50px; }
   .mission-boxes {
-    margin-top: 260px;
+    margin: 260px 20px 0px 0px;
     height: 600px; }
   .fourth-main {
     margin-top: 290px; }
@@ -717,7 +715,8 @@ textarea {
 
 .contact-main {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  grid-area: contact-main; }
 
 .contact-container {
   height: 950px;
@@ -783,7 +782,8 @@ textarea {
   height: 347px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  grid-area: contact-banner; }
 
 .contact-line {
   background-color: #FFFFFF;
@@ -838,6 +838,93 @@ textarea {
 
 .contact-alink-white {
   color: #FFFFFF; }
+
+.contact-mobile-box {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+@media only screen and (min-width: 766px) and (max-width: 1024px) {
+  .contact-photo {
+    display: none; }
+  .contact-container-wrapper {
+    overflow: hidden; }
+  .contact-main {
+    margin: 30px 0px 300px 0px;
+    width: 100vw; }
+  .contact-spacing {
+    width: 80vw; }
+  .input-one, .input-two, .input-three {
+    height: 35px;
+    font-size: 15px; }
+  .input-one {
+    width: 70vw; }
+  .input-three {
+    width: 14.5vw; }
+  .input-four {
+    width: 70vw;
+    height: 200px;
+    font-size: 15px; }
+  .radio-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+  .radio-box {
+    margin: 10px 0px; }
+  .contact-line {
+    margin: 0px 25px; } }
+
+@media screen and (max-width: 765px) {
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "mobile-header-container" "contact-main" "contact-banner" "footer-nav"; }
+  .contact-photo {
+    display: none; }
+  .contact-main {
+    margin-top: 100px;
+    margin-bottom: 400px;
+    overflow-x: hidden;
+    width: 100vw; }
+  .contact-spacing {
+    width: 60vw; }
+  .input-one, .input-two, .input-three {
+    height: 35px;
+    font-size: 15px; }
+  .input-one {
+    width: 65vw; }
+  .input-three {
+    width: 14.5vw; }
+  .input-four {
+    width: 65vw;
+    height: 200px;
+    font-size: 15px; }
+  .radio-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+  .radio-box {
+    margin: 10px 0px; }
+  .contact-banner {
+    display: flex;
+    flex-direction: column; }
+  .contact-line {
+    width: 80vw;
+    height: 2px;
+    margin: 20px 0px 10px 0px; }
+  .contact-mobile-box {
+    display: flex;
+    width: 80vw; }
+  .contact-alink-white, .address {
+    font-size: 15px;
+    word-wrap: break-word;
+    width: 50vw; }
+  .contact-icons {
+    margin-top: 20px; }
+  .contact-subheader {
+    margin-top: 0px; }
+  .submit-btn {
+    width: 70vw; } }
 
 .header-home {
   z-index: 10;
@@ -1447,6 +1534,9 @@ input::placeholder {
   align-items: center;
   flex-direction: column; }
 
+.careers-top {
+  grid-area: careers-top; }
+
 .careers-top-header {
   margin-bottom: 20px;
   word-wrap: break-word;
@@ -1459,7 +1549,8 @@ input::placeholder {
 .white-banner-box {
   height: 300px;
   background-color: #FFFFFF;
-  text-align: center; }
+  text-align: center;
+  grid-area: white-banner-box; }
 
 .careers-title {
   font-size: 40px;
@@ -1514,7 +1605,8 @@ input::placeholder {
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  grid-area: gray-banner-box; }
 
 .perks-box {
   display: flex;
@@ -1544,7 +1636,8 @@ input::placeholder {
   color: #838383; }
 
 .expandedbox {
-  height: 650px; }
+  height: 650px;
+  grid-area: expandedbox; }
 
 .vision-subheader {
   color: #1A2E5A;
@@ -1554,6 +1647,93 @@ input::placeholder {
 .white-arrow {
   margin-left: 5px;
   width: 15px; }
+
+.careers-mobile-cover {
+  display: none; }
+
+.careers-gray-box {
+  grid-area: careers-gray-box; }
+
+@media only screen and (min-width: 766px) and (max-width: 1024px) {
+  .transparent-half {
+    height: 35vh; }
+  .careers-para-gray {
+    word-wrap: break-word;
+    width: 70vw; }
+  .benefits {
+    height: 205px; }
+  .white-banner-box, .expandedbox {
+    margin-bottom: 50px; }
+  .gray-banner-box {
+    padding-bottom: 50px; } }
+
+@media screen and (max-width: 765px) {
+  .careers-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "mobile-header-container" "careers-top"  "white-banner-box" "careers-gray-box" "perks-box" "white-banner-box" "footer-nav"; }
+  .careers-cover {
+    display: none; }
+  .careers-mobile-cover {
+    display: block;
+    width: 100vw; }
+  .careers-container {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    width: 100vw; }
+  .careers-main {
+    display: flex;
+    flex-direction: column; }
+  .transparent-half {
+    width: 100vw;
+    background-color: #1A2E5A;
+    position: static;
+    height: 300px;
+    margin-top: -10px; }
+  .white-banner-box {
+    width: 100vw;
+    margin: 50px 0px 200px 0px; }
+  .btn-cta {
+    width: 80vw; }
+  .btn-cta:hover {
+    width: 80vw; }
+  .gray-banner-box {
+    position: static;
+    background-color: #F6F6F6;
+    width: 100vw;
+    display: flex;
+    flex-direction: column; }
+  .careers-gray-box {
+    width: 100vw;
+    background-color: #F6F6F6;
+    padding: 50px 0px 700px 0px; }
+  .careers-title {
+    word-wrap: break-word;
+    width: 85vw;
+    margin: auto; }
+  .careers-para-gray {
+    word-wrap: break-word;
+    width: 85vw;
+    margin: auto;
+    padding-top: 20px; }
+  .perks-box {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6F6;
+    margin-top: -350px; }
+  .benefits {
+    width: 80vw;
+    padding-bottom: 5px 0px 10px 0px; }
+  .careers-top-header, .careers-subheader {
+    word-wrap: break-word;
+    width: 85vw;
+    margin: 10px 20px; }
+  .expandedbox {
+    height: 750px;
+    margin-top: 950px; }
+  .careers-para {
+    margin-bottom: 20px; } }
 
 .customer-testimony {
   width: 55vw;

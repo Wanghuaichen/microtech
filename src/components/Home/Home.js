@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import ModalVideo from 'react-modal-video';
 import Carousel from 'nuka-carousel';
 import {Helmet} from "react-helmet";
-// import MetaTags from 'react-meta-tags';
 
 // components
 import Header from '../Header/Header';
@@ -62,9 +61,11 @@ export default class Home extends Component {
           <meta name="description" content="We innovate technologies that empower food producers to grow a safe, wholesome food supply more efficiently and more profitably." />
         </Helmet>
 
+        <Header />
+        <MobileHeader />
+
         <main className="slider-home">
-          <Header />
-          <MobileHeader />
+          
           <img className="mobile-home" src={MobileHome} alt="Micro Technologies Home" />
 
           <Carousel decorators={false} autoplay={true}
@@ -77,8 +78,8 @@ export default class Home extends Component {
             <header className="center-box">
               <h3 className="vision-text">We innovate technologies that empower food producers to grow a safe, wholesome food supply more efficiently and more profitably.</h3>
 
-              <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='wUlPN0sZffY' onClose={() => this.setState({ isOpen: false })} />
-              <div className="main-cta" onClick={this.openModal}>WATCH VIDEO</div>
+              <ModalVideo className="modal-video" channel='youtube' isOpen={this.state.isOpen} videoId='wUlPN0sZffY' onClose={() => this.setState({ isOpen: false })} />
+              <h6 className="main-cta" onClick={this.openModal}>WATCH VIDEO</h6>
               
             </header>
           </div>

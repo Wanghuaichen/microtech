@@ -13,7 +13,7 @@ import LocationIcon from '../../assets/Icons/facebook-placeholder-for-locate-pla
 export default class Conact extends Component {
     render() {
         return (
-            <section className="contact-container">
+            <section className="contact-container-wrapper">
 
                 <Helmet>
                     <title>Contact</title>
@@ -93,6 +93,7 @@ export default class Conact extends Component {
                 <div className="contact-banner">
                     <h3 className="contact-header">Contact Us</h3>
                     <div className="contact-line"></div>
+                    <div className="contact-mobile-box">
                     <div className="contact-icons">
                         <img className="contact-icon" src={PhoneIcon} alt="phone icon" />
                         <img className="contact-icon" src={EmailIcon} alt="email icon" />
@@ -102,6 +103,7 @@ export default class Conact extends Component {
                         <h4 className="contact-subheader"><a className="contact-alink-white" href="tel:800-858-4330">800.858.4330.</a></h4>
                         <h4 className="contact-subheader"><a className="contact-alink-white" href="mailto:Info@MicroTechnologies.com">Info@MicroTechnologies.com</a></h4>
                         <h4 className="contact-subheader address">8701 Centerport Blvd, Amarillo, TX 79108</h4>
+                    </div>
                     </div>
                 </div>
 

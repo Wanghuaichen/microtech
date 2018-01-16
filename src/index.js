@@ -8,7 +8,7 @@ import App from './App';
 
 ReactDOM.render(
 
-  <BrowserRouter>
+  <BrowserRouter >
     <MuiThemeProvider>
       <App />
     </MuiThemeProvider>
