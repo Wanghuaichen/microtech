@@ -258,3 +258,139 @@
     color: $secondary-blue;
     margin-left: 5px;
 }
+
+.stocker-cover-mobile {
+    display: none;
+}
+
+
+// ipad responsive 
+
+@media only screen and (min-width : 766px) and (max-width : 1024px) {
+    .stocker-cover-title-main {
+        margin: 10px 0px;
+    }
+
+    .stocker-watch-video {
+        margin-top: 0px;
+    }
+
+    .stocker-text {
+        height: 300px;
+        width: 100vw;
+        margin-right: 150px;
+    }
+
+    .stocker-nav-para {
+        word-wrap: break-word;
+        width: 80vw;
+        margin-right: 150px;
+    }
+
+    .stocker-nav-header, .stocker-nav-header2, .stocker-nav-header3 {
+        word-wrap: break-word;
+        width: 80vw;
+        margin-left: -150px;
+    }
+    
+}
+
+
+// mobile responsive 
+
+@media screen and (max-width: 765px){
+    .stocker-cover-mobile {
+        display: block;
+        width: 100vw;
+    }
+
+    .stocker-cover {
+        display: none;
+    }
+
+    .stocker-container {
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        width: 100vw;
+    }
+
+    .stocker-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .transparent-stocker {
+        width: 100vw;
+        background-color: $primary-blue;
+        position: static;
+        height: 500px;
+        margin-top: -10px;
+    }
+
+    .stocker-cover-title-main {
+        color: $white;
+        z-index: 20;
+    }
+
+    .stocker-para {
+        color: $white;
+        z-index: 20;
+        margin-top: -40px;
+    }
+    
+    .stocker-text {
+        height: 400px;
+        width: 100vw;
+    }
+
+    .stocker-nav-para {
+        word-wrap: break-word;
+        width: 80vw;
+        margin-right: 150px;
+    }
+
+    .stocker-nav-header, .stocker-nav-header2, .stocker-nav-header3 {
+        word-wrap: break-word;
+        width: 80vw;
+        margin-left: -150px;
+    }
+
+    .stocker-section, .stocker-section-white {
+        @include flexSetUp;
+        flex-direction: column;
+        height: 700px;
+    }
+
+    .stocker-section-white-wider {
+        @include flexSetUp;
+        flex-direction: column;
+        height: 800px;
+    }
+
+    .stocker-subheader, .stocker-paragraph, .stocker-capture, .stocker-paragraph-two, .stocker-paragraph-three, .stocker-capture-left, .stocker-capture-left2, .stocker-header-break, .stocker-header, .graytext {
+        width: 85vw;
+        max-width: 85vw;
+        margin: 20px 0px;
+    }
+
+    .watch-video-stocker-footer {
+        @include flexSetUp;
+        flex-direction: column;
+        height: 200px;
+    }
+
+    .stocker-contact-line {
+        display: none;
+    }
+
+    .stocker-footer-text {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .stocker-video-box {
+        margin-top: 20px;
+    }
+
+}

@@ -20,6 +20,7 @@ import OpSum from '../../assets/Pics/rptoperationsummary.jpg';
 import GP from '../../assets/Pics/groupprocessing.jpg';
 import Treatments from '../../assets/Pics/treatment1.jpg';
 import StockerVideo from '../../assets/Videos/Stocker1Final.mp4';
+import StockerMobile from '../../assets/Mobile/StockerMobile.png';
 
 
 export default class Stocker extends Component {
@@ -82,6 +83,8 @@ export default class Stocker extends Component {
 
         <Header />
         <MobileHeader />
+
+        <img className="stocker-cover-mobile" src={StockerMobile} alt="Stocker Cover" />
 
         <main className="stocker-main">
 
