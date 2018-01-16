@@ -10,6 +10,7 @@ import BlogFeatured from '../../assets/Pics/Blog_featured.png';
 import BlogFiller from '../../assets/Pics/Blog_filler.png';
 import TwitterFollow from '../../assets/Icons/Twitter.png';
 import LinkedInFollow from '../../assets/Icons/Linkedin.png';
+import BlogMobile from '../../assets/Mobile//FeedyardMobile.png';
 
 export default class Blog extends Component {
   render() {
@@ -23,6 +24,8 @@ export default class Blog extends Component {
 
         <Header />
         <MobileHeader />
+
+        <img className="blog-cover-mobile" src={BlogMobile} alt="Blog Cover" />
 
         <main className="blog-main">
           <section className="cover-top">

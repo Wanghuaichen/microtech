@@ -260,5 +260,437 @@
     height: 150px;
 }
 
+.difference-cover-mobile {
+    display: none;
+}
+
+// ipad responsive 
+
+@media only screen and (min-width : 766px) and (max-width : 1024px) {
+
+    .difference-cover-mobile {
+        display: block;
+        width: 100vw;
+    }
+
+    .difference-cover {
+        display: none;
+    }
+
+    .difference-container {
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        width: 100vw;
+    }
+
+    .difference-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .transparent-white {
+        width: 100vw;
+        background-color: $primary-blue;
+        position: static;
+        height: 500px;
+        margin-top: -10px;
+    }
+
+    .center-difference-box {
+        color: $white;
+        z-index: 20;
+    }
+
+    .difference-subheader {
+        word-wrap: break-word;
+        width: 85vw;
+    }
+
+    .white-banner-box {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+    }
+
+    .values-box {
+        width: 100vw;
+        margin: auto 0;
+    }
+
+    .diff-box {
+        width: 30vw;
+        position: relative;
+    }
+
+    .values-header {
+        font-size: 18px;
+    }
+
+    .values-numbers {
+        font-size: 85px;
+    }
+
+    .values-para {
+        word-wrap: break-word;
+        width: 28vw;
+    }
+
+    .val-line {
+        margin-top: 40px;
+    }
+
+    .slanted-line {
+        display: none;
+    }
+
+    .quotes {
+        width: 15vw;
+        margin-bottom: 50px;
+    }
+
+    .operations-quote, .operation-name, .operations-title, .operations-box {
+        word-wrap: break-word;
+        width: 85vw;
+        margin: 0 auto;
+    }
+
+    .operations-box {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .operations-name {
+        font-size: 28px;
+    }
+
+    .operations-title {
+        font-size: 14px;
+    }
+
+    .ourpeople-box {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        justify-content: space-around;
+        height: 40vh;
+        width: 100vw;
+    }
+
+    .third-diff-section {
+        position: relative;
+    }
+
+    .threePs-para {
+        width: 85vw;
+    }
+
+    .partnership-container {
+        height: 300px;
+    }
+
+    .partnership-para {
+        text-align: left;
+        color: $text-dark;
+        word-wrap: break-word;
+        width: 80vw;
+        margin: 20px 0px;
+    }
+
+    .nutrition-wide {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100vw;
+        margin-left: 40px;
+    }
+
+    .nutrition-container {
+        width: 100vw;
+        height: 550px;
+    }
+
+    .nutrition-box {
+        width: 100vw;
+    }
+
+    .nutrition-header, .nutrition-subtitle, {
+        width: 85w;
+    }
+
+    .nutrition-para {
+        word-wrap: break-word;
+        width: 85vw;
+    }
+
+    .white-passion-box {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .slantedbar {
+        margin: 50px 0px;
+    }
+
+    .passion-h2, .passion-h2-para {
+        word-wrap: break-word;
+        width: 40vw;
+    }
+
+    .graypassion {
+        height: 1200px;
+        padding-bottom: 50px;
+    }
+
+   .passion-container {
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+
+    .passion-container {
+        margin: 0;
+    }
+
+    .subblue-subtitle {
+        width: 40vw;
+    }
+
+    .bluesub-para {
+        word-wrap: break-word;
+        width: 40vw;
+        margin-top: 75px;
+    }
+
+    .bluesub {
+        background-color: $opacity-dark;
+        color: $white;
+        width: 40vw;
+        height: 100px;
+        z-index: 50;
+        @include flexSetUp;
+        margin-top: 240px;
+        position: absolute;
+    }
+
+    .passion-image, {
+        position: relative;
+        width: 40vw;
+    }
+
+    .passion-box {
+        margin: 30px 12px;
+    }
+
+}
+
+// mobile responsive 
+
+@media screen and (max-width: 765px){
+
+    .difference-cover-mobile {
+        display: block;
+        width: 100vw;
+    }
+
+    .difference-cover {
+        display: none;
+    }
+
+    .difference-container {
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        width: 100vw;
+    }
+
+    .difference-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .transparent-white {
+        width: 100vw;
+        background-color: $primary-blue;
+        position: static;
+        height: 500px;
+        margin-top: -10px;
+    }
+
+    .center-difference-box {
+        color: $white;
+        z-index: 20;
+    }
+
+    .difference-subheader {
+        word-wrap: break-word;
+        width: 85vw;
+    }
+
+    .white-banner-box {
+        display: flex;
+        flex-direction: column;
+        height: 900px;
+    }
+
+    .values-box {
+        flex-wrap: wrap;
+        height: 900px;
+    }
+
+    .diff-box {
+        margin: 70px 0px;
+    }
+
+    .slanted-line {
+        display: none;
+    }
+
+    .quotes {
+        width: 25vw;
+        margin-bottom: 50px;
+    }
+
+    .operations-quote, .operation-name, .operations-title, .operations-box {
+        word-wrap: break-word;
+        width: 85vw;
+        margin: 0 auto;
+    }
+
+    .operations-box {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .operations-name {
+        font-size: 28px;
+    }
+
+    .operations-title {
+        font-size: 14px;
+    }
+
+    .ourpeople-box {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        height: 600px;
+        width: 100vw; 
+        position: static;
+    }
+    
+    .threePs-title {
+        color: $primary-blue;
+        text-align: center;
+        word-wrap: break-word;
+        width: 85vw;
+        margin-top: 30px;
+    }
+
+    .threePs-title2 {
+        display: none;
+    }
+
+    .threePs-para {
+        text-align: left;
+        color: $primary-blue;
+        word-wrap: break-word;
+        width: 85vw;
+        margin: 20px 0px;
+    }
+
+    .partnership-container {
+        height: 300px;
+    }
+
+    .partnership-para {
+        text-align: left;
+        color: $text-dark;
+        word-wrap: break-word;
+        width: 80vw;
+        margin: 20px 0px;
+    }
+
+    .nutrition-wide {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100vw;
+    }
+
+    .nutrition-container {
+        width: 100vw;
+        height: 800px;
+    }
+
+    .nutrition-box {
+        width: 100vw;
+    }
+
+    .nutrition-header, .nutrition-subtitle, {
+        width: 85w;
+    }
+
+    .nutrition-para {
+        word-wrap: break-word;
+        width: 85vw;
+    }
+
+    .white-passion-box {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .slantedbar {
+        margin: 25px 0px;
+    }
+
+    .passion-h2, .passion-h2-para {
+        word-wrap: break-word;
+        width: 85vw;
+    }
+
+    .graypassion {
+        height: 2300px;
+        padding-bottom: 50px;
+    }
+
+   .passion-container {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .passion-container {
+        margin: 0;
+    }
+    
+    .passion-image, {
+        position: relative;
+        width: 90vw;
+    }
+
+    .subblue-subtitle {
+        width: 90vw;
+    }
+
+    .bluesub-para {
+        word-wrap: break-word;
+        width: 85vw;
+        margin-top: 75px;
+    }
+
+    .bluesub {
+        background-color: $opacity-dark;
+        color: $white;
+        width: 90vw;
+        height: 100px;
+        z-index: 50;
+        @include flexSetUp;
+        margin-top: 268px;
+        position: absolute;
+    }
+}
 
 

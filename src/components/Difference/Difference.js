@@ -14,6 +14,7 @@ import Customers from '../../assets/Pics/Customers.png';
 import Animals from '../../assets/Pics/Animals.png';
 import Family from '../../assets/Pics/Family.png';
 import ArrowDown from '../../assets/Pics/ArrowDown.svg';
+import DifferenceMobile from '../../assets/Mobile/DifferenceMobile.png';
 
 export default class Difference extends Component {
   constructor() {
@@ -64,6 +65,8 @@ export default class Difference extends Component {
 
         <Header />
         <MobileHeader />
+
+        <img className="difference-cover-mobile" src={DifferenceMobile} alt="Difference Cover" />
 
         <main className="difference-main">
 

@@ -283,14 +283,19 @@
 
     .stocker-nav-para {
         word-wrap: break-word;
-        width: 80vw;
+        width: 85vw;
         margin-right: 150px;
     }
 
     .stocker-nav-header, .stocker-nav-header2, .stocker-nav-header3 {
         word-wrap: break-word;
-        width: 80vw;
+        width: 85vw;
         margin-left: -150px;
+    }
+
+    .stocker-header {
+        word-wrap: break-word;
+        width: 40vw;
     }
     
 }
