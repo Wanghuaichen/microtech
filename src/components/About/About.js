@@ -14,6 +14,7 @@ import EmailBlue from '../../assets/Icons/close-envelope.png';
 import EmailTiny from '../../assets/Icons/Grey_Envelope.png';
 import Cowpen from '../../assets/Pics/Cowpen.svg';
 import Map from '../../assets/Pics/Map.jpg';
+import AboutMobile from '../../assets/Mobile/AboutMobile.png';
 
 
 export default class About extends Component {
@@ -28,6 +29,8 @@ export default class About extends Component {
 
         <Header />
         <MobileHeader />
+
+        <img className="about-cover-mobile" src={AboutMobile} alt="About Cover" />
 
         <main className="about-main">
          <div className="about-cover"></div>

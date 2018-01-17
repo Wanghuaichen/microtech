@@ -226,6 +226,31 @@ input::placeholder {
 
 @media only screen and (min-width : 766px) and (max-width : 1020px) {
 
+    .blog-cover-mobile {
+        display: block;
+        width: 100vw;
+    }
+
+    .transparent-mid {
+        width: 100vw;
+        background-color: $primary-blue;
+        position: static;
+        height: 500px;
+        margin-top: -10px;
+    }
+
+    .blog-cover-title {
+        color: $white;
+        z-index: 20;
+        word-wrap: break-word;
+        width: 90vw;
+    }
+
+    .blog-subtitle {
+        color: $white;
+        z-index: 20;
+    }
+
     .btn-nav {
         margin: 10;
     }

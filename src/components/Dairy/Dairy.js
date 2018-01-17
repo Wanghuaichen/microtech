@@ -50,11 +50,12 @@ export default class Dairy extends Component {
 
         <Header />
         <MobileHeader />
+        
         <img className="dairy-cover-mobile" src={DairyMobile} alt="Dairy Cover" />
 
         <main className="dairy-main">
           <section className="feedyard-top">
-            <div className="transparent-stocker">
+            <div className="transparent-stocker white-text">
               <h3 className="feedyard-cover-title-one">What does Precision Dairy</h3>
               <h3 className="feedyard-cover-title-three">Management Look Like?</h3>
               <h6 className="feedyard-subtitle">DECISIONS DRIVEN BY REAL-TIME DATA</h6>

@@ -27,3 +27,130 @@
     color: $bg-light;
     cursor: pointer;
 }
+
+
+.slideshow-display {
+    width: 700px;
+}
+
+// mobile responsive 
+
+@media screen and (max-width: 765px){
+
+    .dairy-cover-mobile {
+        display: block;
+        width: 100vw;
+    }
+
+    .stocker-cover {
+        display: none;
+    }
+
+    .dairy-container {
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        width: 100vw;
+    }
+
+    .dairy-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .transparent-stocker {
+        width: 100vw;
+        background-color: $primary-blue;
+        position: static;
+        height: 500px;
+        margin-top: -10px;
+    }
+
+    .moreinfo-full {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .moreinfo-side {
+        width: 100vw;
+        height: 170px;
+    }
+
+    .moreinfo-right {
+        width: 100vw;
+    }
+
+    .nav-side-box {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+    }
+
+    .nav-side-btn {
+        width: 25vw;
+        margin: 2px;
+        height: 100px;
+        position: relative;
+    }
+
+    .dairy-top-nav {
+        width: 100vw;
+    }
+
+    .dairy-btn, .dairyactive {
+        width: 50vw;
+    }
+
+    .nav-side-label {
+        font-size: 16px;
+        text-align: center;
+        word-wrap: break-word;
+        width: 20vw;
+    }
+
+    .active-side {
+        bottom: 0;
+        left: 0;
+        width: 24vw;
+        height: 1.2vw;
+        background-color: $secondary-blue;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .dairy-btn-text {
+        text-align: center;
+    }
+
+    .slideshow-display {
+        width: 200px;
+    }
+
+    .list-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .moreinfo-display {
+        height: 800px;
+        margin-bottom:400px;
+    }
+
+    .tv-screen, .tv-screen-frame, .iphone-header, .iphone-text, .iphone, .tv-display, .iphone-text2 {
+        display: none;
+    }
+
+    .click-bottom-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .click-left-para {
+        margin-bottom: 20px;
+    }
+
+    .transparent-stocker2 {
+        background-color: $white;
+        margin: 100px 0px;
+    }
+}

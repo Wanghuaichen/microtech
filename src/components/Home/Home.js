@@ -9,7 +9,7 @@ import {Helmet} from "react-helmet";
 import Header from '../Header/Header';
 import MobileHeader from '../Header/MobileHeader';
 import Footer from '../Footer/Footer';
-import Loading from '../Loading/Loading';
+// import Loading from '../Loading/Loading';
 
 // images
 import HomeHero from '../../assets/Pics/HomeHero.png';
@@ -29,8 +29,8 @@ export default class Home extends Component {
   constructor() {
     super()
     this.state = {
-      isOpen: false,
-      isLoading: true
+      isOpen: false
+      // isLoading: true
     }
     this.openModal = this.openModal.bind(this)
   }
@@ -42,7 +42,7 @@ export default class Home extends Component {
   componentDidMount() { 
     // setTimeout( () =>  this.setState ({isLoading: false}), 750)
 
-    this.setState({isLoading: false})
+    // this.setState({isLoading: false})
     
   };
 
@@ -51,7 +51,7 @@ export default class Home extends Component {
   render() {
     return (
 
-      this.state.isLoading ? <Loading /> : 
+      // this.state.isLoading ? <Loading /> : 
       
       <section className="home-container">
       
@@ -78,8 +78,9 @@ export default class Home extends Component {
             <header className="center-box">
               <h3 className="vision-text">We innovate technologies that empower food producers to grow a safe, wholesome food supply more efficiently and more profitably.</h3>
 
-              <ModalVideo className="modal-video" channel='youtube' isOpen={this.state.isOpen} videoId='wUlPN0sZffY' onClose={() => this.setState({ isOpen: false })} />
+              <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='wUlPN0sZffY' onClose={() => this.setState({ isOpen: false })} />
               <h6 className="main-cta" onClick={this.openModal}>WATCH VIDEO</h6>
+              
               
             </header>
           </div>
@@ -200,6 +201,7 @@ export default class Home extends Component {
               </Link>
             </div>
           </div>
+          
         </section>
         
         <Footer />

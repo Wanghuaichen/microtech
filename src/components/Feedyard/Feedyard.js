@@ -59,7 +59,7 @@ export default class Feedyard extends Component {
         <main className="feedyard-main">
 
           <section className="feedyard-top">
-            <div className="transparent-stocker">
+            <div className="transparent-stocker white-text">
               <h3 className="feedyard-cover-title-one">What does</h3>
               <h3 className="feedyard-cover-title-two">Precision Animal Agriculture</h3>
               <h3 className="feedyard-cover-title-three">on a feedyard look like?</h3>
@@ -72,7 +72,7 @@ export default class Feedyard extends Component {
             <img className="stocker-cover" src={FeedyardCover} alt="Feedyard Cover" />
           </section>
 
-          <section className="blue-banner-flex">
+          <section className="blue-banner-flex advanced">
             <h6 className="blue-left-text">ADVANCED COMPREHENSIVE & INTEREGRATED</h6>
             <div className="line-break-banner"></div>
             <h6 className="blue-right-text">FEEDYARD MANAGEMENT SOLUTIONS</h6>

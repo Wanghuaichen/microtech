@@ -223,3 +223,131 @@
 .leadership-alinks {
     color: $text-dark;
 }
+
+.about-cover-mobile {
+    display: none;
+}
+
+// ipad responsive 
+
+@media only screen and (min-width : 766px) and (max-width : 1024px) {
+
+}
+
+// mobile responsive 
+
+@media screen and (max-width: 765px){
+
+    .about-cover {
+        display: none;
+    }
+
+    .about-cover-mobile {
+        display: block;
+        width: 100vw;
+    }
+
+    .stocker-cover {
+        display: none;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        width: 100vw;
+    }
+
+    .about-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .transparent-stocker {
+        width: 100vw;
+        background-color: $primary-blue;
+        position: static;
+        height: 500px;
+        margin-top: -10px;
+    }
+
+    .bluebanner-column, .responsibility-container, .gray-footer,.res-align, .responsibility-box, .bluebanner-left, .leadership-bottom, .left {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        margin: 0;
+    }
+
+    .bluebanner-header {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .leadership-text, .partnership-logos {
+        word-wrap: break-word;
+        width: 100vw;
+        margin: 10px 20px 0px 40px;
+        flex-wrap: wrap;
+    }
+
+    .part-icon {
+        margin: 10px 0px;
+        text-align: center;
+    }
+
+    .team-container, .execs-container {
+        width: 100vw;
+    }
+
+    .display-circle-text, .history-circles-para, .history-circles-header {
+        margin: 0;
+        word-wrap: break-word;
+        width: 100vw;
+        position: static;
+    }
+
+    .team-box, .team-text, .execs-box {
+        word-wrap: break-word;
+        width: 85vw;
+    }
+
+    .team-line {
+        width: 300px;
+        height: 1px;
+    }
+
+    .facts-box, .facts-header, .cowpen-image {
+        width: 100vw;
+    }
+
+    .responsibility-box {
+        margin-top: 70px;
+    }
+
+    .res-text-left, .responsibility-header {
+        word-wrap: break-word;
+        width: 85vw;
+        margin: 0 auto;
+    }
+
+    .map {
+        width: 85vw;
+    }
+
+    .map-container {
+        height: 500px;
+    }
+
+    .gray-footer {
+        height: 600px;
+    }
+
+    .gray-location {
+        text-align: center;
+
+    }
+
+
+   
+
+}

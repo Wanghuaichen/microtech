@@ -29,7 +29,8 @@ export default class View2 extends Component {
         <div className="img-view2-box">
           <img className="tv-screen" src={Infographic} alt="infographic" width="400px" />
         </div>
-        <Carousel width={700} decorators={Carousel.getDefaultProps().decorators.slice(0, 2)} autoplay={true} wrapAround={true} speed={600} >
+        <div className="slideshow-display">
+        <Carousel decorators={Carousel.getDefaultProps().decorators.slice(0, 2)} autoplay={true} wrapAround={true} speed={600} >
             <img className="slideshow-box" src={Slide1} alt="slide show" onLoad={() => {window.dispatchEvent(new Event('resize'));}}  />
             <img className="slideshow-box" src={Slide2} alt="slide show" onLoad={() => {window.dispatchEvent(new Event('resize'));}}  />
             <img className="slideshow-box" src={Slide3} alt="slide show" onLoad={() => {window.dispatchEvent(new Event('resize'));}}  />
@@ -41,6 +42,7 @@ export default class View2 extends Component {
             <img className="slideshow-box" src={Slide9} alt="slide show" onLoad={() => {window.dispatchEvent(new Event('resize'));}}  />
             <img className="slideshow-box" src={Slide10} alt="slide show" onLoad={() => {window.dispatchEvent(new Event('resize'));}}  />
           </Carousel>
+          </div>
 
         <div className="click-bottom-box">
           <div className="click-left-text">

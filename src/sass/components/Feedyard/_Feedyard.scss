@@ -280,14 +280,12 @@
 
     .transparent-stocker, .transparent-stocker2 {
         width: 100vw;
-        background-color: $white;
+        background-color: $primary-blue;
         position: static;
-        height: 650px;
-        margin-bottom: 50px;
     }
 
     .feedyard-cover-title-one, .feedyard-cover-title-two, .feedyard-cover-title-three, {
-        color: $primary-blue;
+        color: $white;
         z-index: 20;
         word-wrap: break-word;
         width: 90vw;
@@ -374,6 +372,10 @@
         display: flex;
         flex-direction: column;
         height: 600px;
+    }
+    
+    .white-text {
+        color: $white;
     }
 
 
