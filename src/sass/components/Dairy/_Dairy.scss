@@ -55,3 +55,46 @@
     color: $primary-blue;
     text-align: center;
 }
+
+// ipad responsive 
+
+@media only screen and (min-width : 766px) and (max-width : 1024px) {
+
+}
+
+// mobile responsive 
+
+@media screen and (max-width: 765px){
+
+    .dairy-cover-mobile {
+        display: block;
+        width: 100vw;
+    }
+
+    .stocker-cover {
+        display: none;
+    }
+
+    .dairy-container {
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        width: 100vw;
+    }
+
+    .dairy-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .transparent-stocker {
+        width: 100vw;
+        background-color: $primary-blue;
+        position: static;
+        height: 500px;
+        margin-top: -10px;
+    }
+
+
+
+}

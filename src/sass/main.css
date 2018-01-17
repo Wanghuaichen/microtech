@@ -1885,6 +1885,27 @@ input::placeholder {
   color: #1A2E5A;
   text-align: center; }
 
+@media screen and (max-width: 765px) {
+  .dairy-cover-mobile {
+    display: block;
+    width: 100vw; }
+  .stocker-cover {
+    display: none; }
+  .dairy-container {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    width: 100vw; }
+  .dairy-main {
+    display: flex;
+    flex-direction: column; }
+  .transparent-stocker {
+    width: 100vw;
+    background-color: #1A2E5A;
+    position: static;
+    height: 500px;
+    margin-top: -10px; } }
+
 .difference-top {
   display: flex; }
 
@@ -3931,6 +3952,15 @@ input::placeholder {
   justify-content: center;
   align-items: center; }
 
+.white-banner-flex-bottom {
+  height: 250px;
+  width: 100vw;
+  color: #1A2E5A;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .laptop {
   margin-top: 20px; }
 
@@ -3949,6 +3979,85 @@ input::placeholder {
 .slideshow-container {
   display: flex;
   justify-content: flex-start; }
+
+.feedyard-cover-mobile {
+  display: none; }
+
+@media screen and (max-width: 765px) {
+  .feedyard-cover-mobile {
+    display: block;
+    width: 100vw; }
+  .stocker-cover {
+    display: none; }
+  .feedyard-container {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    width: 100vw; }
+  .feedyard-main {
+    display: flex;
+    flex-direction: column; }
+  .transparent-stocker, .transparent-stocker2 {
+    width: 100vw;
+    background-color: #FFFFFF;
+    position: static;
+    height: 650px;
+    margin-bottom: 50px; }
+  .feedyard-cover-title-one, .feedyard-cover-title-two, .feedyard-cover-title-three {
+    color: #1A2E5A;
+    z-index: 20;
+    word-wrap: break-word;
+    width: 90vw; }
+  .blue-banner-flex, .blue-banner-flex-m, .hear-customers-container, .transparent-banner-flex, .white-banner-flex {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    width: 100vw; }
+  .white-banner-flex {
+    margin-bottom: 130px; }
+  .blue-banner-flex, .blue-banner-flex-m {
+    text-align: center;
+    height: 300px; }
+  .blue-left-text {
+    word-wrap: break-word;
+    width: 85vw; }
+  .blue-right-text {
+    font-size: 42px; }
+  .line-break-banner {
+    height: 2px;
+    width: 100px;
+    margin: 20px 0px; }
+  .transparent-line-break-banner {
+    height: 2px;
+    width: 125px;
+    margin: 15px 185px 15px 0px; }
+  .accutrac-wheel {
+    width: 85vw; }
+  .cowboy-testimony, .customer-lightblue, .transparent-left-text, .transparent-right-text, .transparent-right-text2, .transparent-left-subtext, .customer-testimony, .customer-lightblue2, .transparent-left-text2, .transparent-left-subtext2, .comp-para {
+    width: 100vw; }
+  .transparent-left-text, .transparent-left-subtext, .transparent-left-text2, .transparent-left-subtext2, .comp-para {
+    word-wrap: break-word;
+    width: 85vw; }
+  .transparent-right-text {
+    word-wrap: break-word;
+    width: 85vw; }
+  .transparent-right-text2 {
+    word-wrap: break-word;
+    width: 85vw;
+    margin-top: 20px; }
+  .transparent-banner-flex {
+    height: 450px;
+    margin-bottom: 75px; }
+  .comprehensive-solutions {
+    height: 20vh;
+    margin-bottom: 100px; }
+  .dms-para {
+    word-wrap: break-word;
+    width: 90vw; }
+  .white-banner-flex-bottom {
+    display: flex;
+    flex-direction: column;
+    height: 600px; } }
 
 .moreinfo-top {
   background-color: #E8E8E8;

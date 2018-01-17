@@ -15,7 +15,7 @@ import Accutrac from '../../assets/Icons/accutrac.png';
 import CowboyTestimony from '../../assets/Pics/VideoPhoto2.png';
 import Comprehensive from '../../assets/Pics/Comprehensive.png';
 import Quotes from '../../assets/Icons/quote.png';
-
+import FeedyardMobile from '../../assets/Mobile/FeedyardMobile.png';
 
 export default class Feedyard extends Component {
   constructor() {
@@ -54,6 +54,8 @@ export default class Feedyard extends Component {
         <Header />
         <MobileHeader />
 
+        <img className="feedyard-cover-mobile" src={FeedyardMobile} alt="Feedyard Cover" />
+
         <main className="feedyard-main">
 
           <section className="feedyard-top">
@@ -67,7 +69,7 @@ export default class Feedyard extends Component {
               <h6 className="feedyard-subtitle">Optimal Animal Health</h6>
               <h6 className="feedyard-subtitle">Safe, Wholesome Food Supply</h6>
             </div>
-            <img className="stocker-cover" src={FeedyardCover} alt="Stocker Cover" />
+            <img className="stocker-cover" src={FeedyardCover} alt="Feedyard Cover" />
           </section>
 
           <section className="blue-banner-flex">

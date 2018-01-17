@@ -12,6 +12,7 @@ import DairyCover from '../../assets/Pics/Dairy_cover.png';
 import Testimony1 from '../../assets/Pics/VideoShoot.png';
 import LowerCover from '../../assets/Pics/Lower_cover.png';
 import Quotes from '../../assets/Icons/quote.png';
+import DairyMobile from '../../assets/Mobile/DairyMobile.png';
 
 
 export default class Dairy extends Component {
@@ -49,6 +50,7 @@ export default class Dairy extends Component {
 
         <Header />
         <MobileHeader />
+        <img className="dairy-cover-mobile" src={DairyMobile} alt="Dairy Cover" />
 
         <main className="dairy-main">
           <section className="feedyard-top">
@@ -61,7 +63,7 @@ export default class Dairy extends Component {
               <h6 className="feedyard-subtitle">FLEXIBLE AND ACCURATE FEED PROGRAMS</h6>
               <h6 className="feedyard-subtitle">OPTIMAL HERD HEALTH</h6>
             </div>
-            <img className="stocker-cover" src={DairyCover} alt="Stocker Cover" />
+            <img className="stocker-cover" src={DairyCover} alt="Dairy Cover" />
           </section>
 
           <section className="blue-banner-flex">
@@ -138,7 +140,7 @@ export default class Dairy extends Component {
             </div>
           </section>
 
-          <section className="white-banner-flex">
+          <section className="white-banner-flex-bottom">
             <div className="transparent-banner-box">
               <h3 className="transparent-left-text">Dedicated Technical</h3>
               <h6 className="transparent-left-subtext">SERVICE & SUPPORT</h6>
