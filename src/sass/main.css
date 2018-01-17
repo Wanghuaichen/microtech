@@ -1331,7 +1331,7 @@ li {
     width: 100vw;
     margin: 0; }
   .bluebanner-header {
-    font-size: 40px;
+    font-size: 44px;
     text-align: center; }
   .leadership-text, .partnership-logos {
     word-wrap: break-word;
@@ -1369,7 +1369,34 @@ li {
   .gray-footer {
     height: 600px; }
   .gray-location {
-    text-align: center; } }
+    text-align: center; }
+  .president {
+    display: flex;
+    justify-content: flex-start; }
+  .pres-name, .execs-name {
+    width: 45vw !important; }
+  .execs-container {
+    width: auto; }
+  .execs-title {
+    margin: 0px;
+    margin-bottom: 10px;
+    text-align: right; }
+  .team-line {
+    margin-bottom: 120px; }
+  .lead {
+    word-wrap: break-word;
+    width: 100vw; }
+  .left {
+    margin: 0;
+    text-align: center; }
+  .leadership-text {
+    word-wrap: break-word;
+    width: 75vw;
+    margin: 0 auto; }
+  .team-container {
+    margin-top: 100px !important; }
+  .columnbanner {
+    height: 400px; } }
 
 .cover-top {
   display: flex;
@@ -1873,7 +1900,8 @@ input::placeholder {
     margin-top: -10px; }
   .white-banner-box {
     width: 100vw;
-    margin: 50px 0px 200px 0px; }
+    margin: 75px 0px;
+    display: block !important; }
   .btn-cta {
     width: 80vw; }
   .btn-cta:hover {
@@ -3157,6 +3185,12 @@ input::placeholder {
     flex-direction: column;
     width: 100vw;
     margin-top: 250px; }
+  .partnership-team-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 250px;
+    position: static; }
   .team-box, .four-circles-container {
     margin: auto 0;
     height: 500px; }
@@ -4088,12 +4122,18 @@ input::placeholder {
   .feedyard-main {
     display: flex;
     flex-direction: column; }
-  .transparent-stocker, .transparent-stocker2 {
+  .transparent-stocker {
     width: 100vw;
     background-color: #1A2E5A;
     position: static;
-    height: 800px !important;
-    margin: 0; }
+    height: 550px !important;
+    margin: 0;
+    padding-bottom: 50px; }
+  .transparent-stocker2 {
+    width: 100vw;
+    background-color: #1A2E5A;
+    position: static;
+    height: 450px; }
   .feedyard-cover-title-one, .feedyard-cover-title-two, .feedyard-cover-title-three {
     color: #FFFFFF;
     z-index: 20;
@@ -4120,8 +4160,8 @@ input::placeholder {
     margin: 20px 0px; }
   .transparent-line-break-banner {
     height: 2px;
-    width: 125px;
-    margin: 15px 185px 15px 0px; }
+    width: 130px;
+    margin: 15px 190px 15px 0px; }
   .accutrac-wheel {
     width: 85vw; }
   .cowboy-testimony, .customer-lightblue, .transparent-left-text, .transparent-right-text, .transparent-right-text2, .transparent-left-subtext, .customer-testimony, .customer-lightblue2, .transparent-left-text2, .transparent-left-subtext2, .comp-para {

@@ -93,7 +93,7 @@ export default class Integrator extends Component {
             <img className="blog-cover" src={IntegratorCover} alt="Integrator Cover" />
           </section>
 
-          <section className="team-container">
+          <section className="partnership-team-container">
             <div className="team-box">
               <div className="president">
                 <h3 className="pres-name">Experienced Partnership</h3>

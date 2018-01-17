@@ -628,6 +628,14 @@
         margin-top: 250px;
     }
 
+    .partnership-team-container {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        margin-top: 250px;
+        position: static;
+    }
+
     .team-box, .four-circles-container {
         margin: auto 0;
         height: 500px;

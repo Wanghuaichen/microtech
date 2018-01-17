@@ -278,12 +278,20 @@
         flex-direction: column;
     }
 
-    .transparent-stocker, .transparent-stocker2 {
+    .transparent-stocker, {
         width: 100vw;
         background-color: $primary-blue;
         position: static;
-        height: 800px !important;
+        height: 550px !important;
         margin: 0;
+        padding-bottom: 50px;
+    }
+
+    .transparent-stocker2 {
+        width: 100vw;
+        background-color: $primary-blue;
+        position: static;
+        height: 450px;
     }
 
     .feedyard-cover-title-one, .feedyard-cover-title-two, .feedyard-cover-title-three, {
@@ -326,8 +334,8 @@
 
     .transparent-line-break-banner {
         height: 2px;
-        width: 125px;
-        margin: 15px 185px 15px 0px;
+        width: 130px;
+        margin: 15px 190px 15px 0px;
        
     }
 

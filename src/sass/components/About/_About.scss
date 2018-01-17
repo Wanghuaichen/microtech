@@ -279,7 +279,7 @@
     }
 
     .bluebanner-header {
-        font-size: 40px;
+        font-size: 44px;
         text-align: center;
     }
 
@@ -348,6 +348,50 @@
     }
 
 
-   
+    .president {
+        display: flex;
+        justify-content: flex-start;
+    }
 
+    .pres-name, .execs-name {
+        width: 45vw !important;;
+    }
+
+    .execs-container {
+        width: auto;
+    }
+
+    .execs-title {
+        margin: 0px;
+        margin-bottom: 10px;
+        text-align: right;
+    }
+
+    .team-line {
+        margin-bottom: 120px;
+    }
+
+    .lead {
+        word-wrap: break-word;
+        width: 100vw;
+    }
+
+    .left {
+        margin: 0;
+        text-align: center;
+    }
+
+    .leadership-text {
+        word-wrap: break-word;
+        width: 75vw;
+        margin: 0 auto;
+    }
+   
+    .team-container {
+        margin-top: 100px !important;
+    }
+
+    .columnbanner {
+        height: 400px;
+    }
 }
