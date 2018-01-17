@@ -28,10 +28,15 @@
     cursor: pointer;
 }
 
+.steps {
+    margin: 20px 0px;
+}
+
 
 .slideshow-display {
     width: 700px;
 }
+
 
 // mobile responsive 
 
@@ -102,17 +107,18 @@
     }
 
     .nav-side-label {
-        font-size: 16px;
+        font-size: 15px;
         text-align: center;
         word-wrap: break-word;
-        width: 20vw;
+        width: 21vw;
     }
 
     .active-side {
         bottom: 0;
         left: 0;
+        margin-bottom: -5px;
         width: 24vw;
-        height: 1.2vw;
+        height: 5px;
         background-color: $secondary-blue;
         position: absolute;
         cursor: pointer;
@@ -133,11 +139,37 @@
 
     .moreinfo-display {
         height: 800px;
-        margin-bottom:400px;
+        margin-bottom: 400px;
     }
 
-    .tv-screen, .tv-screen-frame, .iphone-header, .iphone-text, .iphone, .tv-display, .iphone-text2 {
+   .iphone-header, .iphone-text, .iphone, .iphone-text2, {
         display: none;
+    }
+
+    .tv-batcher {
+        width: 65vw;
+    }
+
+    .steps {
+        width: 70vw;
+    }
+
+    .laptop, .gps, .tv-screen, .tv-screen-frame,  {
+        height: 20vh;
+        margin: 15px 0px;
+    }
+
+    .tv-display {
+        height: 17vh;
+    }
+
+    .list-left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .color-pallete, .stethoscope {
+        width: 30vw;
     }
 
     .click-bottom-box {
@@ -153,4 +185,32 @@
         background-color: $white;
         margin: 100px 0px;
     }
+
+    .moreinfo-top-nav {
+        width: 45vw;
+        margin: 5px;
+    }
+
+    .feedyard-blueactive {
+        width: 45vw;
+    }
+
+    .moreinfo-top-nav-header {
+        font-size: 21px;
+    }
+
+    .moreinfo-top-text {
+        width: 85vw;
+    }
+
+    .moreinfo-list,{
+        width: 65vw;
+        margin: 5px 0px;
+    }
+
+    .view2-text {
+        width: 70vw;
+    }
+
+
 }

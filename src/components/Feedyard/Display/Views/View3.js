@@ -25,7 +25,7 @@ export default class View2 extends Component {
         <li className="moreinfo-list">Automates reordering and receiving</li>
         <li className="moreinfo-list">Reduces inventory on hand and eliminates emergency stock-outs</li>
         <div className="img-view2-box">
-          <img className="tv-screen" src={Infographic} alt="infographic" width="500px" />
+          <img className="steps" src={Infographic} alt="infographic" width="500px" />
 
           
           <Carousel width={700} decorators={Carousel.getDefaultProps().decorators.slice(0, 2)} autoplay={true} wrapAround={true} speed={600} >

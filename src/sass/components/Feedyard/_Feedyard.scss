@@ -282,6 +282,8 @@
         width: 100vw;
         background-color: $primary-blue;
         position: static;
+        height: 800px !important;
+        margin: 0;
     }
 
     .feedyard-cover-title-one, .feedyard-cover-title-two, .feedyard-cover-title-three, {
@@ -342,6 +344,10 @@
         width: 85vw;
     }
 
+    .customer-lightblue, .customer-lightblue2 {
+        margin-top: -2px;
+    }
+
     .transparent-right-text {
         word-wrap: break-word;
         width: 85vw;
@@ -378,8 +384,23 @@
         color: $white;
     }
 
+    // .feedyard-top {
+    //     display: grid;
+    //     grid-template-columns: 1fr;
+    //     grid-template-areas: 
+    //     "transparent-stocker"
+    //     "accutrac-container"
+    //     "advanced";
+    // }
 
+    .accutrac-container {
+        margin: 0;
+        height: 800px;
+    }
 
-
+    .accutrac-subheader, .accutrac-para {
+        word-wrap: break-word;
+        width: 85vw;
+    }
 }
 

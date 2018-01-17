@@ -741,9 +741,7 @@ textarea {
 
 .input-one, .input-two, .input-three, .input-four {
   margin: 7px 0px 25px 0px;
-  border: 1px solid transparent;
-  border-top: none;
-  border-bottom: 1px solid #DDD;
+  border: 1px solid #DDD;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.39), 0 -1px 1px #FFF, 0 1px 0 #FFF; }
 
 .radio-input {
@@ -883,7 +881,7 @@ textarea {
     display: none; }
   .contact-main {
     margin-top: 100px;
-    margin-bottom: 400px;
+    margin-bottom: 420px;
     overflow-x: hidden;
     width: 100vw; }
   .contact-spacing {
@@ -1327,7 +1325,7 @@ li {
     position: static;
     height: 500px;
     margin-top: -10px; }
-  .bluebanner-column, .responsibility-container, .gray-footer, .res-align, .responsibility-box, .bluebanner-left, .leadership-bottom, .left {
+  .bluebanner-column, .responsibility-container, .gray-footer, .res-align, .responsibility-box, .leadership-bottom, .left {
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -1973,15 +1971,17 @@ input::placeholder {
   color: #1A2E5A;
   text-align: center; }
 
-.dairy-cover-mobile {
+.dairy-cover-mobile, .on {
   display: none; }
 
 @media screen and (max-width: 765px) {
   .dairy-cover-mobile {
     display: block;
     width: 100vw; }
-  .stocker-cover {
+  .stocker-cover, .off {
     display: none; }
+  .on {
+    display: block; }
   .dairy-container {
     display: flex;
     flex-direction: column;
@@ -4091,7 +4091,9 @@ input::placeholder {
   .transparent-stocker, .transparent-stocker2 {
     width: 100vw;
     background-color: #1A2E5A;
-    position: static; }
+    position: static;
+    height: 800px !important;
+    margin: 0; }
   .feedyard-cover-title-one, .feedyard-cover-title-two, .feedyard-cover-title-three {
     color: #FFFFFF;
     z-index: 20;
@@ -4127,6 +4129,8 @@ input::placeholder {
   .transparent-left-text, .transparent-left-subtext, .transparent-left-text2, .transparent-left-subtext2, .comp-para {
     word-wrap: break-word;
     width: 85vw; }
+  .customer-lightblue, .customer-lightblue2 {
+    margin-top: -2px; }
   .transparent-right-text {
     word-wrap: break-word;
     width: 85vw; }
@@ -4148,7 +4152,13 @@ input::placeholder {
     flex-direction: column;
     height: 600px; }
   .white-text {
-    color: #FFFFFF; } }
+    color: #FFFFFF; }
+  .accutrac-container {
+    margin: 0;
+    height: 800px; }
+  .accutrac-subheader, .accutrac-para {
+    word-wrap: break-word;
+    width: 85vw; } }
 
 .moreinfo-top {
   background-color: #E8E8E8;
@@ -4414,6 +4424,9 @@ input::placeholder {
   color: #F6F6F6;
   cursor: pointer; }
 
+.steps {
+  margin: 20px 0px; }
+
 .slideshow-display {
   width: 700px; }
 
@@ -4459,15 +4472,16 @@ input::placeholder {
   .dairy-btn, .dairyactive {
     width: 50vw; }
   .nav-side-label {
-    font-size: 16px;
+    font-size: 15px;
     text-align: center;
     word-wrap: break-word;
-    width: 20vw; }
+    width: 21vw; }
   .active-side {
     bottom: 0;
     left: 0;
+    margin-bottom: -5px;
     width: 24vw;
-    height: 1.2vw;
+    height: 5px;
     background-color: #00539B;
     position: absolute;
     cursor: pointer; }
@@ -4481,8 +4495,22 @@ input::placeholder {
   .moreinfo-display {
     height: 800px;
     margin-bottom: 400px; }
-  .tv-screen, .tv-screen-frame, .iphone-header, .iphone-text, .iphone, .tv-display, .iphone-text2 {
+  .iphone-header, .iphone-text, .iphone, .iphone-text2 {
     display: none; }
+  .tv-batcher {
+    width: 65vw; }
+  .steps {
+    width: 70vw; }
+  .laptop, .gps, .tv-screen, .tv-screen-frame {
+    height: 20vh;
+    margin: 15px 0px; }
+  .tv-display {
+    height: 17vh; }
+  .list-left {
+    display: flex;
+    flex-direction: column; }
+  .color-pallete, .stethoscope {
+    width: 30vw; }
   .click-bottom-box {
     display: flex;
     flex-direction: column; }
@@ -4490,7 +4518,21 @@ input::placeholder {
     margin-bottom: 20px; }
   .transparent-stocker2 {
     background-color: #FFFFFF;
-    margin: 100px 0px; } }
+    margin: 100px 0px; }
+  .moreinfo-top-nav {
+    width: 45vw;
+    margin: 5px; }
+  .feedyard-blueactive {
+    width: 45vw; }
+  .moreinfo-top-nav-header {
+    font-size: 21px; }
+  .moreinfo-top-text {
+    width: 85vw; }
+  .moreinfo-list {
+    width: 65vw;
+    margin: 5px 0px; }
+  .view2-text {
+    width: 70vw; } }
 
 .circle-5 {
   width: 120px;

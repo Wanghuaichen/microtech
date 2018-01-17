@@ -67,16 +67,26 @@ export default class Dairy extends Component {
             <img className="stocker-cover" src={DairyCover} alt="Dairy Cover" />
           </section>
 
-          <section className="blue-banner-flex">
+          <div className="off">
+          <section className="blue-banner-flex advanced2">
             <h6 className="blue-left-text">ADVANCED COMPREHENSIVE & INTEREGRATED</h6>
             <div className="line-break-banner"></div>
             <h6 className="blue-right-text">DAIRY MANAGEMENT SOLUTIONS</h6>
           </section>
+          </div>
 
           <section className="dms-text">
             <h3 className="dms-para">Simply put, we help dairies through the use of our technologies and</h3>
             <h3 className="dms-para">processes, produce a safe, wholesome product more efficiently and more profitably.</h3>
           </section>
+
+          <div className="on">
+          <section className="blue-banner-flex advanced2">
+            <h6 className="blue-left-text">ADVANCED COMPREHENSIVE & INTEREGRATED</h6>
+            <div className="line-break-banner"></div>
+            <h6 className="blue-right-text">DAIRY MANAGEMENT SOLUTIONS</h6>
+          </section>
+          </div>
 
           <DairyInfo />
 

@@ -72,11 +72,13 @@ export default class Feedyard extends Component {
             <img className="stocker-cover" src={FeedyardCover} alt="Feedyard Cover" />
           </section>
 
+          <div className="off">
           <section className="blue-banner-flex advanced">
             <h6 className="blue-left-text">ADVANCED COMPREHENSIVE & INTEREGRATED</h6>
             <div className="line-break-banner"></div>
             <h6 className="blue-right-text">FEEDYARD MANAGEMENT SOLUTIONS</h6>
           </section>
+          </div>
 
           <section className="accutrac-container">
             <div className="accutrac-header-box">
@@ -88,6 +90,14 @@ export default class Feedyard extends Component {
             <p className="accutrac-para">Gain access to real time information and statistics from feed, health, and animal data in a single inventory system. </p>
             <img className="accutrac-wheel" src={Accutrac} alt="accu-trac wheel" width="620px" />
           </section>
+
+          <div className="on">
+          <section className="blue-banner-flex advanced">
+            <h6 className="blue-left-text">ADVANCED COMPREHENSIVE & INTEREGRATED</h6>
+            <div className="line-break-banner"></div>
+            <h6 className="blue-right-text">FEEDYARD MANAGEMENT SOLUTIONS</h6>
+          </section>
+          </div>
 
 
           <main className="moreinfo-container">
