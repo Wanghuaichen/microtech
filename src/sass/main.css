@@ -3185,12 +3185,6 @@ input::placeholder {
     flex-direction: column;
     width: 100vw;
     margin-top: 250px; }
-  .partnership-team-container {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    margin-top: 250px;
-    position: static; }
   .team-box, .four-circles-container {
     margin: auto 0;
     height: 500px; }
@@ -3377,7 +3371,7 @@ input::placeholder {
     margin-top: 250px; }
   .team-box, .four-circles-container {
     margin: auto 0;
-    height: 600px; }
+    height: 800px; }
   .pres-name, .experience-text, .experience-text-two {
     word-wrap: break-word;
     width: 85vw; }
@@ -3506,7 +3500,12 @@ input::placeholder {
   .customized-line {
     display: none; }
   .contact-video-box {
-    margin-top: 30px; } }
+    margin-top: 30px; }
+  .partmobile-name {
+    word-wrap: break-word;
+    width: 85vw !important; }
+  .president {
+    margin-top: 200px; } }
 
 .stocker-top {
   display: flex;

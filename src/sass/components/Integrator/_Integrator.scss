@@ -628,14 +628,6 @@
         margin-top: 250px;
     }
 
-    .partnership-team-container {
-        display: flex;
-        flex-direction: column;
-        width: 100vw;
-        margin-top: 250px;
-        position: static;
-    }
-
     .team-box, .four-circles-container {
         margin: auto 0;
         height: 500px;
@@ -940,7 +932,7 @@
 
     .team-box, .four-circles-container {
         margin: auto 0;
-        height: 600px;
+        height: 800px;
     }
 
     .pres-name, .experience-text, .experience-text-two {
@@ -1158,5 +1150,13 @@
         margin-top: 30px;
     }
     
+    .partmobile-name {
+        word-wrap: break-word;
+        width: 85vw !important;
+    }
+
+    .president {
+        margin-top: 200px;
+    }
 
 }

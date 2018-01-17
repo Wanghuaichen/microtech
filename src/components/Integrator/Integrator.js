@@ -93,10 +93,10 @@ export default class Integrator extends Component {
             <img className="blog-cover" src={IntegratorCover} alt="Integrator Cover" />
           </section>
 
-          <section className="partnership-team-container">
-            <div className="team-box">
+          <section className="team-container">
+            <div className="team-box partmobile">
               <div className="president">
-                <h3 className="pres-name">Experienced Partnership</h3>
+                <h3 className="pres-name partmobile-name">Experienced Partnership</h3>
               </div>
               <p className="experience-text">Experience and versatility are paramount in finding the right partner to assist you with your feed additive application project.</p>
               <p className="experience-text-two">With over 20 years of experience with feed additive application, we have installations in over 300 feed mills in more than 20 countries around the world. We have been recognized as the feed industry’s leader in accurately measuring and applying liquid and dry products. We are proud to have partnered with many leading ingredient suppliers in all segments of the industry.</p>
