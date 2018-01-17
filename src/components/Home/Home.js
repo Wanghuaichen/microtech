@@ -40,21 +40,21 @@ export default class Home extends Component {
   }
 
   componentDidMount() { 
-    this.setState ({isLoading: false})
+    // setTimeout( () =>  this.setState ({isLoading: false}), 750)
+
+    this.setState({isLoading: false})
+    
   };
+
 
   
   render() {
-    return(
-      this.state.isLoading 
-      
-      ? 
-      
-      <Loading /> 
-      
-      : 
+    return (
 
+      this.state.isLoading ? <Loading /> : 
+      
       <section className="home-container">
+      
 
         <Helmet>
           <title>Micro Technologies</title>

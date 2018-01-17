@@ -15,6 +15,7 @@ import WeighPro from '../../assets/Pics/WeighPro.png';
 import Enzyme from '../../assets/Pics/Enzyme_Batching_unit_Copy.png';
 import ProControl from '../../assets/Pics/Pro-Control-Plus.png';
 import ArrowRight from '../../assets/Icons/→.png';
+import IntegratorMobile from '../../assets/Mobile/IntegratorMobile.png';
 
 export default class Integrator extends Component {
   constructor() {
@@ -68,6 +69,8 @@ export default class Integrator extends Component {
         <Header />
         <MobileHeader />
 
+        <img className="integrator-cover-mobile" src={IntegratorMobile} alt="Inegrator Cover" />
+
         <main className="integrator-main">
           <section className="bluecover-top">
             <div className="bluecover-text-box">
@@ -87,7 +90,7 @@ export default class Integrator extends Component {
                 <p>Poultry and livestock producers need to maximize production efficiencies to be successful. Optimizing the nutritional value of feedstuffs and maintaining animal health are musts. Feed additives such as enzymes, probiotics, and organic acids are key to achieving these goals but often feed mills do not have the application technology to utilize them. We consult with our customers to develop a customized solution and provide the service and support required to ensure their success.</p>
               </div>
             </div>
-            <img className="blog-cover" src={IntegratorCover} alt="Blog Cover" />
+            <img className="blog-cover" src={IntegratorCover} alt="Integrator Cover" />
           </section>
 
           <section className="team-container">

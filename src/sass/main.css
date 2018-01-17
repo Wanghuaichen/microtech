@@ -218,7 +218,7 @@ textarea {
   height: 100vh;
   position: absolute;
   z-index: 100;
-  background-color: #FFFFFF;
+  background-color: red;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -2743,7 +2743,8 @@ input::placeholder {
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
   border-top: 50px solid #00539B;
-  margin: auto; }
+  margin: auto;
+  margin-top: -1px; }
 
 .liquimatic-container {
   display: flex;
@@ -2983,6 +2984,383 @@ input::placeholder {
   z-index: 15;
   right: -19px;
   top: 43%; }
+
+.integrator-cover-mobile {
+  display: none; }
+
+@media only screen and (min-width: 766px) and (max-width: 1024px) {
+  .blog-cover {
+    display: none; }
+  .integrator-cover-mobile {
+    display: block;
+    width: 100vw; }
+  .integrator-cover {
+    display: none; }
+  .integrator-container {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    width: 100vw; }
+  .integrator-main {
+    display: flex;
+    flex-direction: column; }
+  .bluecover-text-box {
+    width: 100vw;
+    background-color: #1A2E5A;
+    position: relative;
+    height: 600px;
+    margin-top: -10px; }
+  .integrator-top-text, .text-animated, .fadeinlast, .integrator-top-subtitle {
+    position: absolute;
+    color: #FFFFFF;
+    margin: auto 0;
+    word-wrap: break-word;
+    width: 85vw;
+    top: auto; }
+  .integrator-top-text {
+    margin-top: -160px; }
+  .text-animated, .fadeinlast {
+    margin-top: -85px; }
+  .integrator-top-subtitle {
+    margin-top: 145px; }
+  .bluecover-container {
+    width: 100vw;
+    position: static;
+    height: 800px;
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; }
+  .bluecover-banner-left {
+    word-wrap: break-word;
+    width: 85vw;
+    margin-bottom: 50px;
+    margin-top: 100px; }
+  .bluecover-banner-right {
+    word-wrap: break-word;
+    width: 85vw;
+    margin-bottom: 50px; }
+  .team-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 250px; }
+  .team-box, .four-circles-container {
+    margin: auto 0;
+    height: 500px; }
+  .pres-name, .experience-text, .experience-text-two {
+    word-wrap: break-word;
+    width: 85vw; }
+  .four-circles-container {
+    margin: auto 0;
+    height: 550px;
+    margin-top: -150px;
+    width: 100vw;
+    margin-bottom: 50px; }
+  .circle-num-text {
+    width: 50vw; }
+  .four-column {
+    margin-bottom: 30px; }
+  .int-wheel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: static;
+    margin: auto 0;
+    height: 1150px; }
+  .app-solutions-box {
+    width: 100vw;
+    position: static;
+    margin: 0; }
+  .app-solutions-image {
+    margin: 0; }
+  .app-solutions-text, .app-solutions-text-last, .app-solutions-wrapper, .app-solutions-header {
+    margin: auto 0;
+    word-wrap: break-word;
+    width: 85vw; }
+  .app-solutions-wrapper {
+    margin-top: 20px; }
+  .app-solutions-header {
+    margin-bottom: 20px; }
+  .wheel {
+    max-width: 55vw;
+    margin: 80px 0px; }
+  .watch-video-container {
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    flex-direction: column; }
+  .pelleting-box, .pelleting-subtitle {
+    word-wrap: break-word;
+    width: 85vw; }
+  .liquimatic-container {
+    display: flex;
+    flex-direction: column; }
+  .liquimatic-box-left, .liquimatic-box-right {
+    width: 85vw; }
+  .liquimatic-text-left, .liquimatic-text-right {
+    width: 75vw; }
+  .options-container {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    width: 100vw; }
+  .options-info, .procontrol-list {
+    width: 100vw;
+    margin-bottom: 20px;
+    margin-left: 25px; }
+  .procontrol-header {
+    font-size: 31px;
+    margin-top: -40px;
+    margin-left: 25px; }
+  .weigh-flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 1000px; }
+  .weigh-flex-info, .weigh-flex-machine-box {
+    width: 100vw; }
+  .weigh-flex-text {
+    width: 85vw; }
+  .weigh-flex-machine {
+    max-width: 50vw; }
+  .procontrol-subheader {
+    margin-left: 25px; }
+  .procontrol-list {
+    word-wrap: break-word;
+    width: 75vw; }
+  .weighpro-screen {
+    margin-top: 50px;
+    max-width: 50vw; }
+  .weigh-btn-container {
+    display: flex;
+    flex-direction: column; }
+  .weigh-btn {
+    width: 85vw;
+    margin: 15px 0px; }
+  .weigh-text {
+    word-wrap: break-word;
+    width: 45vw; }
+  .arrow-circle {
+    display: none; }
+  .batching-container {
+    display: flex;
+    flex-direction: column; }
+  .batching-unit-four {
+    width: 100vw;
+    height: 350px; }
+  .batching-unit-three {
+    width: 100vw;
+    height: 230px; }
+  .enzyme-container {
+    display: flex;
+    flex-direction: column; }
+  .enzyme-machine {
+    width: 35vw; }
+  .enzyme-info {
+    width: 100vw; }
+  .enzyme-header, .enzyme-text {
+    word-wrap: break-word;
+    width: 85vw;
+    text-align: center; }
+  .procontrol-container, .watch-video-container-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw; }
+  .procontrol-container {
+    height: 700px; }
+  .procontrol-screen {
+    max-width: 50vw; }
+  .customized-line {
+    display: none; }
+  .contact-video-box {
+    margin-top: 30px; } }
+
+@media screen and (max-width: 765px) {
+  .integrator-cover-mobile {
+    display: block;
+    width: 100vw; }
+  .integrator-cover {
+    display: none; }
+  .integrator-container {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    width: 100vw; }
+  .integrator-main {
+    display: flex;
+    flex-direction: column; }
+  .bluecover-text-box {
+    width: 100vw;
+    background-color: #1A2E5A;
+    position: relative;
+    height: 600px;
+    margin-top: -10px; }
+  .integrator-top-text, .text-animated, .fadeinlast, .integrator-top-subtitle {
+    position: absolute;
+    color: #FFFFFF;
+    margin: auto 0;
+    word-wrap: break-word;
+    width: 85vw;
+    top: auto; }
+  .integrator-top-text {
+    margin-top: -160px; }
+  .text-animated, .fadeinlast {
+    margin-top: -45px; }
+  .integrator-top-subtitle {
+    margin-top: 145px; }
+  .bluecover-container {
+    width: 100vw;
+    position: static;
+    height: 900px;
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  .bluecover-banner-left {
+    word-wrap: break-word;
+    width: 85vw; }
+  .bluecover-banner-right {
+    word-wrap: break-word;
+    width: 85vw;
+    margin-top: -20px; }
+  .team-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 250px; }
+  .team-box, .four-circles-container {
+    margin: auto 0;
+    height: 600px; }
+  .pres-name, .experience-text, .experience-text-two {
+    word-wrap: break-word;
+    width: 85vw; }
+  .four-circles-container {
+    margin: auto 0;
+    height: 550px;
+    margin-top: -150px;
+    width: 100vw;
+    margin-bottom: 50px; }
+  .circle-num-text {
+    width: 50vw; }
+  .four-column {
+    margin-bottom: 30px; }
+  .int-wheel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: static;
+    margin: auto 0;
+    height: 1150px; }
+  .app-solutions-box {
+    width: 100vw;
+    position: static;
+    margin: 0; }
+  .app-solutions-image {
+    margin: 0; }
+  .app-solutions-text, .app-solutions-text-last, .app-solutions-wrapper, .app-solutions-header {
+    margin: auto 0;
+    word-wrap: break-word;
+    width: 85vw; }
+  .app-solutions-wrapper {
+    margin-top: 20px; }
+  .app-solutions-header {
+    font-size: 28px;
+    margin-bottom: 20px; }
+  .app-solutions-text, .app-solutions-text-last {
+    font-size: 13.5px; }
+  .wheel {
+    max-width: 85vw;
+    margin: 80px 0px; }
+  .watch-video-container {
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    flex-direction: column; }
+  .pelleting-box, .pelleting-subtitle {
+    word-wrap: break-word;
+    width: 85vw; }
+  .liquimatic-container {
+    display: flex;
+    flex-direction: column; }
+  .liquimatic-box-left, .liquimatic-box-right {
+    width: 85vw; }
+  .liquimatic-text-left, .liquimatic-text-right {
+    width: 75vw; }
+  .options-container {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    width: 100vw; }
+  .options-info, .procontrol-list {
+    width: 100vw;
+    margin-bottom: 20px;
+    margin-left: 25px; }
+  .procontrol-header {
+    font-size: 31px;
+    margin-top: -40px;
+    margin-left: 25px; }
+  .weigh-flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 1000px; }
+  .weigh-flex-info, .weigh-flex-machine-box {
+    width: 100vw; }
+  .weigh-flex-text {
+    width: 85vw; }
+  .weigh-flex-machine {
+    max-width: 75vw; }
+  .procontrol-subheader {
+    margin-left: 25px; }
+  .procontrol-list {
+    word-wrap: break-word;
+    width: 75vw; }
+  .weighpro-screen {
+    max-width: 85vw; }
+  .weigh-btn-container {
+    display: flex;
+    flex-direction: column; }
+  .weigh-btn {
+    width: 85vw;
+    margin: 15px 0px; }
+  .weigh-text {
+    word-wrap: break-word;
+    width: 45vw; }
+  .arrow-circle {
+    display: none; }
+  .batching-container {
+    display: flex;
+    flex-direction: column; }
+  .batching-unit-four {
+    width: 100vw;
+    height: 350px; }
+  .batching-unit-three {
+    width: 100vw;
+    height: 230px; }
+  .enzyme-container {
+    display: flex;
+    flex-direction: column; }
+  .enzyme-machine {
+    width: 75vw; }
+  .enzyme-info {
+    width: 100vw; }
+  .enzyme-header, .enzyme-text {
+    word-wrap: break-word;
+    width: 85vw;
+    text-align: center; }
+  .procontrol-container, .watch-video-container-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw; }
+  .procontrol-container {
+    height: 700px; }
+  .procontrol-screen {
+    max-width: 75vw; }
+  .customized-line {
+    display: none; }
+  .contact-video-box {
+    margin-top: 30px; } }
 
 .stocker-top {
   display: flex;
