@@ -1,9 +1,11 @@
 // dependencies
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import ModalVideo from 'react-modal-video';
+// import ModalVideo from 'react-modal-video';
 import Carousel from 'nuka-carousel';
 import {Helmet} from "react-helmet";
+import ReactPlayer from 'react-player';
+import Dialog from 'material-ui/Dialog';
 
 // components
 import Header from '../Header/Header';
@@ -29,15 +31,27 @@ export default class Home extends Component {
   constructor() {
     super()
     this.state = {
-      isOpen: false
+      isOpen: false,
+      open: false,
       // isLoading: true
     }
-    this.openModal = this.openModal.bind(this)
+    this.openModal = this.openModal.bind(this);
+    this.handleOpen = this.handleOpen.bind(this);
+    this.handleClose = this.handleClose.bind(this);
   }
 
   openModal() {
     this.setState({ isOpen: false })
   }
+
+  handleOpen = () => {
+    this.setState({ open: true });
+  };
+
+  handleClose = () => {
+    this.setState({ open: false });
+  };
+
 
   componentDidMount() { 
     // setTimeout( () =>  this.setState ({isLoading: false}), 750)
@@ -49,6 +63,12 @@ export default class Home extends Component {
 
   
   render() {
+
+    const customContentStyle = {
+      width: '54vw',
+      maxWidth: '100vw',
+    };
+
     return (
 
       // this.state.isLoading ? <Loading /> : 
@@ -78,8 +98,27 @@ export default class Home extends Component {
             <header className="center-box">
               <h3 className="vision-text">We innovate technologies that empower food producers to grow a safe, wholesome food supply more efficiently and more profitably.</h3>
 
-              <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='wUlPN0sZffY' onClose={() => this.setState({ isOpen: false })} />
-              <h6 className="main-cta" onClick={this.openModal}>WATCH VIDEO</h6>
+              {/* <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='wUlPN0sZffY' onClose={() => this.setState({ isOpen: false })} />
+              <h6 className="main-cta" onClick={this.openModal}>WATCH VIDEO</h6> */}
+
+              <Dialog
+                modal={false}
+                open={this.state.open}
+                onRequestClose={this.handleClose}
+                contentStyle={customContentStyle}
+                >
+  
+                <ReactPlayer 
+                  isOpen={this.state.isOpen}
+                  playing
+                  controls
+                  url='https://www.youtube.com/watch?v=wUlPN0sZffY'
+                  youtubeConfig={{ playerVars: { start: 15 }}}
+                />
+                
+              </Dialog>
+
+              <h6 className="main-cta" onClick={this.handleOpen}>WATCH VIDEO</h6>
               
               
             </header>

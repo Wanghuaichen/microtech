@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import ModalVideo from 'react-modal-video';
+// import ModalVideo from 'react-modal-video';
 import { Helmet } from "react-helmet";
+import ReactPlayer from 'react-player';
+import Dialog from 'material-ui/Dialog';
 
 import Header from '../Header/Header';
 import MobileHeader from '../Header/MobileHeader';
@@ -20,14 +22,26 @@ export default class Dairy extends Component {
     super();
     this.state = {
       testimonies: [],
-      isOpen: false
+      isOpen: false,
+      open: false,
     }
-    this.openModal = this.openModal.bind(this)
+    this.openModal = this.openModal.bind(this);
+    this.handleOpen = this.handleOpen.bind(this);
+    this.handleClose = this.handleClose.bind(this);
   }
 
   openModal() {
     this.setState({ isOpen: true })
   }
+
+  handleOpen = () => {
+    this.setState({ open: true });
+  };
+
+  handleClose = () => {
+    this.setState({ open: false });
+  };
+
 
   // componentDidMount() {
   //   let dataURL = "http://dev./wp-json/wp/v2/movies?_embed";
@@ -41,8 +55,14 @@ export default class Dairy extends Component {
   // }
 
   
+  
 
   render() {
+
+    const customContentStyle = {
+      width: '54vw',
+      maxWidth: '100vw',
+    };
 
     return(
       <section className = "dairy-container" >
@@ -109,8 +129,26 @@ export default class Dairy extends Component {
               <img className="customer-testimony" src={Testimony1} alt="Customer Headshot" />
               <div className="customer-lightblue2">
                 <h6 className="customer-header">HEAR FROM OUR CUSTOMERS</h6>
-                <ModalVideo channel='youtube' isOpen={this.state.isOpen}videoId='LT04hYXqg1c' start='15s' onClose={() => this.setState({ isOpen: false })} />
-                <h6 className="customer-watchvideo" onClick={this.openModal}>WATCH VIDEO NOW</h6>
+
+                <Dialog
+                modal={false}
+                open={this.state.open}
+                onRequestClose={this.handleClose}
+                contentStyle={customContentStyle}
+                >
+  
+                <ReactPlayer 
+                  isOpen={this.state.isOpen}
+                  playing
+                  controls
+                  url='https://youtu.be/LT04hYXqg1c'
+                  youtubeConfig={{ playerVars: { start: 15 }}}
+                />
+                
+              </Dialog>
+
+              <h6 className="customer-watchvideo" onClick={this.handleOpen}>WATCH VIDEO NOW</h6>      
+
               </div>
             </section>
 
