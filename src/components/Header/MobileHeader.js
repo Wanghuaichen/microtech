@@ -40,7 +40,8 @@ export default class MobileHeader extends Component {
                     </div>
                 </div>
                 <Drawer open={this.state.open} docked={false} openSecondary={true} className="menu-drawer" onRequestChange={this.closeDrawer}>
-                    <MenuItem value={1} primaryText="Menu" />
+                    <Link to='/'>
+                    <MenuItem value={1} primaryText="Home" /></Link>
                     <Link to='/stocker'><MenuItem value={2} primaryText="Stocker" /></Link>
                     <Link to='/feedyard'><MenuItem value={3} primaryText="Feedyard" /></Link>
                     <Link to='/dairy'><MenuItem value={4} primaryText="Dairy" /></Link>

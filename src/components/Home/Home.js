@@ -120,7 +120,7 @@ export default class Home extends Component {
           </section>
         </section>
 
-        <section className="bluebanner-box">
+        <section className="bluebanner-box mobileblue">
           <div className="bluebanner-left">
             <h4>SINCE</h4>
             <h1 className="bluebanner-header">1971</h1>
@@ -128,11 +128,11 @@ export default class Home extends Component {
           <div className="bluebanner-est">
             <h4>EST.</h4>
           </div>
-          <div className="bluebanner-right">
-            <p className="bluebanner-text">
+          <div className="bluebanner-right ">
+            <p className="bluebanner-text mobileblue-text">
               Since 1971, we continue to be the leading provider of advanced, comprehensive and integrated animal management systems and solutions.</p>
             <br></br>
-            <p className="bluebanner-text">
+            <p className="bluebanner-text mobileblue-text">
               We have established an unparalleled track record of delivering meaningful technology solutions based upon a business philosophy centered around three key principles: innovation, value creation and service.
             </p>
           </div>

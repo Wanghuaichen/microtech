@@ -711,7 +711,19 @@ textarea {
   .contact-btn {
     margin-right: 20px; }
   .social-icon {
-    width: 25px !important; } }
+    width: 25px !important; }
+  .mobileblue {
+    width: 100vw;
+    margin: auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+  .mobileblue-text {
+    width: 85vw;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px; } }
 
 .contact-main {
   display: flex;

@@ -604,6 +604,19 @@
         width: 25px !important;
     }
     
+    .mobileblue {
+        width: 100vw;
+        margin: auto 0;
+        @include flexSetUp;
+        text-align: center;
+    }
+
+    .mobileblue-text {
+        width: 85vw;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
 
 }
 
