@@ -264,39 +264,134 @@
     margin-bottom: 20px;
 }
 
-// mobile responsive 
+.history-box-mobile {
+    display: none;
+}
 
-@media screen and (max-width: 765px){
 
-    .history-circles, .history-circles-container {
+// ipad responsive 
+
+@media only screen and (min-width : 766px) and (max-width : 1024px) {
+    .history-box-mobile {
+        display: block;
         width: 100vw;
-        height: 1300px;
-        display: flex;
-        flex-direction: column;
     }
 
-    .circles-first, .circles-second, .circles-third, .circles-fourth, .circles-fifth, .circles-sixth{
+    .history-circles, .history-box {
+        display: none;
+    }
+
+    .history-circles-mobile {
+        width: 100vw;
+        display: block;
+    }
+
+    .history-circles-container-mobile {
+        height: 540px;
+        width: 100vw;
+        overflow-x: hidden;
+        display: inline-flex;
         flex-wrap: wrap;
     }
 
     .circle-1, .circle-2, .circle-3, .circle-4, .circle-5 {
         @include circleMOBILE;
-        grid-area: circle
+        margin: 0;
     }
 
     .active-history-btn1, .active-history-btn2, .active-history-btn3, .active-history-btn4, .active-history-btn5 {
         @include circleMOBILE;
         background-color: $secondary-blue;
+        margin: 0;
     }
 
     .display-circle-text {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        margin: 0;
         position: static;
+        height: 325px;
+    }
+
+    .history-circles-header {
+        word-wrap: break-word;
+        width: 85vw;
+        margin: 50px 20px 20px 50px;
     }
 
     .history-circles-para {
         word-wrap: break-word;
+        width: 85vw;
+        margin: 0px 50px;
+    }
+
+
+
+}
+
+
+
+
+// mobile responsive 
+
+@media screen and (max-width: 765px){
+
+    .history-box-mobile {
+        display: block;
         width: 100vw;
     }
+
+    .history-circles, .history-box {
+        display: none;
+    }
+
+    .history-circles-mobile {
+        width: 100vw;
+        display: block;
+    }
+
+    .history-circles-container-mobile {
+        height: 540px;
+        width: 100vw;
+        overflow-x: hidden;
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+
+    .circle-1, .circle-2, .circle-3, .circle-4, .circle-5 {
+        @include circleMOBILE;
+        margin: 0;
+    }
+
+    .active-history-btn1, .active-history-btn2, .active-history-btn3, .active-history-btn4, .active-history-btn5 {
+        @include circleMOBILE;
+        background-color: $secondary-blue;
+        margin: 0;
+    }
+
+    .display-circle-text {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        margin: 0;
+        position: static;
+        height: 500px;
+    }
+
+    .history-circles-header {
+        word-wrap: break-word;
+        width: 320px;
+        margin: 40px 20px 20px 20px;
+    }
+
+    .history-circles-para {
+        word-wrap: break-word;
+        width: 320px;
+        margin: 0px 20px;
+    }
+
+
 
     
 

@@ -266,8 +266,8 @@
 }
 
 @mixin circleMOBILE {
-    width: 25vw;
-    height: 75px;
+    width: 20vw;
+    height: 60px;
     font-size: 30px;
     font-family: $btn-font;
     font-weight: 300;
@@ -277,6 +277,7 @@
     background-color: $circle-gray;
     color: $white;
     margin: 0;
-    @include flexSetUp;
     cursor: pointer;
+    box-sizing: border-box;
+    border: 0.5px solid #ccc;
 }

@@ -94,7 +94,7 @@ export default class Integrator extends Component {
           </section>
 
           <section className="team-container">
-            <div className="team-box partmobile">
+            <div className="team-box">
               <div className="president">
                 <h3 className="pres-name partmobile-name">Experienced Partnership</h3>
               </div>

@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import Header from '../Header/Header';
 import {Helmet} from "react-helmet";
 
-import History from '../About/History';
+import Header from '../Header/Header';
 import MobileHeader from '../Header/MobileHeader';
+import History from '../About/History';
+import MobileHistory from './MobileHistory';
 import Footer from '../Footer/Footer';
 
 import MWILogo from '../../assets/Logos/MWI_Animal_Health_White.png';
@@ -35,7 +36,7 @@ export default class About extends Component {
         <main className="about-main">
          <div className="about-cover"></div>
 
-          <section className="bluebanner-box about">
+          <section className="bluebanner-column about columnbanner">
             <div className="bluebanner-left">
               <h4 className="left">OUR COMPANY</h4>
               <h1 className="bluebanner-header left">HISTORY</h1>
@@ -53,6 +54,11 @@ export default class About extends Component {
             <History />
           </div>
 
+          <div className="history-box-mobile">
+            <MobileHistory />
+          </div>
+
+
           <section className="bluebanner-column about columnbanner">
             <div className="bluebanner-left ">
               <h1 className="bluebanner-header left lead">LEADERSHIP</h1>
@@ -65,9 +71,9 @@ export default class About extends Component {
 
           
           <section className="team-container">
-            <div className="team-box">
+            <div className="team-box aboutteam">
               <h2>Leadership Team</h2>
-              <div className="president">
+              <div className="president-about">
                 <h5 className="pres-name">TIM PEART,</h5>
                 <h5 className="pres-title">PRESIDENT</h5>
               </div>

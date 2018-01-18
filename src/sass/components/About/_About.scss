@@ -224,15 +224,218 @@
     color: $text-dark;
 }
 
+.president-about {
+    display: flex;
+    margin: 10px 0px;
+}
+
 .about-cover-mobile {
     display: none;
 }
 
-// ipad responsive 
+.history-box-mobile {
+    display: none;
+}
+
+
+
+
+
+// ipad responsive
 
 @media only screen and (min-width : 766px) and (max-width : 1024px) {
 
+    .about-cover {
+        display: none;
+    }
+
+    .about-cover-mobile, .history-box-mobile {
+        display: block;
+        width: 100vw;
+    }
+
+    .stocker-cover {
+        display: none;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        width: 100vw;
+    }
+
+    .about-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .transparent-stocker {
+        width: 100vw;
+        background-color: $primary-blue;
+        position: static;
+        height: 500px;
+        margin-top: -10px;
+    }
+
+    .bluebanner-column, .responsibility-container, .gray-footer,.res-align, .responsibility-box,  .leadership-bottom, .left {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        margin: 0;
+    }
+
+    .bluebanner-header {
+        font-size: 44px;
+        text-align: center;
+    }
+
+    .leadership-text, .partnership-logos {
+        word-wrap: break-word;
+        @include flexSetUp;
+        margin-right: 100px;
+    }
+
+    .part-icon {
+        margin: 20px;
+        text-align: center;
+        height: 5vw;
+    }
+
+    .team-container, .execs-container {
+        width: 100vw;
+    }
+
+    .display-circle-text, .history-circles-para, .history-circles-header {
+        margin: 0;
+        word-wrap: break-word;
+        width: 100vw;
+        position: static;
+    }
+
+    .team-box, .team-text, .execs-box {
+        word-wrap: break-word;
+        width: 85vw;
+    }
+
+    .team-line {
+        width: 85vw;
+        height: 1px;
+    }
+
+    .facts-box, .facts-header, .cowpen-image {
+        width: 100vw;
+    }
+
+    .responsibility-box {
+        margin-top: 70px;
+    }
+
+    .res-text-left, .responsibility-header {
+        word-wrap: break-word;
+        width: 85vw;
+        margin: 0 auto;
+    }
+
+    .map {
+        width: 85vw;
+    }
+
+    .map-container {
+        height: 500px;
+    }
+
+    .gray-footer {
+        height: 600px;
+    }
+
+    .gray-location {
+        text-align: center;
+
+    }
+
+    .president {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .pres-name, .execs-name {
+        width: 45vw !important;;
+    }
+
+    .execs-container {
+        width: auto;
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+
+    .execs-title {
+        margin: 0px;
+        margin-bottom: 10px;
+        text-align: right;
+    }
+
+    .team-line {
+        margin-top: -75px;
+    }
+
+    .lead {
+        word-wrap: break-word;
+        width: 100vw;
+    }
+
+    .left {
+        margin: 15px 0px;
+        text-align: center;
+    }
+
+    .leadership-text {
+        word-wrap: break-word;
+        width: 75vw;
+        margin: 0 auto;
+    }
+   
+    .team-container {
+        margin-top: 100px !important;
+    }
+
+    .columnbanner {
+        height: 400px;
+        margin-top: -1px;
+    }
+
+    .president-about {
+        display: flex;
+        margin: 10px 0px;
+    }
+
+    .aboutteam {
+        height: 500px !important;
+    }
+
+    .bluebanner-right {
+        width: 100vw;
+
+    }
+
+    .bluebanner-est {
+        width: 100vw;
+        text-align: center;
+        margin: 0px;
+    }
+
+    .bannerabout {
+        width: 100vw;
+        text-align: center;
+        margin: 20px 0px;
+    }
+
 }
+
+
+
+
+
 
 // mobile responsive 
 
@@ -242,7 +445,7 @@
         display: none;
     }
 
-    .about-cover-mobile {
+    .about-cover-mobile, .history-box-mobile {
         display: block;
         width: 100vw;
     }
@@ -347,7 +550,6 @@
 
     }
 
-
     .president {
         display: flex;
         justify-content: flex-start;
@@ -359,6 +561,8 @@
 
     .execs-container {
         width: auto;
+        margin-top: 70px;
+        margin-bottom: 20px;
     }
 
     .execs-title {
@@ -368,7 +572,7 @@
     }
 
     .team-line {
-        margin-bottom: 120px;
+        margin-top: 50px;
     }
 
     .lead {
@@ -377,7 +581,7 @@
     }
 
     .left {
-        margin: 0;
+        margin: 15px 0px;
         text-align: center;
     }
 
@@ -393,5 +597,32 @@
 
     .columnbanner {
         height: 400px;
+        margin-top: -1px;
+    }
+
+    .president-about {
+        display: flex;
+        margin: 10px 0px;
+    }
+
+    .aboutteam {
+        height: 500px !important;
+    }
+
+    .bluebanner-right {
+        width: 100vw;
+
+    }
+
+    .bluebanner-est {
+        width: 100vw;
+        text-align: center;
+        margin: 0px;
+    }
+
+    .bannerabout {
+        width: 100vw;
+        text-align: center;
+        margin: 20px 0px;
     }
 }
