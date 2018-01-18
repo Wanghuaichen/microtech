@@ -384,8 +384,8 @@
         height: 600px !important;
     }
 
-    .bluebanner-header {
-        font-size: 80px;
+    .since {
+        text-align: center;
     }
 
     .bluebanner-est {
@@ -432,6 +432,20 @@
 
     .social-icon {
         width: 25px !important;
+    }
+
+    .mobileblue {
+        width: 100vw;
+        margin: auto 0;
+        @include flexSetUp;
+        text-align: center;
+    }
+
+    .mobileblue-text {
+        width: 85vw;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 10px;
     }
 }
 

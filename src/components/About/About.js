@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 import Header from '../Header/Header';
 import MobileHeader from '../Header/MobileHeader';
@@ -23,7 +23,7 @@ export default class About extends Component {
     return (
       <section className="about-container">
 
-       <Helmet>
+        <Helmet>
           <title>About</title>
           <meta name="description" content="By combining deep experience in agriculture, science and technology, Micro Technologies aims to create superior value and contribute to the ongoing success of our customer every day." />
         </Helmet>
@@ -34,18 +34,21 @@ export default class About extends Component {
         <img className="about-cover-mobile" src={AboutMobile} alt="About Cover" />
 
         <main className="about-main">
-         <div className="about-cover"></div>
+          <div className="about-cover"></div>
+
 
           <section className="bluebanner-column about columnbanner">
             <div className="bluebanner-left">
               <h4 className="left">OUR COMPANY</h4>
-              <h1 className="bluebanner-header left">HISTORY</h1>
+              <div className="flexabout-this">
+                <h1 className="bluebanner-header left lead">HISTORY</h1>
+                <div className="bluebanner-est">
+                  <h4 className="margin-est">EST.</h4>
+                </div>
+              </div>
             </div>
-            <div className="bluebanner-est">
-              <h4>EST.</h4>
-            </div>
-            <div className="bluebanner-right">
-              <p className="bluebanner-text bannerabout">
+            <div className="leadership-bottom">
+              <p className="leadership-text left lead">
                 DECADES OF UNWAVERING COMMITMENT TO REPEATED INNOVATION</p>
             </div>
           </section>
@@ -60,7 +63,7 @@ export default class About extends Component {
 
 
           <section className="bluebanner-column about columnbanner">
-            <div className="bluebanner-left ">
+            <div className="bluebanner-left">
               <h1 className="bluebanner-header left lead">LEADERSHIP</h1>
             </div>
             <div className="leadership-bottom">
@@ -69,7 +72,7 @@ export default class About extends Component {
             </div>
           </section>
 
-          
+
           <section className="team-container">
             <div className="team-box aboutteam">
               <h2>Leadership Team</h2>

@@ -1,8 +1,11 @@
+.footer-home {
+    grid-area: footer-home;
+}
+
 .footer-nav {
     @include flexSetUp;
     height: 150px;
     border-top: 0.5px solid #eee;
-    grid-area: footer-nav;
 }
 
 .logo-footer {

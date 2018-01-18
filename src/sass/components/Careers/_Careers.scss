@@ -3,6 +3,11 @@
     height: 100vh;
 }
 
+.careers-container {
+    position: static;
+    display: flex;
+}
+
 .transparent-half {
     width: 50vw;
     height: 80vh;
@@ -146,6 +151,10 @@
         padding-bottom: 50px;
     }
 
+    .expandedbox {
+        margin-bottom: 300px;
+    }
+
 }
 
 
@@ -162,7 +171,7 @@
         "careers-gray-box"
         "perks-box"
         "white-banner-box"
-        "footer-nav";
+        "footer-home";
     }
 
 

@@ -38,6 +38,187 @@
 }
 
 
+
+// ipad responsive 
+
+@media only screen and (min-width : 766px) and (max-width : 1024px) {
+
+    .dairy-cover-mobile {
+        display: block;
+        width: 100vw;
+    }
+
+    .stocker-cover {
+        display: none;
+    }
+
+    .dairy-container {
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        width: 100vw;
+    }
+
+    .dairy-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .transparent-stocker {
+        width: 100vw;
+        background-color: $primary-blue;
+        position: static;
+        height: 500px;
+        margin-top: -10px;
+    }
+
+    .moreinfo-full {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .moreinfo-side {
+        width: 100vw;
+        height: 170px;
+    }
+
+    .moreinfo-right {
+        width: 100vw;
+    }
+
+    .nav-side-box {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+    }
+
+    .nav-side-btn {
+        width: 25vw;
+        margin: 2px;
+        height: 100px;
+        position: relative;
+    }
+
+    .dairy-top-nav {
+        width: 100vw;
+    }
+
+    .dairy-btn, .dairyactive {
+        width: 50vw;
+    }
+
+    .nav-side-label {
+        font-size: 15px;
+        text-align: center;
+        word-wrap: break-word;
+        width: 21vw;
+    }
+
+    .active-side {
+        bottom: 0;
+        left: 0;
+        margin-bottom: -5px;
+        width: 24vw;
+        height: 5px;
+        background-color: $secondary-blue;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .dairy-btn-text {
+        text-align: center;
+    }
+
+    .slideshow-display {
+        width: 200px;
+    }
+
+    .list-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .moreinfo-display {
+        height: 800px;
+        margin-bottom: 400px;
+    }
+
+   .iphone-header, .iphone-text, .iphone, .iphone-text2, {
+        display: none;
+    }
+
+    .tv-batcher {
+        width: 65vw;
+    }
+
+    .steps {
+        width: 70vw;
+    }
+
+    .laptop, .gps, .tv-screen, .tv-screen-frame,  {
+        width: 75vw;
+        margin: 15px 0px;
+    }
+
+    .tv-display {
+        width: 71vw;
+    }
+
+    .list-left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .color-pallete, .stethoscope {
+        width: 75vw;
+    }
+
+    .click-bottom-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .click-left-para {
+        margin-bottom: 20px;
+    }
+
+    .transparent-stocker2 {
+        background-color: $white;
+        margin: 100px 0px;
+    }
+
+    .moreinfo-top-nav {
+        width: 45vw;
+        margin: 5px;
+    }
+
+    .feedyard-blueactive {
+        width: 45vw;
+    }
+
+    .moreinfo-top-nav-header {
+        font-size: 21px;
+    }
+
+    .moreinfo-top-text {
+        width: 85vw;
+    }
+
+    .moreinfo-list,{
+        width: 65vw;
+        margin: 5px 0px;
+    }
+
+    .view2-text {
+        width: 70vw;
+    }
+
+
+
+
+}
+
+
 // mobile responsive 
 
 @media screen and (max-width: 765px){

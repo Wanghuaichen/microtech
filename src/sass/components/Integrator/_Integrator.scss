@@ -601,11 +601,12 @@
     .bluecover-container {
         width: 100vw;
         position: static;
-        height: 800px;
+        height: 650px;
         margin-top: -10px; 
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        margin-bottom: 30px;
     }
 
     .bluecover-banner-left {

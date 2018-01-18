@@ -141,6 +141,8 @@
     align-items: center;
     color: $primary-blue;
     width: 45vw;
+    margin: 35px 0px;
+    cursor: pointer;
 }
 
 .nutrition-subtitle {
@@ -155,6 +157,12 @@
 .arrow-down {
     width: 20px;
     margin: 0px 25px;
+}
+
+.arrow-down:active {
+    width: 20px;
+    margin: 0px 25px;
+    transform: rotate(180deg) scaleX(-1);
 }
 
 .nutrition-para {
@@ -259,6 +267,7 @@
     margin: 20px 0px;
     height: 150px;
 }
+
 
 .difference-cover-mobile {
     display: none;
@@ -412,6 +421,7 @@
 
     .nutrition-box {
         width: 100vw;
+        margin: 10px 0px;
     }
 
     .nutrition-header, .nutrition-subtitle, {
@@ -625,6 +635,7 @@
 
     .nutrition-box {
         width: 100vw;
+        margin: 10px 0px;
     }
 
     .nutrition-header, .nutrition-subtitle, {

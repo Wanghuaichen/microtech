@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import AnimatedNumber from 'react-animated-number';
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 import Header from '../Header/Header';
 import MobileHeader from '../Header/MobileHeader';
@@ -23,8 +23,20 @@ export default class Difference extends Component {
     this.state = {
       smallValue: 0,
       mediumValue: 0,
-      updates: 0
-    };
+      updates: 0,
+      isHidden0: true,
+      isHidden1: true,
+      isHidden2: true,
+      isHidden3: true,
+      isHidden4: true,
+      isHidden5: true,
+    }
+    this.toggleHidden0 = this.toggleHidden0.bind(this);
+    this.toggleHidden1 = this.toggleHidden1.bind(this);
+    this.toggleHidden2 = this.toggleHidden2.bind(this);
+    this.toggleHidden3 = this.toggleHidden3.bind(this);
+    this.toggleHidden4 = this.toggleHidden4.bind(this);
+    this.toggleHidden5 = this.toggleHidden5.bind(this);
   }
 
   componentDidMount() {
@@ -49,6 +61,43 @@ export default class Difference extends Component {
       updates: updates + 1
     });
   }
+
+  toggleHidden0() {
+    this.setState({
+      isHidden0: !this.state.isHidden0,
+    });
+  }
+
+  toggleHidden1() {
+    this.setState({
+      isHidden1: !this.state.isHidden1,
+    });
+  }
+
+  toggleHidden2() {
+    this.setState({
+      isHidden2: !this.state.isHidden2,
+    });
+  }
+
+  toggleHidden3() {
+    this.setState({
+      isHidden3: !this.state.isHidden3,
+    });
+  }
+
+  toggleHidden4() {
+    this.setState({
+      isHidden4: !this.state.isHidden4,
+    });
+  }
+
+  toggleHidden5() {
+    this.setState({
+      isHidden5: !this.state.isHidden5,
+    });
+  }
+
 
 
   render() {
@@ -198,41 +247,69 @@ export default class Difference extends Component {
           <section className="nutrition-wide">
             <section className="nutrition-container">
               <h4 className="nutrition-header">Nutritionists  /  Veterinarians  / Consultants</h4>
-              <div className="nutrition-box">
+
+
+              <div className="nutrition-box" onClick={() => this.toggleHidden0()}>
                 <img className="arrow-down" src={ArrowDown} alt="drop down arrow" />
                 <h6 className="nutrition-subtitle">DATA DRIVEN DECISIONS</h6>
               </div>
-              <p className="nutrition-para">Aligned goals of ensuring animal health, accuracy in nutrition, offering flexibility, accountability, access to real-time data and ability to adjust to any customers needs from virtually anywhere. Allowing optimization of your time and efficiencies in your business.</p>
-              <div className="nutrition-box">
+
+              {!this.state.isHidden0 &&
+                <p className="nutrition-para" tag="toggle1">Aligned goals of ensuring animal health, accuracy in nutrition, offering flexibility, accountability, access to real-time data and ability to adjust to any customers needs from virtually anywhere. Allowing optimization of your time and efficiencies in your business.</p>
+              }
+
+
+              <div className="nutrition-box" onClick={() => this.toggleHidden1()}>
                 <img className="arrow-down" src={ArrowDown} alt="drop down arrow" />
                 <h6 className="nutrition-subtitle">RESPONSIBLE ANIMAL PRODUCTION</h6>
               </div>
-              <p className="nutrition-para">Our technologies offer the opportunity to utilize health and nutrition products in flexible ways that really make sense for the animal. They provide assurance that products are properly given to target animals through precision delivery along with substantiating records. Gain access to historical records of product usage with corresponding animal health and performance data to accurately determination of relative value of products under actual use conditions.</p>
-              <div className="nutrition-box">
+
+              {!this.state.isHidden1 &&
+                <p className="nutrition-para">Our technologies offer the opportunity to utilize health and nutrition products in flexible ways that really make sense for the animal. They provide assurance that products are properly given to target animals through precision delivery along with substantiating records. Gain access to historical records of product usage with corresponding animal health and performance data to accurately determination of relative value of products under actual use conditions.</p>
+              }
+
+              <div className="nutrition-box" onClick={() => this.toggleHidden2()}>
                 <img className="arrow-down" src={ArrowDown} alt="drop down arrow" />
                 <h6 className="nutrition-subtitle">REGULATORY COMPLIANCE SUPPORT</h6>
               </div>
-              <p className="nutrition-para">We act as your partner in regulatory compliance and offer unparalleled technical service and support for all of our technologies.</p>
+
+              {!this.state.isHidden2 &&
+                <p className="nutrition-para">We act as your partner in regulatory compliance and offer unparalleled technical service and support for all of our technologies.</p>
+              }
+
             </section>
 
 
             <section className="nutrition-container">
               <h4 className="nutrition-header">Manufacturer Partners</h4>
-              <div className="nutrition-box">
+
+              <div className="nutrition-box" onClick={() => this.toggleHidden3()}>
                 <img className="arrow-down" src={ArrowDown} alt="drop down arrow" />
                 <h6 className="nutrition-subtitle">ENSURING OPTIMAL PRODUCT RESULTS</h6>
               </div>
-              <p className="nutrition-para">Match product levels more accurately to target animals based upon days on feed, animal size and type, daily intake, animal health condition, nutritional content of the ration, performance level, animal genetics, and other criteria to achieve optimal performance rather than one level for all animals.</p>
-              <div className="nutrition-box">
+
+              {!this.state.isHidden3 &&
+                <p className="nutrition-para">Match product levels more accurately to target animals based upon days on feed, animal size and type, daily intake, animal health condition, nutritional content of the ration, performance level, animal genetics, and other criteria to achieve optimal performance rather than one level for all animals.</p>
+              }
+
+              <div className="nutrition-box" onClick={() => this.toggleHidden4()}>
                 <img className="arrow-down" src={ArrowDown} alt="drop down arrow" />
                 <h6 className="nutrition-subtitle">ACCURATE DELIVERY & VERIFICATION</h6>
               </div>
-              <p className="nutrition-para">Our technology supports our customers in accurately delivering the products you manufacture to ensure responsible animal production while maintaining product identity all the way to the bunk.</p>
-              <div className="nutrition-box">
+
+              {!this.state.isHidden4 &&
+                <p className="nutrition-para">Our technology supports our customers in accurately delivering the products you manufacture to ensure responsible animal production while maintaining product identity all the way to the bunk.</p>
+              }
+
+              <div className="nutrition-box" onClick={() => this.toggleHidden5()}>
                 <img className="arrow-down" src={ArrowDown} alt="drop down arrow" />
                 <h6 className="nutrition-subtitle">END USER TRAINING, SERVICE & SUPPORT</h6>
               </div>
-              <p className="nutrition-para">We strive to ensure a safe food supply and our customers’ long term success, as such, we are committed to providing exceptional end user training, service and on-going support of the use of products, processes and technologies.</p>
+
+              {!this.state.isHidden5 &&
+                <p className="nutrition-para">We strive to ensure a safe food supply and our customers’ long term success, as such, we are committed to providing exceptional end user training, service and on-going support of the use of products, processes and technologies.</p>
+              }
+
             </section>
           </section>
 

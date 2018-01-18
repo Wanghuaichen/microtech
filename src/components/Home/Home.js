@@ -122,7 +122,7 @@ export default class Home extends Component {
 
         <section className="bluebanner-box mobileblue">
           <div className="bluebanner-left">
-            <h4>SINCE</h4>
+            <h4 className="since">SINCE</h4>
             <h1 className="bluebanner-header">1971</h1>
           </div>
           <div className="bluebanner-est">

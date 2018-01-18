@@ -64,6 +64,39 @@
 
 @media only screen and (min-width : 766px) and (max-width : 1024px) {
 
+    .dairy-cover-mobile {
+        display: block;
+        width: 100vw;
+    }
+
+    .stocker-cover, .off {
+        display: none;
+    }
+
+    .on {
+        display: block; 
+     }
+
+    .dairy-container {
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        width: 100vw;
+    }
+
+    .dairy-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .transparent-stocker {
+        width: 100vw;
+        background-color: $primary-blue;
+        position: static;
+        height: 500px;
+        margin-top: -10px;
+    }
+
 }
 
 // mobile responsive 
