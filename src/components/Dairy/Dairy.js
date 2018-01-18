@@ -59,9 +59,21 @@ export default class Dairy extends Component {
 
   render() {
 
-    const customContentStyle = {
-      width: '54vw',
-      maxWidth: '100vw',
+    const styles = {
+      dialogRoot: {
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        
+      },
+      dialogContent: {
+        position: "relative",
+        transform: "",
+        width: '100%'
+      },
+      dialogBody: {
+        padding: 0
+      }
     };
 
     return(
@@ -134,10 +146,14 @@ export default class Dairy extends Component {
                 modal={false}
                 open={this.state.open}
                 onRequestClose={this.handleClose}
-                contentStyle={customContentStyle}
+                contentStyle={ styles.dialogContent }
+                bodyStyle={ styles.dialogBody }
+                style={ styles.dialogRoot }
+                repositionOnUpdate={ false }
                 >
   
                 <ReactPlayer 
+                  onLoad={() => { window.dispatchEvent(new Event('resize')); }}
                   isOpen={this.state.isOpen}
                   playing
                   controls
