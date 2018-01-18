@@ -40,7 +40,7 @@ export default class Careers extends Component {
             <p className="careers-para">Our team is composed of talented and dedicated professionals.  We cultivate a nurturing atmosphere where qualified candidates are placed in positions best suited to their skills and expertise.
               </p>
             <p className="careers-para">Learn more about some of our featured roles below, or take a look at our list of open positions.</p>
-            <div className="btn-cta">EXPLORE OPPORTUNITIES
+            <div onClick={ () => alert('No current opportunities. Check back soon!') }className="btn-cta">EXPLORE OPPORTUNITIES
             <img className="white-arrow" src={WhiteArrow} alt="Explore Opportunities" />
             </div>
           </section>
@@ -88,7 +88,7 @@ export default class Careers extends Component {
             <p className="careers-para">There is power in our individual perspectives. Our greatest impact is when we collaborate as one, using our collective expertise to generate ideas with sustaining value.</p>
 
 
-            <div className="btn-cta">EXPLORE OPPORTUNITIES
+            <div onClick={ () => alert('No current opportunities. Check back soon!') } className="btn-cta">EXPLORE OPPORTUNITIES
             <img className="white-arrow" src={WhiteArrow} alt="Explore Opportunities" />
             </div>
           </section>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import ReactPlayer from 'react-player';
 import Dialog from 'material-ui/Dialog';
 import {Helmet} from "react-helmet";
 
@@ -65,6 +66,23 @@ export default class Stocker extends Component {
 
   render() {
 
+    const styles = {
+      dialogRoot: {
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        
+      },
+      dialogContent: {
+        position: "relative",
+        transform: "",
+        width: '100%'
+      },
+      dialogBody: {
+        padding: 0
+      }
+    };
+
     return (
       this.state.isLoading
         
@@ -94,13 +112,25 @@ export default class Stocker extends Component {
               <h6>Management System for Stockers and Backgrounders.</h6>
               <p className="stocker-para">Stocker1™ is an internet based system allowing stocker and backgrounding operations to access it from any location with internet capabilities. One look and you will know it was designed in the field with close interaction between stocker and backgrounder operators.</p>
 
+
               <Dialog
                 modal={false}
                 open={this.state.open}
                 onRequestClose={this.handleClose}
-                contentStyle={{ maxWidth: 850 }}
-              >
-                <video width="800px" src={StockerVideo} id="myvideo" autoplay="autoplay" controls />
+                contentStyle={ styles.dialogContent }
+                bodyStyle={ styles.dialogBody }
+                style={ styles.dialogRoot }
+                repositionOnUpdate={ false }
+                >
+  
+                <ReactPlayer 
+                  onLoad={() => { window.dispatchEvent(new Event('resize')); }}
+                  isOpen={this.state.isOpen}
+                  playing
+                  controls
+                  url={StockerVideo}
+                />
+                
               </Dialog>
 
               <div className="stocker-watch-video" onClick={this.handleOpen}>WATCH VIDEO</div>

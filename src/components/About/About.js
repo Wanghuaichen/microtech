@@ -94,27 +94,8 @@ export default class About extends Component {
             <div className="team-line"></div>
 
             <div className="execs-container">
-              <div className="execs-box">
-                <div className="executives">
-                  <h5 className="execs-name">DICK BISHOP,</h5>
-                  <h5 className="execs-title">CONTROLLER</h5>
-                </div>
-                <div className="company-information company">
-                  <img className="email-tiny" src={EmailTiny} alt="phone icon" />
-                  <a className="leadership-alinks" href="mailto:DBISHOP@MICROTECHNOLOGIES.COM"><p className="email-tiny-text-exec">DBISHOP@MICROTECHNOLOGIES.COM</p></a>
-                </div>
-              </div>
-              <div className="execs-box">
-                <div className="executives">
-                  <h5 className="execs-name">JERRY CORMAN,</h5>
-                  <h5 className="execs-title">Dairy Program Development Sales Manager</h5>
-                </div>
-                <div className="company-information company">
-                  <img className="email-tiny" src={EmailTiny} alt="phone icon" />
-                  <a className="leadership-alinks" href="mailto:JCORMAN@MICROTECHNOLOGIES.COM"><p className="email-tiny-text-exec">JCORMAN@MICROTECHNOLOGIES.COM</p></a>
-                </div>
-              </div>
-              <div className="execs-box">
+
+            <div className="execs-box">
                 <div className="executives">
                   <h5 className="execs-name">MARCUS DORSEY,</h5>
                   <h5 className="execs-title">Field Operations Manager
@@ -125,16 +106,7 @@ export default class About extends Component {
                   <a className="leadership-alinks" href="mailto:MDORSEY@MICROTECHNOLOGIES.COM"><p className="email-tiny-text-exec">MDORSEY@MICROTECHNOLOGIES.COM</p></a>
                 </div>
               </div>
-              <div className="execs-box">
-                <div className="executives">
-                  <h5 className="execs-name">MAX KOSTER,</h5>
-                  <h5 className="execs-title">Beef Program Development Sales Manager</h5>
-                </div>
-                <div className="company-information company">
-                  <img className="email-tiny" src={EmailTiny} alt="phone icon" />
-                  <a className="leadership-alinks" href="mailto:MKOSTER@MICROTECHNOLOGIES.COM"><p className="email-tiny-text-exec">MKOSTER@MICROTECHNOLOGIES.COM</p></a>
-                </div>
-              </div>
+
               <div className="execs-box">
                 <div className="executives">
                   <h5 className="execs-name">DUANE LOMAX,</h5>
@@ -146,6 +118,7 @@ export default class About extends Component {
                   <a className="leadership-alinks" href="mailto:DLOMAX@MICROTECHNOLOGIES.COM"><p className="email-tiny-text-exec">DLOMAX@MICROTECHNOLOGIES.COM</p></a>
                 </div>
               </div>
+
               <div className="execs-box">
                 <div className="executives">
                   <h5 className="execs-name">JOE YOUNG,</h5>
@@ -156,6 +129,40 @@ export default class About extends Component {
                   <a className="leadership-alinks" href="mailto:JYOUNG@MICROTECHNOLOGIES.COM"><p className="email-tiny-text-exec">JYOUNG@MICROTECHNOLOGIES.COM</p></a>
                 </div>
               </div>
+
+              <div className="execs-box">
+                <div className="executives">
+                  <h5 className="execs-name">MAX KOSTER,</h5>
+                  <h5 className="execs-title">Beef Program Development Sales Manager</h5>
+                </div>
+                <div className="company-information company">
+                  <img className="email-tiny" src={EmailTiny} alt="phone icon" />
+                  <a className="leadership-alinks" href="mailto:MKOSTER@MICROTECHNOLOGIES.COM"><p className="email-tiny-text-exec">MKOSTER@MICROTECHNOLOGIES.COM</p></a>
+                </div>
+              </div>
+
+              <div className="execs-box">
+                <div className="executives">
+                  <h5 className="execs-name">JERRY CORMAN,</h5>
+                  <h5 className="execs-title">Dairy Program Development Sales Manager</h5>
+                </div>
+                <div className="company-information company">
+                  <img className="email-tiny" src={EmailTiny} alt="phone icon" />
+                  <a className="leadership-alinks" href="mailto:JCORMAN@MICROTECHNOLOGIES.COM"><p className="email-tiny-text-exec">JCORMAN@MICROTECHNOLOGIES.COM</p></a>
+                </div>
+              </div>
+
+              <div className="execs-box">
+                <div className="executives">
+                  <h5 className="execs-name">DICK BISHOP,</h5>
+                  <h5 className="execs-title">CONTROLLER</h5>
+                </div>
+                <div className="company-information company">
+                  <img className="email-tiny" src={EmailTiny} alt="phone icon" />
+                  <a className="leadership-alinks" href="mailto:DBISHOP@MICROTECHNOLOGIES.COM"><p className="email-tiny-text-exec">DBISHOP@MICROTECHNOLOGIES.COM</p></a>
+                </div>
+              </div>
+              
             </div>
 
           </section>

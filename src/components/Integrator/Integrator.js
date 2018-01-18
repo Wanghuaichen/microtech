@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedNumber from 'react-animated-number';
 import {Helmet} from "react-helmet";
+import ReactPlayer from 'react-player';
+import Dialog from 'material-ui/Dialog';
 
 import Header from '../Header/Header';
 import MobileHeader from '../Header/MobileHeader';
@@ -24,10 +26,13 @@ export default class Integrator extends Component {
     this.state = {
       smallValue: 0,
       bigValue: 0,
-      updates: 0
+      updates: 0,
+      open: false
     };
     this.update = this.update.bind(this);
     this.mountUnmount = this.mountUnmount.bind(this);
+    this.handleOpen = this.handleOpen.bind(this);
+    this.handleClose = this.handleClose.bind(this);
   }
 
   componentDidMount() {
@@ -54,9 +59,34 @@ export default class Integrator extends Component {
     });
   }
 
+  handleOpen = () => {
+    this.setState({ open: true });
+  };
+
+  handleClose = () => {
+    this.setState({ open: false });
+  };
+
   render() {
 
     const { smallValue, mediumValue, bigValue } = this.state;
+
+    const styles = {
+      dialogRoot: {
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        
+      },
+      dialogContent: {
+        position: "relative",
+        transform: "",
+        width: '100%'
+      },
+      dialogBody: {
+        padding: 0
+      }
+    };
 
     return (
       <section className="integrator-container">
@@ -219,7 +249,30 @@ export default class Integrator extends Component {
               <h3 className="pelleting-header">Post-Pelleting Liquid Application</h3>
               <p className="pelleting-subtitle">Complete solution for post-pelleting liquid application of enzymes, fats, oils and other heat sensitive ingredients</p>
             </div>
-            <div className="pelleting-video-box">WATCH VIDEO</div>
+
+            <Dialog
+                modal={false}
+                open={this.state.open}
+                onRequestClose={this.handleClose}
+                contentStyle={ styles.dialogContent }
+                bodyStyle={ styles.dialogBody }
+                style={ styles.dialogRoot }
+                repositionOnUpdate={ false }
+                >
+  
+                <ReactPlayer 
+                  onLoad={() => { window.dispatchEvent(new Event('resize')); }}
+                  isOpen={this.state.isOpen}
+                  playing
+                  controls
+                  url='https://www.youtube.com/watch?v=wUlPN0sZffY'
+                  youtubeConfig={{ playerVars: { start: 15 }}}
+                />
+                
+              </Dialog>
+
+              <div className="pelleting-video-box" onClick={this.handleOpen}>WATCH VIDEO</div>
+
           </section>
 
           <section className="triangle-container">
@@ -277,7 +330,30 @@ export default class Integrator extends Component {
             <div className="weigh-flex-info color5">
               <h3 className="weigh-flex-header">WeighFlex</h3>
               <p className="weigh-flex-text">The WeighFlex DF is an In-Line dry material feeding and measurement device. The innovative design measures the force, due to material flow, against a curved deflection chute. The WeighFlex DF can be used for many types of products including animal feed, oilseeds, pulses, & cereal grains.</p>
-              <div className="weigh-flex-video-box">WATCH VIDEO</div>
+
+              <Dialog
+                modal={false}
+                open={this.state.open}
+                onRequestClose={this.handleClose}
+                contentStyle={ styles.dialogContent }
+                bodyStyle={ styles.dialogBody }
+                style={ styles.dialogRoot }
+                repositionOnUpdate={ false }
+                >
+  
+                <ReactPlayer 
+                  onLoad={() => { window.dispatchEvent(new Event('resize')); }}
+                  isOpen={this.state.isOpen}
+                  playing
+                  controls
+                  url='https://www.youtube.com/watch?v=wUlPN0sZffY'
+                  youtubeConfig={{ playerVars: { start: 15 }}}
+                />
+                
+              </Dialog>
+
+              <div className="weigh-flex-video-box" onClick={this.handleOpen}>WATCH VIDEO</div>
+              
             </div>
             <div className="weigh-flex-machine-box">
               <img className="weigh-flex-machine" src={WeighFlex} alt="Weigh Flex Machine" />
@@ -328,7 +404,30 @@ export default class Integrator extends Component {
             <div className="enzyme-info color1">
               <h3 className="enzyme-header">The Enzyme Batching Unit</h3>
               <p className="enzyme-text">Reconstitute highly concentrated powdered enzymes into liquid for either mixer or post-pelleting application.</p>
-              <div className="enzyme-video-box">WATCH VIDEO</div>
+
+              <Dialog
+                modal={false}
+                open={this.state.open}
+                onRequestClose={this.handleClose}
+                contentStyle={ styles.dialogContent }
+                bodyStyle={ styles.dialogBody }
+                style={ styles.dialogRoot }
+                repositionOnUpdate={ false }
+                >
+  
+                <ReactPlayer 
+                  onLoad={() => { window.dispatchEvent(new Event('resize')); }}
+                  isOpen={this.state.isOpen}
+                  playing
+                  controls
+                  url='https://www.youtube.com/watch?v=wUlPN0sZffY'
+                  youtubeConfig={{ playerVars: { start: 15 }}}
+                />
+                
+              </Dialog>
+
+              <div className="enzyme-video-box" onClick={this.handleOpen}>WATCH VIDEO</div>
+
             </div>
           </section>
 
