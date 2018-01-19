@@ -450,6 +450,10 @@
         height: 450px;
     }
 
+    .feed-para {
+        width: 85vw;
+    }
+
     .feedyard-cover-title-one, .feedyard-cover-title-two, .feedyard-cover-title-three, {
         color: $white;
         z-index: 20;
@@ -499,7 +503,13 @@
         width: 85vw;
     }
 
-    .cowboy-testimony, .customer-lightblue, .transparent-left-text, .transparent-right-text, .transparent-right-text2, .transparent-left-subtext, .customer-testimony, .customer-lightblue2, .transparent-left-text2, .transparent-left-subtext2, .comp-para {
+    .cowboy-testimony, .customer-testimony {
+        display: block;
+        height: 60vw;
+        width: 100vw;
+    }
+
+   .customer-lightblue, .transparent-left-text, .transparent-right-text, .transparent-right-text2, .transparent-left-subtext, .customer-lightblue2, .transparent-left-text2, .transparent-left-subtext2, .comp-para {
         width: 100vw;
     }
 

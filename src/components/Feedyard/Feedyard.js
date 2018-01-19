@@ -14,7 +14,7 @@ import Display1 from './Display/Display1';
 
 import FeedyardCover from '../../assets/Pics/Feedyard_cover.png';
 import Accutrac from '../../assets/Icons/accutrac.png';
-import CowboyTestimony from '../../assets/Pics/VideoPhoto2.png';
+import CowboyTestimony from '../../assets/Pics/FeedyardCustomerRKirkland.png';
 import Comprehensive from '../../assets/Pics/Comprehensive.png';
 import Quotes from '../../assets/Icons/quote.png';
 import FeedyardMobile from '../../assets/Mobile/FeedyardMobile.png';

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import AnimatedNumber from 'react-animated-number';
+import TrackVisibility from 'react-on-screen';
 import { Helmet } from "react-helmet";
 
 import Header from '../Header/Header';
@@ -78,15 +79,15 @@ export default class About extends Component {
             <section className="bluecover-about-container">
               <div className="bluebanner-left">
                 <h4 className="left">OUR COMPANY</h4>
-                <div className="flexabout-this">
-                  <h1 className="bluebanner-header left leadtop">HISTORY</h1>
-                  <div className="bluebanner-est">
+                {/* <div className="flexabout-this"> */}
+                <h1 className="bluebanner-header left leadtop">HISTORY</h1>
+                {/* <div className="bluebanner-est">
                     <h4 className="margin-est">EST.</h4>
-                  </div>
-                </div>
+                  </div> */}
+                {/* </div> */}
               </div>
-              <div className="leadership-bottom">
-                <p className="leadership-text-leftalign">
+              <div className="bluebanner-right">
+                <p className="bluebanner-text bannerabout">
                   Decades of unwavering commitment to repeated innovation</p>
               </div>
             </section>
@@ -284,59 +285,71 @@ export default class About extends Component {
               <h4>Worldwide:</h4>
               <h6>
 
-              <AnimatedNumber
-                  style={{
-                    transition: '0.8s ease-out',
-                    transitionProperty:
-                      'background-color, color'
-                  }}
-                  frameStyle={perc => (
-                    perc === 100 ? {} : { backgroundColor: '#ffffff' }
-                  )}
-                  stepPrecision={0}
-                  value={smallValue}
-                  duration={1200}
-                  formatValue={n => `${n}+ Countries`} />
+                <TrackVisibility>
+                  {({ isVisible }) => isVisible &&
+                    <AnimatedNumber
+                      style={{
+                        transition: '0.8s ease-out',
+                        transitionProperty:
+                          'background-color, color'
+                      }}
+                      frameStyle={perc => (
+                        perc === 100 ? {} : { backgroundColor: '#ffffff' }
+                      )}
+                      stepPrecision={0}
+                      value={smallValue}
+                      duration={1200}
+                      formatValue={n => `${n}+ Countries`} />
+                  }
+                </TrackVisibility>
 
-                </h6>
+              </h6>
             </div>
             <div className="gray-location">
               <h4>Distribution Network:</h4>
               <h6>
 
-              <AnimatedNumber
-                  style={{
-                    transition: '0.8s ease-out',
-                    transitionProperty:
-                      'background-color, color'
-                  }}
-                  frameStyle={perc => (
-                    perc === 100 ? {} : { backgroundColor: '#ffffff' }
-                  )}
-                  stepPrecision={0}
-                  value={mediumValue}
-                  duration={1200}
-                  formatValue={n => `${n} Locations`} />
-                  
-                </h6>
+                <TrackVisibility>
+                  {({ isVisible }) => isVisible &&
+                    <AnimatedNumber
+                      style={{
+                        transition: '0.8s ease-out',
+                        transitionProperty:
+                          'background-color, color'
+                      }}
+                      frameStyle={perc => (
+                        perc === 100 ? {} : { backgroundColor: '#ffffff' }
+                      )}
+                      stepPrecision={0}
+                      value={mediumValue}
+                      duration={1200}
+                      formatValue={n => `${n} Locations`} />
+                  }
+                </TrackVisibility>
+
+              </h6>
             </div>
             <div className="gray-location">
               <h4>Patents:</h4>
               <h6 className="patents">
 
-                <AnimatedNumber
-                  style={{
-                    transition: '0.8s ease-out',
-                    transitionProperty:
-                      'background-color, color'
-                  }}
-                  frameStyle={perc => (
-                    perc === 100 ? {} : { backgroundColor: '#ffffff' }
-                  )}
-                  stepPrecision={0}
-                  value={bigValue}
-                  duration={1200}
-                  formatValue={n => `${n}+ US And Foreign Patents`} />
+                <TrackVisibility>
+                  {({ isVisible }) => isVisible &&
+                    <AnimatedNumber
+                      style={{
+                        transition: '0.8s ease-out',
+                        transitionProperty:
+                          'background-color, color'
+                      }}
+                      frameStyle={perc => (
+                        perc === 100 ? {} : { backgroundColor: '#ffffff' }
+                      )}
+                      stepPrecision={0}
+                      value={bigValue}
+                      duration={1200}
+                      formatValue={n => `${n}+ US And Foreign Patents`} />
+                  }
+                </TrackVisibility>
 
               </h6>
             </div>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import AnimatedNumber from 'react-animated-number';
+import TrackVisibility from 'react-on-screen';
 import { Helmet } from "react-helmet";
 
 import Header from '../Header/Header';
@@ -137,19 +138,23 @@ export default class Difference extends Component {
                 <h4 className="values-header">INNOVATION</h4>
                 <p className="values-numbers">
 
-                  <AnimatedNumber
-                    style={{
-                      transition: '0.8s ease-out',
-                      transitionProperty:
-                        'background-color, color'
-                    }}
-                    frameStyle={perc => (
-                      perc === 100 ? {} : { backgroundColor: '#ffffff' }
-                    )}
-                    stepPrecision={0}
-                    value={smallValue}
-                    duration={1200}
-                    formatValue={n => `${n}%`} />
+                  <TrackVisibility throttleInterval={500}>
+                    {({ isVisible }) => isVisible &&
+                      <AnimatedNumber
+                        style={{
+                          transition: '0.8s ease-out',
+                          transitionProperty:
+                            'background-color, color'
+                        }}
+                        frameStyle={perc => (
+                          perc === 100 ? {} : { backgroundColor: '#ffffff' }
+                        )}
+                        stepPrecision={0}
+                        value={smallValue}
+                        duration={1200}
+                        formatValue={n => `${n}%`} />
+                    }
+                  </TrackVisibility>
 
                 </p>
                 <div className="val-line"></div>
@@ -159,19 +164,23 @@ export default class Difference extends Component {
                 <h4 className="values-header">VALUE CREATION</h4>
                 <p className="values-numbers">
 
-                  <AnimatedNumber
-                    style={{
-                      transition: '0.8s ease-out',
-                      transitionProperty:
-                        'background-color, color'
-                    }}
-                    frameStyle={perc => (
-                      perc === 100 ? {} : { backgroundColor: '#ffffff' }
-                    )}
-                    stepPrecision={0}
-                    value={smallValue}
-                    duration={1200}
-                    formatValue={n => `${n}`} />
+                  <TrackVisibility throttleInterval={500}>
+                    {({ isVisible }) => isVisible &&
+                      <AnimatedNumber
+                        style={{
+                          transition: '0.8s ease-out',
+                          transitionProperty:
+                            'background-color, color'
+                        }}
+                        frameStyle={perc => (
+                          perc === 100 ? {} : { backgroundColor: '#ffffff' }
+                        )}
+                        stepPrecision={0}
+                        value={smallValue}
+                        duration={1200}
+                        formatValue={n => `${n}`} />
+                    }
+                  </TrackVisibility>
 
                 </p>
                 <div className="val-line"></div>
@@ -181,19 +190,23 @@ export default class Difference extends Component {
                 <h4 className="values-header">SERVICE</h4>
                 <p className="values-numbers">
 
-                  <AnimatedNumber
-                    style={{
-                      transition: '0.8s ease-out',
-                      transitionProperty:
-                        'background-color, color'
-                    }}
-                    frameStyle={perc => (
-                      perc === 100 ? {} : { backgroundColor: '#ffffff' }
-                    )}
-                    stepPrecision={0}
-                    value={mediumValue}
-                    duration={1200}
-                    formatValue={n => `${n}`} />
+                  <TrackVisibility throttleInterval={500}>
+                    {({ isVisible }) => isVisible &&
+                      <AnimatedNumber
+                        style={{
+                          transition: '0.8s ease-out',
+                          transitionProperty:
+                            'background-color, color'
+                        }}
+                        frameStyle={perc => (
+                          perc === 100 ? {} : { backgroundColor: '#ffffff' }
+                        )}
+                        stepPrecision={0}
+                        value={mediumValue}
+                        duration={1200}
+                        formatValue={n => `${n}`} />
+                    }
+                  </TrackVisibility>
 
                 </p>
                 <div className="val-line"></div>

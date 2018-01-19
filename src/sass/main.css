@@ -1179,10 +1179,11 @@ li {
   color: #FFFFFF;
   position: absolute;
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
   text-align: left; }
+
+.bluebanner-text {
+  margin: 60px 0px 30px 50px; }
 
 .flexabout-this {
   display: flex; }
@@ -3312,14 +3313,14 @@ input::placeholder {
   flex-direction: column;
   position: relative; }
 
-.batching-unit-four {
+.batching-unit-four, .batching-unit-four2 {
   width: 25vw;
   height: 395px;
   display: flex;
   flex-direction: column;
   position: relative; }
 
-.batching-header {
+.batching-header, .batching-header2 {
   margin: 40px 0px 10px 30px; }
 
 .batching-list {
@@ -3448,6 +3449,8 @@ input::placeholder {
     flex-direction: column;
     overflow-x: hidden;
     width: 100vw; }
+  .feed-para {
+    width: 85vw; }
   .integrator-main {
     display: flex;
     flex-direction: column; }
@@ -3594,9 +3597,16 @@ input::placeholder {
   .batching-container {
     display: flex;
     flex-direction: column; }
-  .batching-unit-four {
+  .batching-unit-four, .batching-unit-four2 {
     width: 100vw;
-    height: 350px; }
+    height: 350px;
+    justify-content: center; }
+  .batching-header2 {
+    margin-top: 0px; }
+  .batching-header {
+    margin-top: 50px; }
+  .downdown {
+    margin-top: 75px; }
   .batching-unit-three {
     width: 100vw;
     height: 230px; }
@@ -3775,14 +3785,23 @@ input::placeholder {
   .weigh-text {
     word-wrap: break-word;
     width: 45vw; }
-  .arrow-circle {
-    display: none; }
   .batching-container {
     display: flex;
     flex-direction: column; }
-  .batching-unit-four {
+  .batching-unit-four, .batching-unit-four2 {
     width: 100vw;
-    height: 350px; }
+    height: 350px;
+    justify-content: center; }
+  .batching-header2 {
+    margin-top: 0px; }
+  .batching-header {
+    margin-top: 50px; }
+  .downdown {
+    margin-top: 75px; }
+  .arrow-circle {
+    right: 45%;
+    top: 94%;
+    transform: rotate(90deg); }
   .batching-unit-three {
     width: 100vw;
     height: 230px; }
@@ -4181,8 +4200,10 @@ input::placeholder {
     z-index: 20;
     margin-top: -40px; }
   .stocker-text {
-    height: 400px;
-    width: 100vw; }
+    height: 450px;
+    width: 100vw;
+    justify-content: flex-start;
+    margin-top: 35px; }
   .stocker-nav-para {
     word-wrap: break-word;
     width: 80vw;
@@ -4586,6 +4607,8 @@ input::placeholder {
     background-color: #1A2E5A;
     position: static;
     height: 450px; }
+  .feed-para {
+    width: 85vw; }
   .feedyard-cover-title-one, .feedyard-cover-title-two, .feedyard-cover-title-three {
     color: #FFFFFF;
     z-index: 20;
@@ -4616,7 +4639,11 @@ input::placeholder {
     margin: 15px 190px 15px 0px; }
   .accutrac-wheel {
     width: 85vw; }
-  .cowboy-testimony, .customer-lightblue, .transparent-left-text, .transparent-right-text, .transparent-right-text2, .transparent-left-subtext, .customer-testimony, .customer-lightblue2, .transparent-left-text2, .transparent-left-subtext2, .comp-para {
+  .cowboy-testimony, .customer-testimony {
+    display: block;
+    height: 60vw;
+    width: 100vw; }
+  .customer-lightblue, .transparent-left-text, .transparent-right-text, .transparent-right-text2, .transparent-left-subtext, .customer-lightblue2, .transparent-left-text2, .transparent-left-subtext2, .comp-para {
     width: 100vw; }
   .transparent-left-text, .transparent-left-subtext, .transparent-left-text2, .transparent-left-subtext2, .comp-para {
     word-wrap: break-word;

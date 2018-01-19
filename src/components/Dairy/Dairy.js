@@ -12,7 +12,7 @@ import Footer from '../Footer/Footer';
 import DairyInfo from '../Dairy/DairyInfo';
 
 import DairyCover from '../../assets/Pics/Dairy_cover.png';
-import Testimony1 from '../../assets/Pics/VideoShoot.png';
+import Testimony1 from '../../assets/Pics/DairyCustomerJBenson.png';
 import LowerCover from '../../assets/Pics/Lower_cover.png';
 import Quotes from '../../assets/Icons/quote.png';
 import DairyMobile from '../../assets/Mobile/DairyMobile.png';

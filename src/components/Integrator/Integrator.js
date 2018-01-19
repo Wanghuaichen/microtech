@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedNumber from 'react-animated-number';
-import {Helmet} from "react-helmet";
+import TrackVisibility from 'react-on-screen';
+import { Helmet } from "react-helmet";
 import ReactPlayer from 'react-player';
 import Dialog from 'material-ui/Dialog';
 
@@ -27,11 +28,15 @@ export default class Integrator extends Component {
       smallValue: 0,
       bigValue: 0,
       updates: 0,
-      open: false
+      open1: false,
+      open2: false,
+      open3: false
     };
     this.update = this.update.bind(this);
     this.mountUnmount = this.mountUnmount.bind(this);
-    this.handleOpen = this.handleOpen.bind(this);
+    this.handleOpen1 = this.handleOpen1.bind(this);
+    this.handleOpen2 = this.handleOpen2.bind(this);
+    this.handleOpen3 = this.handleOpen3.bind(this);
     this.handleClose = this.handleClose.bind(this);
   }
 
@@ -59,12 +64,20 @@ export default class Integrator extends Component {
     });
   }
 
-  handleOpen = () => {
-    this.setState({ open: true });
+  handleOpen1 = () => {
+    this.setState({ open1: true });
+  };
+
+  handleOpen2 = () => {
+    this.setState({ open2: true });
+  };
+
+  handleOpen3 = () => {
+    this.setState({ open3: true });
   };
 
   handleClose = () => {
-    this.setState({ open: false });
+    this.setState({ open1: false, open2: false, open3: false });
   };
 
   render() {
@@ -76,7 +89,7 @@ export default class Integrator extends Component {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        
+
       },
       dialogContent: {
         position: "relative",
@@ -92,8 +105,8 @@ export default class Integrator extends Component {
       <section className="integrator-container">
 
         <Helmet>
-            <title>Integrator</title>
-            <meta name="description" content="We provide innovative feed additive dosing systems that improve performance and profitability and ensure the success of our partners by providing unparalleled service and support." />
+          <title>Integrator</title>
+          <meta name="description" content="We provide innovative feed additive dosing systems that improve performance and profitability and ensure the success of our partners by providing unparalleled service and support." />
         </Helmet>
 
         <Header />
@@ -135,73 +148,97 @@ export default class Integrator extends Component {
             <div className="four-circles-container">
               <div className="four-column">
                 <div className="circle-num">
-                  <AnimatedNumber
-                    style={{
-                      transition: '0.8s ease-out',
-                      transitionProperty:
-                        'background-color, color'
-                    }}
-                    frameStyle={perc => (
-                      perc === 100 ? {} : { backgroundColor: '#ffffff' }
-                    )}
-                    stepPrecision={0}
-                    value={smallValue}
-                    duration={4000}
-                    formatValue={n => `${n}+`} />
+
+                  <TrackVisibility>
+                    {({ isVisible }) => isVisible &&
+                      <AnimatedNumber
+                        style={{
+                          transition: '0.8s ease-out',
+                          transitionProperty:
+                            'background-color, color'
+                        }}
+                        frameStyle={perc => (
+                          perc === 100 ? {} : { backgroundColor: '#ffffff' }
+                        )}
+                        stepPrecision={0}
+                        value={smallValue}
+                        duration={4000}
+                        formatValue={n => `${n}+`} />
+                    }
+                  </TrackVisibility>
+
                 </div>
                 <p className="circle-num-text">20+ years of experience with feed additive application</p>
               </div>
               <div className="four-column">
                 <div className="circle-num">
-                  <AnimatedNumber
-                    style={{
-                      transition: '0.8s ease-out',
-                      transitionProperty:
-                        'background-color, color'
-                    }}
-                    frameStyle={perc => (
-                      perc === 100 ? {} : { backgroundColor: '#ffffff' }
-                    )}
-                    stepPrecision={0}
-                    value={mediumValue}
-                    duration={4000}
-                    formatValue={n => `${n}`} />
+
+                  <TrackVisibility>
+                    {({ isVisible }) => isVisible &&
+                      <AnimatedNumber
+                        style={{
+                          transition: '0.8s ease-out',
+                          transitionProperty:
+                            'background-color, color'
+                        }}
+                        frameStyle={perc => (
+                          perc === 100 ? {} : { backgroundColor: '#ffffff' }
+                        )}
+                        stepPrecision={0}
+                        value={mediumValue}
+                        duration={4000}
+                        formatValue={n => `${n}`} />
+                    }
+                  </TrackVisibility>
+
                 </div>
                 <p className="circle-num-text">300+ Feedmill installations</p>
               </div>
               <div className="four-column">
                 <div className="circle-num">
-                  <AnimatedNumber
-                    style={{
-                      transition: '0.8s ease-out',
-                      transitionProperty:
-                        'background-color, color'
-                    }}
-                    frameStyle={perc => (
-                      perc === 100 ? {} : { backgroundColor: '#ffffff' }
-                    )}
-                    stepPrecision={0}
-                    value={smallValue}
-                    duration={4000}
-                    formatValue={n => `${n}+`} />
+
+                  <TrackVisibility>
+                    {({ isVisible }) => isVisible &&
+                      <AnimatedNumber
+                        style={{
+                          transition: '0.8s ease-out',
+                          transitionProperty:
+                            'background-color, color'
+                        }}
+                        frameStyle={perc => (
+                          perc === 100 ? {} : { backgroundColor: '#ffffff' }
+                        )}
+                        stepPrecision={0}
+                        value={smallValue}
+                        duration={4000}
+                        formatValue={n => `${n}+`} />
+                    }
+                  </TrackVisibility>
+
                 </div>
                 <p className="circle-num-text">20+ Countries</p>
               </div>
               <div className="four-column">
                 <div className="circle-num">
-                  <AnimatedNumber
-                    style={{
-                      transition: '0.8s ease-out',
-                      transitionProperty:
-                        'background-color, color'
-                    }}
-                    frameStyle={perc => (
-                      perc === 100 ? {} : { backgroundColor: '#ffffff' }
-                    )}
-                    stepPrecision={0}
-                    value={bigValue}
-                    duration={4000}
-                    formatValue={n => `${n}`} />
+
+                  <TrackVisibility >
+                    {({ isVisible }) => isVisible &&
+                      <AnimatedNumber
+                        style={{
+                          transition: '0.8s ease-out',
+                          transitionProperty:
+                            'background-color, color'
+                        }}
+                        frameStyle={perc => (
+                          perc === 100 ? {} : { backgroundColor: '#ffffff' }
+                        )}
+                        stepPrecision={0}
+                        value={bigValue}
+                        duration={4000}
+                        formatValue={n => `${n}`} />
+                    }
+                  </TrackVisibility>
+
                 </div>
                 <p className="circle-num-text">500+ pellet line start ups for post-pellet liquid enzyme systems</p>
               </div>
@@ -251,27 +288,27 @@ export default class Integrator extends Component {
             </div>
 
             <Dialog
-                modal={false}
-                open={this.state.open}
-                onRequestClose={this.handleClose}
-                contentStyle={ styles.dialogContent }
-                bodyStyle={ styles.dialogBody }
-                style={ styles.dialogRoot }
-                repositionOnUpdate={ false }
-                >
-  
-                <ReactPlayer 
-                  onLoad={() => { window.dispatchEvent(new Event('resize')); }}
-                  isOpen={this.state.isOpen}
-                  playing
-                  controls
-                  url='https://www.youtube.com/watch?v=wUlPN0sZffY'
-                  youtubeConfig={{ playerVars: { start: 15 }}}
-                />
-                
-              </Dialog>
+              modal={false}
+              open={this.state.open2}
+              onRequestClose={this.handleClose}
+              contentStyle={styles.dialogContent}
+              bodyStyle={styles.dialogBody}
+              style={styles.dialogRoot}
+              repositionOnUpdate={false}
+            >
 
-              <div className="pelleting-video-box" onClick={this.handleOpen}>WATCH VIDEO</div>
+              <ReactPlayer
+                onLoad={() => { window.dispatchEvent(new Event('resize')); }}
+                isOpen={this.state.isOpen2}
+                playing
+                // controls
+                url='https://vimeo.com/204024506'
+
+              />
+
+            </Dialog>
+
+            <div className="pelleting-video-box" onClick={this.handleOpen2}>WATCH VIDEO</div>
 
           </section>
 
@@ -333,27 +370,27 @@ export default class Integrator extends Component {
 
               <Dialog
                 modal={false}
-                open={this.state.open}
+                open={this.state.open3}
                 onRequestClose={this.handleClose}
-                contentStyle={ styles.dialogContent }
-                bodyStyle={ styles.dialogBody }
-                style={ styles.dialogRoot }
-                repositionOnUpdate={ false }
-                >
-  
-                <ReactPlayer 
+                contentStyle={styles.dialogContent}
+                bodyStyle={styles.dialogBody}
+                style={styles.dialogRoot}
+                repositionOnUpdate={false}
+              >
+
+                <ReactPlayer
                   onLoad={() => { window.dispatchEvent(new Event('resize')); }}
-                  isOpen={this.state.isOpen}
+                  isOpen={this.state.isOpen3}
                   playing
-                  controls
-                  url='https://www.youtube.com/watch?v=wUlPN0sZffY'
-                  youtubeConfig={{ playerVars: { start: 15 }}}
+                  // controls
+                  url='https://vimeo.com/202760559'
+
                 />
-                
+
               </Dialog>
 
-              <div className="weigh-flex-video-box" onClick={this.handleOpen}>WATCH VIDEO</div>
-              
+              <div className="weigh-flex-video-box" onClick={this.handleOpen3}>WATCH VIDEO</div>
+
             </div>
             <div className="weigh-flex-machine-box">
               <img className="weigh-flex-machine" src={WeighFlex} alt="Weigh Flex Machine" />
@@ -361,8 +398,8 @@ export default class Integrator extends Component {
           </section>
 
           <section className="batching-container">
-            <div className="batching-unit-four color1">
-              <h4 className="batching-header">Accuracy</h4>
+            <div className="batching-unit-four2 color1">
+              <h4 className="batching-header2">Accuracy</h4>
               <li className="batching-list">Typical accuracy is +-2 % or better through full scale</li>
               <li className="batching-list">Adjusts flow rate to desired output for accurate liquid application</li>
               <li className="batching-list">True “in-line” measurement</li>
@@ -370,8 +407,8 @@ export default class Integrator extends Component {
                 <img className="arrow-right" src={ArrowRight} alt="arrow right" width="15px" />
               </div>
             </div>
-            <div className="batching-unit-four color2">
-              <h4 className="batching-header">Flexibility</h4>
+            <div className="batching-unit-four2 color2">
+              <h4 className="batching-header2">Flexibility</h4>
               <li className="batching-list">Remote control panel can be mounted up to 500 feet from the body depending on requirements</li>
               <li className="batching-list">Compact Size allows for easy integration into plant process</li>
               <li className="batching-list">Models available for applications from 4 - 120 metric tonnes per hour</li>
@@ -380,8 +417,8 @@ export default class Integrator extends Component {
                 <img className="arrow-right" src={ArrowRight} alt="arrow right" width="15px" />
               </div>
             </div>
-            <div className="batching-unit-four color3">
-              <h4 className="batching-header">Automation</h4>
+            <div className="batching-unit-four2 color3">
+              <h4 className="batching-header2">Automation</h4>
               <li className="batching-list">Complete standalone operation via provided PLC control panel</li>
               <li className="batching-list">Remote Support functions</li>
               <li className="batching-list">Communication with central PLC control systems</li>
@@ -389,8 +426,8 @@ export default class Integrator extends Component {
                 <img className="arrow-right" src={ArrowRight} alt="arrow right" width="15px" />
               </div>
             </div>
-            <div className="batching-unit-four color4">
-              <h4 className="batching-header">Simplicity</h4>
+            <div className="batching-unit-four2 color4">
+              <h4 className="batching-header2">Simplicity</h4>
               <li className="batching-list">Easy calibration and configuration procedure</li>
               <li className="batching-list">Touch Screen for easy operation</li>
 
@@ -407,26 +444,25 @@ export default class Integrator extends Component {
 
               <Dialog
                 modal={false}
-                open={this.state.open}
+                open={this.state.open1}
                 onRequestClose={this.handleClose}
-                contentStyle={ styles.dialogContent }
-                bodyStyle={ styles.dialogBody }
-                style={ styles.dialogRoot }
-                repositionOnUpdate={ false }
-                >
-  
-                <ReactPlayer 
+                contentStyle={styles.dialogContent}
+                bodyStyle={styles.dialogBody}
+                style={styles.dialogRoot}
+                repositionOnUpdate={false}
+              >
+
+                <ReactPlayer
                   onLoad={() => { window.dispatchEvent(new Event('resize')); }}
-                  isOpen={this.state.isOpen}
+                  isOpen={this.state.isOpen1}
                   playing
-                  controls
-                  url='https://www.youtube.com/watch?v=wUlPN0sZffY'
-                  youtubeConfig={{ playerVars: { start: 15 }}}
+                  // controls
+                  url='https://vimeo.com/202762766'
                 />
-                
+
               </Dialog>
 
-              <div className="enzyme-video-box" onClick={this.handleOpen}>WATCH VIDEO</div>
+              <div className="enzyme-video-box" onClick={this.handleOpen1}>WATCH VIDEO</div>
 
             </div>
           </section>
@@ -453,7 +489,7 @@ export default class Integrator extends Component {
               </div>
             </div>
             <div className="batching-unit-three color3">
-              <h4 className="batching-header">Automation</h4>
+              <h4 className="batching-header downdown">Automation</h4>
               <li className="batching-list">Fully Automatic Operation</li>
             </div>
           </section>
@@ -461,7 +497,7 @@ export default class Integrator extends Component {
           <section className="procontrol-container">
             <img className="procontrol-screen" src={ProControl} alt="Pro Control Plus® Software Screen" />
             <div className="procontrol-info">
-              <h3 className="procontrol-header">Pro-Control  Plus  Software</h3>
+              <h3 className="procontrol-header">Pro-Control  Plus<sup>&reg;</sup> Software</h3>
               <li className="procontrol-list">Easy to use graphic interface</li>
               <li className="procontrol-list">Remote access via internet for technical support</li>
               <li className="procontrol-list">Alarms can be forwarded to mill staff and Micro support staff</li>

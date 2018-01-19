@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import Laptop from '../../../../assets/Pics/Read-N-Feed.png';
+// import Laptop from '../../../../assets/Pics/Read-N-Feed.png';
+import Laptop from '../../../../assets/Pics/RNFBunkReader.webp';
 
 
 export default class View4 extends Component {

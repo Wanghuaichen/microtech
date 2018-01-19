@@ -498,7 +498,7 @@
     position: relative;
 }
 
-.batching-unit-four {
+.batching-unit-four, .batching-unit-four2 {
     width: 25vw; 
     height: 395px;
     display: flex;
@@ -506,7 +506,7 @@
     position: relative;
 }
 
-.batching-header {
+.batching-header, .batching-header2 {
     margin: 40px 0px 10px 30px;
 }
 
@@ -626,6 +626,10 @@
         flex-direction: column;
         overflow-x: hidden;
         width: 100vw;
+    }
+
+    .feed-para {
+        width: 85vw;
     }
 
     .integrator-main {
@@ -858,10 +862,24 @@
         flex-direction: column;
     }
 
-    .batching-unit-four {
+    .batching-unit-four, .batching-unit-four2  {
         width: 100vw;
         height: 350px;
+        justify-content: center;
     }
+
+    .batching-header2 {
+        margin-top: 0px;
+    }
+
+    .batching-header {
+        margin-top: 50px;
+    }
+
+    .downdown {
+        margin-top: 75px;
+    }
+        
 
     .batching-unit-three {
         width: 100vw;
@@ -1155,18 +1173,33 @@
         width: 45vw;
     }
 
-    .arrow-circle {
-        display: none;
-    }
-
     .batching-container {
         display: flex;
         flex-direction: column;
     }
 
-    .batching-unit-four {
+    .batching-unit-four, .batching-unit-four2  {
         width: 100vw;
         height: 350px;
+        justify-content: center;
+    }
+
+    .batching-header2 {
+        margin-top: 0px;
+    }
+
+    .batching-header {
+        margin-top: 50px;
+    }
+
+    .downdown {
+        margin-top: 75px;
+    }
+
+    .arrow-circle {
+        right: 45%;
+        top: 94%;
+        transform: rotate(90deg);
     }
 
     .batching-unit-three {

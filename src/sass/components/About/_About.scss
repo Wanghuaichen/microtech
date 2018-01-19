@@ -26,9 +26,13 @@
     background-color: $primary-blue;
     color: $white;
     position: absolute;
-    @include flexSetUp;
-    flex-direction: column;
+    display: flex;
+    align-items: center;
     text-align: left;
+}
+
+.bluebanner-text {
+    margin: 60px 0px 30px 50px;
 }
 
 .flexabout-this {

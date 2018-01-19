@@ -55,7 +55,7 @@ export default class Footer extends Component {
                                 <Link to="/policy">
                                     <p className="conditions privacy policy">PRIVACY POLICY</p></Link>
                             </div>
-                            <p className="conditions">COPYRIGHT 2017 AMERISOURCEBERGEN CORPORATION. ALL RIGHTS RESERVED.</p>
+                            <p className="conditions">COPYRIGHT 2018 AMERISOURCEBERGEN CORPORATION. ALL RIGHTS RESERVED.</p>
                         </div>
                     </div>
                 </div>

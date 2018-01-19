@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import TVParlor from '../../../../assets/Photos/Mixer/TvScreen.png';
-import PCP from '../../../../assets/Photos/Parlor/PCP.png';
+import TVParlor from '../../../../assets/Photos/Parlor/ProControlParlor.png';
+// import PCP from '../../../../assets/Photos/Parlor/ProControlParlor.png';
 import ParlorPhone from '../../../../assets/Photos/Parlor/Phone.png';
 
 export default class View4 extends Component {
@@ -23,7 +23,7 @@ export default class View4 extends Component {
                     </div>
                     <div className="tv-box">
                         <img className="tv-screen-frame" src={TVParlor} alt="slide show" height="275px" />
-                        <img className="tv-display" src={PCP} alt="PCP Display" height="230px" />
+                        {/* <img className="tv-display" src={PCP} alt="PCP Display" width="230px" /> */}
                     </div>
                 </div>
                 <div className="phone-container">
