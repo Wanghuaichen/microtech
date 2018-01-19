@@ -237,7 +237,7 @@ export default class About extends Component {
             </div>
           </section>
 
-          <section className="responsibility-container">
+          <section className="responsibility-container" id="responsibility">
 
             <div className="res-align">
               <div className="responsibility-box">

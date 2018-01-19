@@ -145,7 +145,14 @@ export default class Feedyard extends Component {
                 </div>
               </div>
               <div className="moreinfo-top-textbox">
-                <p className="moreinfo-top-text">Our precision feed management solutions help optimize animal performance potential. We ensure consistency, accuracy, ration flexibility and verification, real-time data and accountability. Each system is custom configured to fit your feed processes allowing you more control over inventory and shrink.</p>
+                {this.state.show === 0 &&
+                
+                <p className="moreinfo-top-text">Our precision feed management solutions help optimize animal performance potential. We ensure consistency, accuracy, ration flexibility and verification, real-time data and accountability. Each system is custom configured to fit your feed processes allowing you more control over inventory and shrink.</p>}
+
+                {this.state.show === 1 &&
+                
+                <p className="moreinfo-top-text">Drug-Trac<sup>&reg;</sup> is the most comprehensive animal health management software system available today to help you ensure optimal animal health, inventory management and revolutionary diagnostic technologies.</p>}
+
               </div>
             </section>
           </main>

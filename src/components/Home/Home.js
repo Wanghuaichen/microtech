@@ -1,6 +1,7 @@
 // dependencies
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 // import ModalVideo from 'react-modal-video';
 import Carousel from 'nuka-carousel';
 import {Helmet} from "react-helmet";
@@ -15,7 +16,7 @@ import Footer from '../Footer/Footer';
 
 // images
 import HomeHero from '../../assets/Pics/HomeHero.png';
-import HomeHero2 from '../../assets/Pics/HeroHome2.png';
+import HomeHero2 from '../../assets/Pics/HomeTwo.png';
 import StockerIcon from '../../assets/Icons/Stocker.png';
 import FeedyardIcon from '../../assets/Icons/Feedyard.png';
 import DairyIcon from '../../assets/Icons/dairy.png';
@@ -250,9 +251,9 @@ export default class Home extends Component {
               <p className="fourth-para four">As the world's population grows, we are challenged to produce more higher-quality protein than ever before with the use of less natural resources. We believe the path to securing a safe, affordable and wholesome food supply will come primarily as a result of innovation. That is why we are committed to developing technologies to empower food producers, both as business owners and stewards.</p>
               <br></br>
               <p className="fourth-para four">Learn more about Our Why and the passion that drives our everyday actions.</p>
-              <Link to='/about'>
+              <HashLink to='/about#responsibility'>
                 <div className="res-cta four">OUR RESPONSIBILITY</div>
-              </Link>
+              </HashLink>
             </div>
           </div>
           

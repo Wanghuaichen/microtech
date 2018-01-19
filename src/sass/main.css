@@ -261,7 +261,8 @@ textarea {
   word-wrap: break-word;
   width: 45vw;
   text-shadow: 2px 2px 6px gray;
-  text-align: center; }
+  text-align: center;
+  margin-top: -135px; }
 
 .main-cta {
   color: #FFFFFF;
@@ -278,7 +279,7 @@ textarea {
   letter-spacing: 1.6px;
   font-size: 26px;
   cursor: pointer;
-  margin-top: 300px; }
+  margin-top: 100px; }
 
 .main-cta:hover {
   background-color: rgba(26, 46, 90, 0.9);
@@ -477,7 +478,7 @@ textarea {
   display: none;
   grid-area: mobile-header-container; }
 
-.logo-icon, .menu-container, .menu-drawer, .mobile-nav-box, .mobile-home {
+.logo-icon, .menu-container, .menu-drawer, .mobile-nav-box, .mobile-home, .menu-hamburger {
   display: none; }
 
 @media only screen and (min-width: 766px) and (max-width: 1024px) {
@@ -491,8 +492,13 @@ textarea {
     display: none; }
   .slider {
     display: none !important; }
-  .mobile-header-container, .logo-icon, .menu-container, .logo-icon-image, .menu-box, .btn-mui, .menu-drawer, .mobile-home {
+  .mobile-header-container, .logo-icon, .menu-container, .logo-icon-image, .menu-box, .btn-mui, .menu-drawer, .mobile-home, .menu-hamburger {
     display: block; }
+  .menu-hamburger {
+    width: 30px;
+    margin-left: -20px;
+    margin-top: -3px;
+    cursor: pointer; }
   .mobile-header-container {
     width: 100vw;
     display: flex;
@@ -625,8 +631,13 @@ textarea {
     display: none; }
   .slider {
     display: none !important; }
-  .mobile-header-container, .logo-icon, .menu-container, .logo-icon-image, .menu-box, .btn-mui, .menu-drawer, .mobile-home {
+  .mobile-header-container, .logo-icon, .menu-container, .logo-icon-image, .menu-box, .btn-mui, .menu-drawer, .mobile-home, .menu-hamburger {
     display: block; }
+  .menu-hamburger {
+    width: 30px;
+    margin-left: -20px;
+    margin-top: -3px;
+    cursor: pointer; }
   .mobile-header-container {
     width: 100vw;
     display: flex;
@@ -2650,7 +2661,7 @@ input::placeholder {
   .difference-cover-mobile {
     display: block;
     width: 100vw; }
-  .difference-cover {
+  .difference-cover, .third-cover {
     display: none; }
   .difference-container {
     display: flex;
@@ -4673,7 +4684,7 @@ input::placeholder {
 .moreinfo-top-text {
   color: #333333;
   word-wrap: break-word;
-  width: 970px;
+  width: 730px;
   margin: 20px; }
 
 .active-line {

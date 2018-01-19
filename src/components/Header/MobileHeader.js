@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
-import RaisedButton from 'material-ui/RaisedButton';
+import IconButton from 'material-ui/IconButton';
 
 import LogoIcon from '../../assets/Logos/MicroTech_MED.jpg';
 // import LogoIcon from '../../assets/Logos/Mirco_icon.png';
+import MenuIcon from '../../assets/Icons/menu.svg';
+
 
 export default class MobileHeader extends Component {
     constructor(props) {
@@ -32,11 +34,10 @@ export default class MobileHeader extends Component {
                         <img className="logo-icon-image" src={LogoIcon} alt="Micro Technologies Icon"/></Link>
                     </div>
                     <div className="menu-box">
-                    <RaisedButton
+                    <IconButton
                         className="btn-mui"
-                        label="Menu"
                         onClick={this.handleToggle}
-                    />
+                    ><img className="menu-hamburger" src={MenuIcon} alt="menu navigation" /></IconButton>
                     </div>
                 </div>
                 <Drawer open={this.state.open} docked={false} openSecondary={true} className="menu-drawer" onRequestChange={this.closeDrawer}>

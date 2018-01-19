@@ -36,11 +36,12 @@
     width: 45vw; 
     text-shadow: 2px 2px 6px gray;
     text-align: center;
+    margin-top: -135px;
 }
 
 .main-cta {
     @include mainCTA;
-    margin-top: 300px;
+    margin-top: 100px;
 }
 
 .main-cta:hover {
@@ -254,9 +255,11 @@
     grid-area: mobile-header-container;
 }
 
-.logo-icon, .menu-container, .menu-drawer, .mobile-nav-box, .mobile-home {
+.logo-icon, .menu-container, .menu-drawer, .mobile-nav-box, .mobile-home, .menu-hamburger {
     display: none;
 }
+
+
 
 // ipad responsive 
 
@@ -287,8 +290,15 @@
         display: none !important;
     }
 
-    .mobile-header-container, .logo-icon, .menu-container, .logo-icon-image, .menu-box, .btn-mui , .menu-drawer, .mobile-home {
+    .mobile-header-container, .logo-icon, .menu-container, .logo-icon-image, .menu-box, .btn-mui , .menu-drawer, .mobile-home, .menu-hamburger {
         display: block;
+    }
+
+    .menu-hamburger {
+        width: 30px;
+        margin-left: -20px;
+        margin-top: -3px;
+        cursor: pointer;
     }
 
     .mobile-header-container {
@@ -478,8 +488,15 @@
         display: none !important;
     }
 
-    .mobile-header-container, .logo-icon, .menu-container, .logo-icon-image, .menu-box, .btn-mui , .menu-drawer, .mobile-home {
+    .mobile-header-container, .logo-icon, .menu-container, .logo-icon-image, .menu-box, .btn-mui , .menu-drawer, .mobile-home, .menu-hamburger {
         display: block;
+    }
+
+    .menu-hamburger {
+        width: 30px;
+        margin-left: -20px;
+        margin-top: -3px;
+        cursor: pointer;
     }
 
     .mobile-header-container {
