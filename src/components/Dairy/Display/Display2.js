@@ -25,7 +25,7 @@ export default class Display2 extends Component {
             <section className="display2">
                 <div className="dairy-top-nav">
                     <div onClick={() => this.handleView3()} className={this.state.view === 3 ? "dairyactive" : "dairy-btn"} >
-                        <h6 className="dairy-btn-text">PRO-CONTROL MIXER</h6></div>
+                        <h6 className="dairy-btn-text">PRO-CONTROL® MIXER</h6></div>
                     <div onClick={() => this.handleView4()} className={this.state.view === 4 ? "dairyactive" : "dairy-btn"}  >
                         <h6 className="dairy-btn-text">Pro-Control® Parlor</h6>
                     </div>

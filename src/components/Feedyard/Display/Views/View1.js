@@ -5,7 +5,7 @@ export default class View1 extends Component {
     render() {
         return (
             <div className="moreinfo-display">
-                <h4 className="moreinfo-display-header">DRUG-TRAC® ANIMAL HEALTH SYSTEM</h4>
+                <h4 className="moreinfo-display-header">DRUG-TRAC<sup>&reg;</sup> ANIMAL HEALTH SYSTEM</h4>
                 <div className="list-flex">
                     <div className="list-left">
                         <li className="moreinfo-list">Flexible, interactive health reporting on individual or lot level</li>

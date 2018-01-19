@@ -113,7 +113,7 @@ export default class Integrator extends Component {
             <div className="bluecover-container">
               <div className="bluecover-banner-left">
                 <h3 className="bluecover-title-left">Feed Additive Suppliers</h3>
-                <p>Feed ingredient manufacturers are constantly striving to develop innovative new products to make poultry and livestock production more efficient and to keep our food supply safe. Many of these products require specialized application methods. We act as a partner to manufacturers to develop innovative solutions and provide the service and support their customers need to ensure long-term success.</p>
+                <p className="feed-para">Feed ingredient manufacturers are constantly striving to develop innovative new products to make poultry and livestock production more efficient and to keep our food supply safe. Many of these products require specialized application methods. We act as a partner to manufacturers to develop innovative solutions and provide the service and support their customers need to ensure long-term success.</p>
               </div>
               <div className="bluecover-banner-right">
                 <h3 className="bluecover-title-right">Poultry & Pork Producers</h3>
@@ -317,7 +317,7 @@ export default class Integrator extends Component {
               <li className="procontrol-list">IBC handling & automated refill options </li>
             </div>
             <div className="weighpro-box">
-              <img className="weighpro-screen" src={WeighPro} alt="Pro Control Plus Software Screen" />
+              <img className="weighpro-screen" src={WeighPro} alt="Pro Control Plus® Software Screen" />
               <div className="weigh-btn-container">
                 <div className="weigh-btn"><p className="weigh-text">Enhanced Reporting -  View  >  Print  >  Export</p></div>
                 <div className="weigh-btn"><p className="weigh-text">Remote Support Login Capability</p></div>
@@ -390,7 +390,7 @@ export default class Integrator extends Component {
               </div>
             </div>
             <div className="batching-unit-four color4">
-              <h4 className="batching-header">Automation</h4>
+              <h4 className="batching-header">Simplicity</h4>
               <li className="batching-list">Easy calibration and configuration procedure</li>
               <li className="batching-list">Touch Screen for easy operation</li>
 
@@ -459,7 +459,7 @@ export default class Integrator extends Component {
           </section>
 
           <section className="procontrol-container">
-            <img className="procontrol-screen" src={ProControl} alt="Pro Control Plus Software Screen" />
+            <img className="procontrol-screen" src={ProControl} alt="Pro Control Plus® Software Screen" />
             <div className="procontrol-info">
               <h3 className="procontrol-header">Pro-Control  Plus  Software</h3>
               <li className="procontrol-list">Easy to use graphic interface</li>

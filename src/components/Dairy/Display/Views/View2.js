@@ -20,7 +20,7 @@ export default class View2 extends Component {
   render() {
     return (
       <div className="moreinfo-display">
-        <h4 className="moreinfo-display-header">CUBEX® QBUD - HEALTH INVENTORY MANAGEMENT</h4>
+        <h4 className="moreinfo-display-header">CUBEX<sup>&reg;</sup> QBUD - HEALTH INVENTORY MANAGEMENT</h4>
         <li className="moreinfo-list">Digital, wireless inventory system for animal health products</li>
         <li className="moreinfo-list">
           Simple to use and more secure</li>

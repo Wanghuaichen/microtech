@@ -49,3 +49,12 @@ table {
 a {
 	text-decoration: none;
 }
+
+sup {
+    position: relative;
+    font-size: 50%;
+    line-height: 0;
+    vertical-align: baseline;
+	top: -0.8em;
+	margin-right: 4px;
+}

@@ -75,6 +75,65 @@
 
 
 
+
+
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+#fade-in {
+  opacity:0; 
+  animation:fadeIn ease-in 1;
+  animation-fill-mode:forwards;
+  animation-duration:1s;
+}
+
+#fade-in-one {
+  opacity:0; 
+  animation:fadeIn ease-in 1;
+  animation-fill-mode:forwards;
+  animation-duration:1s;
+  animation-delay: 0.4s;
+}
+
+#fade-in-two {
+    opacity:0; 
+    animation:fadeIn ease-in 1;
+    animation-fill-mode:forwards;
+    animation-duration:1s;
+    animation-delay: 0.8s;
+}
+
+#fade-in-three {
+    opacity:0; 
+    animation:fadeIn ease-in 1;
+    animation-fill-mode:forwards;
+    animation-duration:1s;
+    animation-delay: 1.2s;
+  }
+
+#fade-in-four {
+    opacity:0; 
+    animation:fadeIn ease-in 1;
+    animation-fill-mode:forwards;
+    animation-duration:1s;
+    animation-delay: 1.6s;
+}
+
+#fade-in-five {
+    opacity:0; 
+    animation:fadeIn ease-in 1;
+    animation-fill-mode:forwards;
+    animation-duration:1s;
+    animation-delay: 2.0s;
+}
+
+  
+
+
+
+
+
+
+
 .integrator-top-subtitle {
     top: 0;
     margin-top: 200px;
@@ -83,6 +142,7 @@
     text-align: center;
     word-wrap: break-word;
     width: 40vw;
+    font-size: 21px;
 }
 
 
@@ -94,6 +154,10 @@
     word-wrap: break-word;
     width: 40vw;
     margin: 30px;
+}
+
+.feed-para {
+    width: 37vw;
 }
 
 .bluecover-banner-right {

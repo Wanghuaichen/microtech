@@ -25,9 +25,9 @@ export default class Display0 extends Component {
             <section className="display0">
                 <div className="dairy-top-nav">
                     <div onClick={() => this.handleView0()} className={this.state.view === 0 ? "dairyactive" : "dairy-btn"} >
-                        <h6 className="dairy-btn-text">MICRO WEIGH SYSTEM®</h6></div>
+                        <h6 className="dairy-btn-text">MICRO WEIGH® SYSTEM</h6></div>
                     <div onClick={() => this.handleView1()} className={this.state.view === 1 ? "dairyactive" : "dairy-btn"}  >
-                        <h6 className="dairy-btn-text">Pro-Control® Plus Batching System</h6>
+                        <h6 className="dairy-btn-text">Pro-Control Plus® Batching System</h6>
                     </div>
                 </div>
 

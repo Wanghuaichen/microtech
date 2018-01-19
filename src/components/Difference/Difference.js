@@ -193,7 +193,7 @@ export default class Difference extends Component {
                     stepPrecision={0}
                     value={mediumValue}
                     duration={1200}
-                    formatValue={n => `${n}%`} />
+                    formatValue={n => `${n}`} />
 
                 </p>
                 <div className="val-line"></div>

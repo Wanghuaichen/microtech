@@ -99,7 +99,7 @@ export default class History extends Component {
 
                 {this.state.circle === 26 &&
                 <main className="display-circle-text">
-                    <h3 className="history-circles-header">1983 - First “15” Series Micro Weigh System</h3>
+                    <h3 className="history-circles-header">1983 - First “15” Series Micro Weigh® System</h3>
                     <p className="history-circles-para">Mill efficiency was transformed when Micro created computer technology to operate a micro machine that would for the first time use weight, rather than volume and relay logic, to measure micronutrients. Customers received on-the-spot automated reporting and subsequently experienced increased ration accuracy and improved efficiency.</p>
                 </main>}
 
@@ -112,13 +112,13 @@ export default class History extends Component {
                 {this.state.circle === 14 &&
                 <main className="display-circle-text">
                     <h3 className="history-circles-header">1984 - Pro-Control Batching System</h3>
-                    <p className="history-circles-para">The implementation of Micro Weigh Systems elicited numerous customer requests for Micro to computerize the feedlot’s entire feed manufacturing process, which led to the creation of the Pro-Control Batching System.</p>
+                    <p className="history-circles-para">The implementation of Micro Weigh® Systems elicited numerous customer requests for Micro to computerize the feedlot’s entire feed manufacturing process, which led to the creation of the Pro-Control Batching System.</p>
                 </main>}
 
                 {this.state.circle === 2 &&
                 <main className="display-circle-text">
-                    <h3 className="history-circles-header">1985 - First “16” series Micro Weigh System </h3>
-                    <p className="history-circles-para">Two years after its inception, the “15” series Micro Weigh System was upgraded to provide more information and options.  This first “16” series Micro Weigh System used a more durable and sophisticated computer and remains one of Micro’s most durable machines.  Many systems have been in the field for over 25 years and continue to fully operate.</p>
+                    <h3 className="history-circles-header">1985 - First “16” series Micro Weigh® System </h3>
+                    <p className="history-circles-para">Two years after its inception, the “15” series Micro Weigh® System was upgraded to provide more information and options.  This first “16” series Micro Weigh® System used a more durable and sophisticated computer and remains one of Micro’s most durable machines.  Many systems have been in the field for over 25 years and continue to fully operate.</p>
                 </main>}
 
                 {this.state.circle === 27 &&
@@ -135,8 +135,8 @@ export default class History extends Component {
 
                 {this.state.circle === 3 &&
                 <main className="display-circle-text">
-                    <h3 className="history-circles-header">1991 - Read-N-Feed Bunk reader (DOS Based) / Feedtruck V. 1 System </h3>
-                    <p className="history-circles-para">Through evaluating existing customers’ needs, Micro identified the opportunity for bunk reading technology, and in 1991 purchased a software company primarily serving beef feedyards - Agri Systems, Inc., and acquired its feedyard bunk-reading system. The owner, Joe Shell, was welcomed to the company and Micro immediately began offering the Read-N-Feed Bunk Reader systems to existing customers.  Within 4 years, Micro had acquired approximately 65 feedyard bunk-reading customers.</p>
+                    <h3 className="history-circles-header">1991 - Read-N-Feed® Bunk reader (DOS Based) / Feedtruck V. 1 System </h3>
+                    <p className="history-circles-para">Through evaluating existing customers’ needs, Micro identified the opportunity for bunk reading technology, and in 1991 purchased a software company primarily serving beef feedyards - Agri Systems, Inc., and acquired its feedyard bunk-reading system. The owner, Joe Shell, was welcomed to the company and Micro immediately began offering the Read-N-Feed® Bunk Reader systems to existing customers.  Within 4 years, Micro had acquired approximately 65 feedyard bunk-reading customers.</p>
                 </main>}
 
                 {this.state.circle === 28 &&
@@ -159,8 +159,8 @@ export default class History extends Component {
 
                 {this.state.circle === 29 &&
                 <main className="display-circle-text">
-                    <h3 className="history-circles-header">1998 - Windows Based Read-N-Feed Bunk Reader  </h3>
-                    <p className="history-circles-para">In the mid 1990’s, Micro Technologies saw the need to upgrade the ‘original Bunk Reading System’ to the new and improved ‘Read-N-Feed Bunk Reading System’ to provide a more user-friendly, Windows look and feel. Customers at that time were able to seamlessly convert to the new Read-N-Feed system, without losing essential existing features, as well as gain access to multiple new features.</p>
+                    <h3 className="history-circles-header">1998 - Windows Based Read-N-Feed® Bunk Reader  </h3>
+                    <p className="history-circles-para">In the mid 1990’s, Micro Technologies saw the need to upgrade the ‘original Bunk Reading System’ to the new and improved ‘Read-N-Feed® Bunk Reading System’ to provide a more user-friendly, Windows look and feel. Customers at that time were able to seamlessly convert to the new Read-N-Feed® system, without losing essential existing features, as well as gain access to multiple new features.</p>
                 </main>}
 
                 {this.state.circle === 17 &&
@@ -171,13 +171,13 @@ export default class History extends Component {
 
                 {this.state.circle === 5 &&
                 <main className="display-circle-text">
-                    <h3 className="history-circles-header">2001 - Micro Weigh System PC </h3>
-                    <p className="history-circles-para">22 years after the introduction of the “16” MWS, Micro introduced the PC version of the extremely successful 16 machine. The upgrade allowed the system to be fully integrated into the Pro Control Plus Batching System as well as allowing for online access, enhanced reporting, data exports and many more features.  </p>
+                    <h3 className="history-circles-header">2001 - Micro Weigh® System PC </h3>
+                    <p className="history-circles-para">22 years after the introduction of the “16” MWS, Micro introduced the PC version of the extremely successful 16 machine. The upgrade allowed the system to be fully integrated into the Pro Control Plus® Batching System as well as allowing for online access, enhanced reporting, data exports and many more features.  </p>
                 </main>}
 
                 {this.state.circle === 18 &&
                 <main className="display-circle-text">
-                    <h3 className="history-circles-header">2003 - Pro Control Plus Batching System </h3>
+                    <h3 className="history-circles-header">2003 - Pro Control Plus® Batching System </h3>
                     <p className="history-circles-para">Increased prevalence of Micro’s batching technology led to the development of an upgraded second-generation system with greatly expanded capabilities that could be easily customized to precisely address the customer’s changing needs. </p>
                 </main>}
 
@@ -196,19 +196,19 @@ export default class History extends Component {
                 {this.state.circle === 19 &&
                 <main className="display-circle-text">
                     <h3 className="history-circles-header">2005 - Pro-Control Statistical Process Control  </h3>
-                    <p className="history-circles-para">To further improve accuracy of the Pro Control Plus Batching System, Micro developed built-in SPC (Statistical Process Control) which allows for quick, powerful analysis of batching variances, as well as generating automatic SPC exception notifications to specified employees, managers and consultants. </p>
+                    <p className="history-circles-para">To further improve accuracy of the Pro Control Plus® Batching System, Micro developed built-in SPC (Statistical Process Control) which allows for quick, powerful analysis of batching variances, as well as generating automatic SPC exception notifications to specified employees, managers and consultants. </p>
                 </main>}
 
                 {this.state.circle === 7 &&
                 <main className="display-circle-text">
-                    <h3 className="history-circles-header">2007 - First Dairy Micro Weigh System  </h3>
+                    <h3 className="history-circles-header">2007 - First Dairy Micro Weigh® System  </h3>
                     <p className="history-circles-para">A progressive dairy in New Mexico recognized the vision for having precision micro ingredients accurately dispensed in their feed rations and became the first to install a Micro Machine on their dairy. The dairy segment has since benefited from precision feed management systems and continue to grow as a customer base for Micro.  </p>
                 </main>}
 
                 {this.state.circle === 20 &&
                 <main className="display-circle-text">
                     <h3 className="history-circles-header">2007 - Feed Truck System 2.0  </h3>
-                    <p className="history-circles-para">Knowing how essential the Feed Truck System was to its customers, Micro invested further into the technology by rewriting the entire program to have a simpler user interface and full integration within the Read-N-Feed Bunk Reader.</p>
+                    <p className="history-circles-para">Knowing how essential the Feed Truck System was to its customers, Micro invested further into the technology by rewriting the entire program to have a simpler user interface and full integration within the Read-N-Feed® Bunk Reader.</p>
                 </main>}
 
                 {this.state.circle === 32 &&
@@ -234,13 +234,13 @@ export default class History extends Component {
                 {this.state.circle === 33 &&
                 <main className="display-circle-text">
                     <h3 className="history-circles-header">2008 - Pro-Control Routing & Receiving </h3>
-                    <p className="history-circles-para">Micro improved upon the Pro-Control Plus Batching System to encompass monitoring and controlling other feed mill functions beyond the batching process, including receiving and routing of commodities and management of bin storage and automatic refilling. </p>
+                    <p className="history-circles-para">Micro improved upon the Pro-Control Plus® Batching System to encompass monitoring and controlling other feed mill functions beyond the batching process, including receiving and routing of commodities and management of bin storage and automatic refilling. </p>
                 </main>}
 
                 {this.state.circle === 22 &&
                 <main className="display-circle-text">
-                    <h3 className="history-circles-header">2009 - First Accu-Trac System </h3>
-                    <p className="history-circles-para">After many years with standalone systems, Micro embarked on a plan to create a fully integrated feedyard management system. The first module to be released under the ACCU TRAC suite was the Drug Trac Animal Health System. The new system provided users many enhanced features including online access, automated exception management, enhanced reporting plus a strong growth path for future features and benefits. </p>
+                    <h3 className="history-circles-header">2009 - First Accu-Trac® System </h3>
+                    <p className="history-circles-para">After many years with standalone systems, Micro embarked on a plan to create a fully integrated feedyard management system. The first module to be released under the ACCU-TRAC® suite was the Drug Trac Animal Health System. The new system provided users many enhanced features including online access, automated exception management, enhanced reporting plus a strong growth path for future features and benefits. </p>
                 </main>}
 
                 {this.state.circle === 34 &&
@@ -257,8 +257,8 @@ export default class History extends Component {
                 
                 {this.state.circle === 9 &&
                 <main className="display-circle-text">
-                    <h3 className="history-circles-header">2010 - Read-N-Feed Dairy  </h3>
-                    <p className="history-circles-para">Micro recognized that its Read-N-Feed technology was applicable to dairies and began to introduce and install this technology, to the benefit of multiple dairy customers.</p>
+                    <h3 className="history-circles-header">2010 - Read-N-Feed® Dairy  </h3>
+                    <p className="history-circles-para">Micro recognized that its Read-N-Feed® technology was applicable to dairies and began to introduce and install this technology, to the benefit of multiple dairy customers.</p>
                 </main>}
 
                 {this.state.circle === 23 &&
@@ -287,20 +287,20 @@ export default class History extends Component {
 
                 {this.state.circle === 36 &&
                 <main className="display-circle-text">
-                    <h3 className="history-circles-header">2011 - First “17” series Micro Weigh System </h3>
-                    <p className="history-circles-para">As product mixes changed within the Micro customer base, there was a need for a new Micro Weigh System which would increase the ability for the user to use an enhanced array of products while making sure the flexibility and accuracy was not compromised. The 17 MWS was designed to accomplish this task.</p>
+                    <h3 className="history-circles-header">2011 - First “17” series Micro Weigh® System </h3>
+                    <p className="history-circles-para">As product mixes changed within the Micro customer base, there was a need for a new Micro Weigh® System which would increase the ability for the user to use an enhanced array of products while making sure the flexibility and accuracy was not compromised. The 17 MWS was designed to accomplish this task.</p>
                 </main>}
 
                 {this.state.circle === 24 &&
                 <main className="display-circle-text">
-                    <h3 className="history-circles-header">2012 – First Cubex System installed </h3>
-                    <p className="history-circles-para">Micro identified the need to provide a solution for automating the manual processes of product inventory for their customers and knew the cost savings would impact their customers’ bottom line. Through the installation of the Cubex system, customers experienced an improvement in supply and pharmaceutical organization, inventory accuracy, security, operational efficiency and elimination of inventory stock-outs and/or overages. </p>
+                    <h3 className="history-circles-header">2012 – First Cubex® System installed </h3>
+                    <p className="history-circles-para">Micro identified the need to provide a solution for automating the manual processes of product inventory for their customers and knew the cost savings would impact their customers’ bottom line. Through the installation of the Cubex® system, customers experienced an improvement in supply and pharmaceutical organization, inventory accuracy, security, operational efficiency and elimination of inventory stock-outs and/or overages. </p>
                 </main>}
 
                 {this.state.circle === 25 &&
                 <main className="display-circle-text">
-                    <h3 className="history-circles-header">2012 - Accu-Trac Flex Sorting </h3>
-                    <p className="history-circles-para">The introduction of Flex Sorting allowed Accu-Trac the ability to sort animals into like groups by using an algorithm that allows users to sort animals into like groups to maximize pen utilization, for optimal animal performance.  </p>
+                    <h3 className="history-circles-header">2012 - Accu-Trac® Flex Sorting </h3>
+                    <p className="history-circles-para">The introduction of Flex Sorting allowed Accu-Trac® the ability to sort animals into like groups by using an algorithm that allows users to sort animals into like groups to maximize pen utilization, for optimal animal performance.  </p>
                 </main>}
 
                 {this.state.circle === 37 &&
@@ -345,8 +345,8 @@ export default class History extends Component {
 
                 {this.state.circle === 43 &&
                 <main className="display-circle-text">
-                    <h3 className="history-circles-header">2015 - First integrated Read-N-Feed / Accu-Trac system  </h3>
-                    <p className="history-circles-para">The Read-N-Feed system was introduced to the suite of Accu-Trac products to allow for a more integrated and robust system.  Accu-Trac allowed for Read-N-Feed and Drug-Trac to share single cattle inventory, as well as giving the system a new and polished look.  </p>
+                    <h3 className="history-circles-header">2015 - First integrated Read-N-Feed® / Accu-Trac® system  </h3>
+                    <p className="history-circles-para">The Read-N-Feed® system was introduced to the suite of Accu-Trac® products to allow for a more integrated and robust system.  Accu-Trac® allowed for Read-N-Feed® and Drug-Trac® to share single cattle inventory, as well as giving the system a new and polished look.  </p>
                 </main>}
 
                 {this.state.circle === 44 &&
@@ -357,8 +357,8 @@ export default class History extends Component {
 
                 {this.state.circle === 45 &&
                 <main className="display-circle-text">
-                    <h3 className="history-circles-header">2018 - Launch of Accu-Trac Office   </h3>
-                    <p className="history-circles-para">Accu-Trac Office and Feed Inventory System have been integrated with Read-N-Feed and Drug-Trac for a complete, single-inventory feedyard management system.  The full ACCU TRAC suite will provice the user the first fully integrated feedyard management system.   </p>
+                    <h3 className="history-circles-header">2018 - Launch of Accu-Trac® Office   </h3>
+                    <p className="history-circles-para">Accu-Trac® Office and Feed Inventory System have been integrated with Read-N-Feed® and Drug-Trac® for a complete, single-inventory feedyard management system.  The full ACCU-TRAC® suite will provice the user the first fully integrated feedyard management system.   </p>
                 </main>}
 
             </section>

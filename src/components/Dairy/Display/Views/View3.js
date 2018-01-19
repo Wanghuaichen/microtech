@@ -8,8 +8,8 @@ export default class View3 extends Component {
     render() {
         return (
             <div className="moreinfo-display">
-                <h4 className="moreinfo-display-header">  PRO-CONTROL® MIXER</h4>
-                <p className="view2-text">Pro-Control® Mixer is a weight based blending system that allows flexible and accurate on-site blending and delivery of udder hygiene solutions. Remote access to real-time data and automatically generated reports offers critical information that can provide you operational efficiencies, more control and increased profitability. </p>
+                <h4 className="moreinfo-display-header">  PRO-CONTROL<sup>&reg;</sup> MIXER</h4>
+                <p className="view2-text">Pro-Control<sup>&reg;</sup> Mixer is a weight based blending system that allows flexible and accurate on-site blending and delivery of udder hygiene solutions. Remote access to real-time data and automatically generated reports offers critical information that can provide you operational efficiencies, more control and increased profitability. </p>
                 <div className="list-flex">
                     <div className="list-left">
                         <li className="moreinfo-list">	Allows for flexibility to utilize endless product mixing capabilities, can utilize multiple concentrates</li>

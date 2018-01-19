@@ -5,15 +5,15 @@ import Slide1 from '../../../../assets/Photos/MicroWeigh/Slide1.png';
 import Slide2 from '../../../../assets/Photos/MicroWeigh/Slide2.png';
 import Slide3 from '../../../../assets/Photos/MicroWeigh/Slide3.png';
 import Slide4 from '../../../../assets/Photos/MicroWeigh/Slide4.png';
-import Slide5 from '../../../../assets/Photos/MicroWeigh/Slide5.png';
-import Slide6 from '../../../../assets/Photos/MicroWeigh/Slide6.png';
+// import Slide5 from '../../../../assets/Photos/MicroWeigh/Slide5.png';
+// import Slide6 from '../../../../assets/Photos/MicroWeigh/Slide6.png';
 
 
 export default class View0 extends Component {
     render() {
         return (
             <div className="moreinfo-display">
-                <h4 className="moreinfo-display-header"> MICRO WEIGH® SYSTEM MICRO INGREDIENT DELIVERY SYSTEM</h4>
+                <h4 className="moreinfo-display-header"> MICRO WEIGH<sup>&reg;</sup> SYSTEM MICRO INGREDIENT DELIVERY SYSTEM</h4>
                 <h6>FLEXIBLE, CUSTOMIZED & CONSISTENT DIETS</h6>
                 <li className="moreinfo-list">
                     Accurately measure and deliver micro feed ingredients, ensuring consistency in every batch of feed</li>
@@ -30,8 +30,8 @@ export default class View0 extends Component {
                    <img src={Slide2} alt="slide show" width="673px" onLoad={() => {window.dispatchEvent(new Event('resize'));}}  />
                    <img src={Slide3} alt="slide show" width="673px" onLoad={() => {window.dispatchEvent(new Event('resize'));}}  />
                    <img src={Slide4} alt="slide show" width="673px" onLoad={() => {window.dispatchEvent(new Event('resize'));}}  />
-                   <img src={Slide5} alt="slide show" width="673px" onLoad={() => {window.dispatchEvent(new Event('resize'));}}  />
-                   <img src={Slide6} alt="slide show" width="673px" onLoad={() => {window.dispatchEvent(new Event('resize'));}}  />
+                   {/* <img src={Slide5} alt="slide show" width="673px" onLoad={() => {window.dispatchEvent(new Event('resize'));}}  />
+                   <img src={Slide6} alt="slide show" width="673px" onLoad={() => {window.dispatchEvent(new Event('resize'));}}  /> */}
                 </Carousel >
                 </div>
             </div>

@@ -93,11 +93,11 @@ export default class Feedyard extends Component {
               <h3 className="feedyard-cover-title-one">What does</h3>
               <h3 className="feedyard-cover-title-two">Precision Animal Agriculture</h3>
               <h3 className="feedyard-cover-title-three">on a feedyard look like?</h3>
-              <h6 className="feedyard-subtitle">Flexible and Accurate Feed Production</h6>
-              <h6 className="feedyard-subtitle">Increased Efficiencies</h6>
-              <h6 className="feedyard-subtitle">Data Driven Decisions</h6>
-              <h6 className="feedyard-subtitle">Optimal Animal Health</h6>
-              <h6 className="feedyard-subtitle">Safe, Wholesome Food Supply</h6>
+              <h6 className="feedyard-subtitle" id="fade-in-one">Flexible and Accurate Feed Production</h6>
+              <h6 className="feedyard-subtitle" id="fade-in-two">Increased Efficiencies</h6>
+              <h6 className="feedyard-subtitle" id="fade-in-three">Data Driven Decisions</h6>
+              <h6 className="feedyard-subtitle" id="fade-in-four">Optimal Animal Health</h6>
+              <h6 className="feedyard-subtitle" id="fade-in-five">Safe, Wholesome Food Supply</h6>
             </div>
             <img className="stocker-cover" src={FeedyardCover} alt="Feedyard Cover" />
           </section>
@@ -214,7 +214,7 @@ export default class Feedyard extends Component {
           <img className="comprehensive-solutions" src={Comprehensive} alt="herd of cows" height="528px" />
 
           <Carousel decorators={false} autoplay={true}
-            wrapAround={true} speed={600} className="carousel-frame">
+            wrapAround={true} speed={500} className="carousel-frame">
 
             <section className="bluebanner-box quotebox">
               <div className="bluebanner-left">

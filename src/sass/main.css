@@ -51,6 +51,14 @@ table {
 a {
   text-decoration: none; }
 
+sup {
+  position: relative;
+  font-size: 50%;
+  line-height: 0;
+  vertical-align: baseline;
+  top: -0.8em;
+  margin-right: 4px; }
+
 /* modules */
 /* media query breakpoints */
 @keyframes modal-video {
@@ -1131,7 +1139,8 @@ li {
 .history-box {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  height: 900px; }
 
 .about-cover {
   display: flex;
@@ -1151,6 +1160,18 @@ li {
   font-family: "Open Sans", sans-serif;
   font-weight: regular;
   font-size: 15px; }
+
+.bluecover-about-container {
+  width: 100vw;
+  height: 350px;
+  background-color: #1A2E5A;
+  color: #FFFFFF;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left; }
 
 .flexabout-this {
   display: flex; }
@@ -1183,7 +1204,11 @@ li {
 
 .lead {
   word-wrap: break-word;
-  width: 800px; }
+  width: 800px;
+  text-transform: none; }
+
+.leadership-text-leftalign {
+  margin-right: 700px; }
 
 .columnbanner {
   display: flex;
@@ -1340,13 +1365,13 @@ li {
 .about-cover-mobile {
   display: none; }
 
-.history-box-mobile {
+.history-box-mobile, .mobilehide {
   display: none; }
 
 @media only screen and (min-width: 766px) and (max-width: 1024px) {
   .about-cover {
     display: none; }
-  .about-cover-mobile, .history-box-mobile {
+  .about-cover-mobile, .history-box-mobile, .mobilehide {
     display: block;
     width: 100vw; }
   .stocker-cover {
@@ -1466,7 +1491,7 @@ li {
 @media screen and (max-width: 765px) {
   .about-cover {
     display: none; }
-  .about-cover-mobile, .history-box-mobile {
+  .about-cover-mobile, .history-box-mobile, .mobilehide {
     display: block;
     width: 100vw; }
   .stocker-cover {
@@ -2835,6 +2860,53 @@ input::placeholder {
     opacity: 1;
     visibility: visible; } }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+#fade-in {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s; }
+
+#fade-in-one {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 0.4s; }
+
+#fade-in-two {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 0.8s; }
+
+#fade-in-three {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 1.2s; }
+
+#fade-in-four {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 1.6s; }
+
+#fade-in-five {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 2.0s; }
+
 .integrator-top-subtitle {
   top: 0;
   margin-top: 200px;
@@ -2842,7 +2914,8 @@ input::placeholder {
   color: #747474;
   text-align: center;
   word-wrap: break-word;
-  width: 40vw; }
+  width: 40vw;
+  font-size: 21px; }
 
 .bluecover-banner-left {
   display: flex;
@@ -2853,6 +2926,9 @@ input::placeholder {
   word-wrap: break-word;
   width: 40vw;
   margin: 30px; }
+
+.feed-para {
+  width: 37vw; }
 
 .bluecover-banner-right {
   display: flex;
@@ -4356,7 +4432,12 @@ input::placeholder {
 .laptop {
   margin-top: 20px; }
 
-.color-pallete, .stethoscope, .gps {
+.gps {
+  width: 670px;
+  margin-left: -25px;
+  margin-top: 20px; }
+
+.color-pallete, .stethoscope {
   margin-left: -25px;
   margin-top: 20px; }
 
@@ -4608,7 +4689,7 @@ input::placeholder {
 
 .moreinfo-side {
   width: 25vw;
-  height: 950px;
+  height: 1000px;
   background-color: #F6F6F6; }
 
 .nav-side-box {
@@ -4637,7 +4718,7 @@ input::placeholder {
 
 .moreinfo-right {
   width: 75vw;
-  height: 950px; }
+  height: 1000px; }
 
 .moreinfo-display {
   margin: 60px;
@@ -4685,6 +4766,11 @@ input::placeholder {
   padding-left: 25px;
   text-indent: -1.5em;
   margin-top: 20px; }
+
+.monitor-header2 {
+  text-indent: 0;
+  margin-left: -25px;
+  font-size: 18px !important; }
 
 .click-bottom-box {
   display: flex;
@@ -4825,7 +4911,8 @@ input::placeholder {
   cursor: pointer; }
 
 .steps {
-  margin: 20px 0px; }
+  margin: 20px 0px;
+  width: 700px; }
 
 .slideshow-display {
   width: 700px; }

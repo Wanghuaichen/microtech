@@ -7,7 +7,7 @@ export default class View4 extends Component {
     render() {
         return (
             <div className="moreinfo-display">
-                <h4 className="moreinfo-display-header">  READ-N-FEED® BUNK READING SYSTEM</h4>
+                <h4 className="moreinfo-display-header">  READ-N-FEED<sup>&reg;</sup> BUNK READING SYSTEM</h4>
                 <div className="list-flex">
                     <div className="list-left">
                         <li className="moreinfo-list">Accurate feed information for enhanced bunk management</li>

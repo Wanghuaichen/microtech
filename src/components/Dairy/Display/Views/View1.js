@@ -5,8 +5,8 @@ export default class View1 extends Component {
     render() {
         return (
             <div className="moreinfo-display">
-                <h4 className="moreinfo-display-header">  Pro-Control Plus® Feed Batching System</h4>
-                <p className="view2-text">Pro-Control® Plus Batching System is a computerized system that improves the accuracy and speed of diet composition.  Each system is custom configured to best fit your feed manufacturing process. Ensure optimal operational efficiencies by monitoring and controlling by remote access via any mobile device.</p>
+                <h4 className="moreinfo-display-header">  Pro-Control Plus<sup>&reg;</sup> Feed Batching System</h4>
+                <p className="view2-text">Pro-Control Plus<sup>&reg;</sup> Batching System is a computerized system that improves the accuracy and speed of diet composition.  Each system is custom configured to best fit your feed manufacturing process. Ensure optimal operational efficiencies by monitoring and controlling by remote access via any mobile device.</p>
                 <div className="list-flex">
                     <div className="list-left">
                         <li className="moreinfo-list">Manages individual macro ingredients in the production of rations</li>

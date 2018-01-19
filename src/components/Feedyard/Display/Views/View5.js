@@ -7,7 +7,8 @@ export default class View5 extends Component {
   render() {
     return (
       <div className="moreinfo-display">
-        <h4 className="moreinfo-display-header"> Whisper® Veterinarian Stethoscope System by merck animal health</h4>
+        <h4 className="moreinfo-display-header"> Whisper<sup>&reg;</sup> Veterinarian Stethoscope System</h4>
+        <h6>by merck animal health</h6>
         <div className="list-flex">
           <div className="list-left">
             <li className="moreinfo-list">Simple, quick, non-invasive, precision instrument system comprised of an electronic stethoscope and software used to detect lung health</li>

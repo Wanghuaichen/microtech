@@ -8,8 +8,8 @@ export default class View4 extends Component {
     render() {
         return (
             <div className="moreinfo-display">
-                <h4 className="moreinfo-display-header">  PRO-CONTROL® PARLOR</h4>
-                <p className="view2-text">Pro-Control® Parlor is a revolutionary system offering milk quality solutions to ensure consistency of quality CIP, VIP and milking equipment processes through complete automation.</p>
+                <h4 className="moreinfo-display-header">  PRO-CONTROL<sup>&reg;</sup> PARLOR</h4>
+                <p className="view2-text">Pro-Control<sup>&reg;</sup> Parlor is a revolutionary system offering milk quality solutions to ensure consistency of quality CIP, VIP and milking equipment processes through complete automation.</p>
                 <div className="list-flex">
                     <div className="list-left">
                         <h5 className="monitor-header">MONITORS</h5>

@@ -39,10 +39,12 @@ export default class Careers extends Component {
             <h5 className="careers-title">JOIN THE MICRO TECHNOLOGIES™ TEAM</h5>
             <p className="careers-para">Our team is composed of talented and dedicated professionals.  We cultivate a nurturing atmosphere where qualified candidates are placed in positions best suited to their skills and expertise.
               </p>
-            <p className="careers-para">Learn more about some of our featured roles below, or take a look at our list of open positions.</p>
-            <div onClick={ () => alert('No current opportunities. Check back soon!') }className="btn-cta">EXPLORE OPPORTUNITIES
+            {/* <p className="careers-para">Learn more about some of our featured roles below, or take a look at our list of open positions.</p> */}
+
+            <a href="https://abccareers.taleo.net/careersection/mwi/jobsearch.ftl?lang=en&radiusType=M&keyword=microtechnologies&searchExpanded=true&radius=1&portal=101430233" rel="noopener noreferrer" target="_blank">
+            <div className="btn-cta">EXPLORE OPPORTUNITIES
             <img className="white-arrow" src={WhiteArrow} alt="Explore Opportunities" />
-            </div>
+            </div></a>
           </section>
 
           <section className="gray-banner-box">
@@ -88,9 +90,10 @@ export default class Careers extends Component {
             <p className="careers-para">There is power in our individual perspectives. Our greatest impact is when we collaborate as one, using our collective expertise to generate ideas with sustaining value.</p>
 
 
-            <div onClick={ () => alert('No current opportunities. Check back soon!') } className="btn-cta">EXPLORE OPPORTUNITIES
+            <a href="https://abccareers.taleo.net/careersection/mwi/jobsearch.ftl?lang=en&radiusType=M&keyword=microtechnologies&searchExpanded=true&radius=1&portal=101430233" rel="noopener noreferrer" target="_blank">
+            <div className="btn-cta">EXPLORE OPPORTUNITIES
             <img className="white-arrow" src={WhiteArrow} alt="Explore Opportunities" />
-            </div>
+            </div></a>
           </section>
 
 

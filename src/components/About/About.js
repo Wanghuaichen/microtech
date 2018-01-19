@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import AnimatedNumber from 'react-animated-number';
 import { Helmet } from "react-helmet";
 
 import Header from '../Header/Header';
@@ -19,13 +20,51 @@ import AboutMobile from '../../assets/Mobile/AboutMobile.png';
 
 
 export default class About extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      smallValue: 0,
+      mediumValue: 0,
+      bigValue: 0,
+      updates: 0,
+    }
+  }
+
+  componentDidMount() {
+    this.interval = setInterval(() => this.update(), 2000);
+    this.interval = setInterval(() => this.mountUnmount(), 12000);
+  }
+
+  update() {
+    const { updates } = this.state;
+
+    this.setState({
+      smallValue: 20,
+      mediumValue: 24,
+      bigValue: 80,
+      updates: updates + 1
+    });
+  }
+
+  mountUnmount() {
+    const { updates } = this.state;
+
+    this.setState({
+      updates: updates + 1
+    });
+  }
+
   render() {
+
+    const { smallValue, mediumValue, bigValue } = this.state;
+
     return (
       <section className="about-container">
 
         <Helmet>
           <title>About</title>
-          <meta name="description" content="By combining deep experience in agriculture, science and technology, Micro Technologies aims to create superior value and contribute to the ongoing success of our customer every day." />
+          <meta name="description" content="By combining deep experience in agriculture, science and technology, we aim to create superior value and contribute to the ongoing success of our customer every day." />
         </Helmet>
 
         <Header />
@@ -34,23 +73,41 @@ export default class About extends Component {
         <img className="about-cover-mobile" src={AboutMobile} alt="About Cover" />
 
         <main className="about-main">
-          <div className="about-cover"></div>
+          <div className="about-cover">
 
-
-          <section className="bluebanner-column about columnbanner">
-            <div className="bluebanner-left">
-              <h4 className="left">OUR COMPANY</h4>
-              <div className="flexabout-this">
-                <h1 className="bluebanner-header left lead">HISTORY</h1>
-                <div className="bluebanner-est">
-                  <h4 className="margin-est">EST.</h4>
+            <section className="bluecover-about-container">
+              <div className="bluebanner-left">
+                <h4 className="left">OUR COMPANY</h4>
+                <div className="flexabout-this">
+                  <h1 className="bluebanner-header left leadtop">HISTORY</h1>
+                  <div className="bluebanner-est">
+                    <h4 className="margin-est">EST.</h4>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="leadership-bottom">
-              <p className="leadership-text left lead">
-                DECADES OF UNWAVERING COMMITMENT TO REPEATED INNOVATION</p>
-            </div>
+              <div className="leadership-bottom">
+                <p className="leadership-text-leftalign">
+                  Decades of unwavering commitment to repeated innovation</p>
+              </div>
+            </section>
+          </div>
+
+          <section className="mobilehide">
+            <section className="bluebanner-column about columnbanner">
+              <div className="bluebanner-left">
+                <h4 className="left">OUR COMPANY</h4>
+                <div className="flexabout-this">
+                  <h1 className="bluebanner-header left lead">HISTORY</h1>
+                  <div className="bluebanner-est">
+                    <h4 className="margin-est">EST.</h4>
+                  </div>
+                </div>
+              </div>
+              <div className="leadership-bottom">
+                <p className="leadership-text left lead">
+                  Decades of unwavering commitment to repeated innovation</p>
+              </div>
+            </section>
           </section>
 
           <div className="history-box">
@@ -95,7 +152,7 @@ export default class About extends Component {
 
             <div className="execs-container">
 
-            <div className="execs-box">
+              <div className="execs-box">
                 <div className="executives">
                   <h5 className="execs-name">MARCUS DORSEY,</h5>
                   <h5 className="execs-title">Field Operations Manager
@@ -162,7 +219,7 @@ export default class About extends Component {
                   <a className="leadership-alinks" href="mailto:DBISHOP@MICROTECHNOLOGIES.COM"><p className="email-tiny-text-exec">DBISHOP@MICROTECHNOLOGIES.COM</p></a>
                 </div>
               </div>
-              
+
             </div>
 
           </section>
@@ -193,7 +250,7 @@ export default class About extends Component {
               </div>
 
               <div className="facts-box">
-                <p className="facts-header">We are proud to say our technology impacts</p>
+                <p className="facts-header">Together, we are proud to say our technologies impact</p>
                 <h3>2 out of 3</h3>
                 <h4>beef products</h4>
                 <br></br>
@@ -225,15 +282,63 @@ export default class About extends Component {
             </div>
             <div className="gray-location">
               <h4>Worldwide:</h4>
-              <h6>20+ Countries</h6>
+              <h6>
+
+              <AnimatedNumber
+                  style={{
+                    transition: '0.8s ease-out',
+                    transitionProperty:
+                      'background-color, color'
+                  }}
+                  frameStyle={perc => (
+                    perc === 100 ? {} : { backgroundColor: '#ffffff' }
+                  )}
+                  stepPrecision={0}
+                  value={smallValue}
+                  duration={1200}
+                  formatValue={n => `${n}+ Countries`} />
+
+                </h6>
             </div>
             <div className="gray-location">
               <h4>Distribution Network:</h4>
-              <h6>24 Locations</h6>
+              <h6>
+
+              <AnimatedNumber
+                  style={{
+                    transition: '0.8s ease-out',
+                    transitionProperty:
+                      'background-color, color'
+                  }}
+                  frameStyle={perc => (
+                    perc === 100 ? {} : { backgroundColor: '#ffffff' }
+                  )}
+                  stepPrecision={0}
+                  value={mediumValue}
+                  duration={1200}
+                  formatValue={n => `${n} Locations`} />
+                  
+                </h6>
             </div>
             <div className="gray-location">
               <h4>Patents:</h4>
-              <h6 className="patents">80+ US And Foreign Patents</h6>
+              <h6 className="patents">
+
+                <AnimatedNumber
+                  style={{
+                    transition: '0.8s ease-out',
+                    transitionProperty:
+                      'background-color, color'
+                  }}
+                  frameStyle={perc => (
+                    perc === 100 ? {} : { backgroundColor: '#ffffff' }
+                  )}
+                  stepPrecision={0}
+                  value={bigValue}
+                  duration={1200}
+                  formatValue={n => `${n}+ US And Foreign Patents`} />
+
+              </h6>
             </div>
           </section>
         </main>

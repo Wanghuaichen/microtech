@@ -7,7 +7,7 @@ export default class View6 extends Component {
   render() {
     return (
       <div className="moreinfo-display">
-        <h4 className="moreinfo-display-header">READ-N-FEED® GPS FEED TRUCK SYSTEM</h4>
+        <h4 className="moreinfo-display-header">READ-N-FEED<sup>&reg;</sup> GPS FEED TRUCK SYSTEM</h4>
         <div className="list-flex">
           <div className="list-left">
             <li className="moreinfo-list">Right Pen</li>
@@ -15,7 +15,7 @@ export default class View6 extends Component {
             Right Ration</li>
             <li className="moreinfo-list">
             Right Time</li>
-            <img className="gps" src={GPS} alt="GPS" height="300px" />
+            <img className="gps" src={GPS} alt="GPS"  />
             </div> 
         </div>
       </div>

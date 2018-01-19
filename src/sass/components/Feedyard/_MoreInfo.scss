@@ -44,7 +44,7 @@
 
 .moreinfo-side {
     width: 25vw;
-    height: 950px;
+    height: 1000px;
     background-color: $bg-light;
 }
 
@@ -75,7 +75,7 @@
 
 .moreinfo-right {
     width: 75vw;
-    height: 950px;
+    height: 1000px;
 }
 
 .moreinfo-display {
@@ -132,6 +132,12 @@
     padding-left: 25px;
     text-indent: -1.5em;
     margin-top: 20px;
+}
+
+.monitor-header2 {
+    text-indent: 0;
+    margin-left: -25px;
+    font-size: 18px !important;
 }
 
 .click-bottom-box {

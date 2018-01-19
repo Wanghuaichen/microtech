@@ -20,7 +20,7 @@ export default class Display1 extends Component {
             <section className="display1">
                 <div className="dairy-top-nav">
                     <div onClick={() => this.handleView2()} className={this.state.view === 2 ? "dairyactive" : "dairy-btn"} >
-                        <h6 className="dairy-btn-text">MICRO WEIGH SYSTEM®</h6></div>
+                        <h6 className="dairy-btn-text">CUBEX® QBUD - HEALTH INVENTORY MANAGEMENT</h6></div>
                     <div className="dairy-btn-null" >
                     </div>
                 </div>

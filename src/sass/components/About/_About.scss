@@ -1,5 +1,6 @@
 .history-box {
     @include flexSetUp;
+    height: 900px;
 }
 
 .about-cover {
@@ -17,6 +18,17 @@
     height: 327px;
     color: $white;
     @include bodySetUp;
+}
+
+.bluecover-about-container {
+    width: 100vw;
+    height: 350px;
+    background-color: $primary-blue;
+    color: $white;
+    position: absolute;
+    @include flexSetUp;
+    flex-direction: column;
+    text-align: left;
 }
 
 .flexabout-this {
@@ -56,6 +68,11 @@
 .lead {
     word-wrap: break-word;
     width: 800px;
+    text-transform: none;
+}
+
+.leadership-text-leftalign {
+    margin-right: 700px;
 }
 
 .columnbanner {
@@ -242,7 +259,7 @@
     display: none;
 }
 
-.history-box-mobile {
+.history-box-mobile, .mobilehide {
     display: none;
 }
 
@@ -258,7 +275,7 @@
         display: none;
     }
 
-    .about-cover-mobile, .history-box-mobile {
+    .about-cover-mobile, .history-box-mobile, .mobilehide {
         display: block;
         width: 100vw;
     }
@@ -463,7 +480,7 @@
         display: none;
     }
 
-    .about-cover-mobile, .history-box-mobile {
+    .about-cover-mobile, .history-box-mobile, .mobilehide {
         display: block;
         width: 100vw;
     }
