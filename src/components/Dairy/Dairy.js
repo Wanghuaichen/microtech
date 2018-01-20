@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-// import ModalVideo from 'react-modal-video';
 import { Helmet } from "react-helmet";
 import Carousel from 'nuka-carousel';
 import ReactPlayer from 'react-player';
@@ -16,6 +15,7 @@ import Testimony1 from '../../assets/Pics/DairyCustomerJBenson.png';
 import LowerCover from '../../assets/Pics/Lower_cover.png';
 import Quotes from '../../assets/Icons/quote.png';
 import DairyMobile from '../../assets/Mobile/DairyMobile.png';
+import LowerMobile from '../../assets/Pics/LowerMobile.png';
 
 
 export default class Dairy extends Component {
@@ -155,10 +155,11 @@ export default class Dairy extends Component {
               >
 
                 <ReactPlayer
+                  className='react-player' 
                   onLoad={() => { window.dispatchEvent(new Event('resize')); }}
                   isOpen={this.state.isOpen}
                   playing
-                  controls
+                  // controls
                   url='https://youtu.be/LT04hYXqg1c'
                   youtubeConfig={{ playerVars: { start: 15 } }}
                 />
@@ -213,7 +214,8 @@ export default class Dairy extends Component {
               <p className="comp-para">We are a leading U.S. distributor of feed additives and pharmaceuticals, our customers consistently rely on us to supply comprehensive products at a competitive price.</p>
               <p className="comp-para">Through the use of our technology and processes our customers have confidence of their ability to optimize the use of those products for the overall health and wellbeing of their animals. All while gaining increased operational efficiencies to support their long-term success.</p>
             </div>
-            <img className="stocker-cover" src={LowerCover} alt="Stocker Cover" />
+            <img className="stocker-cover hidecover" src={LowerCover} alt="Stocker Cover" />
+            <img className="stocker-cover-lower" src={LowerMobile} alt="Stocker Cover" />
           </section>
 
 

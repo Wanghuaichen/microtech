@@ -70,8 +70,8 @@ export default class Stocker extends Component {
       dialogRoot: {
         display: "flex",
         alignItems: "center",
-        justifyContent: "center",
-        
+        justifyContent: "center",  
+      
       },
       dialogContent: {
         position: "relative",
@@ -79,7 +79,7 @@ export default class Stocker extends Component {
         width: '100%'
       },
       dialogBody: {
-        padding: 0
+        padding: 0,
       }
     };
 
@@ -113,7 +113,7 @@ export default class Stocker extends Component {
               <p className="stocker-para">Stocker1™ is an internet based system allowing stocker and backgrounding operations to access it from any location with internet capabilities. One look and you will know it was designed in the field with close interaction between stocker and backgrounder operators.</p>
 
 
-              <Dialog
+              <Dialog 
                 modal={false}
                 open={this.state.open}
                 onRequestClose={this.handleClose}
@@ -121,9 +121,11 @@ export default class Stocker extends Component {
                 bodyStyle={ styles.dialogBody }
                 style={ styles.dialogRoot }
                 repositionOnUpdate={ false }
+                
                 >
   
                 <ReactPlayer 
+                  className='react-player'
                   onLoad={() => { window.dispatchEvent(new Event('resize')); }}
                   isOpen={this.state.isOpen}
                   playing

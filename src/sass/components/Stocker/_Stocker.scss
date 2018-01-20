@@ -264,6 +264,8 @@
 }
 
 
+
+
 // ipad responsive 
 
 @media only screen and (min-width : 766px) and (max-width : 1024px) {
@@ -309,8 +311,10 @@
     }
     
     .stocker-text {
-        height: 400px;
+        height: 450px;
         width: 100vw;
+        justify-content: flex-start;
+        margin-top: 100px;
     }
 
     .stocker-nav-para {
@@ -346,7 +350,7 @@
     .watch-video-stocker-footer {
         @include flexSetUp;
         flex-direction: column;
-        height: 200px;
+        height: 300px;
     }
 
     .stocker-contact-line {
@@ -358,8 +362,18 @@
         margin-bottom: 5px;
     }
 
+    .stocker-footer-text {
+        text-align: center;
+        font-size: 31px;
+        letter-spacing: 2px;
+        line-height: 1.3;
+        word-wrap: break-word;
+        width: 65vw;
+    }
+
     .stocker-video-box {
         margin-top: 20px;
+        width: 85vw;
     }
     
 }
@@ -448,7 +462,7 @@
     .watch-video-stocker-footer {
         @include flexSetUp;
         flex-direction: column;
-        height: 200px;
+        height: 300px;
     }
 
     .stocker-contact-line {
@@ -457,11 +471,18 @@
 
     .stocker-footer-text {
         text-align: center;
-        margin-bottom: 5px;
+        font-size: 31px;
+        letter-spacing: 2px;
+        line-height: 1.3;
+        word-wrap: break-word;
+        width: 65vw;
     }
 
     .stocker-video-box {
         margin-top: 20px;
+        width: 85vw;
     }
+
+    
 
 }

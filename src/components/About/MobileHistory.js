@@ -43,28 +43,9 @@ export default class MobileHistory extends Component {
                     <div onClick={() => this.handleCircle(32)} className={this.state.circle === 32 ? "active-history-btn3 c33" : "c33 circle-3"} >2007</div>
                     <div onClick={() => this.handleCircle(21)} className={this.state.circle === 21 ? "active-history-btn3 c22" : "c22 circle-3"} >2008</div>
                     <div onClick={() => this.handleCircle(33)} className={this.state.circle === 33 ? "active-history-btn3 c34" : "c34 circle-3"} >2008</div>
-                    <div onClick={() => this.handleCircle(8)} className={this.state.circle === 8 ? "active-history-btn2 c8" : "c8 circle-2"} >2009</div>
-                    <div onClick={() => this.handleCircle(22)} className={this.state.circle === 22 ? "active-history-btn4 c23" : "c23 circle-4"} >2009</div>
-                    <div onClick={() => this.handleCircle(34)} className={this.state.circle === 34 ? "active-history-btn3 c35" : "c35 circle-3"} >2009</div>
-                    <div onClick={() => this.handleCircle(9)} className={this.state.circle === 9 ? "active-history-btn2 c9" : "c9 circle-2"} >2010</div>
-                    <div onClick={() => this.handleCircle(23)} className={this.state.circle === 23 ? "active-history-btn3 c24" : "c24 circle-3"} >2010</div>
-                    <div onClick={() => this.handleCircle(10)} className={this.state.circle === 10 ? "active-history-btn1 c11" : "c11 circle-1"} >2011</div>
-                    <div onClick={() => this.handleCircle(11)} className={this.state.circle === 11 ? "active-history-btn5 c12" : "c12 circle-5"} >2011</div>
-                    <div onClick={() => this.handleCircle(35)} className={this.state.circle === 35 ? "active-history-btn3 c36" : "c36 circle-3"} >2011</div>
-                    <div onClick={() => this.handleCircle(36)} className={this.state.circle === 36 ? "active-history-btn3 c37" : "c37 circle-3"} >2011</div>
-                    <div onClick={() => this.handleCircle(24)} className={this.state.circle === 24 ? "active-history-btn3 c25" : "c25 circle-3"} >2012</div>
-                    <div onClick={() => this.handleCircle(25)} className={this.state.circle === 25 ? "active-history-btn2 c26" : "c26 circle-2"} >2012</div>
-                    <div onClick={() => this.handleCircle(37)} className={this.state.circle === 37 ? "active-history-btn4 c38" : "c38 circle-4"} >2013</div>
-                    <div onClick={() => this.handleCircle(38)} className={this.state.circle === 38 ? "active-history-btn3 c39" : "c39 circle-3"} >2013</div>
-                    <div onClick={() => this.handleCircle(40)} className={this.state.circle === 40 ? "active-history-btn4 c41" : "c41 circle-4"} >2014</div>
-                    <div onClick={() => this.handleCircle(39)} className={this.state.circle === 39 ? "active-history-btn5 c40" : "c40 circle-5"} >2015</div>
-                    <div onClick={() => this.handleCircle(41)} className={this.state.circle === 41 ? "active-history-btn3 c42" : "c42 circle-3"} >2015</div>
-                    <div onClick={() => this.handleCircle(42)} className={this.state.circle === 42 ? "active-history-btn3 c43" : "c43 circle-3"} >2015</div>
-                    <div onClick={() => this.handleCircle(43)} className={this.state.circle === 43 ? "active-history-btn3 c44" : "c44 circle-3"} >2015</div>
-                    <div onClick={() => this.handleCircle(44)} className={this.state.circle === 44 ? "active-history-btn3 c45" : "c45 circle-3"} >2016</div>
-                    <div onClick={() => this.handleCircle(45)} className={this.state.circle === 45 ? "active-history-btn4 c46" : "c46 circle-4"} >2018</div>
-                </div>
+                    </div>
 
+                    
 
 
                 {this.state.circle === 12 &&
@@ -195,9 +176,7 @@ export default class MobileHistory extends Component {
 
                 {this.state.circle === 32 &&
                 <main className="display-circle-text">
-                    <h3 className="history-circles-header">2007 - Acquired CattleLog, individual animal management</h3>
-                    <h3 className="history-circles-header">
-                     and verification program from Emerge.</h3>
+                    <h3 className="history-circles-header">2007 - Acquired CattleLog, individual animal management and verification program from Emerge.</h3>
                     <p className="history-circles-para"></p>
                 </main>}
 
@@ -299,16 +278,14 @@ export default class MobileHistory extends Component {
 
                 {this.state.circle === 40 &&
                 <main className="display-circle-text">
-                    <h3 className="history-circles-header">2014 - Amarillo pharmacy becomes Southwest distributor</h3>
-                    <h3 className="history-circles-header">
+                    <h3 className="history-circles-header">2014 - Amarillo pharmacy becomes Southwest distributor
                     for production animal package goods</h3>
                     <p className="history-circles-para"></p>
                 </main>}
 
                 {this.state.circle === 39 &&
                 <main className="display-circle-text">
-                    <h3 className="history-circles-header">2015 - MWI Animal Health and Micro Technologies acquired by</h3>
-                    <h3 className="history-circles-header">
+                    <h3 className="history-circles-header">2015 - MWI Animal Health and Micro Technologies acquired by
                     AmerisourceBergen </h3>
                     <p className="history-circles-para">Capitalizing on AmerisourceBergen’s knowledge of manufacturer and provider services, in addition to its global reach and partnership philosophy, MWI joined forces with its expertise in veterinary and agricultural markets to collaboratively launch the next generation of superior animal health products and services. With some of the most advanced technology and operations for distribution in the world, the acquisition has allowed Micro to deliver even greater quality and more effective service to its customers. </p>
                 </main>}
@@ -342,6 +319,30 @@ export default class MobileHistory extends Component {
                     <h3 className="history-circles-header">2018 - Launch of Accu-Trac® Office   </h3>
                     <p className="history-circles-para">Accu-Trac® Office and Feed Inventory System have been integrated with Read-N-Feed® and Drug-Trac® for a complete, single-inventory feedyard management system.  The full ACCU-TRAC® suite will provice the user the first fully integrated feedyard management system.   </p>
                 </main>}
+
+
+                <div className="history-circles-container-mobile2">
+                    <div onClick={() => this.handleCircle(8)} className={this.state.circle === 8 ? "active-history-btn2 c8" : "c8 circle-2"} >2009</div>
+                    <div onClick={() => this.handleCircle(22)} className={this.state.circle === 22 ? "active-history-btn4 c23" : "c23 circle-4"} >2009</div>
+                    <div onClick={() => this.handleCircle(34)} className={this.state.circle === 34 ? "active-history-btn3 c35" : "c35 circle-3"} >2009</div>
+                    <div onClick={() => this.handleCircle(9)} className={this.state.circle === 9 ? "active-history-btn2 c9" : "c9 circle-2"} >2010</div>
+                    <div onClick={() => this.handleCircle(23)} className={this.state.circle === 23 ? "active-history-btn3 c24" : "c24 circle-3"} >2010</div>
+                    <div onClick={() => this.handleCircle(10)} className={this.state.circle === 10 ? "active-history-btn1 c11" : "c11 circle-1"} >2011</div>
+                    <div onClick={() => this.handleCircle(11)} className={this.state.circle === 11 ? "active-history-btn5 c12" : "c12 circle-5"} >2011</div>
+                    <div onClick={() => this.handleCircle(35)} className={this.state.circle === 35 ? "active-history-btn3 c36" : "c36 circle-3"} >2011</div>
+                    <div onClick={() => this.handleCircle(36)} className={this.state.circle === 36 ? "active-history-btn3 c37" : "c37 circle-3"} >2011</div>
+                    <div onClick={() => this.handleCircle(24)} className={this.state.circle === 24 ? "active-history-btn3 c25" : "c25 circle-3"} >2012</div>
+                    <div onClick={() => this.handleCircle(25)} className={this.state.circle === 25 ? "active-history-btn2 c26" : "c26 circle-2"} >2012</div>
+                    <div onClick={() => this.handleCircle(37)} className={this.state.circle === 37 ? "active-history-btn4 c38" : "c38 circle-4"} >2013</div>
+                    <div onClick={() => this.handleCircle(38)} className={this.state.circle === 38 ? "active-history-btn3 c39" : "c39 circle-3"} >2013</div>
+                    <div onClick={() => this.handleCircle(40)} className={this.state.circle === 40 ? "active-history-btn4 c41" : "c41 circle-4"} >2014</div>
+                    <div onClick={() => this.handleCircle(39)} className={this.state.circle === 39 ? "active-history-btn5 c40" : "c40 circle-5"} >2015</div>
+                    <div onClick={() => this.handleCircle(41)} className={this.state.circle === 41 ? "active-history-btn3 c42" : "c42 circle-3"} >2015</div>
+                    <div onClick={() => this.handleCircle(42)} className={this.state.circle === 42 ? "active-history-btn3 c43" : "c43 circle-3"} >2015</div>
+                    <div onClick={() => this.handleCircle(43)} className={this.state.circle === 43 ? "active-history-btn3 c44" : "c44 circle-3"} >2015</div>
+                    <div onClick={() => this.handleCircle(44)} className={this.state.circle === 44 ? "active-history-btn3 c45" : "c45 circle-3"} >2016</div>
+                    <div onClick={() => this.handleCircle(45)} className={this.state.circle === 45 ? "active-history-btn4 c46" : "c46 circle-4"} >2018</div>
+                </div>
 
             </section>
         )

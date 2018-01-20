@@ -854,7 +854,9 @@
     }
 
     .arrow-circle {
-        display: none;
+        right: 48%;
+        top: 94%;
+        transform: rotate(90deg);
     }
 
     .batching-container {

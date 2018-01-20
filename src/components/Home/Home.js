@@ -2,9 +2,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-// import ModalVideo from 'react-modal-video';
 import Carousel from 'nuka-carousel';
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 import ReactPlayer from 'react-player';
 import Dialog from 'material-ui/Dialog';
 
@@ -54,14 +53,14 @@ export default class Home extends Component {
   };
 
 
-  
-  componentDidMount() { 
+
+  componentDidMount() {
     // setTimeout( () =>  this.setState ({isLoading: false}), 750
     // this.setState({isLoading: false})
   };
 
 
-  
+
   render() {
 
     const styles = {
@@ -69,7 +68,7 @@ export default class Home extends Component {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        
+
       },
       dialogContent: {
         position: "relative",
@@ -84,9 +83,9 @@ export default class Home extends Component {
     return (
 
       // this.state.isLoading ? <Loading /> : 
-      
+
       <section className="home-container">
-      
+
 
         <Helmet>
           <title>Micro Technologies</title>
@@ -97,7 +96,7 @@ export default class Home extends Component {
         <MobileHeader />
 
         <main className="slider-home">
-          
+
           <img className="mobile-home" src={MobileHome} alt="Micro Technologies Home" />
 
           <Carousel decorators={false} autoplay={true}
@@ -110,33 +109,30 @@ export default class Home extends Component {
             <header className="center-box">
               <h3 className="vision-text">We innovate technologies that empower food producers to grow a safe, wholesome food supply more efficiently and more profitably.</h3>
 
-              {/* <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='wUlPN0sZffY' onClose={() => this.setState({ isOpen: false })} />
-              <h6 className="main-cta" onClick={this.openModal}>WATCH VIDEO</h6> */}
-
-              <Dialog
-                modal={false}
-                open={this.state.open}
-                onRequestClose={this.handleClose}
-                contentStyle={ styles.dialogContent }
-                bodyStyle={ styles.dialogBody }
-                style={ styles.dialogRoot }
-                repositionOnUpdate={ false }
+                <Dialog
+                  modal={false}
+                  open={this.state.open}
+                  onRequestClose={this.handleClose}
+                  contentStyle={styles.dialogContent}
+                  bodyStyle={styles.dialogBody}
+                  style={styles.dialogRoot}
+                  repositionOnUpdate={false}
                 >
-  
-                <ReactPlayer 
-                  onLoad={() => { window.dispatchEvent(new Event('resize')); }}
-                  isOpen={this.state.isOpen}
-                  playing
-                  controls
-                  url='https://www.youtube.com/watch?v=wUlPN0sZffY'
-                  youtubeConfig={{ playerVars: { start: 15 }}}
-                />
-                
-              </Dialog>
+
+                  <ReactPlayer
+                    className='react-player'
+                    onLoad={() => { window.dispatchEvent(new Event('resize')); }}
+                    isOpen={this.state.isOpen}
+                    playing
+                    url='https://www.youtube.com/watch?v=wUlPN0sZffY'
+                    youtubeConfig={{ playerVars: { start: 15, modestbranding: 1 } }}
+                  />
+
+                </Dialog>
 
               <h6 className="main-cta" onClick={this.handleOpen}>WATCH VIDEO</h6>
-              
-              
+
+
             </header>
           </div>
         </main>
@@ -150,7 +146,7 @@ export default class Home extends Component {
           <section className="animal-icons">
             <Link to="/stocker">
               <div className="animal-box">
-                <img className="animal" src={StockerIcon} alt="Stocker Icon" height="111px" />
+                <img className="animal stocker-icon" src={StockerIcon} alt="Stocker Icon" height="111px" />
                 <h4 className="animal-text">STOCKER</h4>
               </div>
             </Link>
@@ -256,12 +252,12 @@ export default class Home extends Component {
               </HashLink>
             </div>
           </div>
-          
+
         </section>
-        
+
         <Footer />
       </section>
     )
-    
+
   }
 }

@@ -287,7 +287,15 @@
     }
 
     .history-circles-container-mobile {
-        height: 540px;
+        height: 300px;
+        width: 100vw;
+        overflow-x: hidden;
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+
+    .history-circles-container-mobile2 {
+        height: 240px;
         width: 100vw;
         overflow-x: hidden;
         display: inline-flex;
@@ -352,7 +360,15 @@
     }
 
     .history-circles-container-mobile {
-        height: 540px;
+        height: 300px;
+        width: 100vw;
+        overflow-x: hidden;
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+
+    .history-circles-container-mobile2 {
+        height: 240px;
         width: 100vw;
         overflow-x: hidden;
         display: inline-flex;
@@ -376,7 +392,7 @@
         width: 100vw;
         margin: 0;
         position: static;
-        height: 500px;
+        height: 430px;
     }
 
     .history-circles-header {

@@ -233,7 +233,7 @@ export default class About extends Component {
               <div className="partnership-logos">
                 <img className="part-icon" src={MWILogo} alt="MWI Animal Health" />
                 <img className="part-icon" src={MTLogo} alt="MWI Animal Health" />
-                <img className="part-icon" src={ABLogo} alt="MWI Animal Health" />
+                <img className="part-icon ABlogo" src={ABLogo} alt="MWI Animal Health" />
               </div>
             </div>
           </section>

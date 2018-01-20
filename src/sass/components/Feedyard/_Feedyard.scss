@@ -249,7 +249,7 @@
     justify-content: flex-start;
 }
 
-.feedyard-cover-mobile {
+.feedyard-cover-mobile, .comprehensive-solutions-mobile {
     display: none;
 }
 
@@ -375,8 +375,7 @@
     }
 
     .comprehensive-solutions {
-        height: 20vh;
-        margin-bottom: 100px;
+        display: none;
     }
 
     .dms-para {
@@ -403,6 +402,12 @@
         word-wrap: break-word;
         width: 85vw;
         text-align: center;
+    }
+
+    .comprehensive-solutions-mobile {
+        display: block;
+        width: 100%;
+        margin-bottom: 125px;
     }
 
 }
@@ -539,8 +544,7 @@
     }
 
     .comprehensive-solutions {
-        height: 20vh;
-        margin-bottom: 100px;
+        display: none;
     }
 
     .dms-para {
@@ -561,11 +565,19 @@
     .accutrac-container {
         margin: 0;
         height: 800px;
+        text-align: center;
     }
 
     .accutrac-subheader, .accutrac-para {
         word-wrap: break-word;
         width: 85vw;
     }
+
+    .comprehensive-solutions-mobile {
+        display: block;
+        width: 100%;
+        margin-bottom: 125px;
+    }
+
 }
 

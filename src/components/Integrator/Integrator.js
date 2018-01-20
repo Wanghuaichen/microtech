@@ -298,6 +298,7 @@ export default class Integrator extends Component {
             >
 
               <ReactPlayer
+                className='react-player'
                 onLoad={() => { window.dispatchEvent(new Event('resize')); }}
                 isOpen={this.state.isOpen2}
                 playing
@@ -379,7 +380,8 @@ export default class Integrator extends Component {
               >
 
                 <ReactPlayer
-                  onLoad={() => { window.dispatchEvent(new Event('resize')); }}
+                   className='react-player'
+                   onLoad={() => { window.dispatchEvent(new Event('resize')); }}
                   isOpen={this.state.isOpen3}
                   playing
                   // controls
@@ -453,7 +455,8 @@ export default class Integrator extends Component {
               >
 
                 <ReactPlayer
-                  onLoad={() => { window.dispatchEvent(new Event('resize')); }}
+                className='react-player'
+                onLoad={() => { window.dispatchEvent(new Event('resize')); }}
                   isOpen={this.state.isOpen1}
                   playing
                   // controls

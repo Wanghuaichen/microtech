@@ -259,6 +259,10 @@
     display: none;
 }
 
+.react-player-mobile {
+    display: none
+}
+
 
 
 // ipad responsive 
@@ -574,6 +578,10 @@
         margin-top: 200px;
     }
 
+    .stocker-icon {
+        height: 160px;
+    }
+
     .icon-subheader {
         margin-top: 230px;
     }
@@ -645,8 +653,13 @@
     .mobileblue-text {
         width: 85vw;
         text-align: center;
-        margin: 0 auto;
-        margin-top: 10px;
+        margin: 0 auto !important;
+        margin-top: 10px !important;
+    }
+
+    .react-player {
+        display: block;
+        width: 100vw !important;;
     }
 
 }

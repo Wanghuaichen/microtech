@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Carousel from 'nuka-carousel';
-// import ModalVideo from 'react-modal-video';
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 import ReactPlayer from 'react-player';
 import Dialog from 'material-ui/Dialog';
 
@@ -16,6 +15,7 @@ import FeedyardCover from '../../assets/Pics/Feedyard_cover.png';
 import Accutrac from '../../assets/Icons/accutrac.png';
 import CowboyTestimony from '../../assets/Pics/FeedyardCustomerRKirkland.png';
 import Comprehensive from '../../assets/Pics/Comprehensive.png';
+import ComprehensiveMobile from '../../assets/Pics/Comprehensive.jpg';
 import Quotes from '../../assets/Icons/quote.png';
 import FeedyardMobile from '../../assets/Mobile/FeedyardMobile.png';
 
@@ -61,15 +61,15 @@ export default class Feedyard extends Component {
       dialogRoot: {
         display: "flex",
         alignItems: "center",
-        justifyContent: "center",        
+        justifyContent: "center",
       },
       dialogContent: {
         position: "relative",
         transform: "",
-        width: '100%'
+        width: '100%',
       },
       dialogBody: {
-        padding: 0
+        padding: 0,
       }
     };
 
@@ -103,11 +103,11 @@ export default class Feedyard extends Component {
           </section>
 
           <div className="off">
-          <section className="blue-banner-flex advanced">
-            <h6 className="blue-left-text">ADVANCED COMPREHENSIVE & INTEREGRATED</h6>
-            <div className="line-break-banner"></div>
-            <h6 className="blue-right-text">FEEDYARD MANAGEMENT SOLUTIONS</h6>
-          </section>
+            <section className="blue-banner-flex advanced">
+              <h6 className="blue-left-text">ADVANCED COMPREHENSIVE & INTEREGRATED</h6>
+              <div className="line-break-banner"></div>
+              <h6 className="blue-right-text">FEEDYARD MANAGEMENT SOLUTIONS</h6>
+            </section>
           </div>
 
           <section className="accutrac-container">
@@ -122,11 +122,11 @@ export default class Feedyard extends Component {
           </section>
 
           <div className="on">
-          <section className="blue-banner-flex advanced">
-            <h6 className="blue-left-text">ADVANCED COMPREHENSIVE & INTEREGRATED</h6>
-            <div className="line-break-banner"></div>
-            <h6 className="blue-right-text">FEEDYARD MANAGEMENT SOLUTIONS</h6>
-          </section>
+            <section className="blue-banner-flex advanced">
+              <h6 className="blue-left-text">ADVANCED COMPREHENSIVE & INTEREGRATED</h6>
+              <div className="line-break-banner"></div>
+              <h6 className="blue-right-text">FEEDYARD MANAGEMENT SOLUTIONS</h6>
+            </section>
           </div>
 
 
@@ -146,12 +146,12 @@ export default class Feedyard extends Component {
               </div>
               <div className="moreinfo-top-textbox">
                 {this.state.show === 0 &&
-                
-                <p className="moreinfo-top-text">Our precision feed management solutions help optimize animal performance potential. We ensure consistency, accuracy, ration flexibility and verification, real-time data and accountability. Each system is custom configured to fit your feed processes allowing you more control over inventory and shrink.</p>}
+
+                  <p className="moreinfo-top-text">Our precision feed management solutions help optimize animal performance potential. We ensure consistency, accuracy, ration flexibility and verification, real-time data and accountability. Each system is custom configured to fit your feed processes allowing you more control over inventory and shrink.</p>}
 
                 {this.state.show === 1 &&
-                
-                <p className="moreinfo-top-text">Drug-Trac<sup>&reg;</sup> is the most comprehensive animal health management software system available today to help you ensure optimal animal health, inventory management and revolutionary diagnostic technologies.</p>}
+
+                  <p className="moreinfo-top-text">Drug-Trac<sup>&reg;</sup> is the most comprehensive animal health management software system available today to help you ensure optimal animal health, inventory management and revolutionary diagnostic technologies.</p>}
 
               </div>
             </section>
@@ -181,29 +181,29 @@ export default class Feedyard extends Component {
             <img className="cowboy-testimony" src={CowboyTestimony} alt="Customer Headshot" />
             <div className="customer-lightblue">
               <h6 className="customer-header">HEAR FROM OUR CUSTOMERS</h6>
-              
+
               <Dialog
                 modal={false}
                 open={this.state.open}
                 onRequestClose={this.handleClose}
-                contentStyle={ styles.dialogContent }
-                bodyStyle={ styles.dialogBody }
-                style={ styles.dialogRoot }
-                repositionOnUpdate={ false }
-                >
-  
-                <ReactPlayer 
+                contentStyle={styles.dialogContent}
+                bodyStyle={styles.dialogBody}
+                style={styles.dialogRoot}
+                repositionOnUpdate={false}
+              >
+
+                <ReactPlayer
+                  className='react-player'
                   onLoad={() => { window.dispatchEvent(new Event('resize')); }}
                   isOpen={this.state.isOpen}
                   playing
-                  controls
                   url='https://www.youtube.com/watch?v=i4wzef1I-Kk'
-                  youtubeConfig={{ playerVars: { start: 15 }}}
+                  youtubeConfig={{ playerVars: { start: 15 } }}
                 />
-                
+
               </Dialog>
 
-              <h6 className="customer-watchvideo" onClick={this.handleOpen}>WATCH VIDEO NOW</h6>   
+              <h6 className="customer-watchvideo" onClick={this.handleOpen}>WATCH VIDEO NOW</h6>
 
             </div>
           </section>
@@ -219,6 +219,7 @@ export default class Feedyard extends Component {
           </section>
 
           <img className="comprehensive-solutions" src={Comprehensive} alt="herd of cows" height="528px" />
+          <img className="comprehensive-solutions-mobile" src={ComprehensiveMobile} alt="herd of cows"  />
 
           <Carousel decorators={false} autoplay={true}
             wrapAround={true} speed={500} className="carousel-frame">

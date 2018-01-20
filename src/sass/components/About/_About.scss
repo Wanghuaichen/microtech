@@ -267,6 +267,10 @@
     display: none;
 }
 
+.ABlogo {
+    height: 55px !important;
+}
+
 
 
 
@@ -393,16 +397,24 @@
         width: 45vw !important;;
     }
 
+    .pres-title {
+        margin-top: 10px;
+        margin-left: -220px;
+    }
+
     .execs-container {
         width: auto;
         margin-top: 70px;
         margin-bottom: 20px;
     }
 
+    .executives {
+        flex-direction: column;
+    }
+
     .execs-title {
-        margin: 0px;
-        margin-bottom: 10px;
-        text-align: right;
+        margin: 5px 0px;
+        text-align: left;
     }
 
     .team-line {
@@ -469,6 +481,10 @@
         display: none;
     }
 
+    .ABlogo {
+        height: 40px !important;
+    }
+
 }
 
 
@@ -525,15 +541,22 @@
         text-align: center;
     }
 
-    .leadership-text, .partnership-logos {
+    .leadership-text {
         word-wrap: break-word;
         width: 100vw;
         margin: 10px 20px 0px 40px;
         flex-wrap: wrap;
     }
 
+    .partnership-logos {
+        width: 100vw;
+        @include flexSetUp;
+        flex-direction: column;
+        margin: auto 0;
+    }
+
     .part-icon {
-        margin: 10px 0px;
+        margin: 15px 0px;
         text-align: center;
     }
 
@@ -586,7 +609,6 @@
 
     .gray-location {
         text-align: center;
-
     }
 
     .president {
@@ -598,16 +620,24 @@
         width: 45vw !important;;
     }
 
+    .pres-title {
+        margin-top: 10px;
+        margin-left: -50px;
+    }
+
     .execs-container {
         width: auto;
         margin-top: 70px;
         margin-bottom: 20px;
     }
 
+    .executives {
+        flex-direction: column;
+    }
+
     .execs-title {
-        margin: 0px;
-        margin-bottom: 10px;
-        text-align: right;
+        margin: 5px 0px;
+        text-align: left;
     }
 
     .team-line {
@@ -671,5 +701,9 @@
 
     .bluebanner-est {
         display: none;
+    }
+
+    .ABlogo {
+        height: 70px !important;
     }
 }
