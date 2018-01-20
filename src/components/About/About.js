@@ -133,7 +133,7 @@ export default class About extends Component {
 
           <section className="team-container">
             <div className="team-box aboutteam">
-              <h2>Leadership Team</h2>
+              <h2 className="leadership-team-h2">Leadership Team</h2>
               <div className="president-about">
                 <h5 className="pres-name">TIM PEART,</h5>
                 <h5 className="pres-title">PRESIDENT</h5>

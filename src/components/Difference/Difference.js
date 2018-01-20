@@ -31,6 +31,8 @@ export default class Difference extends Component {
       isHidden3: true,
       isHidden4: true,
       isHidden5: true,
+      show0: false,
+      show1: false
     }
     this.toggleHidden0 = this.toggleHidden0.bind(this);
     this.toggleHidden1 = this.toggleHidden1.bind(this);
@@ -66,36 +68,42 @@ export default class Difference extends Component {
   toggleHidden0() {
     this.setState({
       isHidden0: !this.state.isHidden0,
+      show0: true
     });
   }
 
   toggleHidden1() {
     this.setState({
       isHidden1: !this.state.isHidden1,
+      show0: true
     });
   }
 
   toggleHidden2() {
     this.setState({
       isHidden2: !this.state.isHidden2,
+      show0: true
     });
   }
 
   toggleHidden3() {
     this.setState({
       isHidden3: !this.state.isHidden3,
+      show1: true
     });
   }
 
   toggleHidden4() {
     this.setState({
       isHidden4: !this.state.isHidden4,
+      show1: true
     });
   }
 
   toggleHidden5() {
     this.setState({
       isHidden5: !this.state.isHidden5,
+      show1: true
     });
   }
 
@@ -258,11 +266,12 @@ export default class Difference extends Component {
           </section>
 
           <section className="nutrition-wide">
-            <section className="nutrition-container">
+            <section className={this.state.show0 ? "nutrition-container-active" : "nutrition-container"}>
               <h4 className="nutrition-header">Nutritionists  /  Veterinarians  / Consultants</h4>
 
 
-              <div className="nutrition-box" onClick={() => this.toggleHidden0()}>
+              <div onClick={() => this.toggleHidden0()}
+                className="nutrition-box" >
                 <img className="arrow-down" src={ArrowDown} alt="drop down arrow" />
                 <h6 className="nutrition-subtitle">DATA DRIVEN DECISIONS</h6>
               </div>
@@ -271,17 +280,20 @@ export default class Difference extends Component {
                 <p className="nutrition-para" tag="toggle1">Aligned goals of ensuring animal health, accuracy in nutrition, offering flexibility, accountability, access to real-time data and ability to adjust to any customers needs from virtually anywhere. Allowing optimization of your time and efficiencies in your business.</p>
               }
 
-
-              <div className="nutrition-box" onClick={() => this.toggleHidden1()}>
+              <div onClick={() => this.toggleHidden1()}
+                className="nutrition-box">
                 <img className="arrow-down" src={ArrowDown} alt="drop down arrow" />
                 <h6 className="nutrition-subtitle">RESPONSIBLE ANIMAL PRODUCTION</h6>
               </div>
 
               {!this.state.isHidden1 &&
-                <p className="nutrition-para">Our technologies offer the opportunity to utilize health and nutrition products in flexible ways that really make sense for the animal. They provide assurance that products are properly given to target animals through precision delivery along with substantiating records. Gain access to historical records of product usage with corresponding animal health and performance data to accurately determination of relative value of products under actual use conditions.</p>
+                <p className="nutrition-para" >Our technologies offer the opportunity to utilize health and nutrition products in flexible ways that really make sense for the animal. They provide assurance that products are properly given to target animals through precision delivery along with substantiating records. Gain access to historical records of product usage with corresponding animal health and performance data to accurately determination of relative value of products under actual use conditions.</p>
               }
 
-              <div className="nutrition-box" onClick={() => this.toggleHidden2()}>
+
+
+              <div onClick={() => this.toggleHidden2()}
+                className="nutrition-box" >
                 <img className="arrow-down" src={ArrowDown} alt="drop down arrow" />
                 <h6 className="nutrition-subtitle">REGULATORY COMPLIANCE SUPPORT</h6>
               </div>
@@ -293,9 +305,8 @@ export default class Difference extends Component {
             </section>
 
 
-            <section className="nutrition-container">
+            <section className={this.state.show1 ? "nutrition-container-active" : "nutrition-container"}>
               <h4 className="nutrition-header">Manufacturer Partners</h4>
-
               <div className="nutrition-box" onClick={() => this.toggleHidden3()}>
                 <img className="arrow-down" src={ArrowDown} alt="drop down arrow" />
                 <h6 className="nutrition-subtitle">ENSURING OPTIMAL PRODUCT RESULTS</h6>

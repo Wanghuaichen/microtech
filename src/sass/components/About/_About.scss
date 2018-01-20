@@ -122,13 +122,19 @@
     margin-bottom: 20px;
 }
 
+.leadership-team-h2, .responsibility-header, .reach {
+    color: $primary-blue;
+}
+
 .execs-name {
     font-size: 26px;
+    color: $primary-blue;
 }
 
 .execs-title {
     font-size: 15px;
     margin: 12px 0px 0px 10px;
+    color: $primary-blue;
 }
 
 .email-information {

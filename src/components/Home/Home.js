@@ -11,7 +11,7 @@ import Dialog from 'material-ui/Dialog';
 import Header from '../Header/Header';
 import MobileHeader from '../Header/MobileHeader';
 import Footer from '../Footer/Footer';
-// import Loading from '../Loading/Loading';
+import Loading from '../Loading/Loading';
 
 // images
 import HomeHero from '../../assets/Pics/HomeHero.png';
@@ -33,7 +33,7 @@ export default class Home extends Component {
     this.state = {
       isOpen: false,
       open: false,
-      // isLoading: true
+      loading: true
     }
     this.openModal = this.openModal.bind(this);
     this.handleOpen = this.handleOpen.bind(this);
@@ -53,11 +53,13 @@ export default class Home extends Component {
   };
 
 
+// componentWillMount(){
+//     this.setState({loading: true}); 
+//  }
 
-  componentDidMount() {
-    // setTimeout( () =>  this.setState ({isLoading: false}), 750
-    // this.setState({isLoading: false})
-  };
+ componentDidMount(){
+     this.setState({loading: false}) 
+ }
 
 
 
@@ -82,10 +84,15 @@ export default class Home extends Component {
 
     return (
 
-      // this.state.isLoading ? <Loading /> : 
+      this.state.loading
+        
+        ?
+
+        <Loading />
+        
+        :
 
       <section className="home-container">
-
 
         <Helmet>
           <title>Micro Technologies</title>
@@ -94,6 +101,7 @@ export default class Home extends Component {
 
         <Header />
         <MobileHeader />
+
 
         <main className="slider-home">
 
