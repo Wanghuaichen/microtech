@@ -2334,7 +2334,11 @@ input::placeholder {
   align-items: center; }
 
 .nutrition-container {
-  height: 600px;
+  height: 610px;
+  margin: 25px; }
+
+.nutrition-container-active {
+  height: 610px;
   margin: 25px; }
 
 .nutrition-box {
@@ -2549,6 +2553,9 @@ input::placeholder {
   .nutrition-container {
     width: 100vw;
     height: 550px; }
+  .nutrition-container-active {
+    width: 100vw;
+    height: 550px; }
   .nutrition-box {
     width: 100vw;
     margin: 10px 0px; }
@@ -2687,11 +2694,7 @@ input::placeholder {
     height: 400px; }
   .nutrition-container-active {
     width: 100vw;
-    height: 800px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100vw; }
+    height: 800px; }
   .nutrition-box {
     width: 100vw;
     margin: 10px 0px; }
@@ -4708,7 +4711,7 @@ input::placeholder {
 
 .moreinfo-side {
   width: 25vw;
-  height: 1000px;
+  height: 1100px;
   background-color: #F6F6F6; }
 
 .nav-side-box {
@@ -4737,7 +4740,7 @@ input::placeholder {
 
 .moreinfo-right {
   width: 75vw;
-  height: 1000px; }
+  height: 1100px; }
 
 .moreinfo-display {
   margin: 60px;
@@ -4866,7 +4869,7 @@ input::placeholder {
     visibility: hidden; }
     .slider-decorator-0 > button::after {
       position: absolute;
-      margin-top: -157px;
+      margin-top: -228px;
       left: 1160%;
       padding-bottom: 15px;
       visibility: visible !important;
@@ -4883,7 +4886,7 @@ input::placeholder {
     visibility: hidden; }
     .slider-decorator-1 > button::after {
       position: absolute;
-      margin-top: -157px;
+      margin-top: -228px;
       border-left: 3px solid #1A2E5A;
       right: 0%;
       padding-bottom: 15px;
@@ -4930,11 +4933,14 @@ input::placeholder {
   cursor: pointer; }
 
 .steps {
-  margin: 20px 0px;
+  margin: 10px 0px;
   width: 700px; }
 
 .slideshow-display {
   width: 700px; }
+
+.slideshow-display-mobile {
+  display: none; }
 
 @media only screen and (min-width: 766px) and (max-width: 1024px) {
   .dairy-cover-mobile {
@@ -4993,8 +4999,6 @@ input::placeholder {
     cursor: pointer; }
   .dairy-btn-text {
     text-align: center; }
-  .slideshow-display {
-    width: 200px; }
   .list-flex {
     display: flex;
     flex-direction: column; }
@@ -5038,7 +5042,9 @@ input::placeholder {
     width: 65vw;
     margin: 5px 0px; }
   .view2-text {
-    width: 70vw; } }
+    width: 70vw; }
+  .slideshow-display {
+    display: none; } }
 
 @media screen and (max-width: 765px) {
   .dairy-cover-mobile {
@@ -5097,30 +5103,35 @@ input::placeholder {
     cursor: pointer; }
   .dairy-btn-text {
     text-align: center; }
-  .slideshow-display {
-    width: 200px; }
   .list-flex {
     display: flex;
     flex-direction: column; }
   .moreinfo-display {
     height: 800px;
     margin-bottom: 400px; }
+  .moreinfo-display-header {
+    margin-left: -25px; }
   .iphone-header, .iphone-text, .iphone, .iphone-text2 {
     display: none; }
   .tv-batcher {
     width: 65vw; }
-  .steps {
+  .steps, .gps {
     width: 70vw; }
-  .laptop, .gps, .tv-screen, .tv-screen-frame {
+  .tv-screen, .tv-screen-frame {
     height: 20vh;
     margin: 15px 0px; }
+  .laptop {
+    height: 30vh; }
   .tv-display {
     height: 17vh; }
   .list-left {
     display: flex;
     flex-direction: column; }
   .color-pallete, .stethoscope {
-    width: 30vw; }
+    width: 70vw; }
+  .view2-text {
+    text-indent: 0em;
+    margin-left: -25px; }
   .click-bottom-box {
     display: flex;
     flex-direction: column; }

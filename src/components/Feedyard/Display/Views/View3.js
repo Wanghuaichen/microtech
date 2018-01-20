@@ -3,16 +3,16 @@ import Carousel from 'nuka-carousel'
 
 
 import Infographic from '../../../../assets/Photos/Cubex/Cubex_Graphic.jpg';
-import Slide1 from '../../../../assets/Photos/Cubex/Slide1.png';
-import Slide2 from '../../../../assets/Photos/Cubex/Slide2.png';
-import Slide3 from '../../../../assets/Photos/Cubex/Slide3.png';
-import Slide4 from '../../../../assets/Photos/Cubex/Slide4.png';
-import Slide5 from '../../../../assets/Photos/Cubex/Slide5.png';
-import Slide6 from '../../../../assets/Photos/Cubex/Slide6.png';
-import Slide7 from '../../../../assets/Photos/Cubex/Slide7.png';
-import Slide8 from '../../../../assets/Photos/Cubex/Slide8.png';
-import Slide9 from '../../../../assets/Photos/Cubex/Slide9.png';
-import Slide10 from '../../../../assets/Photos/Cubex/Slide10.png';
+import Slide1 from '../../../../assets/Photos/Cubex/Slide1.jpg';
+import Slide2 from '../../../../assets/Photos/Cubex/Slide2.jpg';
+import Slide3 from '../../../../assets/Photos/Cubex/Slide3.jpg';
+import Slide4 from '../../../../assets/Photos/Cubex/Slide4.jpg';
+import Slide5 from '../../../../assets/Photos/Cubex/Slide5.jpg';
+import Slide6 from '../../../../assets/Photos/Cubex/Slide6.jpg';
+import Slide7 from '../../../../assets/Photos/Cubex/Slide7.jpg';
+import Slide8 from '../../../../assets/Photos/Cubex/Slide8.jpg';
+import Slide9 from '../../../../assets/Photos/Cubex/Slide9.jpg';
+import Slide10 from '../../../../assets/Photos/Cubex/Slide10.jpg';
 
 export default class View2 extends Component {
   render() {

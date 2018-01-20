@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import Carousel from 'nuka-carousel';
 
-// import Slide1 from '../../../../assets/Photos/MicroWeigh/Slide1.png';
-// import Slide2 from '../../../../assets/Photos/MicroWeigh/Slide2.png';
-// import Slide3 from '../../../../assets/Photos/MicroWeigh/Slide3.png';
-import Slide4 from '../../../../assets/Photos/MicroWeigh/Slide4.png';
-import Slide5 from '../../../../assets/Photos/MicroWeigh/Slide5.png';
-import Slide6 from '../../../../assets/Photos/MicroWeigh/Slide6.png';
+import Slide4 from '../../../../assets/Photos/MicroWeigh/Slide4.jpg';
+import Slide5 from '../../../../assets/Photos/MicroWeigh/Slide5.jpg';
+import Slide6 from '../../../../assets/Photos/MicroWeigh/Slide6.jpg';
 
 
 export default class View0 extends Component {
@@ -23,15 +20,14 @@ export default class View0 extends Component {
                 <li className="moreinfo-list2">
                 Minimize shrink through a closed micro feed ingredient delivery system</li>
 
-                <Carousel width={700} decorators={Carousel.getDefaultProps().decorators.slice(0, 2)} autoplay={true} wrapAround={true} speed={600} >
-                     {/* <img src={Slide1} alt="slide show" width="673px" onLoad={() => {window.dispatchEvent(new Event('resize'));}}  />
-                    <img src={Slide2} alt="slide show" width="673px" onLoad={() => {window.dispatchEvent(new Event('resize'));}}  />
-                    <img src={Slide3} alt="slide show" width="673px" onLoad={() => {window.dispatchEvent(new Event('resize'));}}  /> */}
-                    
-                    <img src={Slide6} alt="slide show" width="673px" onLoad={() => {window.dispatchEvent(new Event('resize'));}}  />
-                    <img src={Slide5} alt="slide show" width="673px" onLoad={() => {window.dispatchEvent(new Event('resize'));}}  />
-                    <img src={Slide4} alt="slide show" width="673px" onLoad={() => {window.dispatchEvent(new Event('resize'));}}  />
+                <div className="slideshow-display">
+                <Carousel className="slider-carousel" decorators={Carousel.getDefaultProps().decorators.slice(0, 2)} autoplay={true} wrapAround={true} speed={600} >
+                    <img src={Slide6} alt="slide show" onLoad={() => {window.dispatchEvent(new Event('resize'));}}  />
+                    <img src={Slide5} alt="slide show" onLoad={() => {window.dispatchEvent(new Event('resize'));}}  />
+                    <img src={Slide4} alt="slide show" onLoad={() => {window.dispatchEvent(new Event('resize'));}}  />
                 </Carousel >
+                </div>
+
                 <div className="slide-nav"></div>
             </div>
         )

@@ -132,7 +132,12 @@
 }
 
 .nutrition-container {
-    height: 600px;
+    height: 610px;
+    margin: 25px;
+}
+
+.nutrition-container-active {
+    height: 610px;
     margin: 25px;
 }
 
@@ -419,6 +424,11 @@
         height: 550px;
     }
 
+    .nutrition-container-active {
+        width: 100vw;
+        height: 550px;
+    }
+
     .nutrition-box {
         width: 100vw;
         margin: 10px 0px;
@@ -637,10 +647,6 @@
     .nutrition-container-active {
         width: 100vw;
         height: 800px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        width: 100vw;
     }
 
     .nutrition-box {

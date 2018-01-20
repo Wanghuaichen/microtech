@@ -44,7 +44,7 @@
 
 .moreinfo-side {
     width: 25vw;
-    height: 1000px;
+    height: 1100px;
     background-color: $bg-light;
 }
 
@@ -75,7 +75,7 @@
 
 .moreinfo-right {
     width: 75vw;
-    height: 1000px;
+    height: 1100px;
 }
 
 .moreinfo-display {
@@ -215,7 +215,7 @@
  
          &::after {
            position: absolute;
-           margin-top: -157px;
+           margin-top: -228px;
            left: 1160%;
            padding-bottom: 15px;
            visibility: visible !important;
@@ -235,7 +235,7 @@
  
          &::after {
            position: absolute;
-           margin-top: -157px;
+           margin-top: -228px;
            border-left: 3px solid $primary-blue;
            right: 0%;
            padding-bottom: 15px;
