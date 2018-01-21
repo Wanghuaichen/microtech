@@ -531,7 +531,9 @@ textarea {
     width: 85vw;
     text-align: center;
     margin: 0 auto;
-    margin-top: 10px; } }
+    margin-top: 10px; }
+  .mobileblue-text {
+    margin: 0 auto !important; } }
 
 @media screen and (max-width: 765px) {
   .home-container {
