@@ -96,6 +96,10 @@
     grid-area: bluebanner-box;
 }
 
+.mobileblue-text {
+    margin: 0 !important;
+}
+
 .bluebanner-text {
     word-wrap: break-word;
     width: 650px; 
@@ -455,11 +459,11 @@
         display: flex;
         justify-content: space-around;
     }
-
+    
     .logo-footer-mobile {
         display: block;
-        width: 30px;
-        margin-top: -7px;
+        width: 31px;
+        margin-top: -6px;
         margin-right: 5px;
         margin-left: 5px;
     }
@@ -676,8 +680,8 @@
 
     .logo-footer-mobile {
         display: block;
-        width: 30px;
-        margin-top: -7px;
+        width: 31px;
+        margin-top: -6px;
         margin-right: 5px;
         margin-left: 5px;
     }
