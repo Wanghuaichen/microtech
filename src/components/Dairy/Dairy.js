@@ -155,7 +155,7 @@ export default class Dairy extends Component {
               >
 
                 <ReactPlayer
-                  className='react-player' 
+                  className='react-player'
                   onLoad={() => { window.dispatchEvent(new Event('resize')); }}
                   isOpen={this.state.isOpen}
                   playing
@@ -171,41 +171,39 @@ export default class Dairy extends Component {
             </div>
           </section>
 
+          <Carousel decorators={false} autoplay={true} wrapAround={true} speed={500} className="carousel-frame">
 
-          <Carousel decorators={false} autoplay={true} 
-            wrapAround={true} speed={900} className="carousel-frame">
-
-            <section className="bluebanner-box quotebox marginup">
-              <div className="bluebanner-left">
-                <img className="quotes" src={Quotes} alt="quotes icon" width="60px" />
-              </div>
-              <div className="slanted-line"></div>
-              <div className="bluebanner-right">
-                <p className="operations-quote">“With technology, there’s accountability. We can easily log in from anywhere and ensure the cows are being fed the accurate and correct rations prescribed by our nutritionist. Because of the technology we are no longer overfeeding; which means more efficiency in production and translates into healthier cows.”</p>
-                <div className="operations-box">
-                  <h5 className="operations-name">- Jake Benson</h5>
-                  <p className="operations-title">PARTNER, D&J DAIRY</p>
-                  <p className="operations-title">HEREFORD, TEXAS</p>
+              <section className="bluebanner-box quotebox marginup">
+                <div className="bluebanner-left">
+                  <img className="quotes" src={Quotes} alt="quotes icon" width="60px" />
                 </div>
-              </div>
-            </section>
-
-            <section className="bluebanner-box quotebox marginup">
-              <div className="bluebanner-left">
-                <img className="quotes" src={Quotes} alt="quotes icon" width="60px" />
-              </div>
-              <div className="slanted-line"></div>
-              <div className="bluebanner-right">
-                <p className="operations-quote">“The ultimate indication of a good relationship with someone is trust. I find a lot of that trust in Micro. When they say they’re going to do something, they get it done. When they don’t have the answer to a question I have, they go out of their way to figure it out.”</p>
-                <div className="operations-box">
-                  <h5 className="operations-name">- Isaac Ghorbani</h5>
-                  <p className="operations-title">OPERATIONS MANAGER</p>
-                  <p className="operations-title">FRISIA DAIRY, HARTLEY, TEXAS</p>
+                <div className="slanted-line"></div>
+                <div className="bluebanner-right">
+                  <p className="operations-quote">“With technology, there’s accountability. We can easily log in from anywhere and ensure the cows are being fed the accurate and correct rations prescribed by our nutritionist. Because of the technology we are no longer overfeeding; which means more efficiency in production and translates into healthier cows.”</p>
+                  <div className="operations-box">
+                    <h5 className="operations-name">- Jake Benson</h5>
+                    <p className="operations-title">PARTNER, D&J DAIRY</p>
+                    <p className="operations-title">HEREFORD, TEXAS</p>
+                  </div>
                 </div>
-              </div>
-            </section>
+              </section>
 
-          </Carousel>
+              <section className="bluebanner-box quotebox marginup">
+                <div className="bluebanner-left">
+                  <img className="quotes" src={Quotes} alt="quotes icon" width="60px" />
+                </div>
+                <div className="slanted-line"></div>
+                <div className="bluebanner-right">
+                  <p className="operations-quote">“The ultimate indication of a good relationship with someone is trust. I find a lot of that trust in Micro. When they say they’re going to do something, they get it done. When they don’t have the answer to a question I have, they go out of their way to figure it out.”</p>
+                  <div className="operations-box">
+                    <h5 className="operations-name">- Isaac Ghorbani</h5>
+                    <p className="operations-title">OPERATIONS MANAGER</p>
+                    <p className="operations-title">FRISIA DAIRY, HARTLEY, TEXAS</p>
+                  </div>
+                </div>
+              </section>
+
+            </Carousel>
 
           <section className="feedyard-top">
             <div className="transparent-stocker2">

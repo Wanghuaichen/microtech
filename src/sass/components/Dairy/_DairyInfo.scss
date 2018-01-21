@@ -237,6 +237,10 @@
       }
     }
 
+    .carousel-frame{
+        margin-left: 0 !important;
+        margin-bottom: 60px;
+    }
 
 
 }
@@ -429,6 +433,7 @@
     .slider {
         display: block !important;
         width: 375px !important;
+        overflow-y: hidden !important;
         margin-left: -60px !important;
 
     &-decorator-0 { /* Previous */
@@ -447,10 +452,14 @@
           &::after {
             margin-top: -119px;
             right: 0%;
-
           }
         }
       }
+    }
+
+    .carousel-frame{
+        margin-left: 0 !important;
+        margin-bottom: 60px;
     }
 
 }

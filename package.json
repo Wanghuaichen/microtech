@@ -33,6 +33,7 @@
     "react": "^16.2.0",
     "react-animated-number": "^0.4.4",
     "react-dom": "^16.2.0",
+    "react-flex-carousel": "^1.1.0",
     "react-helmet": "^5.2.0",
     "react-meta-tags": "^0.3.0",
     "react-on-screen": "^2.0.1",

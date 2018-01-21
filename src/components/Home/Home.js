@@ -107,7 +107,7 @@ export default class Home extends Component {
 
           <img className="mobile-home" src={MobileHome} alt="Micro Technologies Home" />
 
-          <Carousel decorators={false} autoplay={true}
+          <Carousel className="slideslidehome" decorators={false} autoplay={true}
             wrapAround={true} speed={600} >
             <img src={HomeHero} alt="Home Cow Cover" onLoad={() => { window.dispatchEvent(new Event('resize')); }} />
             <img src={HomeHero2} alt="Home Cow Cover" onLoad={() => { window.dispatchEvent(new Event('resize')); }} />

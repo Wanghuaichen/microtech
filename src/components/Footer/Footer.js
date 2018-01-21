@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 import Logo from '../../assets/Logos/MicroTech_MED.jpg'
 import HR from '../../assets/Icons/HR_white.png';
@@ -8,6 +8,7 @@ import Knowledge from '../../assets/Icons/Knowledgedriven_white.png';
 import LinkedIn from '../../assets/Icons/Linkedin_white.png';
 import Mail from '../../assets/Icons/Mail_white.png';
 import Twitter from '../../assets/Icons/Twitter_white.png';
+import LogoFooter from '../../assets/Icons/FooterLogo.png';
 
 export default class Footer extends Component {
     render() {
@@ -29,6 +30,10 @@ export default class Footer extends Component {
                         <nav className="social-links">
                             <div className="social-box">
 
+                                <Link to="/">
+                                    <img className="logo-footer-mobile" src={LogoFooter} alt="Micro Technologies Logo" />
+                                </Link>
+
                                 <Link to="/careers">
                                     <img className="social-icon" src={HR} alt="HR Icon" /></Link>
 
@@ -39,7 +44,7 @@ export default class Footer extends Component {
                                     <img className="social-icon" src={LinkedIn} alt="LinkedIn Icon" /></a>
 
                                 <Link to="/contact">
-                                    <img className="social-icon" src={Mail} alt="Mail Icon" /></Link>
+                                    <img className="social-icon mail-icon" src={Mail} alt="Mail Icon" /></Link>
 
                                 <a href="https://twitter.com/Innovation_MT?lang=en" rel="noopener noreferrer" target="_blank">
                                     <img className="social-icon" src={Twitter} alt="Twitter Icon" /></a>

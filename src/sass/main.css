@@ -378,6 +378,9 @@ textarea {
 .react-player-mobile {
   display: none; }
 
+.logo-footer-mobile {
+  display: none; }
+
 @media only screen and (min-width: 766px) and (max-width: 1024px) {
   .home-container {
     display: grid;
@@ -448,6 +451,8 @@ textarea {
       font-size: 34px;
       width: 75vw;
       margin-top: -40px; }
+  .slideslidehome {
+    visibility: hidden !important; }
   .main-cta {
     margin-top: 280px;
     width: 75vw;
@@ -462,6 +467,8 @@ textarea {
     width: 75vw; }
   .icon-animal-box, .icon-header, .animal-icons {
     margin-top: 300px; }
+  .icon-box {
+    margin-top: -125px; }
   .animal {
     height: 10vw;
     margin-top: -30px; }
@@ -500,6 +507,12 @@ textarea {
     width: 100vw;
     display: flex;
     justify-content: space-around; }
+  .logo-footer-mobile {
+    display: block;
+    width: 30px;
+    margin-top: -7px;
+    margin-right: 5px;
+    margin-left: 5px; }
   .contact-btn {
     margin-right: 80px; }
   .social-icon {
@@ -642,6 +655,14 @@ textarea {
     margin-right: 20px; }
   .social-icon {
     width: 25px !important; }
+  .mail-icon {
+    display: none; }
+  .logo-footer-mobile {
+    display: block;
+    width: 30px;
+    margin-top: -7px;
+    margin-right: 5px;
+    margin-left: 5px; }
   .mobileblue {
     width: 100vw;
     margin: auto 0;
@@ -656,7 +677,9 @@ textarea {
     margin-top: 10px !important; }
   .react-player {
     display: block;
-    width: 100vw !important; } }
+    width: 100vw !important; }
+  .slideslidehome {
+    display: none; } }
 
 .contact-main {
   display: flex;
@@ -2025,7 +2048,9 @@ input::placeholder {
   .gray-banner-box {
     padding-bottom: 50px; }
   .expandedbox {
-    margin-bottom: 300px; } }
+    margin-bottom: 350px; }
+  .explore-cta {
+    margin-top: -150px !important; } }
 
 @media screen and (max-width: 765px) {
   .careers-container {
@@ -5056,7 +5081,10 @@ input::placeholder {
         visibility: hidden; }
         .slider-decorator-1 > button::after {
           margin-top: -250px;
-          right: 0%; } }
+          right: 0%; }
+  .carousel-frame {
+    margin-left: 0 !important;
+    margin-bottom: 60px; } }
 
 @media screen and (max-width: 765px) {
   .dairy-cover-mobile {
@@ -5169,6 +5197,7 @@ input::placeholder {
   .slider {
     display: block !important;
     width: 375px !important;
+    overflow-y: hidden !important;
     margin-left: -60px !important; }
     .slider-decorator-0 {
       /* Previous */ }
@@ -5183,7 +5212,10 @@ input::placeholder {
         visibility: hidden; }
         .slider-decorator-1 > button::after {
           margin-top: -119px;
-          right: 0%; } }
+          right: 0%; }
+  .carousel-frame {
+    margin-left: 0 !important;
+    margin-bottom: 60px; } }
 
 .circle-5 {
   width: 120px;

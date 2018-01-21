@@ -263,6 +263,14 @@
     display: none
 }
 
+.logo-footer-mobile {
+    display: none;
+}
+
+
+
+
+
 
 
 // ipad responsive 
@@ -290,7 +298,7 @@
         display: none;
     }
 
-    .slider {
+    .slider, {
         display: none !important;
     }
 
@@ -358,6 +366,10 @@
         }
     }
 
+    .slideslidehome {
+        visibility: hidden !important;
+    }
+
     .main-cta {
         margin-top: 280px;
         width: 75vw;
@@ -376,6 +388,10 @@
 
     .icon-animal-box, .icon-header, .animal-icons {
         margin-top: 300px;
+    }
+
+    .icon-box {
+        margin-top: -125px;
     }
 
     .animal {
@@ -440,6 +456,14 @@
         justify-content: space-around;
     }
 
+    .logo-footer-mobile {
+        display: block;
+        width: 30px;
+        margin-top: -7px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
     .contact-btn {
         margin-right: 80px;
     }
@@ -461,6 +485,9 @@
         margin: 0 auto;
         margin-top: 10px;
     }
+
+    
+
 }
 
 // mobile responsive 
@@ -642,6 +669,18 @@
     .social-icon {
         width: 25px !important;
     }
+
+    .mail-icon {
+        display: none;
+    }
+
+    .logo-footer-mobile {
+        display: block;
+        width: 30px;
+        margin-top: -7px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
     
     .mobileblue {
         width: 100vw;
@@ -660,6 +699,10 @@
     .react-player {
         display: block;
         width: 100vw !important;;
+    }
+
+    .slideslidehome {
+        display: none;
     }
 
 }

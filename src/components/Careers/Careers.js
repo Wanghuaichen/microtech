@@ -42,7 +42,7 @@ export default class Careers extends Component {
             {/* <p className="careers-para">Learn more about some of our featured roles below, or take a look at our list of open positions.</p> */}
 
             <a href="https://abccareers.taleo.net/careersection/mwi/jobsearch.ftl?lang=en&radiusType=M&keyword=microtechnologies&searchExpanded=true&radius=1&portal=101430233" rel="noopener noreferrer" target="_blank">
-            <div className="btn-cta">EXPLORE OPPORTUNITIES
+            <div className="btn-cta explore-cta">EXPLORE OPPORTUNITIES
             <img className="white-arrow" src={WhiteArrow} alt="Explore Opportunities" />
             </div></a>
           </section>
