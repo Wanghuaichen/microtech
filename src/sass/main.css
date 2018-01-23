@@ -887,6 +887,16 @@ textarea {
   justify-content: center;
   align-items: center; }
 
+.error {
+  border-color: red;
+  width: 43vw;
+  height: 25px;
+  margin: 10px 0px 20px 0px; }
+
+.submit-btn:disabled {
+  background-color: red;
+  opacity: 0.5; }
+
 @media only screen and (min-width: 766px) and (max-width: 1024px) {
   .contact-photo {
     display: none; }
