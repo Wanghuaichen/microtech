@@ -19,6 +19,10 @@ export default class FourOhFour extends Component {
                     <img className="fourohfour-image" src={Cows404} alt="404 page" />
                 </header>
 
+                {/* <audio controls>
+                <source src="testaudio.mp3" type="audio/mpeg">
+                </audio> */}
+
                 <Footer />
             </section>
         )

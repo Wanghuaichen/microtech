@@ -7,6 +7,10 @@ import Header from '../Header/Header';
 import MobileHeader from '../Header/MobileHeader';
 import Footer from '../Footer/Footer';
 
+import { connect } from 'react-redux';
+import { getUserInfo } from '../../ducks/users';
+import { withRouter } from 'react-router-dom';
+
 import ContactCover from '../../assets/Pics/Contact_cover.png';
 import PhoneIcon from '../../assets/Icons/phone-receiver.png';
 import EmailIcon from '../../assets/Icons/large_envelope.png';
@@ -22,7 +26,8 @@ import LocationIcon from '../../assets/Icons/facebook-placeholder-for-locate-pla
 //     };
 // }
 
-export default class Contact extends Component {
+
+class Contact extends Component {
 
     constructor(props) {
         super(props);
@@ -60,9 +65,9 @@ export default class Contact extends Component {
         }))
     }
 
-    
+
     handleClose = () => {
-        this.setState({open: false});
+        this.setState({ open: false });
     };
 
     // handleBlur = (field) => (e) => {
@@ -83,7 +88,7 @@ export default class Contact extends Component {
                 //access the results here....
                 console.log(res);
             });
-            this.setState({open: true});
+        this.setState({ open: true });
         // alert(`Thank you for reaching out. We will respond back shortly.`);
     }
 
@@ -91,6 +96,17 @@ export default class Contact extends Component {
     //     const errors = validate(this.state.email, this.state.first_name, this.state.last_name, this.state.phone, this.state.message_text);
     //     const isDisabled = Object.keys(errors).some(x => errors[x]);
     //     return !isDisabled;
+    // }
+
+    // componentWillMount() {
+    //     axios.get(`/api/form/${this.props.match.params.id}`)
+    //         .then((response) => {
+    //             this.setState({
+    //                 donate: response.data[0]
+    //             })
+    //         }).then(response => {
+    //             this.props.getUserInfo();
+    //         });
     // }
 
 
@@ -255,3 +271,11 @@ export default class Contact extends Component {
         )
     }
 }
+
+function mapStateToProps(state) {
+    return {
+        user: state.user
+    }
+}
+
+export default connect(mapStateToProps, { getUserInfo })(withRouter(Contact))
